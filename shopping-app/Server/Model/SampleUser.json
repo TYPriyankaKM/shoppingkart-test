@@ -1,0 +1,16 @@
+{
+  "id": 0,
+  "firstName": "",
+  "lastName": "",
+  "gender": "",
+  "email": "",
+  "phone": 8967642874,
+  "password": "",
+  "cartList": [],
+  "wishList": [],
+  "status": "",
+  "role": "",
+  "addressList": [],
+  "orderHistory": [],
+  "token": ""
+}

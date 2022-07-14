@@ -1,0 +1,1010 @@
+[
+  {
+    "productsid": "LP01",
+    "name": "",
+    "brand": "Maybelline New York",
+    "title": "Lipstick",
+    "description": "Maybelline New York Sensational Liquid Matte Lipstick - 03 Flush It Red",
+    "rating": 4.3,
+    "category": "beauty_products",
+    "price": 244,
+    "offer": 10,
+    "type": "",
+    "merchantId": 0,
+    "thumbnailURL": "https://images-static.nykaa.com/media/catalog/product/7/d/7ddf1c76902395723011_1.jpg?tr=w-344,h-344,cm-pad_resize",
+    "productImageURLs": [
+      "https://images-static.nykaa.com/media/catalog/product/7/d/7ddf1c76902395723011_3.jpg",
+      "https://images-static.nykaa.com/media/catalog/product/7/d/7ddf1c76902395723011_4.jpg",
+      "https://images-static.nykaa.com/media/catalog/product/7/d/7ddf1c76902395723011_1.jpg"
+    ],
+    "searchTags": ["Maybelline New York", "Lipstick"]
+  },
+
+  {
+    "productsid": "LP02",
+    "name": "",
+    "brand": "Lakme",
+    "title": "Lipstick",
+    "description": "Lakme 9 To 5 Primer + Matte Lipstick - MR2 Red Coat",
+    "rating": 4.2,
+    "category": "beauty_products",
+    "price": 400,
+    "offer": 10,
+    "type": "",
+    "merchantId": 0,
+    "thumbnailURL": "https://images-static.nykaa.com/media/catalog/product/2/9/29d9f0524847_s11-8901030794308.jpg?tr=w-344,h-344,cm-pad_resize",
+    "productimageURLs": [
+      "https://images-static.nykaa.com/media/catalog/product/2/9/29d9f0524847_s1-8901030794308.jpg?tr=w-344,h-344,cm-pad_resize",
+      "https://images-static.nykaa.com/media/catalog/product/2/9/29d9f0524847_h-8901030794308.jpg?tr=w-344,h-344,cm-pad_resize",
+      ""
+    ],
+    "searchTags": ["Lakme", "Lipstick"]
+  },
+
+  {
+    "productsid": "LP03",
+    "name": "",
+    "brand": "M.A.C",
+    "title": "Lipstick",
+    "description": "M.A.C Retro Matte Lipstick - Flat Out Fabulous",
+    "rating": 4.6,
+    "category": "beauty_products",
+    "price": 1700,
+    "offer": 10,
+    "type": "",
+    "merchantId": 0,
+    "thumbnailURL": "https://images-static.nykaa.com/media/catalog/product/9/3/937a29a773602314782_rv__3.jpg?tr=w-344,h-344,cm-pad_resize",
+    "productimageURLs": [
+      "https://images-static.nykaa.com/media/catalog/product/9/3/937a29a773602314782_rv__2.jpg",
+      "https://images-static.nykaa.com/media/catalog/product/9/3/937a29a773602314782_rv__1.jpg",
+      "https://images-static.nykaa.com/media/catalog/product/9/3/937a29a773602314782_rv__10.jpg"
+    ],
+    "searchTags": ["M.A.C", "Lipstick"]
+  },
+  {
+    "productsid": "LP04",
+    "name": "",
+    "brand": "HUDA EAUTY",
+    "title": "Lipstick",
+    "description": "Huda Beauty Mini Power Bullet Kit - Interview & Girls Trip",
+    "rating": 3.9,
+    "category": "beauty_products",
+    "price": 1550,
+    "offer": 10,
+    "type": "",
+    "merchantId": 0,
+    "thumbnailURL": "https://images-static.nykaa.com/media/catalog/product/5/9/59e3abdhudab00000072_5.jpg?tr=w-344,h-344,cm-pad_resize",
+    "productimageURLs": [
+      "https://images-static.nykaa.com/media/catalog/product/5/9/59e3abdhudab00000072_2.jpg",
+      "https://images-static.nykaa.com/media/catalog/product/5/9/59e3abdhudab00000072_3.jpg",
+      "https://images-static.nykaa.com/media/catalog/product/5/9/59e3abdhudab00000072_2.jpg"
+    ],
+    "searchTags": ["HUDA EAUTY", "Lipstick"]
+  },
+
+  {
+    "productsid": "LP05",
+    "name": "",
+    "brand": "NYKAA",
+    "title": "Lipstick",
+    "description": "Nykaa All Day Matte Long Wear Liquid Foundation With Pump - Vanilla 02",
+    "rating": 4.3,
+    "category": "beauty_products",
+    "price": 599,
+    "offer": 10,
+    "type": "",
+    "merchantId": 0,
+    "thumbnailURL": "https://images-static.nykaa.com/media/catalog/product/7/9/7905903NYKAC00000161_1.jpg?tr=w-344,h-344,cm-pad_resize",
+    "productimageURLs": [
+      "https://images-static.nykaa.com/media/catalog/product/7/9/7905903NYKAC00000161_3.jpg",
+      "https://images-static.nykaa.com/media/catalog/product/7/9/7905903NYKAC00000161_2.jpg",
+      "https://images-static.nykaa.com/media/catalog/product/7/9/7905903NYKAC00000161_4.jpg?tr=w-344,h-344,cm-pad_resize"
+    ],
+    "searchTags": ["NYKAA", "Lipstick"]
+  },
+  {
+    "productsid": "LP06",
+    "name": "",
+    "brand": "Colorbar",
+    "title": "Lipstick",
+    "description": "Colorbar Matte Me As I Am Lipcolor - 001 Prank",
+    "rating": 4.4,
+    "category": "beauty_products",
+    "price": 680,
+    "offer": 10,
+    "type": "",
+    "merchantId": 0,
+    "thumbnailURL": "https://images-static.nykaa.com/media/catalog/product/8/9/8904052432623_1.jpg?tr=w-344,h-344,cm-pad_resize",
+    "productimageURLs": [
+      "https://images-static.nykaa.com/media/catalog/product/8/9/8904052432623_2.jpg",
+      "https://images-static.nykaa.com/media/catalog/product/8/9/8904052432623_1.jpg",
+      "https://images-static.nykaa.com/media/catalog/product/8/9/8904052432623_3.jpg"
+    ],
+    "searchTags": ["Colorbar", "Lipstick"]
+  },
+  {
+    "productsid": "LP07",
+    "name": "",
+    "brand": "Maybelline New York",
+    "title": "Mascara",
+    "description": "Maybelline New York The Colossal Mascara Waterproof - 001 Waterproof Black",
+    "rating": 4.4,
+    "category": "beauty_products",
+    "price": 299,
+    "offer": 10,
+    "type": "",
+    "merchantId": 0,
+    "thumbnailURL": "https://images-static.nykaa.com/media/catalog/product/3/0/30079236_i_new_0__r1.jpg?tr=w-344,h-344,cm-pad_resize",
+    "productimageURLs": [
+      "https://images-static.nykaa.com/media/catalog/product/3/0/30079236_i2_i_new_0__r3.jpg",
+      "https://images-static.nykaa.com/media/catalog/product/3/0/30079236_i_new_0__r1.jpg",
+      "https://images-static.nykaa.com/media/catalog/product/3/0/30079236_i3_i_new_0__r4.jpg"
+    ],
+    "searchTags": ["Maybelline New York", "Mascara"]
+  },
+
+  {
+    "productsid": "LP08",
+    "name": "",
+    "brand": "Maybelline New York",
+    "title": "Mascara",
+    "description": "Maybelline New York The Colossal Mascara Waterproof - 001 Waterproof Black",
+    "rating": 4.4,
+    "category": "beauty_products",
+    "price": 299,
+    "offer": 10,
+    "type": "",
+    "merchantId": 0,
+    "thumbnailURL": "https://images-static.nykaa.com/media/catalog/product/3/0/30079236_i_new_0__r1.jpg?tr=w-344,h-344,cm-pad_resize",
+    "productimageURLs": [
+      "https://images-static.nykaa.com/media/catalog/product/3/0/30079236_i2_i_new_0__r3.jpg",
+      "https://images-static.nykaa.com/media/catalog/product/3/0/30079236_i_new_0__r1.jpg",
+      "https://images-static.nykaa.com/media/catalog/product/3/0/30079236_i3_i_new_0__r4.jpg"
+    ],
+    "searchTags": ["Maybelline New York", "Mascara"]
+  },
+  {
+    "productsid": "LP09",
+    "name": "",
+    "brand": "Mayebelline New York",
+    "title": "Primer",
+    "description": "Maybelline New York Fit Me Primer - Dewy+Smooth",
+    "rating": 4.4,
+    "category": "beauty_products",
+    "price": 467,
+    "offer": 10,
+    "type": "",
+    "merchantId": 0,
+    "thumbnailURL": "https://images-static.nykaa.com/media/catalog/product/5/b/5b990e16902395773146_1.jpg",
+    "productimageURLs": [
+      "https://images-static.nykaa.com/media/catalog/product/5/b/5b990e16902395773146_2.jpg",
+      "https://images-static.nykaa.com/media/catalog/product/5/b/5b990e16902395773146_3.jpg",
+      "https://images-static.nykaa.com/media/catalog/product/5/b/5b990e16902395773146_4.jpg"
+    ],
+    "searchTags": ["Mayebelline New York", "Primer"]
+  },
+  {
+    "productsid": "LP10",
+    "name": "",
+    "brand": "M.A.C",
+    "title": "Lipstick",
+    "description": "M.A.C Love Me Liquid Lipcolour - It's All Me",
+    "rating": 4.4,
+    "category": "beauty_roducts",
+    "price": 2200,
+    "offer": 10,
+    "type": "",
+    "merchantId": 0,
+    "thumbnailURL": "https://images-static.nykaa.com/media/catalog/product/5/b/5bf8ac1773602607303_1.jpg",
+    "productimageURLs": [
+      "https://images-static.nykaa.com/media/catalog/product/5/b/5bf8ac1773602607303_2.jpg",
+      "https://images-static.nykaa.com/media/catalog/product/5/b/5bf8ac1773602607303_3.jpg",
+      "https://images-static.nykaa.com/media/catalog/product/5/b/5bf8ac1773602607303_4.jpg"
+    ],
+    "searchTags": ["M.A.C", "Lipstick"]
+  },
+  {
+    "productsid": "CR011",
+    "name": "",
+    "brand": "Ponds",
+    "title": "Cream",
+    "description": "Ponds Age Miracle Wrinkle Corrector Day Cream SPF 18 PA++",
+    "rating": 4.4,
+    "category": "beauty_products",
+    "price": 410,
+    "offer": 10,
+    "type": "",
+    "merchantId": 0,
+    "thumbnailURL": "https://images-static.nykaa.com/media/catalog/product/f/f/ff0e66b8901030664564_1.jpg",
+    "productimageURLs": [
+      "https://images-static.nykaa.com/media/catalog/product/f/f/ff0e66b8901030664564_2.jpg",
+      "https://images-static.nykaa.com/media/catalog/product/f/f/ff0e66b8901030664564_3.jpg",
+      "https://images-static.nykaa.com/media/catalog/product/f/f/ff0e66b8901030664564_4.jpg"
+    ],
+    "searchTags": ["Ponds", "Cream"]
+  },
+
+  {
+    "productsid": "CR012",
+    "name": "",
+    "brand": "NYKAA",
+    "title": "Cream",
+    "description": "Nykaa Honeysuckle & White Tea Hand & Nail Creme",
+    "rating": 4.3,
+    "category": "beauty_products",
+    "price": 209,
+    "offer": 10,
+    "type": "",
+    "merchantId": 0,
+    "thumbnailURL": "https://images-static.nykaa.com/media/catalog/product/8/9/8904245703684_1_1_1.jpg",
+    "productimageURLs": [
+      "https://images-static.nykaa.com/media/catalog/product/8/9/8904245703684_2.jpg",
+      "https://images-static.nykaa.com/media/catalog/product/8/9/8904245703684_3.jpg",
+      "https://images-static.nykaa.com/media/consc/cruelty.jpg"
+    ],
+    "searchTags": ["NYKAA", "Cream"]
+  },
+  {
+    "productsid": "CR013",
+    "name": "",
+    "brand": "Clinique",
+    "title": "Face Primer",
+    "description": "Clinique Superprimer Face Primers - Universal Face Primer",
+    "rating": 4.3,
+    "category": "beauty_products",
+    "price": 2900,
+    "offer": 10,
+    "type": "",
+    "merchantId": 0,
+    "thumbnailURL": "https://images-static.nykaa.com/media/catalog/product/2/0/20714644093_2.jpg",
+    "productimageURLs": [
+      "https://images-static.nykaa.com/media/catalog/product/m/a/makeup_atff_statement_2_6.jpg",
+      "https://images-static.nykaa.com/media/catalog/product/c/l/clinique-authenticity-certificate_2_65.jpg",
+      "https://images-static.nykaa.com/media/catalog/product/2/0/20714644093_2.jpg"
+    ],
+    "searchTags": ["Clinique", "Face Primer"]
+  },
+
+  {
+    "productsid": "CR014",
+    "name": "",
+    "brand": "Lotus",
+    "title": "Cream",
+    "description": "Lotus Herbals WhiteGlow Skin Whitening & Brightening Gel Creme SPF 25 PA+++",
+    "rating": 4.4,
+    "category": "beauty_products",
+    "price": 293,
+    "offer": 10,
+    "type": "",
+    "merchantId": 0,
+    "thumbnailURL": "https://images-static.nykaa.com/media/catalog/product/a/d/ad711de806360320600_NV1.jpg",
+    "productimageURLs": [
+      "https://images-static.nykaa.com/media/catalog/product/a/d/ad711deLotus_herbal_ACERT.jpg",
+      "https://images-static.nykaa.com/media/consc/cruelty.jpg"
+    ],
+    "searchTags": ["Lotus", "Gel Cream"]
+  },
+  {
+    "productsid": "CR015",
+    "name": "",
+    "brand": "Lotus",
+    "title": "Cream",
+    "description": "Lotus Herbals Phyto-Rx Skin Firming Anti-Ageing Creme SPF 25 Pa+++",
+    "rating": 4.4,
+    "category": "beauty_products",
+    "price": 676,
+    "offer": 10,
+    "type": "",
+    "merchantId": 0,
+    "thumbnailURL": "https://images-static.nykaa.com/media/catalog/product/1/b/1b001deNYLOTUS000029_NV1.jpg",
+    "productimageURLs": [
+      "https://images-static.nykaa.com/media/catalog/product/1/b/1b001deLotus_herbal_ACERT.jpg",
+      "https://images-static.nykaa.com/media/consc/cruelty.jpg"
+    ],
+    "searchTags": ["Lotus", "Anti-Ageing Cream"]
+  },
+  {
+    "productsid": "CR016",
+    "name": "",
+    "brand": "Olay",
+    "title": "Cream",
+    "description": "Olay Retinol & Niacinamide Day and Night Combo",
+    "rating": 4.4,
+    "category": "beauty_products",
+    "price": 2589,
+    "offer": 10,
+    "type": "",
+    "merchantId": 0,
+    "thumbnailURL": "https://images-static.nykaa.com/media/catalog/product/4/4/44f00a3olaybnd000097.jpg",
+    "productimageURLs": [
+      "https://images-static.nykaa.com/media/catalog/product/4/4/44f00a3olaybnd000097_2.jpg",
+      "https://images-static.nykaa.com/media/catalog/product/4/4/44f00a3olaybnd000097_3.jpg",
+      "https://images-static.nykaa.com/media/catalog/product/4/4/44f00a3olaybnd000097_4.jpg"
+    ],
+    "searchTags": ["Olay", "Cream"]
+  },
+  {
+    "productsid": "CR017",
+    "name": "",
+    "brand": "Biotique",
+    "title": "Cream",
+    "description": "Biotique Wheatgerm Anti-Ageing Night Cream",
+    "rating": 4.3,
+    "category": "beauty_products",
+    "price": 168,
+    "offer": 10,
+    "type": "",
+    "merchantId": 0,
+    "thumbnailURL": "https://images-static.nykaa.com/media/catalog/product/8/9/8906009451107_3.jpg",
+    "productimageURLs": [
+      "https://images-static.nykaa.com/media/catalog/product/2/9/29710fb8906009451107_6.jpg",
+      "https://images-static.nykaa.com/media/catalog/product/2/9/29710fb8906009451107_7.jpg",
+      "https://images-static.nykaa.com/media/consc/consious.jpg"
+    ],
+    "searchTags": ["Biotique", "Cream"]
+  },
+  {
+    "productsid": "CR018",
+    "name": "",
+    "brand": "The Face Shop",
+    "title": "Cream",
+    "description": "The Face Shop Naturalsun Eco Super Perfect Sun Cream Ex",
+    "rating": 4.5,
+    "category": "beauty_products",
+    "price": 1377,
+    "offer": 10,
+    "type": "",
+    "merchantId": 0,
+    "thumbnailURL": "https://images-static.nykaa.com/media/catalog/product/1/2/124e250thefa00000014__1_.jpg",
+    "productimageURLs": [
+      "https://images-static.nykaa.com/media/catalog/product/1/2/124e250thefa00000014__2_.jpg",
+      "https://images-static.nykaa.com/media/catalog/product/1/2/124e250thefa00000014__3_.jpg",
+      "https://images-static.nykaa.com/media/catalog/product/1/2/124e250thefa00000014__4_.jpg"
+    ],
+    "searchTags": ["The Face Shop", "Cream"]
+  },
+  {
+    "productsid": "CR019",
+    "name": "",
+    "brand": "Nivea",
+    "title": "Cream",
+    "description": "NIVEA Crème, Multi-Purpose Moisturizer, Protective Skin Care Cream for Men, Women & Family",
+    "rating": 4.5,
+    "category": "beauty_products",
+    "price": 179,
+    "offer": 10,
+    "type": "",
+    "merchantId": 0,
+    "thumbnailURL": "https://images-static.nykaa.com/media/catalog/product/a/1/a108fec42204251_1.jpg",
+    "productimageURLs": [
+      "https://images-static.nykaa.com/media/catalog/product/a/1/a108fec42204251_2.jpg",
+      "https://images-static.nykaa.com/media/catalog/product/a/1/a108fec42204251_3.jpg",
+      "https://images-static.nykaa.com/media/catalog/product/a/1/a108fec42204251_4.jpg"
+    ],
+    "searchTags": ["Nivea", "Cream"]
+  },
+  {
+    "productsid": "CR020",
+    "name": "",
+    "brand": "Lakme",
+    "title": "Cream",
+    "description": "Lakme Absolute Hydra Pro Gel Creme",
+    "rating": 4.5,
+    "category": "beauty_products",
+    "price": 524,
+    "offer": 10,
+    "type": "",
+    "merchantId": 0,
+    "thumbnailURL": "https://images-static.nykaa.com/media/catalog/product/3/8/38423ad27271_h-8901030752094.jpg",
+    "productimageURLs": [
+      "https://images-static.nykaa.com/media/catalog/product/3/8/38423ad27271_s1-8901030752094.jpg",
+      "https://images-static.nykaa.com/media/catalog/product/3/8/38423ad27271_s2-8901030752094.jpg",
+      "https://images-static.nykaa.com/media/catalog/product/3/8/38423ad27271_s3-8901030752094.jpg"
+    ],
+    "searchTags": ["Lakme", "Cream"]
+  },
+
+  {
+    "productsid": "FW021",
+    "name": "",
+    "brand": "Lakme",
+    "title": "Face Wash",
+    "description": "Lakme Blush & Glow Strawberry Creme Face Wash With Strawberry Extract",
+    "rating": 4.4,
+    "category": "beauty_products",
+    "price": 173,
+    "offer": 10,
+    "type": "",
+    "merchantId": 0,
+    "thumbnailURL": "https://images-static.nykaa.com/media/catalog/product/1/a/1aa8c2b12826_h-8901030599293.jpg",
+    "productimageURLs": [
+      "https://images-static.nykaa.com/media/catalog/product/1/a/1aa8c2b12826_s1-8901030599293.jpg",
+      "https://images-static.nykaa.com/media/catalog/product/1/a/1aa8c2b12826_s2-8901030599293.jpg",
+      "https://images-static.nykaa.com/media/catalog/product/1/a/1aa8c2b12826_s3-8901030599293.jpg"
+    ],
+    "searchTags": ["Lakme", "Face Wash"]
+  },
+  {
+    "productsid": "FW022",
+    "name": "",
+    "brand": "Lakme",
+    "title": "Face Wash",
+    "description": "Lakme 9to5 Vitamin C Facewash With Microcrystalline Beads For Refreshed & Glowing Skin",
+    "rating": 4.4,
+    "category": "beauty_products",
+    "price": 187,
+    "offer": 10,
+    "type": "",
+    "merchantId": 0,
+    "thumbnailURL": "https://images-static.nykaa.com/media/catalog/product/4/5/4589e2727444_h-8901030854958.jpg",
+    "productimageURLs": [
+      "https://images-static.nykaa.com/media/catalog/product/4/5/4589e2727444_s1-8901030854958.jpg",
+      "https://images-static.nykaa.com/media/catalog/product/4/5/4589e2727444_s2-8901030854958.jpg",
+      "https://images-static.nykaa.com/media/catalog/product/4/5/4589e2727444_s3-8901030854958.jpg"
+    ],
+    "searchTags": ["Lakme", "Face Wash"]
+  },
+
+  {
+    "productsid": "FW023",
+    "name": "",
+    "brand": "Nykaa",
+    "title": "Face Wash",
+    "description": "Nykaa Naturals Cucumber & Aloe Vera Face Wash for Hydrated Skin",
+    "rating": 4.3,
+    "category": "beauty_products",
+    "price": 97,
+    "offer": 10,
+    "type": "",
+    "merchantId": 0,
+    "thumbnailURL": "https://images-static.nykaa.com/media/catalog/product/8/9/8904245714079_1.jpg",
+    "productimageURLs": [
+      "https://images-static.nykaa.com/media/catalog/product/8/9/8904245714079_2.jpg",
+      "https://images-static.nykaa.com/media/catalog/product/8/9/8904245714079_3.jpg",
+      "https://images-static.nykaa.com/media/consc/cruelty.jpg"
+    ],
+    "searchTags": ["Nykaa", "Face Wash"]
+  },
+  {
+    "productsid": "FW024",
+    "name": "",
+    "brand": "Biotique",
+    "title": "Face Wash",
+    "description": "Biotique Fruit Brightening Face Wash 100% Pure & Natural",
+    "rating": 4.2,
+    "category": "beauty_products",
+    "price": 47,
+    "offer": 10,
+    "type": "",
+    "merchantId": 0,
+    "thumbnailURL": "https://images-static.nykaa.com/media/catalog/product/8/9/8906009454405_1__2.jpg",
+    "productimageURLs": [
+      "https://images-static.nykaa.com/media/catalog/product/8/9/8906009454405_2_.jpg",
+      "https://images-static.nykaa.com/media/catalog/product/a/d/ad1e0fbbiotique_acert.jpg",
+      "https://images-static.nykaa.com/media/consc/consious.jpg"
+    ],
+    "searchTags": ["Biotique", "Face Wash"]
+  },
+  {
+    "productsid": "FW025",
+    "name": "",
+    "brand": "L'Oreal Paris",
+    "title": "Face Wash",
+    "description": "L'Oreal Paris Hydrated, Plump & Radiant Skin Kit",
+    "rating": 4.6,
+    "category": "beauty_products",
+    "price": 903,
+    "offer": 10,
+    "type": "",
+    "merchantId": 0,
+    "thumbnailURL": "https://images-static.nykaa.com/media/catalog/product/c/4/c4f2f79LOREA00000115_1.jpg",
+    "productimageURLs": [
+      "https://images-static.nykaa.com/media/catalog/product/c/4/c4f2f79LOREA00000115_2.jpg",
+      "https://images-static.nykaa.com/media/catalog/product/c/4/c4f2f79LOREA00000115_3.jpg",
+      "https://images-static.nykaa.com/media/catalog/product/c/4/c4f2f79LOREA00000115_4.jpg"
+    ],
+    "searchTags": ["L'Oreal Paris", "Face Wash"]
+  },
+
+  {
+    "productsid": "FW026",
+    "name": "",
+    "brand": "Bioderma",
+    "title": "Face Wash",
+    "description": "Bioderma Sebium Gel Moussant Purifying Cleansing Foaming Gel Combination/Oily Skin",
+    "rating": 5,
+    "category": "beauty_products",
+    "price": 356,
+    "offer": 10,
+    "type": "",
+    "merchantId": 0,
+    "thumbnailURL": "https://images-static.nykaa.com/media/catalog/product/2/1/210743e3401381716523-01.jpg",
+    "productimageURLs": [
+      "https://images-static.nykaa.com/media/catalog/product/2/1/210743e3401381716523-04.jpg",
+      "https://images-static.nykaa.com/media/catalog/product/2/1/210743e3401381716523-05.jpg",
+      "https://images-static.nykaa.com/media/catalog/product/2/1/210743e3401381716523-03.jpg"
+    ],
+    "searchTags": ["Bioderma", "Face Wash"]
+  },
+  {
+    "productsid": "FW027",
+    "name": "",
+    "brand": "Cetaphil",
+    "title": "Cream",
+    "description": "Cetaphil Cleansing + Hydrating Regime",
+    "rating": 4.4,
+    "category": "beauty_products",
+    "price": 600,
+    "offer": 10,
+    "type": "",
+    "merchantId": 0,
+    "thumbnailURL": "https://images-static.nykaa.com/media/catalog/product/9/8/982bfa5NYKBNDCTP0009_1.jpg",
+    "productimageURLs": [
+      "https://images-static.nykaa.com/media/catalog/product/9/8/982bfa5NYKBNDCTP0009_2.jpg",
+      "https://images-static.nykaa.com/media/consc/cruelty.jpg"
+    ],
+    "searchTags": ["Cetaphil", "Cetaphil Cleansing + Hydrating Regime"]
+  },
+
+  {
+    "productsid": "FW028",
+    "name": "",
+    "brand": "Mamaearth",
+    "title": "Face Wash",
+    "description": "Mamaearth Vitamin C Foaming Face Wash with Vitamin C & Turmeric",
+    "rating": 4.4,
+    "category": "beauty_products",
+    "price": 379,
+    "offer": 10,
+    "type": "",
+    "merchantId": 0,
+    "thumbnailURL": "https://images-static.nykaa.com/media/catalog/product/1/2/12062d18906087773115_GMC_1.jpg",
+    "productimageURLs": [
+      "https://images-static.nykaa.com/media/catalog/product/1/2/12062d18906087773115_GMC_4.jpg",
+      "https://images-static.nykaa.com/media/catalog/product/1/2/12062d18906087773115_GMC_5.jpg",
+      "https://images-static.nykaa.com/media/consc/consious.jpg"
+    ],
+    "searchTags": ["Mamaerath", "Face Wash"]
+  },
+  {
+    "productsid": "FW029",
+    "name": "",
+    "brand": "Neutrogena",
+    "title": "Face Wash",
+    "description": "Neutrogena Oil Free Acne Wash Pink Grapefruit Facial Cleanser",
+    "rating": 4.2,
+    "category": "beauty_products",
+    "price": 630,
+    "offer": 10,
+    "type": "",
+    "merchantId": 0,
+    "thumbnailURL": "https://images-static.nykaa.com/media/catalog/product/9/3/9300607560220_a.jpg",
+    "productimageURLs": [
+      "https://images-static.nykaa.com/media/catalog/product/9/3/9300607560220_3_1.jpg",
+      "https://images-static.nykaa.com/media/catalog/product/9/3/9300607560220_2_1.jpg",
+      "https://images-static.nykaa.com/media/catalog/product/9/3/9300607560220_4_1.jpg"
+    ],
+    "searchTags": ["Neutrogena", "Face Wash"]
+  },
+  {
+    "productsid": "FW030",
+    "name": "",
+    "brand": "Nykaa",
+    "title": "Face Wash",
+    "description": "Nykaa Naturals Haldi & Chandan Face Wash for Radiant Skin",
+    "rating": 4.3,
+    "category": "beauty_products",
+    "price": 104,
+    "offer": 10,
+    "type": "",
+    "merchantId": 0,
+    "thumbnailURL": "https://images-static.nykaa.com/media/catalog/product/8/9/8904245714062_1.jpg",
+    "productimageURLs": [
+      "https://images-static.nykaa.com/media/catalog/product/8/9/8904245714062_2.jpg",
+      "https://images-static.nykaa.com/media/catalog/product/8/9/8904245714062_3.jpg",
+      "https://images-static.nykaa.com/media/consc/cruelty.jpg"
+    ],
+    "searchTags": ["Nykaa", "Face Wash"]
+  },
+
+  {
+    "productsid": "MO031",
+    "name": "",
+    "brand": "Biotique",
+    "title": "Moisturizers",
+    "description": "Biotique Morning Nectar Nourish & Hydrate Moisturizer",
+    "rating": 4.4,
+    "category": "beauty_products",
+    "price": 145,
+    "offer": 10,
+    "type": "",
+    "merchantId": 0,
+    "thumbnailURL": "https://images-static.nykaa.com/media/catalog/product/8/9/8906009450070_1_.png",
+    "productimageURLs": [
+      "https://images-static.nykaa.com/media/catalog/product/8/9/8906009450070_2_.png",
+      "https://images-static.nykaa.com/media/catalog/product/f/9/f9440fbbiotique_acert.jpg",
+      "https://images-static.nykaa.com/media/consc/consious.jpg"
+    ],
+    "searchTags": ["Biotique", "Moisturizers"]
+  },
+  {
+    "productsid": "MO032",
+    "name": "",
+    "brand": "Nykaa",
+    "title": "Moisturizers",
+    "description": "Nykaa SKINRX Vitamin C Illuminate + Day Moisturizer with SPF 15 for Normal to Dry Skin",
+    "rating": 4.3,
+    "category": "beauty_products",
+    "price": 319,
+    "offer": 10,
+    "type": "",
+    "merchantId": 0,
+    "thumbnailURL": "https://images-static.nykaa.com/media/catalog/product/5/5/55fea91NYKAB00000508_1.jpg",
+    "productimageURLs": [
+      "https://images-static.nykaa.com/media/catalog/product/5/5/55fea91NYKAB00000508_2.jpg",
+      "https://images-static.nykaa.com/media/catalog/product/5/5/55fea91NYKAB00000508_3.jpg",
+      "https://images-static.nykaa.com/media/catalog/product/5/5/55fea91NYKAB00000508_4.jpg"
+    ],
+    "searchTags": ["Nykaa", "Moisturizers"]
+  },
+  {
+    "productsid": "MO033",
+    "name": "",
+    "brand": "Clinique",
+    "title": "Moisturizers",
+    "description": "Clinique Moisture Surge 100h Auto-replenishing Hydrator (Moisturizer)",
+    "rating": 4.4,
+    "category": "beauty_products",
+    "price": 950,
+    "offer": 10,
+    "type": "",
+    "merchantId": 0,
+    "thumbnailURL": "https://images-static.nykaa.com/media/catalog/product/e/8/e813db4CLINI00000001_2.jpg",
+    "productimageURLs": [
+      "https://images-static.nykaa.com/media/catalog/product/e/8/e813db4CLINI00000001_4.jpg",
+      "https://images-static.nykaa.com/media/catalog/product/e/8/e813db4CLINI00000001_5.jpg",
+      "https://images-static.nykaa.com/media/catalog/product/e/8/e813db4CLINI00000001_6.jpg"
+    ],
+    "searchTags": ["Clinique", "Moisturizers"]
+  },
+  {
+    "productsid": "MO034",
+    "name": "",
+    "brand": "Cetaphil",
+    "title": "Moisturizers",
+    "description": "Cetaphil Moisturising Cream",
+    "rating": 4.7,
+    "category": "beauty_products",
+    "price": 395,
+    "offer": 10,
+    "type": "",
+    "merchantId": 0,
+    "thumbnailURL": "https://images-static.nykaa.com/media/catalog/product/1/5/15bd38aNYCETA0000005-new1.jpg",
+    "productimageURLs": [
+      "https://images-static.nykaa.com/media/catalog/product/1/5/15bd38aNYCETA0000005-new2.jpg",
+      "https://images-static.nykaa.com/media/catalog/product/1/5/15bd38aNYCETA0000005-new4.jpg",
+      "https://images-static.nykaa.com/media/catalog/product/1/5/15bd38aNYCETA0000005-new5.jpg"
+    ],
+    "searchTags": ["Cetaphil", "Moisturizers"]
+  },
+  {
+    "productsid": "MO035",
+    "name": "",
+    "brand": "Lotus Herbal",
+    "title": "Moisturizers",
+    "description": "Lotus Herbal Nutramoist Skin Renewal Daily Moisturising Creme SPF-25",
+    "rating": 4.5,
+    "category": "beauty_products",
+    "price": 341,
+    "offer": 10,
+    "type": "",
+    "merchantId": 0,
+    "thumbnailURL": "https://images-static.nykaa.com/media/catalog/product/0/8/0806360790502.jpg",
+    "productimageURLs": [
+      "https://images-static.nykaa.com/media/catalog/product/0/8/0806360790502_1_.jpg",
+      "https://images-static.nykaa.com/media/catalog/product/l/o/lotus_herbals_1_147.jpg",
+      "https://images-static.nykaa.com/media/consc/cruelty.jpg"
+    ],
+    "searchTags": ["Lotus Herbal", "Moisturizers"]
+  },
+  {
+    "productsid": "MO036",
+    "name": "",
+    "brand": "NIVEA",
+    "title": "Moisturizers",
+    "description": "NIVEA Men Dark Spot Reduction Moisturiser SPF30",
+    "rating": 4.3,
+    "category": "beauty_products",
+    "price": 189,
+    "offer": 10,
+    "type": "",
+    "merchantId": 0,
+    "thumbnailURL": "https://images-static.nykaa.com/media/catalog/product/7/f/7f4ec3a4005900196002_1.jpg",
+    "productimageURLs": [
+      "https://d286adtp3hdk00.cloudfront.net/ab817eef-3692-4fa9-885e-88a314c2121b/thumbnails/4005808954711_NIVEA%20MEN%20Deodorant%20-%20Fresh%20Power_thumb.0000004.jpg",
+      "https://images-static.nykaa.com/media/catalog/product/7/f/7f4ec3a4005900196002_3.jpg",
+      "https://images-static.nykaa.com/media/catalog/product/7/f/7f4ec3a4005900196002_2.jpg"
+    ],
+    "searchTags": ["NIVEA", "Moisturizers"]
+  },
+  {
+    "productsid": "MO037",
+    "name": "",
+    "brand": "NIVEA",
+    "title": "Moisturizers",
+    "description": "Nivea Soft Moisturiser & Milk Delight - Honey Combo",
+    "rating": 4.5,
+    "category": "beauty_products",
+    "price": 374,
+    "offer": 10,
+    "type": "",
+    "merchantId": 0,
+    "thumbnailURL": "https://images-static.nykaa.com/media/catalog/product/f/3/f3ddf89nivea00000085.jpg",
+    "productimageURLs": [
+      "https://images-static.nykaa.com/media/catalog/product/f/3/f3ddf89nynivea_acert.jpg",
+      "https://images-static.nykaa.com/media/catalog/product/f/3/f3ddf89nivea00000085.jpg"
+    ],
+    "searchTags": ["NIVEA", "Moisturizers"]
+  },
+  {
+    "productsid": "MO038",
+    "name": "",
+    "brand": "Ponds",
+    "title": "Moisturizers",
+    "description": "",
+    "rating": 4.5,
+    "category": "beauty_products",
+    "price": 232,
+    "offer": 10,
+    "type": "",
+    "merchantId": 0,
+    "thumbnailURL": "https://images-static.nykaa.com/media/catalog/product/1/9/1922c2b27234_h-8901030755354.jpg",
+    "productimageURLs": [
+      "https://images-static.nykaa.com/media/catalog/product/1/9/1922c2b27234_s1-8901030755354.jpg",
+      "https://images-static.nykaa.com/media/catalog/product/1/9/1922c2b27234_s2-8901030755354.jpg",
+      "https://images-static.nykaa.com/media/catalog/product/1/9/1922c2b27234_s3-8901030755354.jpg"
+    ],
+    "searchTags": ["Ponds", "Moisturizers"]
+  },
+  {
+    "productsid": "MO039",
+    "name": "",
+    "brand": "Lotus",
+    "title": "Moisturizers",
+    "description": "Lotus Professional Phyto-Rx Deep Moisturising Creme",
+    "rating": 4.5,
+    "category": "beauty_products",
+    "price": 532,
+    "offer": 10,
+    "type": "",
+    "merchantId": 0,
+    "thumbnailURL": "https://images-static.nykaa.com/media/catalog/product/5/b/5bdf1deNYLOTUS000012_NV1.jpg",
+    "productimageURLs": [
+      "https://images-static.nykaa.com/media/catalog/product/5/b/5bdf1deNYLOTUS000012_NV2.jpg",
+      "https://images-static.nykaa.com/media/catalog/product/5/b/5bdf1deNYLOTUS000012_NV3.jpg",
+      "https://images-static.nykaa.com/media/consc/cruelty.jpg"
+    ],
+    "searchTags": ["Lotus", "Moisturizers"]
+  },
+  {
+    "productsid": "MO040",
+    "name": "",
+    "brand": "Dot & Key",
+    "title": "Moisturizers",
+    "description": "Dot & Key Vitamin C + E Super Bright Moisturizer",
+    "rating": 4.4,
+    "category": "beauty_products",
+    "price": 506,
+    "offer": 10,
+    "type": "",
+    "merchantId": 0,
+    "thumbnailURL": "https://images-static.nykaa.com/media/catalog/product/8/a/8a5474bDOTKE00000054-1.jpg",
+    "productimageURLs": [
+      "https://images-static.nykaa.com/media/catalog/product/8/a/8a5474bDOTKE00000054-2.jpg",
+      "https://images-static.nykaa.com/media/catalog/product/8/a/8a5474bDOTKE00000054-3.jpg",
+      "https://images-static.nykaa.com/media/consc/clean_cruelty.jpg"
+    ],
+    "searchTags": ["Dot & Key", "Moisturizers"]
+  },
+
+  {
+    "productsid": "EY041",
+    "name": "",
+    "brand": "Kay Beauty",
+    "title": "Eyeliner",
+    "description": "Kay Beauty Quick Dry Liquid Eyeliner - Shadow Play",
+    "rating": 4.3,
+    "category": "beauty_products",
+    "price": 375,
+    "offer": 10,
+    "type": "",
+    "merchantId": 0,
+    "thumbnailURL": "https://images-static.nykaa.com/media/catalog/product/s/h/shadow-play_1.jpg",
+    "productimageURLs": [
+      "https://images-static.nykaa.com/media/catalog/product/c/a/ca640c58904330900530_2.jpg",
+      "https://images-static.nykaa.com/media/catalog/product/c/a/ca640c58904330900530_3.jpg",
+      "https://images-static.nykaa.com/media/catalog/product/s/h/shadow-play.jpg"
+    ],
+    "searchTags": ["Kay Beauty", "Eyeline"]
+  },
+  {
+    "productsid": "EY042",
+    "name": "",
+    "brand": "Maybelline New York",
+    "title": "Eyeliner",
+    "description": "Maybelline New York Line Tattoo High Impact Liner - Intense Black",
+    "rating": 4.3,
+    "category": "beauty_products",
+    "price": 385,
+    "offer": 10,
+    "type": "",
+    "merchantId": 0,
+    "thumbnailURL": "https://images-static.nykaa.com/media/catalog/product/3/c/3c641c76902395740353_1.jpg",
+    "productimageURLs": [
+      "https://images-static.nykaa.com/media/catalog/product/3/c/3c641c76902395740353_4.jpg",
+      "https://images-static.nykaa.com/media/catalog/product/3/c/3c641c76902395740353_5.jpg",
+      "https://images-static.nykaa.com/media/catalog/product/3/c/3c641c76902395740353_2.jpg"
+    ],
+    "searchTags": ["Maybelline New York", "Eyeliner"]
+  },
+  {
+    "productsid": "EY043",
+    "name": "",
+    "brand": "Lakme",
+    "title": "Eyeliner",
+    "description": "Lakme Insta Eye Liner - Black",
+    "rating": 4.2,
+    "category": "beauty_products",
+    "price": 98,
+    "offer": 10,
+    "type": "",
+    "merchantId": 0,
+    "thumbnailURL": "https://images-static.nykaa.com/media/catalog/product/1/9/19647_h_2.jpg",
+    "productimageURLs": [
+      "https://images-static.nykaa.com/media/catalog/product/1/9/19647_s3_1.jpg",
+      "https://images-static.nykaa.com/media/catalog/product/1/9/19647_s2_1.jpg",
+      "https://images-static.nykaa.com/media/catalog/product/1/9/19647_s4.jpg"
+    ],
+    "searchTags": ["Lakme", "Eyeliner"]
+  },
+  {
+    "productsid": "EY044",
+    "name": "",
+    "brand": "SUGAR",
+    "title": "Eyeliner",
+    "description": "SUGAR Kohl Of Honour Intense Kajal - 01 Black Out (single Blister)",
+    "rating": 4.3,
+    "category": "beauty_products",
+    "price": 247,
+    "offer": 10,
+    "type": "",
+    "merchantId": 0,
+    "thumbnailURL": "https://images-static.nykaa.com/media/catalog/product/e/f/ef3c934SUGAR00000051_1.jpg",
+    "productimageURLs": [
+      "https://images-static.nykaa.com/media/catalog/product/e/f/ef3c934SUGAR00000051_4.jpg",
+      "https://images-static.nykaa.com/media/catalog/product/e/f/ef3c934SUGAR00000051_3.jpg",
+      "https://images-static.nykaa.com/media/catalog/product/e/f/ef3c934SUGAR00000051_2.jpg"
+    ],
+    "searchTags": ["SUGAR", "Eyeliner"]
+  },
+
+  {
+    "productsid": "EY045",
+    "name": "",
+    "brand": "M.A.C",
+    "title": "Eyeliner",
+    "description": "M.A.C In Extreme Dimension 24hr Kajal Eye Liner",
+    "rating": 4.4,
+    "category": "beauty_products",
+    "price": 675,
+    "offer": 10,
+    "type": "",
+    "merchantId": 0,
+    "thumbnailURL": "https://images-static.nykaa.com/media/catalog/product/0/9/09d037emacxx00000225_0.jpg",
+    "productimageURLs": [
+      "https://images-static.nykaa.com/media/catalog/product/0/9/09d037emacxx00000225_01.jpg",
+      "https://images-static.nykaa.com/media/catalog/product/0/9/09d037emacxx00000225_02.jpg",
+      "https://images-static.nykaa.com/media/catalog/product/0/9/09d037emacxx00000225_04.jpg"
+    ],
+    "searchTags": ["M.A.C", "Eyeliner"]
+  },
+  {
+    "productsid": "EY046",
+    "name": "",
+    "brand": "LOreal Paris",
+    "title": "Eyeliner",
+    "description": "LOreal Paris Super Liner Super Star Duo Designer - Black",
+    "rating": 4.2,
+    "category": "beauty_products",
+    "price": 765,
+    "offer": 10,
+    "type": "",
+    "merchantId": 0,
+    "thumbnailURL": "https://images-static.nykaa.com/media/catalog/product/6/9/6902395449270.png",
+    "productimageURLs": [
+      "https://images-static.nykaa.com/media/catalog/product/6/9/6902395449270_1.jpg",
+      "https://images-static.nykaa.com/media/catalog/product/6/9/6902395449270_3_.jpg",
+      "https://images-static.nykaa.com/media/catalog/product/6/9/6902395449270_2_.jpg"
+    ],
+    "searchTags": ["LOreal Paris", "Eyeliner"]
+  },
+  {
+    "productsid": "EY047",
+    "name": "",
+    "brand": "Charlotte",
+    "title": "Eyeliner",
+    "description": "Charlotte Tilbury Eye Colour Magic Liner Duo - Super Blue",
+    "rating": 4.4,
+    "category": "beauty_products",
+    "price": 2900,
+    "offer": 10,
+    "type": "",
+    "merchantId": 0,
+    "thumbnailURL": "https://images-static.nykaa.com/media/catalog/product/5/0/5060696170406_1.jpg",
+    "productimageURLs": [
+      "https://images-static.nykaa.com/media/catalog/product/5/0/5060696170406_2.jpg",
+      "https://images-static.nykaa.com/media/catalog/product/5/0/5060696170406_3.jpg",
+      "https://images-static.nykaa.com/media/catalog/product/a/u/authenticity-certificate-ct---nykaa_53.jpg"
+    ],
+    "searchTags": ["Charlotte ", "Eyeliner"]
+  },
+  {
+    "productsid": "EY048",
+    "name": "",
+    "brand": "Huda Beauty",
+    "title": "Eyeliner",
+    "description": "Huda Beauty Life Liner Duo Pencil & Liquid Eyeliner",
+    "rating": 4.1,
+    "category": "beauty_products",
+    "price": 2050,
+    "offer": 10,
+    "type": "",
+    "merchantId": 0,
+    "thumbnailURL": "https://images-static.nykaa.com/media/catalog/product/6/2/6291106034240_3_.jpg",
+    "productimageURLs": [
+      "https://images-static.nykaa.com/media/catalog/product/6/2/6291106034240_2_.jpg",
+      "https://images-static.nykaa.com/media/catalog/product/6/2/6291106034240_4_.jpg",
+      "https://images-static.nykaa.com/media/catalog/product/6/2/6291106034240_5_.jpg"
+    ],
+    "searchTags": ["Huda Beauty ", "Eyeliner"]
+  },
+  {
+    "productsid": "EY049",
+    "name": "",
+    "brand": "Colorbar",
+    "title": "Eyeliner",
+    "description": "Colorbar Infinite 24Hrs Eyeliner - Infinite Black 001",
+    "rating": 4.3,
+    "category": "beauty_products",
+    "price": 700,
+    "offer": 10,
+    "type": "",
+    "merchantId": 0,
+    "thumbnailURL": "https://images-static.nykaa.com/media/catalog/product/8/9/8904052409748-1.png",
+    "productimageURLs": [
+      "https://images-static.nykaa.com/media/catalog/product/8/9/8904052409748-2.png",
+      "https://images-static.nykaa.com/media/catalog/product/8/9/8904052409748-3.png",
+      "https://images-static.nykaa.com/media/catalog/product/8/9/8904052409748-4.png"
+    ],
+    "searchTags": ["Colorbar", "Eyeliner"]
+  },
+  {
+    "productsid": "EY050",
+    "name": "",
+    "brand": "Nykaa",
+    "title": "Eyeliner",
+    "description": "Nykaa Cosmetics Glam Eyes Look- Glamoreyes Coloured Liquid Eyeliner Chaotic Calypso + Glamoreyes Coloured Liquid Eyeliner Enchanting Forest",
+    "rating": 3.9,
+    "category": "beauty_products",
+    "price": 449,
+    "offer": 10,
+    "type": "",
+    "merchantId": 0,
+    "thumbnailURL": "https://images-static.nykaa.com/media/catalog/product/8/c/8c98477nykac00000506_1.jpg",
+    "productimageURLs": [
+      "https://images-static.nykaa.com/media/catalog/product/8/c/8c98477nykac00000506_2.jpg",
+      "https://images-static.nykaa.com/media/catalog/product/8/c/8c98477nykac00000506_3.jpg"
+    ],
+    "searchTags": ["Nykaa", "Eyeliner"]
+  }
+]
