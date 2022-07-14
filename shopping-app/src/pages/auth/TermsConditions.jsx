@@ -102,7 +102,7 @@ Praesent commodo cursus magna, vel scelerisque nisl consectetur et.`
           {btnCondition == true ? (
             <Button
               onClick={handleAgree}
-              style={{ backgroundColor: "#231955" , color: "#eee"}}
+              style={{ backgroundColor: "#231955", color: "#eee" }}
             >
               I Agree
             </Button>

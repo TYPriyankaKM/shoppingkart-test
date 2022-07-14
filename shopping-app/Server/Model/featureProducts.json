@@ -1,6 +1,6 @@
 [
   {
-    "productsid": "HPH1",
+    "productId": "HPH1",
     "name": "",
     "brand": "Boult",
     "title": "Headphones",
@@ -10,7 +10,8 @@
     "price": 1199,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/416/416/kw9krrk0/headphone/z/i/p/-original-imag8z6ht9qffnju.jpeg?q=70",
     "productImageURLs": [
       "https://rukminim1.flixcart.com/image/416/416/kw9krrk0/headphone/j/d/n/-original-imag8z6hryvfm2ed.jpeg?q=70",
@@ -20,7 +21,7 @@
     "searchTags": ["Boult", "Headphones"]
   },
   {
-    "productsid": "HPH2",
+    "productId": "HPH2",
     "name": "",
     "brand": "Boult",
     "title": "Headphones",
@@ -30,7 +31,8 @@
     "price": 449,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/416/416/kw9krrk0/headphone/2/a/s/-original-imag8z6hknfffmf9.jpeg?q=70",
     "productImageURLs": [
       "https://rukminim1.flixcart.com/image/416/416/kw9krrk0/headphone/z/j/7/-original-imag8z6hfhvsrvgn.jpeg?q=70",
@@ -41,7 +43,7 @@
   },
 
   {
-    "productsid": "HPH3",
+    "productId": "HPH3",
     "name": "",
     "brand": "truke",
     "title": "Headphones",
@@ -50,8 +52,9 @@
     "category": "electronics",
     "offer": 10,
     "type": "",
+    "quantity": 10,
     "price": 999,
-    "merchantId": 0,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/416/416/l2hwwi80/headphone/h/1/m/buds-f1-truke-original-imagdtv486a6hu6z.jpeg?q=70",
     "productImageURLs": [
       "https://rukminim1.flixcart.com/image/416/416/l3ahpjk0/headphone/6/i/u/-original-imageg8pub5hdh4z.jpeg?q=70",
@@ -62,7 +65,7 @@
   },
 
   {
-    "productsid": "HPH4",
+    "productId": "HPH4",
     "name": "",
     "brand": "SONY ",
     "title": "Headphones",
@@ -72,7 +75,8 @@
     "price": 8990,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/416/416/kavefm80/headphone/h/a/s/wh-ch710n-sony-original-imafscdmhsnq77yw.jpeg?q=70",
     "productImageURLs": [
       "https://rukminim1.flixcart.com/image/416/416/kavefm80/headphone/c/z/n/wh-ch710n-sony-original-imafscdmahkvcz24.jpeg?q=70",
@@ -83,7 +87,7 @@
   },
 
   {
-    "productsid": "HPH5",
+    "productId": "HPH5",
     "name": "",
     "brand": "OPPO",
     "title": "Headphones",
@@ -93,7 +97,8 @@
     "price": 1799,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/416/416/kura1e80/headphone/d/e/s/eti81-eti82-oppo-original-imag7szs9dcxyrhs.jpeg?q=70",
     "productImageURLs": [
       "https://rukminim1.flixcart.com/image/416/416/kthjy4w0/headphone/t/e/y/eti181-eti182-oppo-original-imag6tggzsqcpjpq.jpeg?q=70",
@@ -104,7 +109,7 @@
   },
 
   {
-    "productsid": "HPH6",
+    "productId": "HPH6",
     "name": "",
     "brand": "boAt",
     "title": "Headphones",
@@ -114,7 +119,8 @@
     "price": 999,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/416/416/k73nlow0/headphone/h/9/z/boat-rockerz-370-original-imafpef5cszgwxmx.jpeg?q=70",
     "productImageURLs": [
       "https://rukminim1.flixcart.com/image/416/416/k73nlow0/headphone/h/9/z/boat-rockerz-370-original-imafpef5cnqf6zcy.jpeg?q=70",
@@ -125,7 +131,7 @@
   },
 
   {
-    "productsid": "HPH7",
+    "productId": "HPH7",
     "name": "",
     "brand": "truke",
     "title": "Headphones",
@@ -135,7 +141,8 @@
     "price": 1499,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/416/416/ksnjp8w0/headphone/t/o/k/btg-1-truke-original-imag66cyarerhhgr.jpeg?q=70",
     "productImageURLs": [
       "https://rukminim1.flixcart.com/image/416/416/ksnjp8w0/headphone/n/2/q/btg-1-truke-original-imag66cyege2jcfp.jpeg?q=70",
@@ -146,7 +153,7 @@
   },
 
   {
-    "productsid": "HPH8",
+    "productId": "HPH8",
     "name": "",
     "brand": "blue seed",
     "title": "Headphones",
@@ -156,7 +163,8 @@
     "price": 495,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/416/416/l27wtjk0/headphone/v/s/t/bbd-s-19-sport-fitness-earbuds-blue-seed-original-imagdhyhxfnzfyf5.jpeg?q=70",
     "productImageURLs": [
       "https://rukminim1.flixcart.com/image/416/416/k687wy80/headphone/y/k/d/blue-seed-bbd-s19-tws-wireless-bluetooth-earbuds-original-imafnyxnhdjex5z6.jpeg?q=70",
@@ -167,7 +175,7 @@
   },
 
   {
-    "productsid": "HPH9",
+    "productId": "HPH9",
     "name": "",
     "brand": "realme ",
     "title": "Headphones",
@@ -177,7 +185,8 @@
     "price": 3999,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/416/416/l15bxjk0/headphone/h/p/w/rma2105-realme-original-imagcsfvjhsygg6x.jpeg?q=70",
     "productImageURLs": [
       "https://rukminim1.flixcart.com/image/416/416/l1dwknk0/headphone/f/n/2/-original-imagcyzgzkqmvkpx.jpeg?q=70",
@@ -188,7 +197,7 @@
   },
 
   {
-    "productsid": "HPH10",
+    "productId": "HPH10",
     "name": "",
     "brand": "boAt",
     "title": "Headphones",
@@ -198,7 +207,8 @@
     "price": 399,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/416/416/k51cpe80pkrrdj/headphone-refurbished/c/t/8/c-bassheads-100-boat-original-imafn4qttzkvzeyq.jpeg?q=70",
     "productImageURLs": [
       "https://rukminim1.flixcart.com/image/416/416/k0vbgy80pkrrdj/headphone/r/3/g/boat-bassheads-100-original-imafgf7xewz7qknt.jpeg?q=70",
@@ -208,7 +218,7 @@
     "searchTags": ["boAt", "Headphones"]
   },
   {
-    "productsid": "LAP1",
+    "productId": "LAP1",
     "name": "",
     "brand": "HP",
     "title": "Laptop",
@@ -217,8 +227,9 @@
     "category": "electronics",
     "offer": 10,
     "type": "",
+    "quantity": 10,
     "price": 33490,
-    "merchantId": 0,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/416/416/keaaavk0/computer/x/m/y/lenovo-na-laptop-original-imafuzt8r5jqppfn.jpeg?q=70",
     "productImageURLs": [
       "https://rukminim1.flixcart.com/image/416/416/kbb49zk0/computer/x/m/y/lenovo-na-laptop-original-imafsnkx2tkh6vgm.jpeg?q=70",
@@ -228,7 +239,7 @@
     "searchTags": ["HP", "Laptop"]
   },
   {
-    "productsid": "LAP2",
+    "productId": "LAP2",
     "name": "",
     "brand": "ASUS",
     "title": "Laptop",
@@ -237,8 +248,9 @@
     "category": "electronics",
     "offer": 10,
     "type": "",
+    "quantity": 10,
     "price": 50000,
-    "merchantId": 0,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/416/416/kp2y2kw0/computer/y/0/c/na-thin-and-light-laptop-asus-original-imag3ebnzawky4kn.jpeg?q=70",
     "productImageURLs": [
       "https://rukminim1.flixcart.com/image/416/416/l2m78280/computer/m/x/3/-original-imagdx9qetmzqjz7.jpeg?q=70",
@@ -248,7 +260,7 @@
     "searchTags": ["ASUS", "Laptop"]
   },
   {
-    "productsid": "LAP3",
+    "productId": "LAP3",
     "name": "",
     "brand": "DELL",
     "title": "Laptop",
@@ -257,8 +269,9 @@
     "category": "electronics",
     "offer": 10,
     "type": "",
+    "quantity": 10,
     "price": 31990,
-    "merchantId": 0,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/416/416/l1dwknk0/computer/e/u/0/inspiron-3525-notebook-dell-original-imagcyrebyny33kd.jpeg?q=70",
     "productImageURLs": [
       "https://rukminim1.flixcart.com/image/416/416/l1dwknk0/computer/6/w/x/inspiron-3525-notebook-dell-original-imagcyrezyaqvjt6.jpeg?q=70",
@@ -268,7 +281,7 @@
     "searchTags": ["DELL", "Laptop"]
   },
   {
-    "productsid": "LAP4",
+    "productId": "LAP4",
     "name": "",
     "brand": "HP",
     "title": "Laptop",
@@ -277,8 +290,9 @@
     "category": "electronics",
     "offer": 10,
     "type": "",
+    "quantity": 10,
     "price": 40990,
-    "merchantId": 0,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/416/416/l0zm64w0/computer/k/h/m/14s-dq2606tu-thin-and-light-laptop-hp-original-imagcnsfnrzvzbs6.jpeg?q=70",
     "productImageURLs": [
       "https://rukminim1.flixcart.com/image/416/416/l0zm64w0/computer/r/y/i/14s-dq2606tu-thin-and-light-laptop-hp-original-imagcnsfsewvphz2.jpeg?q=70",
@@ -288,7 +302,7 @@
     "searchTags": ["HP", "Laptop"]
   },
   {
-    "productsid": "LAP5",
+    "productId": "LAP5",
     "name": "",
     "brand": "ASUS ",
     "title": "Laptop",
@@ -297,8 +311,9 @@
     "category": "electronics",
     "offer": 10,
     "type": "",
+    "quantity": 10,
     "price": 73990,
-    "merchantId": 0,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/416/416/l3rmzrk0/computer/z/2/c/-original-imagetjyhhtrtkdg.jpeg?q=70",
     "productImageURLs": [
       "https://rukminim1.flixcart.com/image/416/416/l3rmzrk0/computer/q/n/s/-original-imagetjywgwu7cc8.jpeg?q=70",
@@ -308,7 +323,7 @@
     "searchTags": ["ASUS", "Laptop"]
   },
   {
-    "productsid": "LAP6",
+    "productId": "LAP6",
     "name": "",
     "brand": "Lenovo",
     "title": "Laptop",
@@ -317,8 +332,9 @@
     "category": "electronics",
     "offer": 10,
     "type": "",
+    "quantity": 10,
     "price": 42490,
-    "merchantId": 0,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/416/416/kruyw7k0/computer/e/h/f/na-thin-and-light-laptop-lenovo-original-imag5jy6chya8jjg.jpeg?q=70",
     "productImageURLs": [
       "https://rukminim1.flixcart.com/image/416/416/kruyw7k0/computer/e/h/f/na-thin-and-light-laptop-lenovo-original-imag5jy6chya8jjg.jpeg?q=70",
@@ -328,7 +344,7 @@
     "searchTags": ["Lenovo", "Laptop"]
   },
   {
-    "productsid": "LAP7",
+    "productId": "LAP7",
     "name": "",
     "brand": "Infinix",
     "title": "Laptop",
@@ -337,8 +353,9 @@
     "category": "electronics",
     "offer": 10,
     "type": "",
+    "quantity": 10,
     "price": 39990,
-    "merchantId": 0,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/416/416/kw3v0cw0/computer/j/q/f/inbook-x1-thin-and-light-laptop-infinix-original-imag8vfssyyfzvku.jpeg?q=70",
     "productImageURLs": [
       "https://rukminim1.flixcart.com/image/416/416/kwgpz0w0/computer/q/a/w/-original-imag94q2fmavc3gh.jpeg?q=70",
@@ -348,7 +365,7 @@
     "searchTags": ["Infinix", "Laptop"]
   },
   {
-    "productsid": "LAP8",
+    "productId": "LAP8",
     "name": "",
     "brand": "acer",
     "title": "Laptop",
@@ -357,8 +374,9 @@
     "category": "electronics",
     "offer": 10,
     "type": "",
+    "quantity": 10,
     "price": 34899,
-    "merchantId": 0,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/416/416/kshtxu80/computer/2/a/s/aspire-3-thin-and-light-laptop-acer-original-imag6fvccahrjyv6.jpeg?q=70",
     "productImageURLs": [
       "https://rukminim1.flixcart.com/image/416/416/kybvo280/computer/n/n/h/-original-imagah7xggkpggyy.jpeg?q=70",
@@ -368,7 +386,7 @@
     "searchTags": ["acer", "Laptop"]
   },
   {
-    "productsid": "LAP9",
+    "productId": "LAP9",
     "name": "",
     "brand": "LG",
     "title": "Laptop",
@@ -378,7 +396,8 @@
     "price": 57990,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/416/416/kfeamq80/computer/g/w/b/lg-original-imafvv2vbezr6sk2.jpeg?q=70",
     "productImageURLs": [
       "https://rukminim1.flixcart.com/image/416/416/kfeamq80/computer/g/w/b/lg-original-imafvv2vw5hdm3cv.jpeg?q=70",
@@ -388,7 +407,7 @@
     "searchTags": ["LG", "Laptop"]
   },
   {
-    "productsid": "LAP10",
+    "productId": "LAP10",
     "name": "",
     "brand": "APPLE",
     "title": "Laptop",
@@ -398,7 +417,8 @@
     "price": 108990,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/416/416/khdqnbk0/computer/5/d/e/apple-original-imafxfyqkdfxqjab.jpeg?q=70",
     "productImageURLs": [
       "https://rukminim1.flixcart.com/image/416/416/khdqnbk0/computer/5/d/e/apple-original-imafxfyqw3vubgcw.jpeg?q=70",
@@ -408,7 +428,7 @@
     "searchTags": ["APPLE", "Laptop"]
   },
   {
-    "productsid": "MOB1",
+    "productId": "MOB1",
     "name": "",
     "brand": "SAMSUNG",
     "title": "Mobile",
@@ -418,7 +438,8 @@
     "price": 11999,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/416/416/kqqykcw0/mobile/p/y/u/galaxy-f22-sm-e225fzkhins-samsung-original-imag4z99fagskjxd.jpeg?q=70",
     "productImageURLs": [
       " https://rukminim1.flixcart.com/image/416/416/kqqykcw0/mobile/t/i/8/galaxy-f22-sm-e225fzkhins-samsung-original-imag4z99src8zbj4.jpeg?q=70",
@@ -428,7 +449,7 @@
     "searchTags": ["SAMSUNG", "Mobile"]
   },
   {
-    "productsid": "MOB2",
+    "productId": "MOB2",
     "name": "",
     "brand": "POCO",
     "title": "Mobile",
@@ -438,7 +459,8 @@
     "price": 10400,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/416/416/ku4ezrk0/mobile/b/o/m/c31-mzb0a0min-poco-original-imag7bzqxekkpkrv.jpeg?q=70",
     "productImageURLs": [
       "https://rukminim1.flixcart.com/image/416/416/kzrbiq80/mobile/w/u/q/-original-imagbp4xphdnkhvg.jpeg?q=70",
@@ -448,7 +470,7 @@
     "searchTags": ["POCO", "Mobile"]
   },
   {
-    "productsid": "MOB3",
+    "productId": "MOB3",
     "name": "",
     "brand": "OPPO",
     "title": "Mobile",
@@ -458,7 +480,8 @@
     "price": 17499,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/416/416/l4d2ljk0/mobile/x/d/z/-original-imagf9wt5emzsjqz.jpeg?q=70",
     "productImageURLs": [
       "https://rukminim1.flixcart.com/image/416/416/l44hyfk0/mobile/h/8/h/-original-imagf2xbspbt7efm.jpeg?q=70",
@@ -468,7 +491,7 @@
     "searchTags": ["OPPO", "Mobile"]
   },
   {
-    "productsid": "MOB4",
+    "productId": "MOB4",
     "name": "",
     "brand": "REDMI",
     "title": "Mobile",
@@ -478,7 +501,8 @@
     "price": 12999,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/416/416/kyeqjrk0/mobile/u/0/8/-original-imagan9qhw9nyhce.jpeg?q=70",
     "productImageURLs": [
       "https://rukminim1.flixcart.com/image/416/416/kyeqjrk0/mobile/l/z/t/-original-imagan9q2v7jvagh.jpeg?q=70",
@@ -488,7 +512,7 @@
     "searchTags": ["REDMI", "Mobile"]
   },
   {
-    "productsid": "MOB5",
+    "productId": "MOB5",
     "name": "",
     "brand": "APPLE",
     "title": "Mobile",
@@ -498,7 +522,8 @@
     "price": 46999,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/416/416/kgiaykw0/mobile/x/g/b/apple-iphone-11-mhdm3hn-a-original-imafwqepgzwzwucu.jpeg?q=70",
     "productImageURLs": [
       "https://rukminim1.flixcart.com/image/416/416/kgiaykw0/mobile/x/g/b/apple-iphone-11-mhdm3hn-a-original-imafwqepqy7qet5h.jpeg?q=70",
@@ -508,7 +533,7 @@
     "searchTags": ["APPLE", "Mobile"]
   },
   {
-    "productsid": "MOB6",
+    "productId": "MOB6",
     "name": "",
     "brand": "APPLE",
     "title": "Mobile",
@@ -518,7 +543,8 @@
     "price": 53999,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/416/416/kg8avm80/mobile/j/f/9/apple-iphone-12-dummyapplefsn-original-imafwg8dhe5aeyhk.jpeg?q=70",
     "productImageURLs": [
       "https://rukminim1.flixcart.com/image/416/416/kg8avm80/mobile/j/f/9/apple-iphone-12-dummyapplefsn-original-imafwg8dkyh2zgrh.jpeg?q=70",
@@ -528,7 +554,7 @@
     "searchTags": ["APPLE", "Mobile"]
   },
   {
-    "productsid": "MOB7",
+    "productId": "MOB7",
     "name": "",
     "brand": "vivo",
     "title": "Mobile",
@@ -538,7 +564,8 @@
     "price": 16990,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/416/416/kzd147k0/mobile/d/1/b/-original-imagbe5qddy9xr6y.jpeg?q=70",
     "productImageURLs": [
       "https://rukminim1.flixcart.com/image/416/416/kzd147k0/mobile/b/x/9/-original-imagbe5qkfp7fdsf.jpeg?q=70",
@@ -548,7 +575,7 @@
     "searchTags": ["vivo", "Mobile"]
   },
   {
-    "productsid": "MOB8",
+    "productId": "MOB8",
     "name": "",
     "brand": "SAMSUNG",
     "title": "Mobile",
@@ -558,7 +585,8 @@
     "price": 11499,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/416/416/kn22m4w0/mobile/9/k/s/galaxy-f12-sm-f127glbiins-samsung-original-imagftmhhhvghq7w.jpeg?q=70",
     "productImageURLs": [
       "https://rukminim1.flixcart.com/image/416/416/kn22m4w0/mobile/z/y/z/galaxy-f12-sm-f127glbiins-samsung-original-imagftmhawdaep9u.jpeg?q=70",
@@ -568,7 +596,7 @@
     "searchTags": ["SAMSUNG", "Mobile"]
   },
   {
-    "productsid": "MOB9",
+    "productId": "MOB9",
     "name": "",
     "brand": "REDMI",
     "title": "Mobile",
@@ -578,7 +606,8 @@
     "price": 10499,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/416/416/l0tweq80/mobile/w/r/t/-original-imagcgtgwg5taegn.jpeg?q=70",
     "productImageURLs": [
       "https://rukminim1.flixcart.com/image/416/416/l0tweq80/mobile/v/p/a/-original-imagcgtgyvg87kpz.jpeg?q=70",
@@ -588,7 +617,7 @@
     "searchTags": ["REDMI", "Mobile"]
   },
   {
-    "productsid": "MOB10",
+    "productId": "MOB10",
     "name": "",
     "brand": "realme",
     "title": "Mobile",
@@ -598,7 +627,8 @@
     "price": 17499,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/416/416/l0jwbrk0/mobile/a/p/r/-original-imagcb64gwkhzdk5.jpeg?q=70",
     "productImageURLs": [
       "https://rukminim1.flixcart.com/image/416/416/l0jwbrk0/mobile/m/t/t/-original-imagcb64xkmer9wd.jpeg?q=70",
@@ -608,7 +638,7 @@
     "searchTags": ["realme", "Mobile"]
   },
   {
-    "productsid": "TV11",
+    "productId": "TV11",
     "name": "",
     "brand": "realme",
     "title": "TV",
@@ -617,8 +647,9 @@
     "category": "electronics",
     "offer": 10,
     "type": "",
+    "quantity": 10,
     "price": 29999,
-    "merchantId": 0,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/416/416/kosxzm80/television/1/s/r/rmv2004-realme-original-imag36hw6k6h5jmh.jpeg?q=70",
     "productImageURLs": [
       "https://rukminim1.flixcart.com/image/416/416/kpcy5jk0/television/z/s/5/rmv2005-realme-original-imag3m6xz9gt4xt6.jpeg?q=70 ",
@@ -629,7 +660,7 @@
   },
 
   {
-    "productsid": "TV12",
+    "productId": "TV12",
     "name": "",
     "brand": "Mi",
     "title": "TV",
@@ -639,7 +670,8 @@
     "price": 31999,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/416/416/ksoz53k0/television/c/p/h/l43m6-es-mi-original-imag6774wykv4ps8.jpeg?q=70",
     "productImageURLs": [
       " https://rukminim1.flixcart.com/image/416/416/ksoz53k0/television/f/0/e/l55m6-es-mi-original-imag67744w55989m.jpeg?q=70",
@@ -649,7 +681,7 @@
     "searchTags": ["Mi", "TV"]
   },
   {
-    "productsid": "TV13",
+    "productId": "TV13",
     "name": "",
     "brand": "Sansui",
     "title": "TV",
@@ -658,8 +690,9 @@
     "category": "electronics",
     "offer": 10,
     "type": "",
+    "quantity": 10,
     "price": 10499,
-    "merchantId": 0,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/416/416/l3bx5e80/television/z/a/y/jsw32cshd-sansui-original-imagehazmqkezzcp.jpeg?q=70",
     "productImageURLs": [
       " https://rukminim1.flixcart.com/image/416/416/l3bx5e80/television/q/i/o/jsw32cshd-sansui-original-imagehazgs6cu7rc.jpeg?q=70",
@@ -670,7 +703,7 @@
   },
 
   {
-    "productsid": "TV14",
+    "productId": "TV14",
     "name": "",
     "brand": "Thomson",
     "title": "TV",
@@ -679,8 +712,9 @@
     "category": "electronics",
     "offer": 10,
     "type": "",
+    "quantity": 10,
     "price": 11999,
-    "merchantId": 0,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/416/416/kiyw9e80-0/television/p/0/w/32path0011-thomson-original-imafynyvsmeuwtzr.jpeg?q=70",
     "productImageURLs": [
       " https://rukminim1.flixcart.com/image/416/416/kiyw9e80-0/television/f/i/y/32path0011-thomson-original-imafynyvzuxhhrfj.jpeg?q=70",
@@ -691,7 +725,7 @@
   },
 
   {
-    "productsid": "TV15",
+    "productId": "TV15",
     "name": "",
     "brand": "SAMSUNG",
     "title": "TV",
@@ -701,7 +735,8 @@
     "price": 15999,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/416/416/kbs9k7k0/television/c/j/3/samsung-ua32t4340akxxl-original-imaft25qdysfsq7k.jpeg?q=70",
     "productImageURLs": [
       " https://rukminim1.flixcart.com/image/416/416/kbs9k7k0/television/c/j/3/samsung-ua32t4340akxxl-original-imaft25qz27mseyg.jpeg?q=70",
@@ -712,7 +747,7 @@
   },
 
   {
-    "productsid": "TV16",
+    "productId": "TV16",
     "name": "",
     "brand": "OnePlus",
     "title": "TV",
@@ -722,7 +757,8 @@
     "price": 40990,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/416/416/kuwzssw0/television/i/q/x/u-series-50-u1s-50uc1a00-oneplus-original-imag7xtnfn7yrfrn.jpeg?q=70",
     "productImageURLs": [
       "https://rukminim1.flixcart.com/image/416/416/kuwzssw0/television/n/4/c/u-series-50-u1s-50uc1a00-oneplus-original-imag7xtngqby3gnr.jpeg?q=70 ",
@@ -732,7 +768,7 @@
     "searchTags": ["OnePlus", "TV"]
   },
   {
-    "productsid": "TV17",
+    "productId": "TV17",
     "name": "",
     "brand": "Nokia",
     "title": "TV",
@@ -742,7 +778,8 @@
     "price": 46999,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/416/416/ku1k4280/television/e/w/f/55uhdadndt52x-nokia-original-imag79br5etmuqdb.jpeg?q=70",
     "productImageURLs": [
       "https://rukminim1.flixcart.com/image/416/416/ku1k4280/television/n/n/4/55uhdadndt52x-nokia-original-imag79brchckhzqh.jpeg?q=70 ",
@@ -752,7 +789,7 @@
     "searchTags": ["Nokia", "TV"]
   },
   {
-    "productsid": "TV18",
+    "productId": "TV18",
     "name": "",
     "brand": "Mi",
     "title": "TV",
@@ -762,7 +799,8 @@
     "price": 40999,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/416/416/ksoz53k0/television/j/n/i/l50m6-es-mi-original-imag6774eyhv77fg.jpeg?q=70",
     "productImageURLs": [
       "https://rukminim1.flixcart.com/image/416/416/ksoz53k0/television/1/b/t/l55m6-es-mi-original-imag6774rxfufkzf.jpeg?q=70 ",
@@ -773,7 +811,7 @@
   },
 
   {
-    "productsid": "TV19",
+    "productId": "TV19",
     "name": "",
     "brand": "LG",
     "title": "TV",
@@ -783,7 +821,8 @@
     "price": 48999,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/416/416/kqse07k0/television/m/m/i/55up7500ptz-55up7500ptz-lg-original-imag4q3zjqgshdhy.jpeg?q=70",
     "productImageURLs": [
       "https://rukminim1.flixcart.com/image/416/416/kqse07k0/television/6/n/q/55up7500ptz-55up7500ptz-lg-original-imag4q3zmbqtwwbt.jpeg?q=70 ",
@@ -794,7 +833,7 @@
   },
 
   {
-    "productsid": "TV110",
+    "productId": "TV110",
     "name": "",
     "brand": "SONY",
     "title": "TV",
@@ -804,7 +843,8 @@
     "price": 71999,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/416/416/l2rwzgw0/television/j/p/0/kd-55x80aj-sony-original-imagefgmyfkbavde.jpeg?q=70",
     "productImageURLs": [
       " https://rukminim1.flixcart.com/image/416/416/l2rwzgw0/television/t/t/m/kd-55x80aj-sony-original-imagefgmhjkqbhfy.jpeg?q=70",
@@ -814,7 +854,7 @@
     "searchTags": ["SONY", "TV"]
   },
   {
-    "productsid": "LP01",
+    "productId": "LP01",
     "name": "",
     "brand": "Maybelline New York",
     "title": "Lipstick",
@@ -824,7 +864,8 @@
     "price": 244,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://images-static.nykaa.com/media/catalog/product/7/d/7ddf1c76902395723011_1.jpg",
     "productImageURLs": [
       "https://images-static.nykaa.com/media/catalog/product/7/d/7ddf1c76902395723011_3.jpg",
@@ -835,7 +876,7 @@
   },
 
   {
-    "productsid": "LP02",
+    "productId": "LP02",
     "name": "",
     "brand": "Lakme",
     "title": "Lipstick",
@@ -845,6 +886,7 @@
     "price": 400,
     "offer": 10,
     "type": "",
+    "quantity": 10,
     "thumbnailURL": "https://images-static.nykaa.com/media/catalog/product/2/9/29d9f0524847_s11-8901030794308.jpg?tr=w-344,h-344,cm-pad_resize",
     "productimagesURL": [
       "https://images-static.nykaa.com/media/catalog/product/2/9/29d9f0524847_s1-8901030794308.jpg?tr=w-344,h-344,cm-pad_resize",
@@ -855,7 +897,7 @@
   },
 
   {
-    "productsid": "LP03",
+    "productId": "LP03",
     "name": "",
     "brand": "M.A.C",
     "title": "Lipstick",
@@ -865,6 +907,7 @@
     "price": 1700,
     "offer": 10,
     "type": "",
+    "quantity": 10,
     "thumbnailURL": "https://images-static.nykaa.com/media/catalog/product/9/3/937a29a773602314782_rv__3.jpg?tr=w-344,h-344,cm-pad_resize",
     "productimagesURL": [
       "https://images-static.nykaa.com/media/catalog/product/9/3/937a29a773602314782_rv__2.jpg",
@@ -874,7 +917,7 @@
     "search tags": ["M.A.C", "Lipstick"]
   },
   {
-    "productsid": "LP04",
+    "productId": "LP04",
     "name": "",
     "brand": "HUDA EAUTY",
     "title": "Lipstick",
@@ -884,6 +927,7 @@
     "price": 1550,
     "offer": 10,
     "type": "",
+    "quantity": 10,
     "thumbnailURL": "https://images-static.nykaa.com/media/catalog/product/5/9/59e3abdhudab00000072_5.jpg?tr=w-344,h-344,cm-pad_resize",
     "productimagesURL": [
       "https://images-static.nykaa.com/media/catalog/product/5/9/59e3abdhudab00000072_2.jpg",
@@ -894,7 +938,7 @@
   },
 
   {
-    "productsid": "LP05",
+    "productId": "LP05",
     "name": "",
     "brand": "NYKAA",
     "title": "Lipstick",
@@ -904,6 +948,7 @@
     "price": 599,
     "offer": 10,
     "type": "",
+    "quantity": 10,
     "thumbnailURL": "https://images-static.nykaa.com/media/catalog/product/7/9/7905903NYKAC00000161_1.jpg?tr=w-344,h-344,cm-pad_resize",
     "productimagesURL": [
       "https://images-static.nykaa.com/media/catalog/product/7/9/7905903NYKAC00000161_3.jpg",
@@ -913,7 +958,7 @@
     "search tags": ["NYKAA", "Lipstick"]
   },
   {
-    "productsid": "LP06",
+    "productId": "LP06",
     "name": "",
     "brand": "Colorbar",
     "title": "Lipstick",
@@ -923,6 +968,7 @@
     "price": 680,
     "offer": 10,
     "type": "",
+    "quantity": 10,
     "thumbnailURL": "https://images-static.nykaa.com/media/catalog/product/8/9/8904052432623_1.jpg?tr=w-344,h-344,cm-pad_resize",
     "productimagesURL": [
       "https://images-static.nykaa.com/media/catalog/product/8/9/8904052432623_2.jpg",
@@ -932,7 +978,7 @@
     "search tags": ["Colorbar", "Lipstick"]
   },
   {
-    "productsid": "LP07",
+    "productId": "LP07",
     "name": "",
     "brand": "Maybelline New York",
     "title": "Mascara",
@@ -942,6 +988,7 @@
     "price": 299,
     "offer": 10,
     "type": "",
+    "quantity": 10,
     "thumbnailURL": "https://images-static.nykaa.com/media/catalog/product/3/0/30079236_i_new_0__r1.jpg?tr=w-344,h-344,cm-pad_resize",
     "productimagesURL": [
       "https://images-static.nykaa.com/media/catalog/product/3/0/30079236_i2_i_new_0__r3.jpg",
@@ -952,7 +999,7 @@
   },
 
   {
-    "productsid": "LP08",
+    "productId": "LP08",
     "name": "",
     "brand": "Maybelline New York",
     "title": "Mascara",
@@ -962,6 +1009,7 @@
     "price": 299,
     "offer": 10,
     "type": "",
+    "quantity": 10,
     "thumbnailURL": "https://images-static.nykaa.com/media/catalog/product/3/0/30079236_i_new_0__r1.jpg?tr=w-344,h-344,cm-pad_resize",
     "productimagesURL": [
       "https://images-static.nykaa.com/media/catalog/product/3/0/30079236_i2_i_new_0__r3.jpg",
@@ -971,7 +1019,7 @@
     "search tags": ["Maybelline New York", "Mascara"]
   },
   {
-    "productsid": "LP09",
+    "productId": "LP09",
     "name": "",
     "brand": "Mayebelline New York",
     "title": "Primer",
@@ -981,6 +1029,7 @@
     "price": 467,
     "offer": 10,
     "type": "",
+    "quantity": 10,
     "thumbnailURL": "https://images-static.nykaa.com/media/catalog/product/5/b/5b990e16902395773146_1.jpg",
     "productimagesURL": [
       "https://images-static.nykaa.com/media/catalog/product/5/b/5b990e16902395773146_2.jpg",
@@ -990,7 +1039,7 @@
     "search tags": ["Mayebelline New York", "Primer"]
   },
   {
-    "productsid": "LP10",
+    "productId": "LP10",
     "name": "",
     "brand": "M.A.C",
     "title": "Lipstick",
@@ -1000,6 +1049,7 @@
     "price": 2200,
     "offer": 10,
     "type": "",
+    "quantity": 10,
     "thumbnailURL": "https://images-static.nykaa.com/media/catalog/product/5/b/5bf8ac1773602607303_1.jpg",
     "productimagesURL": [
       "https://images-static.nykaa.com/media/catalog/product/5/b/5bf8ac1773602607303_2.jpg",
@@ -1009,7 +1059,7 @@
     "search tags": ["M.A.C", "Lipstick"]
   },
   {
-    "productsid": "CR011",
+    "productId": "CR011",
     "name": "",
     "brand": "Ponds",
     "title": "Cream",
@@ -1019,6 +1069,7 @@
     "price": 410,
     "offer": 10,
     "type": "",
+    "quantity": 10,
     "thumbnailURL": "https://images-static.nykaa.com/media/catalog/product/f/f/ff0e66b8901030664564_1.jpg",
     "productimagesURL": [
       "https://images-static.nykaa.com/media/catalog/product/f/f/ff0e66b8901030664564_2.jpg",
@@ -1029,7 +1080,7 @@
   },
 
   {
-    "productsid": "CR012",
+    "productId": "CR012",
     "name": "",
     "brand": "NYKAA",
     "title": "Cream",
@@ -1039,6 +1090,7 @@
     "price": 209,
     "offer": 10,
     "type": "",
+    "quantity": 10,
     "thumbnailURL": "https://images-static.nykaa.com/media/catalog/product/8/9/8904245703684_1_1_1.jpg",
     "productimagesURL": [
       "https://images-static.nykaa.com/media/catalog/product/8/9/8904245703684_2.jpg",
@@ -1048,7 +1100,7 @@
     "search tags": ["NYKAA", "Cream"]
   },
   {
-    "productsid": "CR013",
+    "productId": "CR013",
     "name": "",
     "brand": "Clinique",
     "title": "Face Primer",
@@ -1058,6 +1110,7 @@
     "price": 2900,
     "offer": 10,
     "type": "",
+    "quantity": 10,
     "thumbnailURL": "https://images-static.nykaa.com/media/catalog/product/2/0/20714644093_2.jpg",
     "productimagesURL": [
       "https://images-static.nykaa.com/media/catalog/product/m/a/makeup_atff_statement_2_6.jpg",
@@ -1068,7 +1121,7 @@
   },
 
   {
-    "productsid": "CR014",
+    "productId": "CR014",
     "name": "",
     "brand": "Lotus",
     "title": "Cream",
@@ -1078,6 +1131,7 @@
     "price": 293,
     "offer": 10,
     "type": "",
+    "quantity": 10,
     "thumbnailURL": "https://images-static.nykaa.com/media/catalog/product/a/d/ad711de806360320600_NV1.jpg",
     "productimagesURL": [
       "https://images-static.nykaa.com/media/catalog/product/a/d/ad711deLotus_herbal_ACERT.jpg",
@@ -1086,7 +1140,7 @@
     "search tags": ["Lotus", "Gel Cream"]
   },
   {
-    "productsid": "CR015",
+    "productId": "CR015",
     "name": "",
     "brand": "Lotus",
     "title": "Cream",
@@ -1096,6 +1150,7 @@
     "price": 676,
     "offer": 10,
     "type": "",
+    "quantity": 10,
     "thumbnailURL": "https://images-static.nykaa.com/media/catalog/product/1/b/1b001deNYLOTUS000029_NV1.jpg",
     "productimagesURL": [
       "https://images-static.nykaa.com/media/catalog/product/1/b/1b001deLotus_herbal_ACERT.jpg",
@@ -1104,7 +1159,7 @@
     "search tags": ["Lotus", "Anti-Ageing Cream"]
   },
   {
-    "productsid": "CR016",
+    "productId": "CR016",
     "name": "",
     "brand": "Olay",
     "title": "Cream",
@@ -1114,6 +1169,7 @@
     "price": 2589,
     "offer": 10,
     "type": "",
+    "quantity": 10,
     "thumbnailURL": "https://images-static.nykaa.com/media/catalog/product/4/4/44f00a3olaybnd000097.jpg",
     "productimagesURL": [
       "https://images-static.nykaa.com/media/catalog/product/4/4/44f00a3olaybnd000097_2.jpg",
@@ -1123,7 +1179,7 @@
     "search tags": ["Olay", "Cream"]
   },
   {
-    "productsid": "CR017",
+    "productId": "CR017",
     "name": "",
     "brand": "Biotique",
     "title": "Cream",
@@ -1133,6 +1189,7 @@
     "price": 168,
     "offer": 10,
     "type": "",
+    "quantity": 10,
     "thumbnailURL": "https://images-static.nykaa.com/media/catalog/product/8/9/8906009451107_3.jpg",
     "productimagesURL": [
       "https://images-static.nykaa.com/media/catalog/product/2/9/29710fb8906009451107_6.jpg",
@@ -1142,7 +1199,7 @@
     "search tags": ["Biotique", "Cream"]
   },
   {
-    "productsid": "CR018",
+    "productId": "CR018",
     "name": "",
     "brand": "The Face Shop",
     "title": "Cream",
@@ -1152,6 +1209,7 @@
     "price": 1377,
     "offer": 10,
     "type": "",
+    "quantity": 10,
     "thumbnailURL": "https://images-static.nykaa.com/media/catalog/product/1/2/124e250thefa00000014__1_.jpg",
     "productimagesURL": [
       "https://images-static.nykaa.com/media/catalog/product/1/2/124e250thefa00000014__2_.jpg",
@@ -1161,7 +1219,7 @@
     "search tags": ["The Face Shop", "Cream"]
   },
   {
-    "productsid": "CR019",
+    "productId": "CR019",
     "name": "",
     "brand": "Nivea",
     "title": "Cream",
@@ -1171,6 +1229,7 @@
     "price": 179,
     "offer": 10,
     "type": "",
+    "quantity": 10,
     "thumbnailURL": "https://images-static.nykaa.com/media/catalog/product/a/1/a108fec42204251_1.jpg",
     "productimagesURL": [
       "https://images-static.nykaa.com/media/catalog/product/a/1/a108fec42204251_2.jpg",
@@ -1180,7 +1239,7 @@
     "search tags": ["Nivea", "Cream"]
   },
   {
-    "productsid": "CR020",
+    "productId": "CR020",
     "name": "",
     "brand": "Lakme",
     "title": "Cream",
@@ -1190,6 +1249,7 @@
     "price": 524,
     "offer": 10,
     "type": "",
+    "quantity": 10,
     "thumbnailURL": "https://images-static.nykaa.com/media/catalog/product/3/8/38423ad27271_h-8901030752094.jpg",
     "productimagesURL": [
       "https://images-static.nykaa.com/media/catalog/product/3/8/38423ad27271_s1-8901030752094.jpg",
@@ -1200,7 +1260,7 @@
   },
 
   {
-    "productsid": "FW021",
+    "productId": "FW021",
     "name": "",
     "brand": "Lakme",
     "title": "Face Wash",
@@ -1210,6 +1270,7 @@
     "price": 173,
     "offer": 10,
     "type": "",
+    "quantity": 10,
     "thumbnailURL": "https://images-static.nykaa.com/media/catalog/product/1/a/1aa8c2b12826_h-8901030599293.jpg",
     "productimagesURL": [
       "https://images-static.nykaa.com/media/catalog/product/1/a/1aa8c2b12826_s1-8901030599293.jpg",
@@ -1219,7 +1280,7 @@
     "search tags": ["Lakme", "Face Wash"]
   },
   {
-    "productsid": "FW022",
+    "productId": "FW022",
     "name": "",
     "brand": "Lakme",
     "title": "Face Wash",
@@ -1229,6 +1290,7 @@
     "price": 187,
     "offer": 10,
     "type": "",
+    "quantity": 10,
     "thumbnailURL": "https://images-static.nykaa.com/media/catalog/product/4/5/4589e2727444_h-8901030854958.jpg",
     "productimagesURL": [
       "https://images-static.nykaa.com/media/catalog/product/4/5/4589e2727444_s1-8901030854958.jpg",
@@ -1239,7 +1301,7 @@
   },
 
   {
-    "productsid": "FW023",
+    "productId": "FW023",
     "name": "",
     "brand": "Nykaa",
     "title": "Face Wash",
@@ -1249,6 +1311,7 @@
     "price": 97,
     "offer": 10,
     "type": "",
+    "quantity": 10,
     "thumbnailURL": "https://images-static.nykaa.com/media/catalog/product/8/9/8904245714079_1.jpg",
     "productimagesURL": [
       "https://images-static.nykaa.com/media/catalog/product/8/9/8904245714079_2.jpg",
@@ -1258,7 +1321,7 @@
     "search tags": ["Nykaa", "Face Wash"]
   },
   {
-    "productsid": "FW024",
+    "productId": "FW024",
     "name": "",
     "brand": "Biotique",
     "title": "Face Wash",
@@ -1268,6 +1331,7 @@
     "price": 47,
     "offer": 10,
     "type": "",
+    "quantity": 10,
     "thumbnailURL": "https://images-static.nykaa.com/media/catalog/product/8/9/8906009454405_1__2.jpg",
     "productimagesURL": [
       "https://images-static.nykaa.com/media/catalog/product/8/9/8906009454405_2_.jpg",
@@ -1277,7 +1341,7 @@
     "search tags": ["Biotique", "Face Wash"]
   },
   {
-    "productsid": "FW025",
+    "productId": "FW025",
     "name": "",
     "brand": "L'Oreal Paris",
     "title": "Face Wash",
@@ -1287,6 +1351,7 @@
     "price": 903,
     "offer": 10,
     "type": "",
+    "quantity": 10,
     "thumbnailURL": "https://images-static.nykaa.com/media/catalog/product/c/4/c4f2f79LOREA00000115_1.jpg",
     "productimagesURL": [
       "https://images-static.nykaa.com/media/catalog/product/c/4/c4f2f79LOREA00000115_2.jpg",
@@ -1297,7 +1362,7 @@
   },
 
   {
-    "productsid": "FW026",
+    "productId": "FW026",
     "name": "",
     "brand": "Bioderma",
     "title": "Face Wash",
@@ -1307,6 +1372,7 @@
     "price": 356,
     "offer": 10,
     "type": "",
+    "quantity": 10,
     "thumbnailURL": "https://images-static.nykaa.com/media/catalog/product/2/1/210743e3401381716523-01.jpg",
     "productimagesURL": [
       "https://images-static.nykaa.com/media/catalog/product/2/1/210743e3401381716523-04.jpg",
@@ -1316,7 +1382,7 @@
     "search tags": ["Bioderma", "Face Wash"]
   },
   {
-    "productsid": "FW027",
+    "productId": "FW027",
     "name": "",
     "brand": "Cetaphil",
     "title": "Cream",
@@ -1326,6 +1392,7 @@
     "price": 600,
     "offer": 10,
     "type": "",
+    "quantity": 10,
     "thumbnailURL": "https://images-static.nykaa.com/media/catalog/product/9/8/982bfa5NYKBNDCTP0009_1.jpg",
     "productimagesURL": [
       "https://images-static.nykaa.com/media/catalog/product/9/8/982bfa5NYKBNDCTP0009_2.jpg",
@@ -1335,7 +1402,7 @@
   },
 
   {
-    "productsid": "FW028",
+    "productId": "FW028",
     "name": "",
     "brand": "Mamaearth",
     "title": "Face Wash",
@@ -1345,6 +1412,7 @@
     "price": 379,
     "offer": 10,
     "type": "",
+    "quantity": 10,
     "thumbnailURL": "https://images-static.nykaa.com/media/catalog/product/1/2/12062d18906087773115_GMC_1.jpg",
     "productimagesURL": [
       "https://images-static.nykaa.com/media/catalog/product/1/2/12062d18906087773115_GMC_4.jpg",
@@ -1354,7 +1422,7 @@
     "search tags": ["Mamaerath", "Face Wash"]
   },
   {
-    "productsid": "FW029",
+    "productId": "FW029",
     "name": "",
     "brand": "Neutrogena",
     "title": "Face Wash",
@@ -1364,6 +1432,7 @@
     "price": 630,
     "offer": 10,
     "type": "",
+    "quantity": 10,
     "thumbnailURL": "https://images-static.nykaa.com/media/catalog/product/9/3/9300607560220_a.jpg",
     "productimagesURL": [
       "https://images-static.nykaa.com/media/catalog/product/9/3/9300607560220_3_1.jpg",
@@ -1373,7 +1442,7 @@
     "search tags": ["Neutrogena", "Face Wash"]
   },
   {
-    "productsid": "FW030",
+    "productId": "FW030",
     "name": "",
     "brand": "Nykaa",
     "title": "Face Wash",
@@ -1383,6 +1452,7 @@
     "price": 104,
     "offer": 10,
     "type": "",
+    "quantity": 10,
     "thumbnailURL": "https://images-static.nykaa.com/media/catalog/product/8/9/8904245714062_1.jpg",
     "productimagesURL": [
       "https://images-static.nykaa.com/media/catalog/product/8/9/8904245714062_2.jpg",
@@ -1393,7 +1463,7 @@
   },
 
   {
-    "productsid": "MO031",
+    "productId": "MO031",
     "name": "",
     "brand": "Biotique",
     "title": "Moisturizers",
@@ -1403,6 +1473,7 @@
     "price": 145,
     "offer": 10,
     "type": "",
+    "quantity": 10,
     "thumbnailURL": "https://images-static.nykaa.com/media/catalog/product/8/9/8906009450070_1_.png",
     "productimagesURL": [
       "https://images-static.nykaa.com/media/catalog/product/8/9/8906009450070_2_.png",
@@ -1412,7 +1483,7 @@
     "search tags": ["Biotique", "Moisturizers"]
   },
   {
-    "productsid": "MO032",
+    "productId": "MO032",
     "name": "",
     "brand": "Nykaa",
     "title": "Moisturizers",
@@ -1422,6 +1493,7 @@
     "price": 319,
     "offer": 10,
     "type": "",
+    "quantity": 10,
     "thumbnailURL": "https://images-static.nykaa.com/media/catalog/product/5/5/55fea91NYKAB00000508_1.jpg",
     "productimagesURL": [
       "https://images-static.nykaa.com/media/catalog/product/5/5/55fea91NYKAB00000508_2.jpg",
@@ -1431,7 +1503,7 @@
     "search tags": ["Nykaa", "Moisturizers"]
   },
   {
-    "productsid": "MO033",
+    "productId": "MO033",
     "name": "",
     "brand": "Clinique",
     "title": "Moisturizers",
@@ -1441,6 +1513,7 @@
     "price": 950,
     "offer": 10,
     "type": "",
+    "quantity": 10,
     "thumbnailURL": "https://images-static.nykaa.com/media/catalog/product/e/8/e813db4CLINI00000001_2.jpg",
     "productimagesURL": [
       "https://images-static.nykaa.com/media/catalog/product/e/8/e813db4CLINI00000001_4.jpg",
@@ -1450,7 +1523,7 @@
     "search tags": ["Clinique", "Moisturizers"]
   },
   {
-    "productsid": "MO034",
+    "productId": "MO034",
     "name": "",
     "brand": "Cetaphil",
     "title": "Moisturizers",
@@ -1460,6 +1533,7 @@
     "price": 395,
     "offer": 10,
     "type": "",
+    "quantity": 10,
     "thumbnailURL": "https://images-static.nykaa.com/media/catalog/product/1/5/15bd38aNYCETA0000005-new1.jpg",
     "productimagesURL": [
       "https://images-static.nykaa.com/media/catalog/product/1/5/15bd38aNYCETA0000005-new2.jpg",
@@ -1469,7 +1543,7 @@
     "search tags": ["Cetaphil", "Moisturizers"]
   },
   {
-    "productsid": "MO035",
+    "productId": "MO035",
     "name": "",
     "brand": "Lotus Herbal",
     "title": "Moisturizers",
@@ -1479,6 +1553,7 @@
     "price": 341,
     "offer": 10,
     "type": "",
+    "quantity": 10,
     "thumbnailURL": "https://images-static.nykaa.com/media/catalog/product/0/8/0806360790502.jpg",
     "productimagesURL": [
       "https://images-static.nykaa.com/media/catalog/product/0/8/0806360790502_1_.jpg",
@@ -1488,7 +1563,7 @@
     "search tags": ["Lotus Herbal", "Moisturizers"]
   },
   {
-    "productsid": "MO036",
+    "productId": "MO036",
     "name": "",
     "brand": "NIVEA",
     "title": "Moisturizers",
@@ -1498,6 +1573,7 @@
     "price": 189,
     "offer": 10,
     "type": "",
+    "quantity": 10,
     "thumbnailURL": "https://images-static.nykaa.com/media/catalog/product/7/f/7f4ec3a4005900196002_1.jpg",
     "productimagesURL": [
       "https://d286adtp3hdk00.cloudfront.net/ab817eef-3692-4fa9-885e-88a314c2121b/thumbnails/4005808954711_NIVEA%20MEN%20Deodorant%20-%20Fresh%20Power_thumb.0000004.jpg",
@@ -1507,7 +1583,7 @@
     "search tags": ["NIVEA", "Moisturizers"]
   },
   {
-    "productsid": "MO037",
+    "productId": "MO037",
     "name": "",
     "brand": "NIVEA",
     "title": "Moisturizers",
@@ -1517,6 +1593,7 @@
     "price": 374,
     "offer": 10,
     "type": "",
+    "quantity": 10,
     "thumbnailURL": "https://images-static.nykaa.com/media/catalog/product/f/3/f3ddf89nivea00000085.jpg",
     "productimagesURL": [
       "https://images-static.nykaa.com/media/catalog/product/f/3/f3ddf89nynivea_acert.jpg",
@@ -1525,7 +1602,7 @@
     "search tags": ["NIVEA", "Moisturizers"]
   },
   {
-    "productsid": "MO038",
+    "productId": "MO038",
     "name": "",
     "brand": "Ponds",
     "title": "Moisturizers",
@@ -1535,6 +1612,7 @@
     "price": 232,
     "offer": 10,
     "type": "",
+    "quantity": 10,
     "thumbnailURL": "https://images-static.nykaa.com/media/catalog/product/1/9/1922c2b27234_h-8901030755354.jpg",
     "productimagesURL": [
       "https://images-static.nykaa.com/media/catalog/product/1/9/1922c2b27234_s1-8901030755354.jpg",
@@ -1544,7 +1622,7 @@
     "search tags": ["Ponds", "Moisturizers"]
   },
   {
-    "productsid": "MO039",
+    "productId": "MO039",
     "name": "",
     "brand": "Lotus",
     "title": "Moisturizers",
@@ -1554,6 +1632,7 @@
     "price": 532,
     "offer": 10,
     "type": "",
+    "quantity": 10,
     "thumbnailURL": "https://images-static.nykaa.com/media/catalog/product/5/b/5bdf1deNYLOTUS000012_NV1.jpg",
     "productimagesURL": [
       "https://images-static.nykaa.com/media/catalog/product/5/b/5bdf1deNYLOTUS000012_NV2.jpg",
@@ -1563,7 +1642,7 @@
     "search tags": ["Lotus", "Moisturizers"]
   },
   {
-    "productsid": "MO040",
+    "productId": "MO040",
     "name": "",
     "brand": "Dot & Key",
     "title": "Moisturizers",
@@ -1573,6 +1652,7 @@
     "price": 506,
     "offer": 10,
     "type": "",
+    "quantity": 10,
     "thumbnailURL": "https://images-static.nykaa.com/media/catalog/product/8/a/8a5474bDOTKE00000054-1.jpg",
     "productimagesURL": [
       "https://images-static.nykaa.com/media/catalog/product/8/a/8a5474bDOTKE00000054-2.jpg",
@@ -1583,7 +1663,7 @@
   },
 
   {
-    "productsid": "EY041",
+    "productId": "EY041",
     "name": "",
     "brand": "Kay Beauty",
     "title": "Eyeliner",
@@ -1593,6 +1673,7 @@
     "price": 375,
     "offer": 10,
     "type": "",
+    "quantity": 10,
     "thumbnailURL": "https://images-static.nykaa.com/media/catalog/product/s/h/shadow-play_1.jpg",
     "productimagesURL": [
       "https://images-static.nykaa.com/media/catalog/product/c/a/ca640c58904330900530_2.jpg",
@@ -1602,7 +1683,7 @@
     "search tags": ["Kay Beauty", "Eyeline"]
   },
   {
-    "productsid": "EY042",
+    "productId": "EY042",
     "name": "",
     "brand": "Maybelline New York",
     "title": "Eyeliner",
@@ -1612,6 +1693,7 @@
     "price": 385,
     "offer": 10,
     "type": "",
+    "quantity": 10,
     "thumbnailURL": "https://images-static.nykaa.com/media/catalog/product/3/c/3c641c76902395740353_1.jpg",
     "productimagesURL": [
       "https://images-static.nykaa.com/media/catalog/product/3/c/3c641c76902395740353_4.jpg",
@@ -1621,7 +1703,7 @@
     "search tags": ["Maybelline New York", "Eyeliner"]
   },
   {
-    "productsid": "EY043",
+    "productId": "EY043",
     "name": "",
     "brand": "Lakme",
     "title": "Eyeliner",
@@ -1631,6 +1713,7 @@
     "price": 98,
     "offer": 10,
     "type": "",
+    "quantity": 10,
     "thumbnailURL": "https://images-static.nykaa.com/media/catalog/product/1/9/19647_h_2.jpg",
     "productimagesURL": [
       "https://images-static.nykaa.com/media/catalog/product/1/9/19647_s3_1.jpg",
@@ -1640,7 +1723,7 @@
     "search tags": ["Lakme", "Eyeliner"]
   },
   {
-    "productsid": "EY044",
+    "productId": "EY044",
     "name": "",
     "brand": "SUGAR",
     "title": "Eyeliner",
@@ -1650,6 +1733,7 @@
     "price": 247,
     "offer": 10,
     "type": "",
+    "quantity": 10,
     "thumbnailURL": "https://images-static.nykaa.com/media/catalog/product/e/f/ef3c934SUGAR00000051_1.jpg",
     "productimagesURL": [
       "https://images-static.nykaa.com/media/catalog/product/e/f/ef3c934SUGAR00000051_4.jpg",
@@ -1660,7 +1744,7 @@
   },
 
   {
-    "productsid": "EY045",
+    "productId": "EY045",
     "name": "",
     "brand": "M.A.C",
     "title": "Eyeliner",
@@ -1670,6 +1754,7 @@
     "price": 675,
     "offer": 10,
     "type": "",
+    "quantity": 10,
     "thumbnailURL": "https://images-static.nykaa.com/media/catalog/product/0/9/09d037emacxx00000225_0.jpg",
     "productimagesURL": [
       "https://images-static.nykaa.com/media/catalog/product/0/9/09d037emacxx00000225_01.jpg",
@@ -1679,7 +1764,7 @@
     "search tags": ["M.A.C", "Eyeliner"]
   },
   {
-    "productsid": "EY046",
+    "productId": "EY046",
     "name": "",
     "brand": "LOreal Paris",
     "title": "Eyeliner",
@@ -1689,6 +1774,7 @@
     "price": 765,
     "offer": 10,
     "type": "",
+    "quantity": 10,
     "thumbnailURL": "https://images-static.nykaa.com/media/catalog/product/6/9/6902395449270.png",
     "productimagesURL": [
       "https://images-static.nykaa.com/media/catalog/product/6/9/6902395449270_1.jpg",
@@ -1698,7 +1784,7 @@
     "search tags": ["LOreal Paris", "Eyeliner"]
   },
   {
-    "productsid": "EY047",
+    "productId": "EY047",
     "name": "",
     "brand": "Charlotte",
     "title": "Eyeliner",
@@ -1708,6 +1794,7 @@
     "price": 2900,
     "offer": 10,
     "type": "",
+    "quantity": 10,
     "thumbnailURL": "https://images-static.nykaa.com/media/catalog/product/5/0/5060696170406_1.jpg",
     "productimagesURL": [
       "https://images-static.nykaa.com/media/catalog/product/5/0/5060696170406_2.jpg",
@@ -1717,7 +1804,7 @@
     "search tags": ["Charlotte ", "Eyeliner"]
   },
   {
-    "productsid": "EY048",
+    "productId": "EY048",
     "name": "",
     "brand": "Huda Beauty",
     "title": "Eyeliner",
@@ -1727,6 +1814,7 @@
     "price": 2050,
     "offer": 10,
     "type": "",
+    "quantity": 10,
     "thumbnailURL": "https://images-static.nykaa.com/media/catalog/product/6/2/6291106034240_3_.jpg",
     "productimagesURL": [
       "https://images-static.nykaa.com/media/catalog/product/6/2/6291106034240_2_.jpg",
@@ -1736,7 +1824,7 @@
     "search tags": ["Huda Beauty ", "Eyeliner"]
   },
   {
-    "productsid": "EY049",
+    "productId": "EY049",
     "name": "",
     "brand": "Colorbar",
     "title": "Eyeliner",
@@ -1746,6 +1834,7 @@
     "price": 700,
     "offer": 10,
     "type": "",
+    "quantity": 10,
     "thumbnailURL": "https://images-static.nykaa.com/media/catalog/product/8/9/8904052409748-1.png",
     "productimagesURL": [
       "https://images-static.nykaa.com/media/catalog/product/8/9/8904052409748-2.png",
@@ -1755,7 +1844,7 @@
     "search tags": ["Colorbar", "Eyeliner"]
   },
   {
-    "productsid": "EY050",
+    "productId": "EY050",
     "name": "",
     "brand": "Nykaa",
     "title": "Eyeliner",
@@ -1764,6 +1853,7 @@
     "category": "beauty_products",
     "offer": 10,
     "type": "",
+    "quantity": 10,
     "price": 449,
     "thumbnailURL": "https://images-static.nykaa.com/media/catalog/product/8/c/8c98477nykac00000506_1.jpg",
     "productimagesURL": [
@@ -1773,7 +1863,7 @@
     "search tags": ["Nykaa", "Eyeliner"]
   },
   {
-    "productsid": "KBT01",
+    "productId": "KBT01",
     "name": "",
     "brand": "ALLEN SOLLY",
     "title": "Yellow Printed Tshirt",
@@ -1783,7 +1873,8 @@
     "price": 239,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://www.pantaloons.com/_next/image?url=https%3A%2F%2Fpantaloons.imgix.net%2Fimg%2Fapp%2Fproduct%2F7%2F702808-7607028.jpg%3Fw%3D295%26q%3D75%26exp%3D1&w=1920&q=75",
     "productImageURLs": [
       "https://pantaloons.imgix.net/img/app/product/7/702808-7607028.jpg",
@@ -1793,7 +1884,7 @@
     "searchTags": ["ALLEN SOLLY", "Yellow Printed Tshirt"]
   },
   {
-    "productsid": "KBT02",
+    "productId": "KBT02",
     "name": "",
     "brand": "ALLEN SOLLY",
     "title": "Multicoloured Striped T-Shirt",
@@ -1803,7 +1894,8 @@
     "price": 519,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://pantaloons.imgix.net/img/app/product/6/645914-6475497.jpg?width=440&height=570",
     "productImageURLs": [
       "https://pantaloons.imgix.net/img/app/product/6/645914-6475497.jpg",
@@ -1813,7 +1905,7 @@
     "searchTags": ["ALLEN SOLLY", "Multicoloured Striped T-Shirt"]
   },
   {
-    "productsid": "KBS03",
+    "productId": "KBS03",
     "name": "",
     "brand": "PANTALOONS BABY",
     "title": "Blue Patterned Shirt",
@@ -1823,7 +1915,8 @@
     "price": 519,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://www.pantaloons.com/_next/image?url=https%3A%2F%2Fpantaloons.imgix.net%2Fimg%2Fapp%2Fproduct%2F6%2F620854-6189816.jpg%3Fw%3D295%26q%3D75%26exp%3D1&w=1920&q=75",
     "productImageURLs": [
       "https://www.pantaloons.com/_next/image?url=https%3A%2F%2Fpantaloons.imgix.net%2Fimg%2Fapp%2Fproduct%2F6%2F620854-6189819.jpg%3Fw%3D295%26q%3D75%26exp%3D1&w=1920&q=75",
@@ -1833,7 +1926,7 @@
     "searchTags": ["PANTALOONS BABY", "Blue Patterned Shirt"]
   },
   {
-    "productsid": "KBS04",
+    "productId": "KBS04",
     "name": "",
     "brand": "PANTALOONS BABY",
     "title": "Maroon Shirt",
@@ -1843,7 +1936,8 @@
     "price": 480,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://www.pantaloons.com/_next/image?url=https%3A%2F%2Fpantaloons.imgix.net%2Fimg%2Fapp%2Fproduct%2F6%2F633778-6254517.jpg%3Fw%3D295%26q%3D75%26exp%3D1&w=1920&q=75",
     "productImageURLs": [
       "https://www.pantaloons.com/_next/image?url=https%3A%2F%2Fpantaloons.imgix.net%2Fimg%2Fapp%2Fproduct%2F6%2F633778-6254518.jpg%3Fw%3D295%26q%3D75%26exp%3D1&w=1920&q=75",
@@ -1853,7 +1947,7 @@
     "searchTags": ["PANTALOONS BABY", "Maroon Shirt"]
   },
   {
-    "productsid": "KBJ05",
+    "productId": "KBJ05",
     "name": "",
     "brand": "INDUS ROUTE",
     "title": "Mustard Colour Block Jacket",
@@ -1863,7 +1957,8 @@
     "price": 480,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://pantaloons.imgix.net/img/app/product/6/650368-6550897.jpg?width=440&height=570",
     "productImageURLs": [
       "https://pantaloons.imgix.net/img/app/product/6/650368-6550897.jpg",
@@ -1873,7 +1968,7 @@
     "searchTags": ["INDUS ROUTE", "Mustard Colour Block Jacket"]
   },
   {
-    "productsid": "KBJ06",
+    "productId": "KBJ06",
     "name": "",
     "brand": "PANTALOONS JUNIOR",
     "title": "White Colour Block Jacket",
@@ -1883,7 +1978,8 @@
     "price": 1480,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://www.pantaloons.com/_next/image?url=https%3A%2F%2Fpantaloons.imgix.net%2Fimg%2Fapp%2Fproduct%2F6%2F650379-6550872.jpg%3Fw%3D295%26q%3D75%26exp%3D1&w=1920&q=75",
     "productImageURLs": [
       "https://pantaloons.imgix.net/img/app/product/6/650379-6550873.jpg",
@@ -1893,7 +1989,7 @@
     "searchTags": ["PANTALOONS JUNIOR", "White Colour Block Jacket"]
   },
   {
-    "productsid": "KSW07",
+    "productId": "KSW07",
     "name": "",
     "brand": "COOLSTAR",
     "title": "White Coordinate Set",
@@ -1902,8 +1998,9 @@
     "category": "Kids",
     "offer": 10,
     "type": "",
+    "quantity": 10,
     "price": 800,
-    "merchantId": 0,
+    "merchantId": 9,
     "thumbnailURL": "https://www.pantaloons.com/_next/image?url=https%3A%2F%2Fpantaloons.imgix.net%2Fimg%2Fapp%2Fproduct%2F6%2F608128-6131289.jpg%3Fw%3D295%26q%3D75%26exp%3D1&w=1920&q=75",
     "productImageURLs": [
       "https://www.pantaloons.com/_next/image?url=https%3A%2F%2Fpantaloons.imgix.net%2Fimg%2Fapp%2Fproduct%2F6%2F608128-6131290.jpg%3Fw%3D295%26q%3D75%26exp%3D1&w=1920&q=75",
@@ -1913,7 +2010,7 @@
     "searchTags": ["COOLSTAR", "White Coordinate Set"]
   },
   {
-    "productsid": "KSW08",
+    "productId": "KSW08",
     "name": "",
     "brand": "PANTALOONS JUNIOR",
     "title": "Mustard & Grey Coordinate Set",
@@ -1923,7 +2020,8 @@
     "price": 599,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://www.pantaloons.com/_next/image?url=https%3A%2F%2Fpantaloons.imgix.net%2Fimg%2Fapp%2Fproduct%2F6%2F636334-6312385.jpg%3Fw%3D295%26q%3D75%26exp%3D1&w=1920&q=75",
     "productImageURLs": [
       "https://www.pantaloons.com/_next/image?url=https%3A%2F%2Fpantaloons.imgix.net%2Fimg%2Fapp%2Fproduct%2F6%2F636334-6312386.jpg%3Fw%3D295%26q%3D75%26exp%3D1&w=1920&q=75",
@@ -1933,7 +2031,7 @@
     "searchTags": ["PANTALOONS JUNIOR", "Mustard & Grey Coordinate Set"]
   },
   {
-    "productsid": "KTR09",
+    "productId": "KTR09",
     "name": "",
     "brand": "COOLSTAR",
     "title": "Beige Solid Trousers",
@@ -1943,7 +2041,8 @@
     "price": 999,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://www.pantaloons.com/_next/image?url=https%3A%2F%2Fpantaloons.imgix.net%2Fimg%2Fapp%2Fproduct%2F4%2F478737-3463401.jpg%3Fw%3D295%26q%3D75%26exp%3D1&w=1920&q=75",
     "productImageURLs": [
       "https://pantaloons.imgix.net/img/app/product/4/478737-3463401.jpg",
@@ -1953,7 +2052,7 @@
     "searchTags": ["COOLSTAR", "Beige Solid Trousers"]
   },
   {
-    "productsid": "KTR10",
+    "productId": "KTR10",
     "name": "",
     "brand": "YK",
     "title": "Boys Black & White Checked Pure Cotton Trousers",
@@ -1963,7 +2062,8 @@
     "price": 699,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15266194/2022/6/4/32da16f7-30a8-42ae-8e21-cecec1f688ed1654331800339-YK-Boys-Black--White-Checked-Pure-Cotton-Trousers-9321654331-1.jpg",
     "productImageURLs": [
       "https://assets.myntassets.com/h_68,q_90,w_52/v1/assets/images/15266194/2022/6/4/bf541a7b-bae8-4b24-8a4c-a1ea5bf911c31654331800315-YK-Boys-Black--White-Checked-Pure-Cotton-Trousers-9321654331-2.jpg",
@@ -1973,7 +2073,7 @@
     "searchTags": ["YK", "Boys Black & White Checked Pure Cotton Trousers"]
   },
   {
-    "productsid": "KEW11",
+    "productId": "KEW11",
     "name": "",
     "brand": "House of Pataudi",
     "title": "Boys Teal Ethnic Motifs Yoke Design Regular Kurta with Pyjamas",
@@ -1983,7 +2083,8 @@
     "price": 999,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/14699590/2022/2/14/2e7c6e3c-696c-4ccd-8a30-34c298962eb81644835530178-House-of-Pataudi-Boys-Teal-Ethnic-Motifs-Yoke-Design-Regular-1.jpg",
     "productImageURLs": [
       "https://assets.myntassets.com/h_68,q_90,w_52/v1/assets/images/14699590/2022/2/14/1f32def7-e578-4138-ad1e-fd67b0ebc0dd1644835530168-House-of-Pataudi-Boys-Teal-Ethnic-Motifs-Yoke-Design-Regular-2.jpg",
@@ -1996,7 +2097,7 @@
     ]
   },
   {
-    "productsid": "KEW12",
+    "productId": "KEW12",
     "name": "",
     "brand": "VASTRAMAY",
     "title": "Vastramay Boys' Maroon And Rose Gold Indowestern Sherwani and Cowl Dhoti Pant Set",
@@ -2006,7 +2107,8 @@
     "price": 2999,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15465334/2021/9/15/27b40aa5-9e3c-4264-b5d8-b5d7d90173171631711524796VastramayBoysMaroonAndRoseGoldIndowesternSherwaniandCowldhot1.jpg",
     "productImageURLs": [
       "https://assets.myntassets.com/h_68,q_90,w_52/v1/assets/images/15465334/2021/9/15/e0cbe48a-f675-4bb6-8767-82733d3f93b51631711524825VastramayBoysMaroonAndRoseGoldIndowesternSherwaniandCowldhot3.jpg",
@@ -2019,7 +2121,7 @@
     ]
   },
   {
-    "productsid": "KBJ13",
+    "productId": "KBJ13",
     "name": "",
     "brand": "HERE&NOW",
     "title": "Boys Blue Regular Fit Clean Look Stretchable Jeans",
@@ -2029,7 +2131,8 @@
     "price": 899,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15616876/2021/12/3/8fc2f62e-7c7d-4f38-a7a0-2847263100081638534381623-HERENOW-Boys-Blue-Regular-Fit-Clean-Look-Stretchable-Jeans-6-1.jpg",
     "productImageURLs": [
       "https://assets.myntassets.com/h_68,q_90,w_52/v1/assets/images/15616876/2021/12/3/cfea039d-205d-46d1-9091-09ca6de478741638534381612-HERENOW-Boys-Blue-Regular-Fit-Clean-Look-Stretchable-Jeans-6-2.jpg",
@@ -2042,7 +2145,7 @@
     ]
   },
   {
-    "productsid": "KBJ14",
+    "productId": "KBJ14",
     "name": "",
     "brand": "United Colors of Benetton",
     "title": "Boys Blue Regular Fit Low-Rise Acid Wash Stretchable Jeans",
@@ -2052,7 +2155,8 @@
     "price": 2999,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/18224442/2022/5/11/dd6ada91-07f7-472f-8e8b-80a5d8f840a81652263666181UnitedColorsofBenettonBoysBlueLow-RiseJeans1.jpg",
     "productImageURLs": [
       "https://assets.myntassets.com/h_68,q_90,w_52/v1/assets/images/18224442/2022/5/11/9cdf3ed5-d0da-4a38-b04e-0438df40e8191652263666159UnitedColorsofBenettonBoysBlueLow-RiseJeans2.jpg",
@@ -2065,7 +2169,7 @@
     ]
   },
   {
-    "productsid": "KEW15",
+    "productId": "KEW15",
     "name": "",
     "brand": "House of Pataudi",
     "title": "Boys Green Cotton Thread Work Kurta",
@@ -2075,7 +2179,8 @@
     "price": 2999,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15977208/2022/3/4/55c4c665-332d-4be1-bbc4-1c3fc0bca4fe1646393301962-House-of-Pataudi-Boys-Green-Cotton-Thread-Work-Kurta-5164639-1.jpg",
     "productImageURLs": [
       "https://assets.myntassets.com/h_68,q_90,w_52/v1/assets/images/15977208/2022/3/4/bc4e3ed6-5abe-4c13-ade9-ee51a2a1d8591646393301952-House-of-Pataudi-Boys-Green-Cotton-Thread-Work-Kurta-5164639-2.jpg",
@@ -2085,7 +2190,7 @@
     "searchTags": ["House of Pataudi", "Boys Green Cotton Thread Work Kurta"]
   },
   {
-    "productsid": "KGF01",
+    "productId": "KGF01",
     "name": "",
     "brand": "TIOR",
     "title": "Floral Print Fit & Flare Dress with Bow Applique",
@@ -2095,7 +2200,8 @@
     "price": 999,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://assets.ajio.com/medias/sys_master/root/20220520/PUdj/6286ae23aeb26921aface37f/-473Wx593H-464358017-white-MODEL.jpg",
     "productImageURLs": [
       "https://assets.ajio.com/medias/sys_master/root/20220520/E6aj/6286ae23aeb26921aface2ee/-78Wx98H-464358017-white-MODEL2.jpg",
@@ -2105,7 +2211,7 @@
     "searchTags": ["TIOR", "Floral Print Fit & Flare Dress with Bow Applique"]
   },
   {
-    "productsid": "KGF02",
+    "productId": "KGF02",
     "name": "",
     "brand": "APNISHA",
     "title": "Floral Fit and Flare Dress",
@@ -2115,7 +2221,8 @@
     "price": 678,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://assets.ajio.com/medias/sys_master/root/20220317/iDTo/62331dcfaeb26921afe0a8d2/-473Wx593H-464027321-blue-MODEL.jpg",
     "productImageURLs": [
       "https://assets.ajio.com/medias/sys_master/root/20220317/WklR/62331dd9aeb26921afe0a92f/-78Wx98H-464027321-blue-MODEL3.jpg",
@@ -2125,7 +2232,7 @@
     "searchTags": ["APNISHA", "Floral Fit and Flare Dress"]
   },
   {
-    "productsid": "KGF03",
+    "productId": "KGF03",
     "name": "",
     "brand": "TOY BALLOON",
     "title": "Floral Fit and Flare Dress",
@@ -2135,7 +2242,8 @@
     "price": 1999,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://assets.ajio.com/medias/sys_master/root/20220225/H5xG/6218f101f997dd03e2f12beb/-473Wx593H-463898797-pink-MODEL.jpg",
     "productImageURLs": [
       "https://assets.ajio.com/medias/sys_master/root/20220225/ptZG/6218f101f997dd03e2f12b57/-78Wx98H-463898797-pink-MODEL2.jpg",
@@ -2145,7 +2253,7 @@
     "searchTags": ["TOY BALLOON", "Floral Fit and Flare Dress"]
   },
   {
-    "productsid": "KGT04",
+    "productId": "KGT04",
     "name": "",
     "brand": "MOTHERCARE",
     "title": "Novelty Print Fit & Flare Dress with Ruffled Panel",
@@ -2155,7 +2263,8 @@
     "price": 599,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://assets.ajio.com/medias/sys_master/root/20220113/hfv3/61e03e81aeb2695cdd13b9ec/-473Wx593H-410260997-pink-MODEL.jpg",
     "productImageURLs": [
       "https://assets.ajio.com/medias/sys_master/root/20220113/jZWi/61e03e81aeb2695cdd13b94e/-78Wx98H-410260997-pink-MODEL2.jpg",
@@ -2168,7 +2277,7 @@
     ]
   },
   {
-    "productsid": "KGT05",
+    "productId": "KGT05",
     "name": "",
     "brand": "U.S. POLO ASSN.",
     "title": "Heart Print Round-Neck Fit & Flare Dress",
@@ -2178,7 +2287,8 @@
     "price": 675,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://assets.ajio.com/medias/sys_master/root/20220531/DkoO/6295ac8ff997dd03e24e909c/-473Wx593H-469102687-pink-MODEL.jpg",
     "productImageURLs": [
       "https://assets.ajio.com/medias/sys_master/root/20220531/JTQx/6295628af997dd03e24cca5d/-78Wx98H-469102687-pink-MODEL2.jpg",
@@ -2191,7 +2301,7 @@
     ]
   },
   {
-    "productsid": "KGF06",
+    "productId": "KGF06",
     "name": "",
     "brand": "MUHURATAM",
     "title": "Graphic Print Fit & flare Dress",
@@ -2201,7 +2311,8 @@
     "price": 1657,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://assets.ajio.com/medias/sys_master/root/20220317/iF6t/62324cccaeb26921afdf57d1/-473Wx593H-464023898-multi-MODEL.jpg",
     "productImageURLs": [
       "https://assets.ajio.com/medias/sys_master/root/20220317/3QRz/62324cccaeb26921afdf574a/-78Wx98H-464023898-multi-MODEL2.jpg",
@@ -2211,7 +2322,7 @@
     "searchTags": ["MUHURATAM", "Graphic Print Fit & flare Dress"]
   },
   {
-    "productsid": "KGS07",
+    "productId": "KGS07",
     "name": "",
     "brand": "BELLA MODA",
     "title": "Solid Dress",
@@ -2221,7 +2332,8 @@
     "price": 899,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://assets.ajio.com/medias/sys_master/root/20210403/gNdJ/6068669baeb269a9e3317d29/-473Wx593H-461069367-multi-MODEL.jpg",
     "productImageURLs": [
       "https://assets.ajio.com/medias/sys_master/root/20210403/Ag4v/6068668daeb269a9e3317b6a/-78Wx98H-461069367-multi-MODEL3.jpg",
@@ -2231,7 +2343,7 @@
     "searchTags": ["BELLA MODA", "Solid Dress"]
   },
   {
-    "productsid": "KGT08",
+    "productId": "KGT08",
     "name": "",
     "brand": "TALES & STORIES",
     "title": "Floral Print Fit & Flare Dress",
@@ -2241,7 +2353,8 @@
     "price": 499,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://assets.ajio.com/medias/sys_master/root/20220601/Y3av/6297179df997dd03e256dd62/-1117Wx1400H-469183425-pink-MODEL.jpg",
     "productImageURLs": [
       "https://assets.ajio.com/medias/sys_master/root/20220601/CV1l/62973b16f997dd03e2589a8f/-78Wx98H-469183425-pink-MODEL2.jpg",
@@ -2251,7 +2364,7 @@
     "searchTags": ["TALES & STORIES", "Floral Print Fit & Flare Dress"]
   },
   {
-    "productsid": "KGT09",
+    "productId": "KGT09",
     "name": "",
     "brand": "ED-A-MAMMA",
     "title": "Striped A-line Dress with Front Tie-Up",
@@ -2261,7 +2374,8 @@
     "price": 399,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://assets.ajio.com/medias/sys_master/root/20220210/7Rqb/62052aecaeb26921af92704f/-1117Wx1400H-441133935-yellow-MODEL.jpg",
     "productImageURLs": [
       "https://assets.ajio.com/medias/sys_master/root/20220531/UpMi/62954f5af997dd03e24c5f06/-78Wx98H-469185721-yellow-MODEL3.jpg",
@@ -2271,7 +2385,7 @@
     "searchTags": ["ED-A-MAMMA", "Striped A-line Dress with Front Tie-Up"]
   },
   {
-    "productsid": "KGW010",
+    "productId": "KGW010",
     "name": "",
     "brand": "HOPSCOTCH",
     "title": "Embellished Gown Dress",
@@ -2281,7 +2395,8 @@
     "price": 3999,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://assets.ajio.com/medias/sys_master/root/20220514/nw2S/627ec0d2f997dd03e2be6158/-473Wx593H-464330587-blue-MODEL.jpg",
     "productImageURLs": [
       "https://assets.ajio.com/medias/sys_master/root/20220514/4AHi/627ec0d2f997dd03e2be60d7/-78Wx98H-464330587-blue-MODEL4.jpg",
@@ -2291,7 +2406,7 @@
     "searchTags": ["HOPSCOTCH", "Embellished Gown Dress"]
   },
   {
-    "productsid": "KGW011",
+    "productId": "KGW011",
     "name": "",
     "brand": "APNISHA",
     "title": "Embellished Gown Dress",
@@ -2301,7 +2416,8 @@
     "price": 559,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://assets.ajio.com/medias/sys_master/root/20220302/ue5X/621f26abaeb26921afc23732/-473Wx593H-462745695-black-MODEL.jpg",
     "productImageURLs": [
       "https://assets.ajio.com/medias/sys_master/root/20220302/Xxw6/621f26abaeb26921afc23699/-78Wx98H-462745695-black-MODEL2.jpg",
@@ -2311,7 +2427,7 @@
     "searchTags": ["APNISHA", "Embellished Gown Dress"]
   },
   {
-    "productsid": "KGW0012",
+    "productId": "KGW0012",
     "name": "",
     "brand": "TOY BALLOON",
     "title": "Embellished Round-Neck Fit & Flare Dress",
@@ -2321,7 +2437,8 @@
     "price": 890,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://assets.ajio.com/medias/sys_master/root/20211211/yDhG/61b3b932aeb2690110080bad/-473Wx593H-463476471-pink-MODEL.jpg",
     "productImageURLs": [
       "https://assets.ajio.com/medias/sys_master/root/20211211/uLzl/61b3b932aeb2690110080b24/-78Wx98H-463476471-pink-MODEL2.jpg",
@@ -2331,7 +2448,7 @@
     "searchTags": ["TOY BALLOON", "Embellished Round-Neck Fit & Flare Dress"]
   },
   {
-    "productsid": "KGA013",
+    "productId": "KGA013",
     "name": "",
     "brand": "MUHURATAM",
     "title": "Checked A-line Dress",
@@ -2341,7 +2458,8 @@
     "price": 600,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://assets.ajio.com/medias/sys_master/root/20220321/9B6q/62383e32f997dd03e2205793/-473Wx593H-464027498-navy-MODEL.jpg",
     "productImageURLs": [
       "https://assets.ajio.com/medias/sys_master/root/20220321/BTJa/62383e32f997dd03e22056e7/-78Wx98H-464027498-navy-MODEL2.jpg",
@@ -2351,7 +2469,7 @@
     "searchTags": ["MUHURATAM", "Checked A-line Dress"]
   },
   {
-    "productsid": "KGA0014",
+    "productId": "KGA0014",
     "name": "",
     "brand": "RIO GIRLS",
     "title": "Striped A-line Dress with Drawstring Waist",
@@ -2361,7 +2479,8 @@
     "price": 599,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://assets.ajio.com/medias/sys_master/root/20210809/93Dz/611143757cdb8cb824ef5375/-473Wx593H-441125106-limeyellow-MODEL.jpg",
     "productImageURLs": [
       "https://assets.ajio.com/medias/sys_master/root/20210809/D6PW/6111445e7cdb8cb824ef55a0/-78Wx98H-441125106-limeyellow-MODEL2.jpg",
@@ -2371,7 +2490,7 @@
     "searchTags": ["RIO GIRLS", "Striped A-line Dress with Drawstring Waist"]
   },
   {
-    "productsid": "KAS0015",
+    "productId": "KAS0015",
     "name": "",
     "brand": "CUTECUMBER",
     "title": "Checks Shift Dress",
@@ -2381,7 +2500,8 @@
     "price": 499,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://assets.ajio.com/medias/sys_master/root/20220414/VeOY/6258329caeb26921af217f37/-1117Wx1400H-464178596-pink-MODEL.jpg",
     "productImageURLs": [
       "https://assets.ajio.com/medias/sys_master/root/20220414/yHQt/6258329caeb26921af217f38/-78Wx98H-464178596-pink-MODEL3.jpg",
@@ -2391,7 +2511,7 @@
     "searchTags": ["CUTECUMBER", "Checks Shift Dress"]
   },
   {
-    "productsid": "KB0001",
+    "productId": "KB0001",
     "name": "",
     "brand": "A.T.U.N.",
     "title": "Girls Violet & Silver-Toned Solid Round Neck Net Fit & Flare Dress",
@@ -2401,7 +2521,8 @@
     "price": 3999,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/17078866/2022/2/7/74b94d71-14c7-4d42-aecd-ae879651f10f1644254832982ATUNBurgundyNetDress1.jpg",
     "productImageURLs": [
       "https://assets.myntassets.com/h_68,q_90,w_52/v1/assets/images/17078866/2022/2/7/cd01ac63-3cdc-4a1b-bf95-39c74733b6641644254832859ATUNBurgundyNetDress3.jpg",
@@ -2414,7 +2535,7 @@
     ]
   },
   {
-    "productsid": "KBOO02",
+    "productId": "KBOO02",
     "name": "",
     "brand": "Tiber Taber",
     "title": "Boys White Printed Panchakattu",
@@ -2424,7 +2545,8 @@
     "price": 1716,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/8445083/2022/4/18/9530c347-5229-4a7d-a97e-4c18aa7feb781650284977694TiberTaberBoysWhitePrintedPanchakattu1.jpg",
     "productImageURLs": [
       "https://assets.myntassets.com/h_68,q_90,w_52/v1/assets/images/8445083/2022/4/18/48080e01-8251-4793-861c-6cfcd41141481650284977715TiberTaberBoysWhitePrintedPanchakattu2.jpg",
@@ -2434,7 +2556,7 @@
     "searchTags": ["Tiber Taber", "Boys White Printed Panchakattu"]
   },
   {
-    "productsid": "KBOO03",
+    "productId": "KBOO03",
     "name": "",
     "brand": "BABY GO",
     "title": "Boys Set of 2 Organic Cotton Printed Romper",
@@ -2444,7 +2566,8 @@
     "price": 599,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/productimage/2021/2/10/fb02363b-d4f3-40bf-a9ad-5309925995611612960323589-1.jpg",
     "productImageURLs": [
       "https://assets.myntassets.com/h_68,q_90,w_52/v1/assets/images/productimage/2021/2/10/1005df57-3635-43c9-94eb-d7d04f736ce31612960323670-5.jpg",
@@ -2455,7 +2578,7 @@
   },
 
   {
-    "productsid": "KBO004",
+    "productId": "KBO004",
     "name": "",
     "brand": "KID1",
     "title": "Boys Blue & Green Emroidered Pure Cotton Kurta with Dhoti Pants",
@@ -2465,7 +2588,8 @@
     "price": 1000,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/17170628/2022/2/16/1ba133f6-2c51-4e20-adc5-b7d4d3bcb2af1645003544029KID1BoysBlueLayeredPureCottonKurtawithDhotiPants1.jpg",
     "productImageURLs": [
       "https://assets.myntassets.com/h_68,q_90,w_52/v1/assets/images/17170628/2022/2/16/3ecda388-d60f-4372-9608-bae28d885c0b1645003543672KID1BoysBlueLayeredPureCottonKurtawithDhotiPants2.jpg",
@@ -2478,7 +2602,7 @@
     ]
   },
   {
-    "productsid": "KBO005",
+    "productId": "KBO005",
     "name": "",
     "brand": "Little Angels",
     "title": "Girls Off White Striped Sweater, Socks & Cap Set",
@@ -2488,7 +2612,8 @@
     "price": 879,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15336746/2021/10/12/1309672b-e3e8-45c3-8158-c43937fd2b4d1634026349942-Little-Angels-Girls-Off-White-Striped-Sweater-Socks--Cap-Set-1.jpg",
     "productImageURLs": [
       "https://assets.myntassets.com/h_68,q_90,w_52/v1/assets/images/15336746/2021/10/12/4dfbf099-9987-41e2-8849-2c1a25a019021634026349930-Little-Angels-Girls-Off-White-Striped-Sweater-Socks--Cap-Set-2.jpg",
@@ -2501,7 +2626,7 @@
     ]
   },
   {
-    "productsid": "KBO006",
+    "productId": "KBO006",
     "name": "",
     "brand": "United Colors of Benetton",
     "title": "Boys Navy Blue Denim Shorts",
@@ -2511,7 +2636,8 @@
     "price": 650,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/18224512/2022/5/13/d27e721c-7ba1-4836-9a23-6794ba258f8f1652386592517UnitedColorsofBenettonBoysNavyBlueDenimShorts1.jpg",
     "productImageURLs": [
       "https://assets.myntassets.com/h_68,q_90,w_52/v1/assets/images/18224512/2022/5/13/4432f5d1-7ad3-4cf5-964c-d6a8fd636c791652386592492UnitedColorsofBenettonBoysNavyBlueDenimShorts2.jpg",
@@ -2521,7 +2647,7 @@
     "searchTags": ["United Colors of Benetton", "Boys Navy Blue Denim Shorts"]
   },
   {
-    "productsid": "KBS007",
+    "productId": "KBS007",
     "name": "",
     "brand": "Wish Karo",
     "title": "Girls Pink & Cream-Coloured Floral Printed Fit and Flare Dress",
@@ -2530,8 +2656,9 @@
     "category": "KIDS",
     "offer": 10,
     "type": "",
+    "quantity": 10,
     "price": 999,
-    "merchantId": 0,
+    "merchantId": 9,
     "thumbnailURL": "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/productimage/2019/7/4/eac54459-ce0b-49fc-b4dc-69cb299df6fb1562224415390-1.jpg",
     "productImageURLs": [
       "https://assets.myntassets.com/h_68,q_90,w_52/v1/assets/images/productimage/2019/7/4/a759a9ce-4e88-4651-9a48-9bc8caa9cd311562224415410-2.jpg",
@@ -2544,7 +2671,7 @@
     ]
   },
   {
-    "productsid": "KBS008",
+    "productId": "KBS008",
     "name": "",
     "brand": "H&M",
     "title": "Girls Beige Sleeveless Romper Suit",
@@ -2553,8 +2680,9 @@
     "category": "KIDS",
     "offer": 10,
     "type": "",
+    "quantity": 10,
     "price": 479,
-    "merchantId": 0,
+    "merchantId": 9,
     "thumbnailURL": "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/18212762/2022/5/10/c096a987-2971-474f-aad0-4961fb1f7d5d1652177904123Sleevelessrompersuit1.jpg",
     "productImageURLs": [
       "https://assets.myntassets.com/h_68,q_90,w_52/v1/assets/images/18212762/2022/5/10/c096a987-2971-474f-aad0-4961fb1f7d5d1652177904123Sleevelessrompersuit1.jpg",
@@ -2564,7 +2692,7 @@
     "searchTags": ["H&M", "Girls Beige Sleeveless Romper Suit"]
   },
   {
-    "productsid": "KB009",
+    "productId": "KB009",
     "name": "",
     "brand": "TINYO",
     "title": "Infant Boys Blue & Grey Graphic Print Cotton Clothing Set",
@@ -2573,8 +2701,9 @@
     "category": "KIDS",
     "offer": 10,
     "type": "",
+    "quantity": 10,
     "price": 350,
-    "merchantId": 0,
+    "merchantId": 9,
     "thumbnailURL": "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/17887556/2022/5/28/607ed93d-1878-43e9-8148-8a77253bb6b31653735675104-TINYO-Boys-Blue--Grey-Printed-Shirt-with-Shorts-391653735674-1.jpg",
     "productImageURLs": [
       "https://assets.myntassets.com/h_68,q_90,w_52/v1/assets/images/17887556/2022/5/28/1361d483-62e7-4a0d-8d94-35477b52bf121653735675069-TINYO-Boys-Blue--Grey-Printed-Shirt-with-Shorts-391653735674-5.jpg",
@@ -2587,7 +2716,7 @@
     ]
   },
   {
-    "productsid": "KBS0010",
+    "productId": "KBS0010",
     "name": "",
     "brand": "max",
     "title": "Infant Boys White Printed Cotton Sleepsuit",
@@ -2596,8 +2725,9 @@
     "category": "KIDS",
     "offer": 10,
     "type": "",
+    "quantity": 10,
     "price": 699,
-    "merchantId": 0,
+    "merchantId": 9,
     "thumbnailURL": "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/18325768/2022/5/19/6a8f93c4-2a4e-4e1c-83bd-452fb5f991721652945877050maxInfantBoysWhitePrintedCottonSleepsuit1.jpg",
     "productImageURLs": [
       "https://assets.myntassets.com/h_68,q_90,w_52/v1/assets/images/18325768/2022/5/19/8f83b902-474e-4604-8b27-5a2fd7986daf1652945877015maxInfantBoysWhitePrintedCottonSleepsuit2.jpg",
@@ -2607,7 +2737,7 @@
     "searchTags": ["max", "Infant Boys White Printed Cotton Sleepsuit"]
   },
   {
-    "productsid": "KBS0011",
+    "productId": "KBS0011",
     "name": "",
     "brand": "Marks & Spencer",
     "title": "Kids Purple & White Checked Cotton Rompers",
@@ -2617,7 +2747,8 @@
     "price": 1499,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/16692962/2022/4/13/28661e17-0780-48ca-9ee4-9c95189102711649849417421-Marks--Spencer-Kids-Purple--White-Checked-Cotton-Rompers-216-1.jpg",
     "productImageURLs": [
       "https://assets.myntassets.com/h_68,q_90,w_52/v1/assets/images/16692962/2022/4/13/0de78c02-9221-4c45-872e-497cba3b6d3e1649849417408-Marks--Spencer-Kids-Purple--White-Checked-Cotton-Rompers-216-2.jpg",
@@ -2630,7 +2761,7 @@
     ]
   },
   {
-    "productsid": "KBS012",
+    "productId": "KBS012",
     "name": "",
     "brand": "H&M",
     "title": "Boys Yellow Zip-Through Hoodie",
@@ -2640,7 +2771,8 @@
     "price": 1599,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/18522602/2022/5/31/51368773-a9fa-4d52-9096-53c18d60d6881653935429541Zip-throughhoodie1.jpg",
     "productImageURLs": [
       "https://assets.myntassets.com/h_68,q_90,w_52/v1/assets/images/18522602/2022/5/31/46999960-3cfc-47e4-b5c5-21d80ac0dcde1653935429551Zip-throughhoodie2.jpg",
@@ -2650,7 +2782,7 @@
     "searchTags": ["H&M", "Boys Yellow Zip-Through Hoodie"]
   },
   {
-    "productsid": "KBS0013",
+    "productId": "KBS0013",
     "name": "",
     "brand": "Babymoon",
     "title": "Infants Blue & Green Peacock Feathers Inspired Photography Outfit With Headband",
@@ -2660,7 +2792,8 @@
     "price": 1000,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/17229230/2022/2/21/e75d75c4-8d87-4d48-9b5a-89b836d752881645425558214BabyPhotoshootProps1.jpg",
     "productImageURLs": [
       "https://assets.myntassets.com/h_68,q_90,w_52/v1/assets/images/17229230/2022/2/21/bb0a6a1d-aeee-40d1-b221-529c743e6d9e1645425557873BabyPhotoshootProps4.jpg",
@@ -2673,7 +2806,7 @@
     ]
   },
   {
-    "productsid": "KBS0014",
+    "productId": "KBS0014",
     "name": "",
     "brand": "AMIRTHA FASHION",
     "title": "Girls Gold & Green Embroidered & Woven Design Ready to Wear Lehenga Choli",
@@ -2683,7 +2816,8 @@
     "price": 1159,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/17994706/2022/4/22/8912da57-4418-4d13-a178-95626b84340a1650649765879AMIRTHAFASHIONGirlsGoldLehengaCholi1.jpg",
     "productImageURLs": [
       "https://assets.myntassets.com/h_68,q_90,w_52/v1/assets/images/17994706/2022/4/22/14a54359-162b-49e7-9ef0-3c4a582b41de1650649765888AMIRTHAFASHIONGirlsGoldLehengaCholi2.jpg",
@@ -2696,7 +2830,7 @@
     ]
   },
   {
-    "productsid": "KBS0015",
+    "productId": "KBS0015",
     "name": "",
     "brand": "MINI KLUB",
     "title": "Infant Boys Green & White Printed Romper",
@@ -2705,8 +2839,9 @@
     "category": "KIDS",
     "offer": 10,
     "type": "",
+    "quantity": 10,
     "price": 1100,
-    "merchantId": 0,
+    "merchantId": 9,
     "thumbnailURL": "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15259406/2021/8/26/2545bb44-afb4-4b86-a5ea-b083964a419b1629950332712MINIKLUB1.jpg",
     "productImageURLs": [
       "https://assets.myntassets.com/h_68,q_90,w_52/v1/assets/images/15259406/2021/8/26/d749d84d-c95f-43eb-8906-b030a40c8b7d1629950332475MINIKLUB3.jpg",
@@ -2716,7 +2851,7 @@
     "searchTags": ["MINI KLUB", "Infant Boys Green & White Printed Romper"]
   },
   {
-    "productsid": "KBS0016",
+    "productId": "KBS0016",
     "name": "",
     "brand": "Bitiya by Bhama",
     "title": "Girls Pink & Off White Ready to Wear Lehenga & Blouse",
@@ -2726,7 +2861,8 @@
     "price": 1300,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/18011758/2022/4/24/590b5be6-a5b4-44f9-aeb7-b3c8c04c24881650747120902BitiyabyBhamaGirlsPinkLehengaCholi1.jpg",
     "productImageURLs": [
       "https://assets.myntassets.com/h_68,q_90,w_52/v1/assets/images/18011758/2022/4/24/40038ef1-0385-4abe-b14e-1029422922c51650747120880BitiyabyBhamaGirlsPinkLehengaCholi5.jpg",
@@ -2739,7 +2875,7 @@
     ]
   },
   {
-    "productsid": "KBS0017",
+    "productId": "KBS0017",
     "name": "",
     "brand": "Naughty Ninos",
     "title": "Girls Pink & Yellow Striped Top with Palazzos",
@@ -2749,7 +2885,8 @@
     "price": 800,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/11212122/2022/5/12/1458a8d9-b050-40df-a1b7-761ae1a74ce61652353787500NaughtyNinosGirlsPinkYellowStripedTopwithPalazzos1.jpg",
     "productImageURLs": [
       "https://assets.myntassets.com/h_68,q_90,w_52/v1/assets/images/11212122/2022/5/12/ee1943f6-9346-4d76-8b25-02723c8bab3f1652353787520NaughtyNinosGirlsPinkYellowStripedTopwithPalazzos2.jpg",
@@ -2762,7 +2899,7 @@
     ]
   },
   {
-    "productsid": "KBS0018",
+    "productId": "KBS0018",
     "name": "",
     "brand": "Bella Moda",
     "title": "Maroon Sequined Embellished A-Line Dress with Sling Bag",
@@ -2772,7 +2909,8 @@
     "price": 699,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/16010282/2021/11/26/31659ab8-0cd0-4ae3-b18d-3f704e7c23f71637918447455-Bella-Moda-Girls-Dresses-8101637918446998-1.jpg",
     "productImageURLs": [
       "https://assets.myntassets.com/h_68,q_90,w_52/v1/assets/images/16010282/2021/11/26/f488a671-1704-44f1-a3a7-01b6d5e5b15e1637918447426-Bella-Moda-Girls-Dresses-8101637918446998-5.jpg",
@@ -2785,7 +2923,7 @@
     ]
   },
   {
-    "productsid": "KBS0019",
+    "productId": "KBS0019",
     "name": "",
     "brand": "H&M",
     "title": "Girls White & Blue Cropped Printed T-Shirt",
@@ -2795,7 +2933,8 @@
     "price": 499,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/17674646/2022/3/29/0ff85de1-4bb1-4d4b-861a-3d0fa173209d1648558746553CroppedprintedT-shirt1.jpg",
     "productImageURLs": [
       "https://assets.myntassets.com/h_68,q_90,w_52/v1/assets/images/17674646/2022/3/29/00582325-d371-4c8d-86a2-b68298e7aba01648558746536CroppedprintedT-shirt4.jpg",
@@ -2805,7 +2944,7 @@
     "searchTags": ["H&M", "Girls White & Blue Cropped Printed T-Shirt"]
   },
   {
-    "productsid": "KBS0020",
+    "productId": "KBS0020",
     "name": "",
     "brand": "HRX by Hrithik Roshan",
     "title": "HRX By Hrithik Roshan U-17 Active Girls Jet Black Rapid-Dry Solid Track Suit",
@@ -2815,7 +2954,8 @@
     "price": 899,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15177836/2021/12/8/5b28491e-cf3d-41a8-b70f-ac65a22cdd091638950312033-HRX-by-Hrithik-Roshan-Girls-Tracksuits-8141638950311193-1.jpg",
     "productImageURLs": [
       "https://assets.myntassets.com/h_68,q_90,w_52/v1/assets/images/15177836/2021/12/8/ff0a42ad-98b9-4db0-96b6-30b0efefadb71638950311995-HRX-by-Hrithik-Roshan-Girls-Tracksuits-8141638950311193-5.jpg",
@@ -2828,7 +2968,7 @@
     ]
   },
   {
-    "productsid": "TOY1",
+    "productId": "TOY1",
     "name": "",
     "brand": "4AJ BAZAAR ",
     "title": "Sea Animal Fish Kids Baby Birthday Gift (18cm) - 18 inch  (Multicolor)",
@@ -2837,6 +2977,7 @@
     "category": "Kids Toys",
     "offer": 10,
     "type": "",
+    "quantity": 10,
     "price": 299,
     "tumbnail_URL": "https://rukminim1.flixcart.com/image/416/416/kuwzssw0/stuffed-toy/9/j/s/sea-animal-fish-kids-baby-birthday-gift-18cm-18-4aj-bazaar-original-imag7xgstgn2bmwj.jpeg?q=70",
     "productImageURLs": [
@@ -2845,7 +2986,7 @@
     "searchTags": ["Soft Toys", "Toys and Games", "Animals Soft Tags"]
   },
   {
-    "productsid": "TOY2",
+    "productId": "TOY2",
     "name": "",
     "brand": "KCCOLLECTION ",
     "title": "Children Beauty Makeup Kit ",
@@ -2854,8 +2995,9 @@
     "category": "Kids Toys",
     "offer": 10,
     "type": "",
+    "quantity": 10,
     "price": 409,
-    "merchantId": 0,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/416/416/kv9urgw0/role-play-toy/f/m/r/branded-children-beauty-makeup-kit-pretend-play-cosmetic-set-toy-original-imag87knwufghheg.jpeg?q=70",
     "productImageURLs": [
       "https://rukminim1.flixcart.com/image/128/128/kv9urgw0/role-play-toy/f/m/r/branded-children-beauty-makeup-kit-pretend-play-cosmetic-set-toy-original-imag87knwufghheg.jpeg?q=70",
@@ -2865,7 +3007,7 @@
     "searchTags": ["Soft Toys", "Toys and Games", "Animals Soft Tags"]
   },
   {
-    "productsid": "TOY3",
+    "productId": "TOY3",
     "name": "",
     "brand": "Hum Enterprise",
     "title": "Hum Enterprise Blue Kitchen  (Blue)",
@@ -2875,7 +3017,8 @@
     "price": 399,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/416/416/kqe3low0/doll-doll-house/k/d/n/blue-kitcen-set-vedanshi-original-imag4f5dvk79n6dv.jpeg?q=70",
     "productImageURLs": [
       "https://rukminim1.flixcart.com/image/416/416/kqe3low0/doll-doll-house/k/d/n/blue-kitcen-set-vedanshi-original-imag4f5dvk79n6dv.jpeg?q=70",
@@ -2885,7 +3028,7 @@
     "searchTags": ["Soft Toys", "Toys and Games", "Animals Soft Tags"]
   },
   {
-    "productsid": "TOY4",
+    "productId": "TOY4",
     "name": "",
     "brand": "SSTOYS 3D ",
     "title": "Fast Modern Car  (Multicolor)",
@@ -2893,9 +3036,10 @@
     "rating": 3.5,
     "offer": 10,
     "type": "",
+    "quantity": 10,
     "category": "Remote Control Car",
     "price": 251,
-    "merchantId": 0,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/128/128/kmkxbww0/remote-control-toy/n/u/4/3d-fast-modern-car-sstoys-original-imagfgdgamejgbwp.jpeg?q=70",
     "productImageURLs": [
       "https://rukminim1.flixcart.com/image/128/128/kmkxbww0/remote-control-toy/n/u/4/3d-fast-modern-car-sstoys-original-imagfgdgamejgbwp.jpeg?q=70",
@@ -2907,7 +3051,7 @@
     "searchTags": ["Soft Toys", "Toys and Games", "Animals Soft Tags"]
   },
   {
-    "productsid": "TOY5",
+    "productId": "TOY5",
     "name": "",
     "brand": "LooknlveSports ",
     "title": " Baby Musical Toy ",
@@ -2916,8 +3060,9 @@
     "category": "Kids Toys",
     "offer": 10,
     "type": "",
+    "quantity": 10,
     "price": 339,
-    "merchantId": 0,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/416/416/k7531jk0/musical-toy/e/m/4/future-09-musical-stunt-car-rotate-360-with-flashing-light-music-original-imafpg2r5tm3rp6w.jpeg?q=70",
     "productImageURLs": [
       "https://rukminim1.flixcart.com/image/416/416/k7531jk0/musical-toy/e/m/4/future-09-musical-stunt-car-rotate-360-with-flashing-light-music-original-imafpg2r5tm3rp6w.jpeg?q=70",
@@ -2926,7 +3071,7 @@
     "searchTags": ["Soft Toys", "Toys and Games", "Animals Soft Tags"]
   },
   {
-    "productsid": "TOY6",
+    "productId": "TOY6",
     "name": "",
     "brand": "Little's Junior Stacking ",
     "title": "Little's Junior Stacking Ring Toys for Kids,  (Multicolor)",
@@ -2935,8 +3080,9 @@
     "category": "Kids Toys",
     "offer": 10,
     "type": "",
+    "quantity": 10,
     "price": 156,
-    "merchantId": 0,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/416/416/knknc7k0/stacking-toy/f/o/5/junior-stacking-ring-toys-for-kids-little-s-original-imag27whhtxf9pgu.jpeg?q=70",
     "productImageURLs": [
       "https://rukminim1.flixcart.com/image/416/416/knknc7k0/stacking-toy/f/o/5/junior-stacking-ring-toys-for-kids-little-s-original-imag27whhtxf9pgu.jpeg?q=70",
@@ -2949,7 +3095,7 @@
     "searchTags": ["Soft Toys", "Toys and Games", "Animals Soft Tags"]
   },
   {
-    "productsid": "TOY7",
+    "productId": "TOY7",
     "name": "",
     "brand": "Little's Light ",
     "title": "Soft Balls",
@@ -2958,8 +3104,9 @@
     "category": "Kids Toys",
     "offer": 10,
     "type": "",
+    "quantity": 10,
     "price": 210,
-    "merchantId": 0,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/128/128/kn7sdjk0/baby-rattle/s/s/n/light-weight-stuffed-plush-soft-baby-play-ball-with-rattle-sound-original-imagfxt8pvqqnwzu.jpeg?q=70",
     "productImageURLs": [
       "https://rukminim1.flixcart.com/image/128/128/kn7sdjk0/baby-rattle/s/s/n/light-weight-stuffed-plush-soft-baby-play-ball-with-rattle-sound-original-imagfxt8pvqqnwzu.jpeg?q=70",
@@ -2971,7 +3118,7 @@
     "searchTags": ["Soft Toys", "Toys and Games", "Animals Soft Tags"]
   },
   {
-    "productsid": "TOY8",
+    "productId": "TOY8",
     "name": "",
     "brand": "Balaji International",
     "title": "General Play",
@@ -2980,8 +3127,9 @@
     "category": "Kids Toys",
     "offer": 10,
     "type": "",
+    "quantity": 10,
     "price": 259,
-    "merchantId": 0,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/416/416/kdj4xow0/ball/q/5/t/100-8-baby-pool-2020-standard-16-baby-pool-balls-16-pool-ball-original-imafuf6dsv5xxz3j.jpeg?q=70",
     "productImageURLs": [
       "https://rukminim1.flixcart.com/image/416/416/kdj4xow0/ball/q/5/t/100-8-baby-pool-2020-standard-16-baby-pool-balls-16-pool-ball-original-imafuf6dsv5xxz3j.jpeg?q=70",
@@ -2990,7 +3138,7 @@
     "searchTags": ["Soft Toys", "Toys and Games", "Animals Soft Tags"]
   },
   {
-    "productsid": "TOY9",
+    "productId": "TOY9",
     "name": "",
     "brand": "Zica CATTERPILLAR",
     "title": "TOY FOR BABIES",
@@ -3000,7 +3148,8 @@
     "price": 181,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/416/416/j5e7afk0/stuffed-toy/u/s/z/catterpillar-033-90-zica-original-imaevzs7ppx352k5.jpeg?q=70",
     "productImageURLs": [
       "https://rukminim1.flixcart.com/image/416/416/j5e7afk0/stuffed-toy/u/s/z/catterpillar-033-90-zica-original-imaevzs7ppx352k5.jpeg?q=70"
@@ -3008,7 +3157,7 @@
     "searchTags": ["Soft Toys", "Toys and Games", "Animals Soft Tags"]
   },
   {
-    "productsid": "TOY10",
+    "productId": "TOY10",
     "name": "",
     "brand": "Dallao Waterproof ",
     "title": "Remote Control Monster Truck & Rock Crawlers",
@@ -3017,8 +3166,9 @@
     "category": "Kids Toys",
     "offer": 10,
     "type": "",
+    "quantity": 10,
     "price": 965,
-    "merchantId": 0,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/416/416/kg9qbgw0/remote-control-toy/4/7/u/1-20-powerful-rechargeable-battery-2-4-ghz-rock-crawler-monster-original-imafwjwzgwzxm4we.jpeg?q=70",
     "productImageURLs": [
       "https://rukminim1.flixcart.com/image/416/416/kg9qbgw0/remote-control-toy/4/7/u/1-20-powerful-rechargeable-battery-2-4-ghz-rock-crawler-monster-original-imafwjwzgwzxm4we.jpeg?q=70",
@@ -3030,7 +3180,7 @@
     "searchTags": ["Soft Toys", "Toys and Games", "Animals Soft Tags"]
   },
   {
-    "productsid": "TOY11",
+    "productId": "TOY11",
     "name": "",
     "brand": "Reyansh Collection ",
     "title": "Brain Teasers",
@@ -3039,8 +3189,9 @@
     "category": "Kids Toys",
     "offer": 10,
     "type": "",
+    "quantity": 10,
     "price": 159,
-    "merchantId": 0,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/416/416/kk5rgy80/puzzle/h/p/n/1-water-gamepad-game-toy-for-kids-pack-of-1-reyansh-collection-original-imafzksxk5zx3fbf.jpeg?q=70",
     "productImageURLs": [
       "https://rukminim1.flixcart.com/image/416/416/kk5rgy80/puzzle/h/p/n/1-water-gamepad-game-toy-for-kids-pack-of-1-reyansh-collection-original-imafzksxk5zx3fbf.jpeg?q=70",
@@ -3050,7 +3201,7 @@
     "searchTags": ["Soft Toys", "Toys and Games", "Animals Soft Tags"]
   },
   {
-    "productsid": "TOY12",
+    "productId": "TOY12",
     "name": "",
     "brand": "Toyswala ",
     "title": "water ring game_1",
@@ -3059,8 +3210,9 @@
     "category": "water ring game_1",
     "offer": 10,
     "type": "",
+    "quantity": 10,
     "price": 199,
-    "merchantId": 0,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/416/416/ktx9si80/board-game/u/e/e/water-ring-game-1-toyswala-original-imag75z9m3agafar.jpeg?q=70",
     "productImageURLs": [
       "https://rukminim1.flixcart.com/image/416/416/ktx9si80/board-game/u/e/e/water-ring-game-1-toyswala-original-imag75z9m3agafar.jpeg?q=70",
@@ -3070,7 +3222,7 @@
     "searchTags": ["Soft Toys", "Toys and Games", "Animals Soft Tags"]
   },
   {
-    "productsid": "TOY13",
+    "productId": "TOY13",
     "name": "",
     "brand": "Kidzoo",
     "title": " India Map Wooden Puzzle",
@@ -3079,8 +3231,9 @@
     "category": "Kids Toys",
     "offer": 10,
     "type": "",
+    "quantity": 10,
     "price": 539,
-    "merchantId": 0,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/416/416/kkmwr680/puzzle/n/4/w/20-india-map-wooden-puzzle-with-important-picture-india-map-for-original-imafzy56kqyjxhku.jpeg?q=70",
     "productImageURLs": [
       "https://rukminim1.flixcart.com/image/416/416/kkmwr680/puzzle/n/4/w/20-india-map-wooden-puzzle-with-important-picture-india-map-for-original-imafzy56kqyjxhku.jpeg?q=70",
@@ -3092,7 +3245,7 @@
     "searchTags": ["Soft Toys", "Toys and Games", "Animals Soft Tags"]
   },
   {
-    "productsid": "TOY14",
+    "productId": "TOY14",
     "name": "",
     "brand": "Kandle ",
     "title": " Connect 4 in A Row Game",
@@ -3102,7 +3255,8 @@
     "price": 275,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/416/416/ktop5e80/board-game/9/j/b/connect-4-in-a-row-game-connect-game-portable-four-up-board-original-imag6z4xtpj2gcbz.jpeg?q=70",
     "productImageURLs": [
       "https://rukminim1.flixcart.com/image/416/416/ktop5e80/board-game/9/j/b/connect-4-in-a-row-game-connect-game-portable-four-up-board-original-imag6z4xtpj2gcbz.jpeg?q=70",
@@ -3114,7 +3268,7 @@
     "searchTags": ["Soft Toys", "Toys and Games", "Animals Soft Tags"]
   },
   {
-    "productsid": "TOY15",
+    "productId": "TOY15",
     "name": "",
     "brand": "WECAN FASHION ",
     "title": " Magnetic Educational Toys Travel Chess Set ",
@@ -3123,8 +3277,9 @@
     "category": "CHESS",
     "offer": 10,
     "type": "",
+    "quantity": 10,
     "price": 390,
-    "merchantId": 0,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/416/416/kesv0y80/board-game/b/p/j/magnetic-chess-board-with-folding-smooth-surface-black-and-white-original-imafvehagtzatcat.jpeg?q=70",
     "productImageURLs": [
       "https://rukminim1.flixcart.com/image/416/416/kesv0y80/board-game/b/p/j/magnetic-chess-board-with-folding-smooth-surface-black-and-white-original-imafvehagtzatcat.jpeg?q=70",
@@ -3133,7 +3288,7 @@
     "searchTags": ["Soft Toys", "Toys and Games", "Animals Soft Tags"]
   },
   {
-    "productsid": "TOY16",
+    "productId": "TOY16",
     "name": "",
     "brand": "Synlark ",
     "title": "Boxing Kit with Gloves and Head Guard",
@@ -3142,8 +3297,9 @@
     "category": "Kids Toys",
     "offer": 10,
     "type": "",
+    "quantity": 10,
     "price": 799,
-    "merchantId": 0,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/416/416/l09w8sw0/toy-sport/b/1/q/3-boxing-kit-with-gloves-and-head-guard-52-cms-filled-with-original-imagc3nakskqtbyz.jpeg?q=70",
     "productImageURLs": [
       "https://rukminim1.flixcart.com/image/416/416/l09w8sw0/toy-sport/b/1/q/3-boxing-kit-with-gloves-and-head-guard-52-cms-filled-with-original-imagc3nakskqtbyz.jpeg?q=70",
@@ -3154,7 +3310,7 @@
     "searchTags": ["Soft Toys", "Toys and Games", "Animals Soft Tags"]
   },
   {
-    "productsid": "TOY17",
+    "productId": "TOY17",
     "name": "",
     "brand": "Wishkey ",
     "title": " Sports Super Archery Bow And Arrow Set ",
@@ -3163,8 +3319,9 @@
     "category": "Bows & Arrows",
     "offer": 10,
     "type": "",
+    "quantity": 10,
     "price": 949,
-    "merchantId": 0,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/416/416/jy4q3680/toy-weapon/v/3/z/sports-super-archery-bow-and-arrow-set-for-kids-with-dart-target-original-imafgfpyzf9wkgjw.jpeg?q=70",
     "productImageURLs": [
       "https://rukminim1.flixcart.com/image/416/416/jy4q3680/toy-weapon/v/3/z/sports-super-archery-bow-and-arrow-set-for-kids-with-dart-target-original-imafgfpyzf9wkgjw.jpeg?q=70",
@@ -3176,7 +3333,7 @@
     "searchTags": ["Soft Toys", "Toys and Games", "Animals Soft Tags"]
   },
   {
-    "productsid": "TOY18",
+    "productId": "TOY18",
     "name": "",
     "brand": "Games Blokus ",
     "title": "Fast Fun Educational Board Games",
@@ -3185,8 +3342,9 @@
     "category": "Blokus Fast Fun",
     "offer": 10,
     "type": "",
+    "quantity": 10,
     "price": 599,
-    "merchantId": 0,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/416/416/jg15aq80/board-game/a/3/u/blokus-fast-fun-games-original-imaf3hmhcxfhqh8u.jpeg?q=70",
     "productImageURLs": [
       "https://rukminim1.flixcart.com/image/128/128/jg15aq80/board-game/a/3/u/blokus-fast-fun-games-original-imaf3hmhcxfhqh8u.jpeg?q=70",
@@ -3196,7 +3354,7 @@
     "searchTags": ["Soft Toys", "Toys and Games", "Animals Soft Tags"]
   },
   {
-    "productsid": "TOY19",
+    "productId": "TOY19",
     "name": "",
     "brand": "Smartgames ",
     "title": "Puzzle With Colours ",
@@ -3205,8 +3363,9 @@
     "category": "Kids Toys",
     "offer": 10,
     "type": "",
+    "quantity": 10,
     "price": 629,
-    "merchantId": 0,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/416/416/jg5fma80/puzzle/w/5/s/2-puzzle-with-colours-smartgames-original-imaf4gck35yyzdsd.jpeg?q=70",
     "productImageURLs": [
       "https://rukminim1.flixcart.com/image/416/416/jg5fma80/puzzle/w/5/s/2-puzzle-with-colours-smartgames-original-imaf4gck35yyzdsd.jpeg?q=70",
@@ -3215,7 +3374,7 @@
     "searchTags": ["Soft Toys", "Toys and Games", "Animals Soft Tags"]
   },
   {
-    "productsid": "TOY20",
+    "productId": "TOY20",
     "name": "",
     "brand": "Smartgames",
     "title": "Little Red Riding Hood Deluxe",
@@ -3223,9 +3382,10 @@
     "rating": 4.8,
     "offer": 10,
     "type": "",
+    "quantity": 10,
     "category": "Kids Toys",
     "price": 1495,
-    "merchantId": 0,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/416/416/k4d27ww0/outdoor-toy/u/m/b/ne-sg-little-red-riding-hood-smartgames-original-imafnaf8wvfx7fhy.jpeg?q=70",
     "productImageURLs": [
       "https://rukminim1.flixcart.com/image/128/128/k4d27ww0/outdoor-toy/u/m/b/ne-sg-little-red-riding-hood-smartgames-original-imafnaf8wvfx7fhy.jpeg?q=70",
@@ -3238,7 +3398,7 @@
     "searchTags": ["Soft Toys", "Toys and Games", "Animals Soft Tags"]
   },
   {
-    "productsid": "TOY21",
+    "productId": "TOY21",
     "name": "",
     "brand": "Smartgames",
     "title": "Little Piggies Activity Kit ",
@@ -3247,8 +3407,9 @@
     "category": "Rhythm & Pattern Recognition",
     "offer": 10,
     "type": "",
+    "quantity": 10,
     "price": 1420,
-    "merchantId": 0,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/416/416/jf1fafk0/learning-toy/z/2/h/three-little-piggies-smartgames-original-imaf3ku8eezhvjdf.jpeg?q=70",
     "productImageURLs": [
       "https://rukminim1.flixcart.com/image/416/416/jf1fafk0/learning-toy/z/2/h/three-little-piggies-smartgames-original-imaf3ku8eezhvjdf.jpeg?q=70",
@@ -3257,7 +3418,7 @@
     "searchTags": ["Soft Toys", "Toys and Games", "Animals Soft Tags"]
   },
   {
-    "productsid": "TOY22",
+    "productId": "TOY22",
     "name": "",
     "brand": "CrazyBuy ",
     "title": "Magic Practice Copybook for Kids",
@@ -3267,7 +3428,8 @@
     "price": 197,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/416/416/l2f20sw0/learning-toy/d/h/l/magic-practice-copybook-for-kids-book-that-can-be-reused-original-imagdrz7gmgmtgqb.jpeg?q=70",
     "productImageURLs": [
       "https://rukminim1.flixcart.com/image/416/416/l2f20sw0/learning-toy/d/h/l/magic-practice-copybook-for-kids-book-that-can-be-reused-original-imagdrz7gmgmtgqb.jpeg?q=70",
@@ -3279,7 +3441,7 @@
     "searchTags": ["Soft Toys", "Toys and Games", "Animals Soft Tags"]
   },
   {
-    "productsid": "TOY23",
+    "productId": "TOY23",
     "name": "",
     "brand": "Miss & Chief ",
     "title": "Superman Licensed 2 in 1 carrom board",
@@ -3289,7 +3451,8 @@
     "price": 359,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/128/128/ktd9mkw0/board-game/4/t/3/superman-licensed-2-in-1-carrom-board-and-ludo-board-for-kids-original-imag6q5bnecfkpks.jpeg?q=70",
     "productImageURLs": [
       "https://rukminim1.flixcart.com/image/128/128/ktd9mkw0/board-game/4/t/3/superman-licensed-2-in-1-carrom-board-and-ludo-board-for-kids-original-imag6q5bnecfkpks.jpeg?q=70",
@@ -3302,7 +3465,7 @@
     "searchTags": ["Soft Toys", "Toys and Games", "Animals Soft Tags"]
   },
   {
-    "productsid": "TOY24",
+    "productId": "TOY24",
     "name": "",
     "brand": "Miss & Chief ",
     "title": "Batman Licensed height adjustable basket and ball",
@@ -3312,7 +3475,8 @@
     "price": 755,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/416/416/ktyp8cw0/toy-sport/p/v/v/hsg-5040-basketball-miss-chief-original-imag77fd4byn7qzf.jpeg?q=70",
     "productImageURLs": [
       "https://rukminim1.flixcart.com/image/416/416/ktyp8cw0/toy-sport/p/v/v/hsg-5040-basketball-miss-chief-original-imag77fd4byn7qzf.jpeg?q=70",
@@ -3325,7 +3489,7 @@
     "searchTags": ["Soft Toys", "Toys and Games", "Animals Soft Tags"]
   },
   {
-    "productsid": "TOY25",
+    "productId": "TOY25",
     "name": "",
     "brand": "Miss & Chief ",
     "title": "Flipkart Tom and Jerry ",
@@ -3334,8 +3498,9 @@
     "category": "Kids Toys",
     "offer": 10,
     "type": "",
+    "quantity": 10,
     "price": 818,
-    "merchantId": 0,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/128/128/ktszgy80/learning-toy/i/u/v/tom-jerry-licensed-8-in-1-easel-board-with-magnetic-alphabets-original-imag72hzvchfpkf6.jpeg?q=70",
     "productImageURLs": [
       "https://rukminim1.flixcart.com/image/128/128/ktszgy80/learning-toy/i/u/v/tom-jerry-licensed-8-in-1-easel-board-with-magnetic-alphabets-original-imag72hzvchfpkf6.jpeg?q=70",
@@ -3347,7 +3512,7 @@
     "searchTags": ["Soft Toys", "Toys and Games", "Animals Soft Tags"]
   },
   {
-    "productsid": "TOY26",
+    "productId": "TOY26",
     "name": "",
     "brand": "TITIRANGI",
     "title": "Mini Puzzle Foam Mat for Kids",
@@ -3356,8 +3521,9 @@
     "category": "Kids Toys",
     "offer": 10,
     "type": "",
+    "quantity": 10,
     "price": 163,
-    "merchantId": 0,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/128/128/kly2aa80/puzzle/q/p/w/36-36-pieces-mini-puzzle-foam-mat-for-kids-interlocking-learning-original-imagyyguj6zxkqvv.jpeg?q=70",
     "productImageURLs": [
       "https://rukminim1.flixcart.com/image/128/128/kly2aa80/puzzle/q/p/w/36-36-pieces-mini-puzzle-foam-mat-for-kids-interlocking-learning-original-imagyyguj6zxkqvv.jpeg?q=70",
@@ -3369,7 +3535,7 @@
     "searchTags": ["Soft Toys", "Toys and Games", "Animals Soft Tags"]
   },
   {
-    "productsid": "TOY27",
+    "productId": "TOY27",
     "name": "",
     "brand": "krenz Catan ",
     "title": "Trade Build Settle Board Game",
@@ -3378,8 +3544,9 @@
     "category": "Kids Toys",
     "offer": 10,
     "type": "",
+    "quantity": 10,
     "price": 798,
-    "merchantId": 0,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/128/128/kt8zb0w0/board-game/g/f/d/catan-trade-build-settle-krenz-original-imag6nymmuauzqaa.jpeg?q=70",
     "productImageURLs": [
       "https://rukminim1.flixcart.com/image/128/128/kt8zb0w0/board-game/g/f/d/catan-trade-build-settle-krenz-original-imag6nymmuauzqaa.jpeg?q=70",
@@ -3392,7 +3559,7 @@
     "searchTags": ["Soft Toys", "Toys and Games", "Animals Soft Tags"]
   },
   {
-    "productsid": "TOY28",
+    "productId": "TOY28",
     "name": "",
     "brand": "MOONZA",
     "title": "Magnetic Balls Magnets Toys Sculpture Building",
@@ -3401,8 +3568,9 @@
     "category": "Kids Toys",
     "offer": 10,
     "type": "",
+    "quantity": 10,
     "price": 625,
-    "merchantId": 0,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/416/416/kk2wl8w0/puzzle/q/b/o/216-multi-colored-balls-for-kids-degree-round-magnetic-stainless-original-imafzhzcyvys2qbn.jpeg?q=70",
     "productImageURLs": [
       "https://rukminim1.flixcart.com/image/416/416/kk2wl8w0/puzzle/q/b/o/216-multi-colored-balls-for-kids-degree-round-magnetic-stainless-original-imafzhzcyvys2qbn.jpeg?q=70",
@@ -3411,7 +3579,7 @@
     "searchTags": ["Soft Toys", "Toys and Games", "Animals Soft Tags"]
   },
   {
-    "productsid": "TOY29",
+    "productId": "TOY29",
     "name": "",
     "brand": "R H lifestyle ",
     "title": "Puzzle Wooden Toys 80 Pieces",
@@ -3420,8 +3588,9 @@
     "category": "Kids Toys",
     "offer": 10,
     "type": "",
+    "quantity": 10,
     "price": 693,
-    "merchantId": 0,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/128/128/jwgple80/learning-toy/m/d/j/puzzle-wooden-toys-80-pieces-educational-toys-kids-3-years-r-h-original-imafh43wg4crtu3n.jpeg?q=70",
     "productImageURLs": [
       "https://rukminim1.flixcart.com/image/416/416/jwgple80/learning-toy/m/d/j/puzzle-wooden-toys-80-pieces-educational-toys-kids-3-years-r-h-original-imafh43wjd2tgjhb.jpeg?q=70",
@@ -3433,7 +3602,7 @@
     "searchTags": ["Soft Toys", "Toys and Games", "Animals Soft Tags"]
   },
   {
-    "productsid": "TOY30",
+    "productId": "TOY30",
     "name": "",
     "brand": "NIYAMAT",
     "title": "Imaginative Arts Barbie Pottery Wheel Game ",
@@ -3442,8 +3611,9 @@
     "category": "Kids Toys",
     "offer": 10,
     "type": "",
+    "quantity": 10,
     "price": 997,
-    "merchantId": 0,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/128/128/ktaeqvk0/art-craft-kit/w/z/b/3-imaginative-arts-barbie-pottery-wheel-game-for-age-8-game-original-imag6z3hymaf5ung.jpeg?q=70",
     "productImageURLs": [
       "https://rukminim1.flixcart.com/image/128/128/ktaeqvk0/art-craft-kit/w/z/b/3-imaginative-arts-barbie-pottery-wheel-game-for-age-8-game-original-imag6z3hymaf5ung.jpeg?q=70",
@@ -3455,7 +3625,7 @@
     "searchTags": ["Soft Toys", "Toys and Games", "Animals Soft Tags"]
   },
   {
-    "productsid": "M1",
+    "productId": "M1",
     "name": "",
     "brand": "Eyebogler",
     "title": "Striped Men Polo Neck",
@@ -3465,13 +3635,14 @@
     "price": 339,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/612/612/kl5hh8w0hlty2aw/t-shirt/c/l/1/xl-t285hs-as7whdnmt-eyebogler-original-imagyebxus3zu9sd.jpeg?q=70",
     "productImageURLs": [],
     "searchTags": ["T-shirt", "Mens cloths", "Mens", "Mens wear"]
   },
   {
-    "productsid": "M2",
+    "productId": "M2",
     "name": "",
     "brand": "Damensch",
     "title": "Solid Men Round Neck Green T-Shirt",
@@ -3481,13 +3652,14 @@
     "price": 499,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/832/832/kyhlfgw0/t-shirt/g/k/r/l-dsldbatemun-damensch-original-imagappe5jcj6jwf.jpeg?q=70",
     "productImageURLs": [],
     "searchTags": ["T-shirt", "Mens cloths", "Mens", "Mens wear"]
   },
   {
-    "productsid": "M3",
+    "productId": "M3",
     "name": "",
     "brand": "Rundown",
     "title": "Solid Men Polo Neck Orange T-Shirt",
@@ -3497,13 +3669,14 @@
     "price": 439,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/832/832/kruyw7k0/t-shirt/m/p/m/l-rd2020rt-rundown-original-imag5jvkyhzzsd2m.jpeg?q=70",
     "productImageURLs": [],
     "searchTags": ["T-shirt", "Mens cloths", "Mens", "Mens wear"]
   },
   {
-    "productsid": "M4",
+    "productId": "M4",
     "name": "",
     "brand": "MANHOOD",
     "title": "Solid Men Polo Neck Multicolor T-Shirt",
@@ -3513,13 +3686,14 @@
     "price": 449,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/832/832/kwjkuq80/t-shirt/w/t/3/s-mcombo2-manhood-original-imag972tqysrg5yf.jpeg?q=70",
     "productImageURLs": [],
     "searchTags": ["T-shirt", "Mens cloths", "Mens", "Mens wear"]
   },
   {
-    "productsid": "M5",
+    "productId": "M5",
     "name": "",
     "brand": "Kamedge",
     "title": "Solid Men Round Neck Grey T-Shirt",
@@ -3529,13 +3703,14 @@
     "price": 275,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/832/832/kflftzk0-0/t-shirt/s/e/a/l-km-round-neck-grey-kamedge-original-imafwyfabwmtbu9r.jpeg?q=70",
     "productImageURLs": [],
     "searchTags": ["T-shirt", "Mens cloths", "Mens", "Mens wear"]
   },
   {
-    "productsid": "M6",
+    "productId": "M6",
     "name": "",
     "brand": "R Heaven Fashions ",
     "title": "Printed Men Round Neck Maroon T-Shirt",
@@ -3545,13 +3720,14 @@
     "price": 279,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/832/832/kex5ci80-0/t-shirt/j/f/z/xxl-jrknevergvpup025-jorkk-original-imafvhzbaz26hfne.jpeg?q=70",
     "productImageURLs": [],
     "searchTags": ["T-shirt", "Mens cloths", "Mens", "Mens wear"]
   },
   {
-    "productsid": "M7",
+    "productId": "M7",
     "name": "",
     "brand": "PROVOGUE",
     "title": "Graphic Print Men Round Neck Navy Blue T-Shirt",
@@ -3561,13 +3737,14 @@
     "price": 349,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/832/832/l1v1uvk0/t-shirt/p/6/0/s-prvss22cn014d-provogue-original-imagdc6hrmccfpaf.jpeg?q=70",
     "productImageURLs": [],
     "searchTags": ["T-shirt", "Mens cloths", "Mens", "Mens wear"]
   },
   {
-    "productsid": "M8",
+    "productId": "M8",
     "name": "",
     "brand": "BEWAKOOF",
     "title": "Solid Men Round Neck White T-Shirt",
@@ -3577,13 +3754,14 @@
     "price": 369,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/832/832/l2rwzgw0/t-shirt/n/6/u/-original-imagefbhdptymjar.jpeg?q=70",
     "productImageURLs": [],
     "searchTags": ["T-shirt", "Mens cloths", "Mens", "Mens wear"]
   },
   {
-    "productsid": "M9",
+    "productId": "M9",
     "name": "",
     "brand": "R Heaven Fashions ",
     "title": "Printed Men Round Neck Yellow T-Shirt",
@@ -3593,13 +3771,14 @@
     "price": 279,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/832/832/k3erngw0/t-shirt/u/p/k/xxl-rhfsmilekdl0125-r-heaven-fashions-original-imafmjuhychutmby.jpeg?q=70",
     "productImageURLs": [],
     "searchTags": ["T-shirt", "Mens cloths", "Mens", "Mens wear"]
   },
   {
-    "productsid": "M10",
+    "productId": "M10",
     "name": "",
     "brand": "ChiChhore ",
     "title": "Striped Men Round Neck Light Blue T-Shirt",
@@ -3609,14 +3788,15 @@
     "price": 379,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/832/832/kn6cxow0/t-shirt/j/z/z/xxl-ch01wstripblue-chichhore-original-imagfwqcwqfrf36z.jpeg?q=70",
     "productImageURLs": [],
     "searchTags": ["T-shirt", "Mens cloths", "Mens", "Mens wear"]
   },
 
   {
-    "productsid": "MS1",
+    "productId": "MS1",
     "name": "",
     "brand": "FUBAR ",
     "title": "Men Slim Fit Checkered Casual Shirt",
@@ -3626,14 +3806,15 @@
     "price": 380,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/832/832/l2w7b0w0/shirt/i/s/b/m-kcsh-07chk07-nbfi-fubar-original-image4yfhvbxfezc.jpeg?q=70",
     "productImageURLs": [],
     "searchTags": ["Shirt", "Mens cloths", "Mens", "Mens wear"]
   },
 
   {
-    "productsid": "MS2",
+    "productId": "MS2",
     "name": "",
     "brand": "MooNVellY ",
     "title": "Men Slim Fit Solid Button Down Collar Casual Shirt",
@@ -3643,13 +3824,14 @@
     "price": 349,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/832/832/l3ys70w0/shirt/l/0/c/m-shirt-01-black-moonvelly-original-imageyxhe8kg4zuk.jpeg?q=70",
     "productImageURLs": [],
     "searchTags": ["Shirt", "Mens cloths", "Mens", "Mens wear"]
   },
   {
-    "productsid": "MS3",
+    "productId": "MS3",
     "name": "",
     "brand": "Surhi ",
     "title": "Men Slim Fit Checkered Spread Collar Casual Shirt",
@@ -3659,13 +3841,14 @@
     "price": 299,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/832/832/kc0u7bk0/shirt/k/a/a/m-pk19sh09g-surhi-original-imaft8vgvhmhbhsy.jpeg?q=70",
     "productImageURLs": [],
     "searchTags": ["Shirt", "Mens cloths", "Mens", "Mens wear"]
   },
   {
-    "productsid": "MS4",
+    "productId": "MS4",
     "name": "",
     "brand": "METRONAUT",
     "title": "Printed Men Round Neck White T-Shirt",
@@ -3675,13 +3858,14 @@
     "price": 359,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/832/832/l2hwwi80/t-shirt/o/t/m/l-fc4356-metronaut-original-imagdtjdehgm55sd.jpeg?q=70",
     "productImageURLs": [],
     "searchTags": ["T-shirt", "Mens cloths", "Mens", "Mens wear"]
   },
   {
-    "productsid": "MS5",
+    "productId": "MS5",
     "name": "",
     "brand": "GESPO",
     "title": "Men Regular Fit Solid Casual Shirt",
@@ -3691,13 +3875,14 @@
     "price": 299,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/832/832/kfoapow0-0/shirt/1/l/t/m-c1276-gespo-original-imafw2gqdztqdkyu.jpeg?q=70",
     "productImageURLs": [],
     "searchTags": ["Shirt", "Mens cloths", "Mens", "Mens wear"]
   },
   {
-    "productsid": "MS6",
+    "productId": "MS6",
     "name": "",
     "brand": "GESPO",
     "title": "Men Regular Fit Solid Casual Shirt",
@@ -3707,13 +3892,14 @@
     "price": 299,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/832/832/k6v2ykw0/shirt/j/x/x/xl-pg146-gespo-original-imafp7gwh9trxb7v.jpeg?q=70",
     "productImageURLs": [],
     "searchTags": ["Shirt", "Mens cloths", "Mens", "Mens wear"]
   },
   {
-    "productsid": "MS7",
+    "productId": "MS7",
     "name": "",
     "brand": "GESPO",
     "title": "Men Regular Fit Solid Casual Shirt",
@@ -3723,13 +3909,14 @@
     "price": 299,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/832/832/kpsnzww0/shirt/k/f/d/s-gg370-gespo-original-imag3y46auhkghhh.jpeg?q=70",
     "productImageURLs": [],
     "searchTags": ["Shirt", "Mens cloths", "Mens", "Mens wear"]
   },
   {
-    "productsid": "MS8",
+    "productId": "MS8",
     "name": "",
     "brand": "icome",
     "title": "Men Regular Fit Striped Ribbed Collar Casual Shirt",
@@ -3739,13 +3926,14 @@
     "price": 299,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/832/832/kmccosw0/shirt/t/l/2/xl-men-regular-super-slim-fit-striped-casual-shirt-icome-original-imagf9q2epye5kks.jpeg?q=70",
     "productImageURLs": [],
     "searchTags": ["Shirt", "Mens cloths", "Mens", "Mens wear"]
   },
   {
-    "productsid": "MS9",
+    "productId": "MS9",
     "name": "",
     "brand": "FUBAR ",
     "title": "Men Regular Fit Self Design Spread Collar Casual Shirt",
@@ -3755,13 +3943,14 @@
     "price": 419,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/832/832/l2tcfbk0/shirt/m/a/g/xxl-kcsh-2008-nb-fubar-original-image2jxakgeywwm.jpeg?q=70",
     "productImageURLs": [],
     "searchTags": ["Shirt", "Mens cloths", "Mens", "Mens wear"]
   },
   {
-    "productsid": "MS10",
+    "productId": "MS10",
     "name": "",
     "brand": "FINIVO FASHION ",
     "title": "Men Regular Fit Striped Spread Collar Casual Shirt",
@@ -3771,13 +3960,14 @@
     "price": 499,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/832/832/kljrvrk0/shirt/b/9/x/xl-h1-finivo-fashion-original-imagyn8d3yadz5sb.jpeg?q=70",
     "productImageURLs": [],
     "searchTags": ["Shirt", "Mens cloths", "Mens", "Mens wear"]
   },
   {
-    "productsid": "MJ1",
+    "productId": "MJ1",
     "name": "",
     "brand": "METRONAUT",
     "title": "Slim Men Light Blue Jeans",
@@ -3787,13 +3977,14 @@
     "price": 580,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/832/832/kqttg280/jean/8/i/4/32-mss21jn651-metronaut-original-imag4rcn8sdygkzf.jpeg?q=70",
     "productImageURLs": [],
     "searchTags": ["Jeans", "Mens cloths", "Mens", "Mens wear"]
   },
   {
-    "productsid": "MJ2",
+    "productId": "MJ2",
     "name": "",
     "brand": "Roadster",
     "title": "Regular Men Blue Jeans",
@@ -3803,13 +3994,14 @@
     "price": 1049,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/832/832/jsc3ssw0/jean/9/y/p/36-4451384-roadster-original-imafdwruyxzdtf2w.jpeg?q=70",
     "productImageURLs": [],
     "searchTags": ["Jeans", "Mens cloths", "Mens", "Mens wear"]
   },
   {
-    "productsid": "MJ3",
+    "productId": "MJ3",
     "name": "",
     "brand": "METRONAUT",
     "title": "Slim Men Dark Blue Jeans",
@@ -3819,13 +4011,14 @@
     "price": 532,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/832/832/kzllrbk0/jean/j/6/m/32-maw21elppjn534-metronaut-original-imagbkkg8esndyg6.jpeg?q=70",
     "productImageURLs": [],
     "searchTags": ["Jeans", "Mens cloths", "Mens", "Mens wear"]
   },
   {
-    "productsid": "MJ4",
+    "productId": "MJ4",
     "name": "",
     "brand": "Roadster ",
     "title": "Slim Men Black Jeans",
@@ -3835,13 +4028,14 @@
     "price": 899,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/832/832/kzllrbk0/jean/j/6/m/32-maw21elppjn534-metronaut-original-imagbkkg8esndyg6.jpeg?q=70",
     "productImageURLs": [],
     "searchTags": ["Jeans", "Mens cloths", "Mens", "Mens wear"]
   },
   {
-    "productsid": "MJ5",
+    "productId": "MJ5",
     "name": "",
     "brand": "Wrangler ",
     "title": "Skinny Men Blue Jeans",
@@ -3851,13 +4045,14 @@
     "price": 1260,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/832/832/l0fm07k0/jean/b/d/u/-original-imagc7z9nmqhrypt.jpeg?q=70",
     "productImageURLs": [],
     "searchTags": ["Jeans", "Mens cloths", "Mens", "Mens wear"]
   },
   {
-    "productsid": "MJ6",
+    "productId": "MJ6",
     "name": "",
     "brand": "PROVOGUE ",
     "title": "Slim Men Blue Jeans",
@@ -3867,13 +4062,14 @@
     "price": 726,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/832/832/ku79vgw0/jean/u/s/w/32-praw21jn075a-provogue-original-imag7dntua9hyebv.jpeg?q=70",
     "productImageURLs": [],
     "searchTags": ["Jeans", "Mens cloths", "Mens", "Mens wear"]
   },
   {
-    "productsid": "MJ7",
+    "productId": "MJ7",
     "name": "",
     "brand": "METRONAUT ",
     "title": "Slim Men Grey Jeans",
@@ -3883,13 +4079,14 @@
     "price": 500,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/832/832/kqttg280/jean/k/0/7/32-mss21jn694-metronaut-original-imag4rcnzj7dkcrh.jpeg?q=70",
     "productImageURLs": [],
     "searchTags": ["Jeans", "Mens cloths", "Mens", "Mens wear"]
   },
   {
-    "productsid": "MJ8",
+    "productId": "MJ8",
     "name": "",
     "brand": "HIGHLANDER",
     "title": "Tapered Fit Men Blue Jeans",
@@ -3899,13 +4096,14 @@
     "price": 599,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/832/832/kgwld3k0-0/jean/r/f/a/32-hljn001160-highlander-original-imafxfbdzzgyyddy.jpeg?q=70",
     "productImageURLs": [],
     "searchTags": ["Jeans", "Mens cloths", "Mens", "Mens wear"]
   },
   {
-    "productsid": "MJ9",
+    "productId": "MJ9",
     "name": "",
     "brand": "Lzard ",
     "title": "Regular Men Black Jeans",
@@ -3915,13 +4113,14 @@
     "price": 349,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/832/832/l1v1uvk0/jean/a/f/k/29-lj081-lzard-original-imagdbuvkdgddd9w.jpeg?q=70",
     "productImageURLs": [],
     "searchTags": ["Jeans", "Mens cloths", "Mens", "Mens wear"]
   },
   {
-    "productsid": "MJ10",
+    "productId": "MJ10",
     "name": "",
     "brand": "UNITED DENIM ",
     "title": "Slim Men Black Jeans",
@@ -3931,13 +4130,14 @@
     "price": 475,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/832/832/l1v1uvk0/jean/a/f/k/29-lj081-lzard-original-imagdbuvkdgddd9w.jpeg?q=70",
     "productImageURLs": [],
     "searchTags": ["Jeans", "Mens cloths", "Mens", "Mens wear"]
   },
   {
-    "productsid": "MF1",
+    "productId": "MF1",
     "name": "",
     "brand": "TR",
     "title": "Men Blue Sandal",
@@ -3947,13 +4147,14 @@
     "price": 249,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/832/832/l16rde80/shopsy-sandal/k/0/e/8-jackpot100-omika-sky-original-imagct66xhrwtsq2.jpeg?q=70",
     "productImageURLs": [],
     "searchTags": ["Footwears", "Mens", "Mens", "Mens wear"]
   },
   {
-    "productsid": "MF2",
+    "productId": "MF2",
     "name": "",
     "brand": "Chevit ",
     "title": "New Stylish and comfortable Shoes Slip On Sneakers For Men  (Black, Grey)",
@@ -3963,13 +4164,14 @@
     "price": 417,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/832/832/l0igvww0/shoe/p/k/r/8-548-chevit-black-grey-original-imagcabfyd4khrfh.jpeg?q=70",
     "productImageURLs": [],
     "searchTags": ["Footwears", "Mens", "Mens", "Mens wear"]
   },
   {
-    "productsid": "MF3",
+    "productId": "MF3",
     "name": "",
     "brand": "SFR",
     "title": "Men Black, Red Sandal",
@@ -3979,13 +4181,14 @@
     "price": 250,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/832/832/kuvkcy80/sandal/h/w/a/8-xxx-01-black-red-8-sfr-black-red-original-imag7wamy9ynjqef.jpeg?q=70",
     "productImageURLs": [],
     "searchTags": ["Footwears", "Mens", "Mens", "Mens wear"]
   },
   {
-    "productsid": "MF4",
+    "productId": "MF4",
     "name": "",
     "brand": "Robbie jones ",
     "title": "Casual Shoes Slip On Sneakers For Men  (Black)",
@@ -3995,13 +4198,14 @@
     "price": 269,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/832/832/kqidx8w0/shoe/d/v/a/10-6500215432-44-labbin-black-original-imag4g2y3ezjevhe.jpeg?q=70",
     "productImageURLs": [],
     "searchTags": ["Footwears", "Mens", "Mens", "Mens wear"]
   },
   {
-    "productsid": "MF5",
+    "productId": "MF5",
     "name": "",
     "brand": "BIRDE ",
     "title": "Running Shoes For Men  (Grey)",
@@ -4011,13 +4215,14 @@
     "price": 299,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/832/832/krkyt8w0/shoe/q/u/b/5-au-brd-406-gry-5-birde-grey-original-imag5ccyzzwrwwfh.jpeg?q=70",
     "productImageURLs": [],
     "searchTags": ["Footwears", "Mens", "Mens", "Mens wear"]
   },
   {
-    "productsid": "MF6",
+    "productId": "MF6",
     "name": "",
     "brand": "ASIAN",
     "title": "Innova-01 White Sports,Walking,Training, Running Shoes For Men  (White)",
@@ -4027,13 +4232,14 @@
     "price": 949,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/832/832/kyxb9u80/shoe/5/v/8/8-innova-01cwht-8-asian-white-original-imagbfzmrmmvkqhv.jpeg?q=70",
     "productImageURLs": [],
     "searchTags": ["Footwears", "Mens", "Mens", "Mens wear"]
   },
   {
-    "productsid": "MF7",
+    "productId": "MF7",
     "name": "",
     "brand": "Paragon",
     "title": "EV1347G Flip Flops  (Black, Red 9)",
@@ -4043,13 +4249,14 @@
     "price": 143,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/832/832/kg15ocw0-0/slipper-flip-flop/k/y/8/8-ev1347g-black-red-paragon-black-original-imafwd5xsjhxrjpm.jpeg?q=70",
     "productImageURLs": [],
     "searchTags": ["Footwears", "Mens", "Mens", "Mens wear"]
   },
   {
-    "productsid": "MF8",
+    "productId": "MF8",
     "name": "",
     "brand": "HOTSTYLE ",
     "title": "Running Shoes For Men  (Black)",
@@ -4059,13 +4266,14 @@
     "price": 242,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/832/832/kq6yefk0/shoe/p/s/r/10-fashion-star-black-165-beige-10-hotstyle-beige-black-original-imag4992vm7yfvfq.jpeg?q=70",
     "productImageURLs": [],
     "searchTags": ["Footwears", "Mens", "Mens", "Mens wear"]
   },
   {
-    "productsid": "MF9",
+    "productId": "MF9",
     "name": "",
     "brand": "PUMA",
     "title": "Zod Runner V3 Running Shoes For Men  (Black)",
@@ -4075,13 +4283,14 @@
     "price": 1439,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/832/832/kfzq8i80-0/shoe/u/h/x/380815-9-puma-black-silver-original-imafwbwttkyxq5dh.jpeg?q=70",
     "productImageURLs": [],
     "searchTags": ["Footwears", "Mens", "Mens", "Mens wear"]
   },
   {
-    "productsid": "MF10",
+    "productId": "MF10",
     "name": "",
     "brand": "NIKE ",
     "title": "Revolution 6 Next Nature Road Running Shoes For Men  (Black)",
@@ -4091,13 +4300,14 @@
     "price": 3695,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/832/832/kvtuxe80/shoe/e/3/o/8-dc3728-003nike-9-nike-black-white-iron-grey-original-imag8mz3nmvgmhdd.jpeg?q=70",
     "productImageURLs": [],
     "searchTags": ["Footwears", "Mens", "Mens", "Mens wear"]
   },
   {
-    "productsid": "MW1",
+    "productId": "MW1",
     "name": "",
     "brand": "hala ",
     "title": "HL-2022 New Trending Full Black Round Waterproof Gym Fitness Freek HL-2022-DTL-BLK Digital Watch - For Men",
@@ -4107,13 +4317,14 @@
     "price": 359,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/832/832/kxxl9jk0/watch/9/8/x/1-hl-2022-new-trending-full-black-round-waterproof-gym-fitness-original-imaga9u8te7hghvz.jpeg?q=70",
     "productImageURLs": [],
     "searchTags": ["Watchs", "Mens Wrist Watchs", "Mens", "Mens Watchs"]
   },
   {
-    "productsid": "MW2",
+    "productId": "MW2",
     "name": "",
     "brand": "LORENZ ",
     "title": "MK-2061W Analog Watch - For Men",
@@ -4123,13 +4334,14 @@
     "price": 269,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/832/832/jupu7ww0/watch/t/t/c/mk-2061w-lorenz-original-imaffrwerygwztxk.jpeg?q=70",
     "productImageURLs": [],
     "searchTags": ["Watchs", "Mens Wrist Watchs", "Mens", "Mens Watchs"]
   },
   {
-    "productsid": "MW3",
+    "productId": "MW3",
     "name": "",
     "brand": "Sylvi ",
     "title": "Famous brand Mens Leather Digital Dual Time Relogio Masculino Black SY-3022 Analog-Digital Watch - For Men",
@@ -4139,13 +4351,14 @@
     "price": 999,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/832/832/kbjox3k0/watch/b/p/6/famous-brand-mens-leather-digital-dual-time-relogio-masculino-original-imafsv63ytwcfec4.jpeg?q=70",
     "productImageURLs": [],
     "searchTags": ["Watchs", "Mens Wrist Watchs", "Mens", "Mens Watchs"]
   },
   {
-    "productsid": "MW4",
+    "productId": "MW4",
     "name": "",
     "brand": "CASIO",
     "title": "EX414 Edifice ( EFV-540DC-1AVUDF ) Analog Watch - For Men",
@@ -4155,13 +4368,14 @@
     "price": 10995,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/832/832/kkprmvk0/watch/g/h/a/ex414-casio-original-imaf98sznqpbcuae.jpeg?q=70",
     "productImageURLs": [],
     "searchTags": ["Watchs", "Mens Wrist Watchs", "Mens", "Mens Watchs"]
   },
   {
-    "productsid": "MW5",
+    "productId": "MW5",
     "name": "",
     "brand": "CASIO",
     "title": "EX191 Edifice ( EFR-539D-1AVUDF ) Analog Watch - For Men",
@@ -4171,13 +4385,14 @@
     "price": 8795,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/832/832/kruyw7k0/watch/v/n/o/ex191-casio-original-imag5jsrajhtna7u.jpeg?q=70",
     "productImageURLs": [],
     "searchTags": ["Watchs", "Mens Wrist Watchs", "Mens", "Mens Watchs"]
   },
   {
-    "productsid": "MW6",
+    "productId": "MW6",
     "name": "",
     "brand": "Rizzly ",
     "title": "216-Black Sporty look Designer Analog Watch - For Men",
@@ -4187,13 +4402,14 @@
     "price": 236,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/832/832/kfikya80-0/watch/y/u/n/216-black-sporty-look-rizzly-original-imafvyg9wc3vkhqy.jpeg?q=70",
     "productImageURLs": [],
     "searchTags": ["Watchs", "Mens Wrist Watchs", "Mens", "Mens Watchs"]
   },
   {
-    "productsid": "MW7",
+    "productId": "MW7",
     "name": "",
     "brand": "BRITEX ",
     "title": "BT7118 Mesh Strap All Black Smiley Multicolor Dial Quartz Mechanism Sports Water Resistant Watch for Boys Analog Watch - For Men",
@@ -4202,14 +4418,15 @@
     "category": "Mens Wrist Watchs",
     "offer": 10,
     "type": "",
+    "quantity": 10,
     "price": 265,
-    "merchantId": 0,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/832/832/k1nw9zk0/watch/m/f/4/bt7118-britex-original-imafjskrhdvhrff7.jpeg?q=70",
     "productImageURLs": [],
     "searchTags": ["Watchs", "Mens Wrist Watchs", "Mens", "Mens Watchs"]
   },
   {
-    "productsid": "MW8",
+    "productId": "MW8",
     "name": "",
     "brand": "M7 By Metronaut",
     "title": "M7-1509-BLACK Chronograph Powered by Flipkart Special Summer Collection Analog-Digital Watch - For Men",
@@ -4219,13 +4436,14 @@
     "price": 499,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/832/832/l0jwbrk0/watch/f/s/6/1-m7-1509-black-chronograph-m7-by-metronaut-men-original-imagcb6qfbccjqcy.jpeg?q=70",
     "productImageURLs": [],
     "searchTags": ["Watchs", "Mens Wrist Watchs", "Mens", "Mens Watchs"]
   },
   {
-    "productsid": "MW9",
+    "productId": "MW9",
     "name": "",
     "brand": "SKMEI",
     "title": "Black Analog & Digital Water Proof Sport Wrist Watch for Men and Boys Analog-Digital Watch - For Men",
@@ -4235,13 +4453,14 @@
     "price": 399,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/832/832/kflftzk0pkrrdj-0/watch/6/z/l/black-analog-digital-water-proof-sport-wrist-watch-for-men-and-original-imafw3akr4frkzsp.jpeg?q=70",
     "productImageURLs": [],
     "searchTags": ["Watchs", "Mens Wrist Watchs", "Mens", "Mens Watchs"]
   },
   {
-    "productsid": "MW10",
+    "productId": "MW10",
     "name": "",
     "brand": "CASIO",
     "title": "EX096 Edifice ( EFR-526L-1AVUDF ) Analog Watch - For Men",
@@ -4251,13 +4470,14 @@
     "price": 6995,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://rukminim1.flixcart.com/image/832/832/k4rcmfk0pkrrdj/watch-refurbished/g/z/w/c-ex096-casio-original-imaeymgqzpujgn4z.jpeg?q=70",
     "productImageURLs": [],
     "searchTags": ["Watchs", "Mens Wrist Watchs", "Mens", "Mens Watchs"]
   },
   {
-    "productsid": "wk01",
+    "productId": "wk01",
     "name": "",
     "brand": "Khushal K",
     "title": "kurtas and suits",
@@ -4267,7 +4487,8 @@
     "price": 1427,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/17048614/2022/2/4/a76f0a64-8a82-4f16-8a84-53b40b54fcb31643971560987KhushalKWomenBlackEthnicMotifsAngrakhaBeadsandStonesKurtawit1.jpg",
     "productImageURLs": [
       "https://assets.myntassets.com/h_68,q_90,w_52/v1/assets/images/17048614/2022/2/4/b0eb9426-adf2-4802-a6b3-5dbacbc5f2511643971561167KhushalKWomenBlackEthnicMotifsAngrakhaBeadsandStonesKurtawit7.jpg",
@@ -4278,7 +4499,7 @@
     "searchTags": ["khushal K", "kurtas and suits"]
   },
   {
-    "productsid": "wk02",
+    "productId": "wk02",
     "name": "",
     "brand": "Khushal K",
     "title": "kurtas and suits",
@@ -4288,7 +4509,8 @@
     "price": 1483,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/17048604/2022/2/4/11b842c5-d9d4-4fee-baa2-0972e3a673641643970773675KhushalKWomenGreenEthnicMotifsPrintedEmpireGottaPattiPureCot7.jpg",
     "productImageURLs": [
       "https://assets.myntassets.com/h_68,q_90,w_52/v1/assets/images/17048604/2022/2/4/11b842c5-d9d4-4fee-baa2-0972e3a673641643970773675KhushalKWomenGreenEthnicMotifsPrintedEmpireGottaPattiPureCot7.jpg",
@@ -4299,7 +4521,7 @@
     "searchTags": ["khushal K", "kurtas and suits"]
   },
   {
-    "productsid": "wk03",
+    "productId": "wk03",
     "name": "",
     "brand": "Khushal K",
     "title": "kurtas and suits",
@@ -4309,7 +4531,8 @@
     "price": 1329,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/13391080/2022/2/21/3ad1838d-d29e-4945-9eca-64930f0939411645460975084KhushalKWomenWhiteWovenDesignKurtawithChuridarDupatta1.jpg",
     "productImageURLs": [
       "https://assets.myntassets.com/h_68,q_90,w_52/v1/assets/images/13391080/2022/2/21/3ad1838d-d29e-4945-9eca-64930f0939411645460975084KhushalKWomenWhiteWovenDesignKurtawithChuridarDupatta1.jpg",
@@ -4321,7 +4544,7 @@
     "searchTags": ["khushal K", "kurtas and suits"]
   },
   {
-    "productsid": "wk04",
+    "productId": "wk04",
     "name": "",
     "brand": "Khushal K",
     "title": "kurtas and suits",
@@ -4331,7 +4554,8 @@
     "price": 1427,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/18483950/2022/6/7/23c59537-fcac-40b1-8e64-4818e8a3e21d1654577763968-Khushal-K-Women-Pink-Ethnic-Motifs-Beads-and-Stones-Kurta-wi-11.jpg",
     "productImageURLs": [
       "https://assets.myntassets.com/h_68,q_90,w_52/v1/assets/images/18483950/2022/6/7/23c59537-fcac-40b1-8e64-4818e8a3e21d1654577763968-Khushal-K-Women-Pink-Ethnic-Motifs-Beads-and-Stones-Kurta-wi-11.jpg",
@@ -4342,7 +4566,7 @@
     "searchTags": ["khushal K", "kurtas and suits"]
   },
   {
-    "productsid": "wk05",
+    "productId": "wk05",
     "name": "",
     "brand": "Khushal K",
     "title": "kurtas and suits",
@@ -4352,7 +4576,8 @@
     "price": 1595,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/17447636/2022/3/9/de7c003c-2f74-4c6f-b7d0-c7c1566ad7981646801368575KhushalKWomenGreenEthnicMotifsPrintedPanelledGottaPattiKurta7.jpg",
     "productImageURLs": [
       "https://assets.myntassets.com/h_68,q_90,w_52/v1/assets/images/17447636/2022/3/9/de7c003c-2f74-4c6f-b7d0-c7c1566ad7981646801368575KhushalKWomenGreenEthnicMotifsPrintedPanelledGottaPattiKurta7.jpg",
@@ -4363,7 +4588,7 @@
     "searchTags": ["khushal K", "kurtas and suits"]
   },
   {
-    "productsid": "wk06",
+    "productId": "wk06",
     "name": "",
     "brand": "Khushal K",
     "title": "kurtas and suits",
@@ -4373,7 +4598,8 @@
     "price": 1337,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/18591578/2022/6/7/bef1087b-74fa-4d1c-bdd2-e594e7a6132d1654577718566-Khushal-K-Women-White-Angrakha-Kurti-with-Palazzos--With-Dup-11.jpg",
     "productImageURLs": [
       "https://assets.myntassets.com/h_68,q_90,w_52/v1/assets/images/18591578/2022/6/7/bef1087b-74fa-4d1c-bdd2-e594e7a6132d1654577718566-Khushal-K-Women-White-Angrakha-Kurti-with-Palazzos--With-Dup-11.jpg",
@@ -4383,7 +4609,7 @@
     "searchTags": ["khushal K", "kurtas and suits"]
   },
   {
-    "productsid": "wk07",
+    "productId": "wk07",
     "name": "",
     "brand": "Khushal K",
     "title": "kurtas and suits",
@@ -4393,7 +4619,8 @@
     "price": 1175,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/9162493/2021/12/21/9db9dd39-b313-46d3-a6c9-42bf6b37c4461640075637375KhushalKWomenOff-WhiteNavyBluePrintedKurtawithPalazzos1.jpg",
     "productImageURLs": [
       "https://assets.myntassets.com/h_68,q_90,w_52/v1/assets/images/9162493/2021/12/21/9db9dd39-b313-46d3-a6c9-42bf6b37c4461640075637375KhushalKWomenOff-WhiteNavyBluePrintedKurtawithPalazzos1.jpg",
@@ -4404,7 +4631,7 @@
     "searchTags": ["khushal K", "kurtas and suits"]
   },
   {
-    "productsid": "wk08",
+    "productId": "wk08",
     "name": "",
     "brand": "Khushal K",
     "title": "kurtas and suits",
@@ -4414,7 +4641,8 @@
     "price": 1595,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/17447652/2022/3/9/38edf447-115f-478c-8e42-835a1643c9501646800787026KhushalKWomenPinkEthnicMotifsPrintedEmpireGottaPattiKurtawit7.jpg",
     "productImageURLs": [
       "https://assets.myntassets.com/h_68,q_90,w_52/v1/assets/images/17447652/2022/3/9/38edf447-115f-478c-8e42-835a1643c9501646800787026KhushalKWomenPinkEthnicMotifsPrintedEmpireGottaPattiKurtawit7.jpg",
@@ -4425,7 +4653,7 @@
     "searchTags": ["khushal K", "kurtas and suits"]
   },
   {
-    "productsid": "wk09",
+    "productId": "wk09",
     "name": "",
     "brand": "Khushal K",
     "title": "kurtas and suits",
@@ -4435,7 +4663,8 @@
     "price": 1133,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/16763838/2022/1/10/ea9444af-64d7-453f-945c-4927a2773c631641829267465KhushalKWomenPurple7.jpg",
     "productImageURLs": [
       "https://assets.myntassets.com/h_68,q_90,w_52/v1/assets/images/16763838/2022/1/10/ea9444af-64d7-453f-945c-4927a2773c631641829267465KhushalKWomenPurple7.jpg",
@@ -4446,7 +4675,7 @@
     "searchTags": ["khushal K", "kurtas and suits"]
   },
   {
-    "productsid": "wk10",
+    "productId": "wk10",
     "name": "",
     "brand": "Khushal K",
     "title": "kurtas and suits",
@@ -4456,7 +4685,8 @@
     "price": 787,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/11306378/2022/6/8/654bbf17-d732-4e51-9cac-223198b722e31654667745366-Khushal-K-Women-Pink-Printed-Kurta-with-Palazzos-64916546677-1.jpg",
     "productImageURLs": [
       "https://assets.myntassets.com/h_68,q_90,w_52/v1/assets/images/11306378/2022/6/8/654bbf17-d732-4e51-9cac-223198b722e31654667745366-Khushal-K-Women-Pink-Printed-Kurta-with-Palazzos-64916546677-1.jpg",
@@ -4467,7 +4697,7 @@
     "searchTags": ["khushal K", "kurtas and suits"]
   },
   {
-    "productsid": "wf01",
+    "productId": "wf01",
     "name": "",
     "brand": "Antheaa",
     "title": "Dress",
@@ -4477,7 +4707,8 @@
     "price": 1303,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/12595594/2020/10/15/b6e22b58-3450-468f-afeb-3218b6ce7acb1602737925709SareemallNavyBluePolyChiffonSolidEthnicPartywearSareewithMat1.jpg",
     "productImageURLs": [
       "https://assets.myntassets.com/h_68,q_90,w_52/v1/assets/images/12595594/2020/10/15/b6e22b58-3450-468f-afeb-3218b6ce7acb1602737925709SareemallNavyBluePolyChiffonSolidEthnicPartywearSareewithMat1.jpg",
@@ -4487,7 +4718,7 @@
     "searchTags": ["Antheaa", "Dresses"]
   },
   {
-    "productsid": "wf02",
+    "productId": "wf02",
     "name": "",
     "brand": "Antheaa",
     "title": "Dress",
@@ -4497,7 +4728,8 @@
     "price": 1271,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/12974224/2020/12/3/426d0ea8-8ac8-4033-98e3-eeae4eb232111606973304805-Antheaa-Women-Dresses-171606973301597-1.jpg",
     "productImageURLs": [
       "https://assets.myntassets.com/h_68,q_90,w_52/v1/assets/images/12974224/2020/12/3/426d0ea8-8ac8-4033-98e3-eeae4eb232111606973304805-Antheaa-Women-Dresses-171606973301597-1.jpg",
@@ -4507,7 +4739,7 @@
     "searchTags": ["Antheaa", "Dresses"]
   },
   {
-    "productsid": "wf03",
+    "productId": "wf03",
     "name": "",
     "brand": "Antheaa",
     "title": "Dress",
@@ -4517,7 +4749,8 @@
     "price": 1165,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/11537380/2020/2/27/5ab6cfa9-d952-4ec3-87f3-77caf8f1761b1582781144384-Antheaa-Women-Dresses-5921582781143098-1.jpg",
     "productImageURLs": [
       "https://assets.myntassets.com/h_68,q_90,w_52/v1/assets/images/11537380/2020/2/27/5ab6cfa9-d952-4ec3-87f3-77caf8f1761b1582781144384-Antheaa-Women-Dresses-5921582781143098-1.jpg",
@@ -4527,7 +4760,7 @@
     "searchTags": ["Antheaa", "Dresses"]
   },
   {
-    "productsid": "wf04",
+    "productId": "wf04",
     "name": "",
     "brand": "Antheaa",
     "title": "Dress",
@@ -4537,7 +4770,8 @@
     "price": 1271,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/17371258/2022/3/16/b655209a-c9a0-4f51-87cf-03bb3ce26d341647411823840-Antheaa-Women-Dresses-3501647411823278-1.jpg",
     "productImageURLs": [
       "https://assets.myntassets.com/h_68,q_90,w_52/v1/assets/images/17371258/2022/3/16/b655209a-c9a0-4f51-87cf-03bb3ce26d341647411823840-Antheaa-Women-Dresses-3501647411823278-1.jpg",
@@ -4547,7 +4781,7 @@
     "searchTags": ["Antheaa", "Dresses"]
   },
   {
-    "productsid": "wf05",
+    "productId": "wf05",
     "name": "",
     "brand": "Antheaa",
     "title": "Dress",
@@ -4557,7 +4791,8 @@
     "price": 1271,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/17371254/2022/3/16/afe55dce-1ddf-4be6-8e9b-c1ddc0eadf501647410660835-Antheaa-Women-Dresses-2121647410660216-1.jpg",
     "productImageURLs": [
       "https://assets.myntassets.com/h_68,q_90,w_52/v1/assets/images/17371254/2022/3/16/afe55dce-1ddf-4be6-8e9b-c1ddc0eadf501647410660835-Antheaa-Women-Dresses-2121647410660216-1.jpg",
@@ -4567,7 +4802,7 @@
     "searchTags": ["Antheaa", "Dresses"]
   },
   {
-    "productsid": "wf06",
+    "productId": "wf06",
     "name": "",
     "brand": "Antheaa",
     "title": "Dress",
@@ -4577,7 +4812,8 @@
     "price": 1197,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/13780894/2021/3/19/5c394797-2d57-4075-88e7-d6f7dd48eb041616147895351-Antheaa-Women-Navy-Blue--Yellow-Ethnic-Printed-A-Line-Dress--1.jpg",
     "productImageURLs": [
       "https://assets.myntassets.com/h_68,q_90,w_52/v1/assets/images/13780894/2021/3/19/5c394797-2d57-4075-88e7-d6f7dd48eb041616147895351-Antheaa-Women-Navy-Blue--Yellow-Ethnic-Printed-A-Line-Dress--1.jpg",
@@ -4587,7 +4823,7 @@
     "searchTags": ["Antheaa", "Dresses"]
   },
   {
-    "productsid": "wf07",
+    "productId": "wf07",
     "name": "",
     "brand": "Antheaa",
     "title": "Dress",
@@ -4597,7 +4833,8 @@
     "price": 1151,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/13780874/2021/3/19/fe44a376-3bd3-4803-8750-4406c2b76d041616151214356-Antheaa-Women-Pink-Self-Design-Tiered-Fit--Flare-Dress-44716-1.jpg",
     "productImageURLs": [
       "https://assets.myntassets.com/h_68,q_90,w_52/v1/assets/images/13780874/2021/3/19/fe44a376-3bd3-4803-8750-4406c2b76d041616151214356-Antheaa-Women-Pink-Self-Design-Tiered-Fit--Flare-Dress-44716-1.jpg",
@@ -4607,7 +4844,7 @@
     "searchTags": ["Antheaa", "Dresses"]
   },
   {
-    "productsid": "wf08",
+    "productId": "wf08",
     "name": "",
     "brand": "Antheaa",
     "title": "Dress",
@@ -4617,7 +4854,8 @@
     "price": 1327,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/14861694/2021/9/7/4040313d-9392-47b7-90ef-f26362f48a5c1631002696050-Antheaa-Sea-Green-Floral-Georgette-A-Line-Midi-Dress-7361631-1.jpg",
     "productImageURLs": [
       "https://assets.myntassets.com/h_68,q_90,w_52/v1/assets/images/14861694/2021/9/7/4040313d-9392-47b7-90ef-f26362f48a5c1631002696050-Antheaa-Sea-Green-Floral-Georgette-A-Line-Midi-Dress-7361631-1.jpg",
@@ -4627,7 +4865,7 @@
     "searchTags": ["Antheaa", "Dresses"]
   },
   {
-    "productsid": "wf09",
+    "productId": "wf09",
     "name": "",
     "brand": "Antheaa",
     "title": "Dress",
@@ -4637,7 +4875,8 @@
     "price": 1430,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/13602866/2021/2/26/472e3d81-04ae-44e0-8054-13f64630a5431614324204446-Antheaa-Women-Dresses-511614324202339-1.jpg",
     "productImageURLs": [
       "https://assets.myntassets.com/h_68,q_90,w_52/v1/assets/images/13602866/2021/2/26/472e3d81-04ae-44e0-8054-13f64630a5431614324204446-Antheaa-Women-Dresses-511614324202339-1.jpg",
@@ -4647,7 +4886,7 @@
     "searchTags": ["Antheaa", "Dresses"]
   },
   {
-    "productsid": "wf10",
+    "productId": "wf10",
     "name": "",
     "brand": "Antheaa",
     "title": "Dress",
@@ -4657,7 +4896,8 @@
     "price": 1084,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/13780904/2021/3/19/5e049dfe-4563-40ac-8024-db179ddabc901616148611187-Antheaa-Women-Yellow-Self-Design-A-Line-Tiered-Dress-With-La-1.jpg",
     "productImageURLs": [
       "https://assets.myntassets.com/h_68,q_90,w_52/v1/assets/images/13780904/2021/3/19/5e049dfe-4563-40ac-8024-db179ddabc901616148611187-Antheaa-Women-Yellow-Self-Design-A-Line-Tiered-Dress-With-La-1.jpg",
@@ -4667,7 +4907,7 @@
     "searchTags": ["Antheaa", "Dresses"]
   },
   {
-    "productsid": "wd01",
+    "productId": "wd01",
     "name": "",
     "brand": "H&M",
     "title": "Top",
@@ -4677,7 +4917,8 @@
     "price": 199,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/productimage/2021/2/19/ce729486-6e42-4edd-b321-143c382e7de91613713367733-1.jpg",
     "productImageURLs": [
       "https://assets.myntassets.com/h_68,q_90,w_52/v1/assets/images/productimage/2021/2/19/ce729486-6e42-4edd-b321-143c382e7de91613713367733-1.jpg",
@@ -4687,7 +4928,7 @@
     "searchTags": ["H&M", "Top"]
   },
   {
-    "productsid": "wd02",
+    "productId": "wd02",
     "name": "",
     "brand": "SASSAFRAS",
     "title": "Top",
@@ -4697,7 +4938,8 @@
     "price": 704,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/13842966/2021/4/3/3d20dde9-8c47-48f2-a079-8cdacd9c78b11617444711671-Sassafras-Brown--Red-Geometric-Printed-Georgette-Wrap-Crop-T-1.jpg",
     "productImageURLs": [
       "https://assets.myntassets.com/h_68,q_90,w_52/v1/assets/images/13842966/2021/4/3/3d20dde9-8c47-48f2-a079-8cdacd9c78b11617444711671-Sassafras-Brown--Red-Geometric-Printed-Georgette-Wrap-Crop-T-1.jpg",
@@ -4707,7 +4949,7 @@
     "searchTags": ["SASSAFRAS", "Top"]
   },
   {
-    "productsid": "wd03",
+    "productId": "wd03",
     "name": "",
     "brand": "STREET 9",
     "title": "Top",
@@ -4717,7 +4959,8 @@
     "price": 639,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15302810/2021/8/30/2d0e4dd7-0a8d-47fd-a7d7-ed28bc3d0a481630325465134STREET9MaroonFloralGeorgetteFittedCropTop1.jpg",
     "productImageURLs": [
       "https://assets.myntassets.com/h_68,q_90,w_52/v1/assets/images/15302810/2021/8/30/2d0e4dd7-0a8d-47fd-a7d7-ed28bc3d0a481630325465134STREET9MaroonFloralGeorgetteFittedCropTop1.jpg",
@@ -4727,7 +4970,7 @@
     "searchTags": ["STREET 9", "Top"]
   },
   {
-    "productsid": "wd04",
+    "productId": "wd04",
     "name": "",
     "brand": "Athena",
     "title": "Top",
@@ -4737,7 +4980,8 @@
     "price": 597,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/13719116/2021/3/3/90d0980a-8b39-48bd-9bf9-a67beb14a9741614753528611-Athena-Fuchsia-Pink-top-with-power-shoulder-sleeve-detail-22-1.jpg",
     "productImageURLs": [
       "https://assets.myntassets.com/h_68,q_90,w_52/v1/assets/images/13719116/2021/3/3/90d0980a-8b39-48bd-9bf9-a67beb14a9741614753528611-Athena-Fuchsia-Pink-top-with-power-shoulder-sleeve-detail-22-1.jpg",
@@ -4747,7 +4991,7 @@
     "searchTags": ["Athena", "Top"]
   },
   {
-    "productsid": "wd05",
+    "productId": "wd05",
     "name": "",
     "brand": "SASSAFRAS",
     "title": "Top",
@@ -4757,7 +5001,8 @@
     "price": 499,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/12222036/2020/10/6/d7ae3065-98d4-42d0-b244-d2b18802ff101601959656577-SASSAFRAS-Women-Black-Solid-High-Neck-Cropped-Top-4441601959-1.jpg",
     "productImageURLs": [
       "https://assets.myntassets.com/h_68,q_90,w_52/v1/assets/images/12222036/2020/10/6/d7ae3065-98d4-42d0-b244-d2b18802ff101601959656577-SASSAFRAS-Women-Black-Solid-High-Neck-Cropped-Top-4441601959-1.jpg",
@@ -4767,7 +5012,7 @@
     "searchTags": ["SASSAFRAS", "Top"]
   },
   {
-    "productsid": "wd06",
+    "productId": "wd06",
     "name": "",
     "brand": "Harpa",
     "title": "Top",
@@ -4777,7 +5022,8 @@
     "price": 649,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/productimage/2021/1/27/e19be52e-4694-4672-9dcf-49e112b16ae01611743531195-1.jpg",
     "productImageURLs": [
       "https://assets.myntassets.com/h_68,q_90,w_52/v1/assets/images/productimage/2021/1/27/e19be52e-4694-4672-9dcf-49e112b16ae01611743531195-1.jpg",
@@ -4787,7 +5033,7 @@
     "searchTags": ["Harpa", "Top"]
   },
   {
-    "productsid": "wd07",
+    "productId": "wd07",
     "name": "",
     "brand": "H&M",
     "title": "Top",
@@ -4797,7 +5043,8 @@
     "price": 249,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/18131636/2022/5/3/d6a4b9eb-0176-4a0e-8b1f-0fc108056b9f1651568746664Croptop1.jpg",
     "productImageURLs": [
       "https://assets.myntassets.com/h_68,q_90,w_52/v1/assets/images/18131636/2022/5/3/d6a4b9eb-0176-4a0e-8b1f-0fc108056b9f1651568746664Croptop1.jpg",
@@ -4807,7 +5054,7 @@
     "searchTags": ["H&M", "Top"]
   },
   {
-    "productsid": "wd08",
+    "productId": "wd08",
     "name": "",
     "brand": "Athena",
     "title": "Top",
@@ -4817,7 +5064,8 @@
     "price": 849,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/productimage/2021/2/23/be327827-401c-478b-8dfa-098750faadad1614061004812-1.jpg",
     "productImageURLs": [
       "https://assets.myntassets.com/h_68,q_90,w_52/v1/assets/images/productimage/2021/2/23/be327827-401c-478b-8dfa-098750faadad1614061004812-1.jpg",
@@ -4827,7 +5075,7 @@
     "searchTags": ["Athena", "Top"]
   },
   {
-    "productsid": "wd09",
+    "productId": "wd09",
     "name": "",
     "brand": "QUIERO",
     "title": "Top",
@@ -4837,7 +5085,8 @@
     "price": 769,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/11157052/2021/9/15/15ebc0f3-06b4-43dd-9eb8-759ea3c30d871631705427380-QUIERO-Women-Black--White-Embroidered-Top-3041631705426967-1.jpg",
     "productImageURLs": [
       "https://assets.myntassets.com/h_68,q_90,w_52/v1/assets/images/11157052/2021/9/15/15ebc0f3-06b4-43dd-9eb8-759ea3c30d871631705427380-QUIERO-Women-Black--White-Embroidered-Top-3041631705426967-1.jpg",
@@ -4847,7 +5096,7 @@
     "searchTags": ["QUIERO", "Top"]
   },
   {
-    "productsid": "wd10",
+    "productId": "wd10",
     "name": "",
     "brand": "KASSUALLY",
     "title": "Top",
@@ -4857,7 +5106,8 @@
     "price": 551,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/productimage/2020/9/22/7e999732-a4ad-4464-9d57-5e0bd60a270c1600728478352-1.jpg",
     "productImageURLs": [
       "https://assets.myntassets.com/h_68,q_90,w_52/v1/assets/images/productimage/2020/9/22/7e999732-a4ad-4464-9d57-5e0bd60a270c1600728478352-1.jpg",
@@ -4867,7 +5117,7 @@
     "searchTags": ["KASSUALLY", "Top"]
   },
   {
-    "productsid": "wj01",
+    "productId": "wj01",
     "name": "",
     "brand": "Kotty",
     "title": "Jeans",
@@ -4877,7 +5127,8 @@
     "price": 959,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/12384822/2020/9/1/3901ed9b-db0c-4056-817d-a518ac01a0691598947696216KottyWomenBlackWideLegJeans1.jpg",
     "productImageURLs": [
       "https://assets.myntassets.com/h_68,q_90,w_52/v1/assets/images/12384822/2020/9/1/3901ed9b-db0c-4056-817d-a518ac01a0691598947696216KottyWomenBlackWideLegJeans1.jpg",
@@ -4887,7 +5138,7 @@
     "searchTags": ["Kotty", "Jeans"]
   },
   {
-    "productsid": "wj02",
+    "productId": "wj02",
     "name": "",
     "brand": "SASSAFRAS",
     "title": "Jeans",
@@ -4897,7 +5148,8 @@
     "price": 959,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/13000352/2022/4/21/c083046e-9f2e-46bc-aedc-9ac56533d1001650517608723SASSAFRASWomenBluePureCottonRelaxedFitHigh-RiseCleanLookCrop1.jpg",
     "productImageURLs": [
       "https://assets.myntassets.com/h_68,q_90,w_52/v1/assets/images/13000352/2022/4/21/c083046e-9f2e-46bc-aedc-9ac56533d1001650517608723SASSAFRASWomenBluePureCottonRelaxedFitHigh-RiseCleanLookCrop1.jpg",
@@ -4907,7 +5159,7 @@
     "searchTags": ["SASSAFRAS", "Jeans"]
   },
   {
-    "productsid": "wj03",
+    "productId": "wj03",
     "name": "",
     "brand": "Roadster",
     "title": "Jeans",
@@ -4917,7 +5169,8 @@
     "price": 734,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/8963473/2019/4/9/9bf85f32-6b74-42f2-a538-557b99a69ff71554805174525-Roadster-Women-Blue-Skinny-Fit-Mid-Rise-Low-Distress-Stretch-1.jpg",
     "productImageURLs": [
       "https://assets.myntassets.com/h_68,q_90,w_52/v1/assets/images/8963473/2019/4/9/9bf85f32-6b74-42f2-a538-557b99a69ff71554805174525-Roadster-Women-Blue-Skinny-Fit-Mid-Rise-Low-Distress-Stretch-1.jpg",
@@ -4927,7 +5180,7 @@
     "searchTags": ["Roadster", "Jeans"]
   },
   {
-    "productsid": "wj04",
+    "productId": "wj04",
     "name": "",
     "brand": "URBANIC",
     "title": "Jeans",
@@ -4937,7 +5190,8 @@
     "price": 1253,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/18328804/2022/5/19/cefa9046-0d63-459b-8dde-3b36d833f5dc1652951299445URBANICWomenBlackJeans1.jpg",
     "productImageURLs": [
       "https://assets.myntassets.com/h_68,q_90,w_52/v1/assets/images/18328804/2022/5/19/cefa9046-0d63-459b-8dde-3b36d833f5dc1652951299445URBANICWomenBlackJeans1.jpg",
@@ -4947,7 +5201,7 @@
     "searchTags": ["URBANIC", "Jeans"]
   },
   {
-    "productsid": "wj05",
+    "productId": "wj05",
     "name": "",
     "brand": "Kotty",
     "title": "Jeans",
@@ -4957,7 +5211,8 @@
     "price": 899,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/12808128/2022/4/18/76094e6b-c7c0-438f-986c-90e5c9086ed91650283583458KottyWomenNavyBlueFlaredHigh-RiseCleanLookJeans1.jpg",
     "productImageURLs": [
       "https://assets.myntassets.com/h_68,q_90,w_52/v1/assets/images/12808128/2022/4/18/76094e6b-c7c0-438f-986c-90e5c9086ed91650283583458KottyWomenNavyBlueFlaredHigh-RiseCleanLookJeans1.jpg",
@@ -4967,7 +5222,7 @@
     "searchTags": ["Kotty", "Jeans"]
   },
   {
-    "productsid": "wj06",
+    "productId": "wj06",
     "name": "",
     "brand": "SASSAFRAS",
     "title": "Jeans",
@@ -4977,7 +5232,8 @@
     "price": 879,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/13000414/2020/12/3/4b6ac67e-3089-450c-83e4-f0362b930af91606971728255-SASSAFRAS-Women-Jeans-7971606971722019-1.jpg",
     "productImageURLs": [
       "https://assets.myntassets.com/h_68,q_90,w_52/v1/assets/images/13000414/2020/12/3/4b6ac67e-3089-450c-83e4-f0362b930af91606971728255-SASSAFRAS-Women-Jeans-7971606971722019-1.jpg",
@@ -4987,7 +5243,7 @@
     "searchTags": ["SASSAFRAS", "Jeans"]
   },
   {
-    "productsid": "wj07",
+    "productId": "wj07",
     "name": "",
     "brand": "Roadster",
     "title": "Jeans",
@@ -4997,7 +5253,8 @@
     "price": 919,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/13315048/2021/3/31/7064713c-94bb-4e17-81fd-bc7774eb5d351617187083110-Roadster-Women-Jeans-5471617187082494-1.jpg",
     "productImageURLs": [
       "https://assets.myntassets.com/h_68,q_90,w_52/v1/assets/images/13315048/2021/3/31/7064713c-94bb-4e17-81fd-bc7774eb5d351617187083110-Roadster-Women-Jeans-5471617187082494-1.jpg",
@@ -5007,7 +5264,7 @@
     "searchTags": ["Roadster", "Jeans"]
   },
   {
-    "productsid": "wj08",
+    "productId": "wj08",
     "name": "",
     "brand": "H&M",
     "title": "Jeans",
@@ -5017,7 +5274,8 @@
     "price": 2699,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/18212996/2022/5/10/9e161d65-c831-49d8-b8d5-f5f985eaf98b165217095196490sBoyfriendJeans1.jpg",
     "productImageURLs": [
       "https://assets.myntassets.com/h_68,q_90,w_52/v1/assets/images/18212996/2022/5/10/9e161d65-c831-49d8-b8d5-f5f985eaf98b165217095196490sBoyfriendJeans1.jpg",
@@ -5027,7 +5285,7 @@
     "searchTags": ["H&M", "Jeans"]
   },
   {
-    "productsid": "wj09",
+    "productId": "wj09",
     "name": "",
     "brand": "Nautica",
     "title": "Jeans",
@@ -5037,7 +5295,8 @@
     "price": 2534,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/17164060/2022/3/31/353885e2-ad8f-466f-a7b0-4fa6d91715121648722113716-Nautica-Women-Jeans-931648722112998-1.jpg",
     "productImageURLs": [
       "https://assets.myntassets.com/h_68,q_90,w_52/v1/assets/images/17164060/2022/3/31/353885e2-ad8f-466f-a7b0-4fa6d91715121648722113716-Nautica-Women-Jeans-931648722112998-1.jpg",
@@ -5047,7 +5306,7 @@
     "searchTags": ["Nautica", "Jeans"]
   },
   {
-    "productsid": "wj10",
+    "productId": "wj10",
     "name": "",
     "brand": "SASSAFRAS",
     "title": "Jeans",
@@ -5057,7 +5316,8 @@
     "price": 879,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/13633422/2021/3/2/de86af0d-d1bd-4d85-a74c-1c28b221a7351614668364227-SASSAFRAS-Women-Jeans-4731614668362535-1.jpg",
     "productImageURLs": [
       "https://assets.myntassets.com/h_68,q_90,w_52/v1/assets/images/13633422/2021/3/2/de86af0d-d1bd-4d85-a74c-1c28b221a7351614668364227-SASSAFRAS-Women-Jeans-4731614668362535-1.jpg",
@@ -5067,7 +5327,7 @@
     "searchTags": ["SASSAFRAS", "Jeans"]
   },
   {
-    "productsid": "WS001",
+    "productId": "WS001",
     "name": "",
     "brand": "Saree mall",
     "title": "Pink & Blue Floral Dyed Banarasi Sarees",
@@ -5077,7 +5337,8 @@
     "price": 1999,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/14006702/2021/7/9/5061cea0-2ccc-46df-97c1-9c2625383d831625822806651-Saree-mall-Women-Sarees-5611625822806335-1.jpg",
     "productImageURLs": [
       "https://assets.myntassets.com/h_68,q_90,w_52/v1/assets/images/14006702/2021/7/9/025edf0d-4716-4036-bd33-5b27535e08a81625822806632-Saree-mall-Women-Sarees-5611625822806335-2.jpg",
@@ -5087,7 +5348,7 @@
     "searchTags": ["Saree mall", "Pink & Blue Floral Dyed Banarasi Sarees"]
   },
   {
-    "productsid": "WS002",
+    "productId": "WS002",
     "name": "",
     "brand": "Saree mall",
     "title": "Purple Ethnic Motifs Zari Silk Blend Banarasi Sarees",
@@ -5097,7 +5358,8 @@
     "price": 4999,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15536978/2021/10/28/6e16a79a-6d85-4999-ac53-c59adf40775c1635405223397-Saree-Mall-Magenta-Silk-Blend-Ethnic-Woven-Design-Festive-Sa-1.jpg",
     "productImageURLs": [
       "https://assets.myntassets.com/h_68,q_90,w_52/v1/assets/images/15536978/2021/10/28/250b6cce-6819-4057-9c98-1b1c6485805b1635405223381-Saree-Mall-Magenta-Silk-Blend-Ethnic-Woven-Design-Festive-Sa-3.jpg",
@@ -5110,7 +5372,7 @@
     ]
   },
   {
-    "productsid": "WS003",
+    "productId": "WS003",
     "name": "",
     "brand": "Saree mall",
     "title": "Green & Gold-Toned Woven Design Zari Silk Blend Banarasi Sarees",
@@ -5120,7 +5382,8 @@
     "price": 5000,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15961010/2021/10/28/c4d2f603-31c5-4217-8c52-f0901b45cded1635424805834SareemallGreenSilkBlendEthnicWovenDesignFestiveWearSareewith1.jpg",
     "productImageURLs": [
       "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15961010/2021/10/28/c4d2f603-31c5-4217-8c52-f0901b45cded1635424805834SareemallGreenSilkBlendEthnicWovenDesignFestiveWearSareewith1.jpg",
@@ -5133,7 +5396,7 @@
     ]
   },
   {
-    "productsid": "WS004",
+    "productId": "WS004",
     "name": "",
     "brand": "MAX",
     "title": "Black & Gold-Toned Silk Cotton Banarasi Saree",
@@ -5143,7 +5406,8 @@
     "price": 9999,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/16287712/2021/12/15/6a7fcba1-506b-4f26-b5ad-3c5caa7916c51639557976894-Saree-mall-Women-Sarees-3381639557976253-2.jpg",
     "productImageURLs": [
       "https://assets.myntassets.com/h_68,q_90,w_52/v1/assets/images/16287712/2021/12/15/c85c86d9-c167-44e1-b861-b6c11398585d1639557976867-Saree-mall-Women-Sarees-3381639557976253-5.jpg",
@@ -5153,7 +5417,7 @@
     "searchTags": ["MAX", "Black & Gold-Toned Silk Cotton Banarasi Saree"]
   },
   {
-    "productsid": "WS005",
+    "productId": "WS005",
     "name": "",
     "brand": "Saree mall",
     "title": "Red Ethnic Motifs Zari Organza Banarasi Sarees",
@@ -5163,7 +5427,8 @@
     "price": 6999,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15537006/2021/10/28/e0fa5ac5-5540-4dd3-bbab-40fc81518f301635404887043-Saree-Mall-Pink-Silk-Blend-Ethnic-Woven-Design-Festive-Saree-2.jpg",
     "productImageURLs": [
       "https://assets.myntassets.com/h_68,q_90,w_52/v1/assets/images/15537006/2021/10/28/dc50a809-a75e-4d3a-a955-1b7eb02dfa451635404887034-Saree-Mall-Pink-Silk-Blend-Ethnic-Woven-Design-Festive-Saree-3.jpg",
@@ -5176,7 +5441,7 @@
     ]
   },
   {
-    "productsid": "WS006",
+    "productId": "WS006",
     "name": "",
     "brand": "ZUDIO",
     "title": "Magenta Ethnic Motifs Zari Silk Blend Banarasi Sarees",
@@ -5186,7 +5451,8 @@
     "price": 4888,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15536980/2021/10/28/13e010d6-e973-4fac-98b1-61b0997d22341635401625503-Saree-Mall-Magenta-Silk-Blend-Ethnic-Woven-Design-Festive-Sa-1.jpg",
     "productImageURLs": [
       "https://assets.myntassets.com/h_68,q_90,w_52/v1/assets/images/15536980/2021/10/28/138081c9-229c-4f70-8f08-d4a3a1a08d531635401625484-Saree-Mall-Magenta-Silk-Blend-Ethnic-Woven-Design-Festive-Sa-3.jpg",
@@ -5199,7 +5465,7 @@
     ]
   },
   {
-    "productsid": "WS007",
+    "productId": "WS007",
     "name": "",
     "brand": "SAREEINDUS",
     "title": "Green & Black Striped Leheriya Saree with Belt",
@@ -5209,7 +5475,8 @@
     "price": 2999,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/14984826/2021/8/18/b1689831-8ab9-483a-b98c-d3fdd04f7ff61629265009705SareeMallGreenGeorgetteEthnicSolidPartyWearSareewithMatching2.jpg",
     "productImageURLs": [
       "https://assets.myntassets.com/h_68,q_90,w_52/v1/assets/images/14984826/2021/8/18/ac4114d6-d176-429d-8a80-b1149b5a663e1629265009838SareeMallGreenGeorgetteEthnicSolidPartyWearSareewithMatching3.jpg",
@@ -5222,7 +5489,7 @@
     ]
   },
   {
-    "productsid": "WS008",
+    "productId": "WS008",
     "name": "",
     "brand": "Saree mall",
     "title": "Cream-Coloured & Pink Satin Floral Block Print Saree",
@@ -5232,7 +5499,8 @@
     "price": 6988,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/13901350/2021/4/19/ab0a38fa-9637-4f67-8122-f67e89ef38741618809749334-Saree-Mall-Cream-Japan-Satin-Ethnic-Floral-Print-Casual-Wear-1.jpg",
     "productImageURLs": [
       "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/13901350/2021/4/19/ab0a38fa-9637-4f67-8122-f67e89ef38741618809749334-Saree-Mall-Cream-Japan-Satin-Ethnic-Floral-Print-Casual-Wear-1.jpg",
@@ -5245,7 +5513,7 @@
     ]
   },
   {
-    "productsid": "WS009",
+    "productId": "WS009",
     "name": "",
     "brand": "Saree Palace",
     "title": "Green & Red Solid Saree",
@@ -5255,7 +5523,8 @@
     "price": 7999,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/9753231/2019/6/1/11275a25-696c-46ef-9ede-d4bcede479691559383684539-Saree-mall-Green--Red-Cotton-Silk-Solid-Smart-Casual-Saree-w-1.jpg",
     "productImageURLs": [
       "https://assets.myntassets.com/h_68,q_90,w_52/v1/assets/images/9753231/2019/6/1/a1f58239-4d7b-4596-8ebd-649d39f54c681559383684485-Saree-mall-Green--Red-Cotton-Silk-Solid-Smart-Casual-Saree-w-3.jpg",
@@ -5265,7 +5534,7 @@
     "searchTags": ["Saree Palace", "Green & Red Solid Saree"]
   },
   {
-    "productsid": "WS0010",
+    "productId": "WS0010",
     "name": "",
     "brand": "Saree Palace",
     "title": "Navy Blue & Red Satin Printed Saree",
@@ -5275,7 +5544,8 @@
     "price": 1298,
     "offer": 10,
     "type": "",
-    "merchantId": 0,
+    "quantity": 10,
+    "merchantId": 9,
     "thumbnailURL": "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/13901242/2021/4/12/bae2e1d1-a3e2-4f3d-9fec-adc824c9a3af1618224103089-Saree-Mall-Navy-Blue-Satin-Ethnic-Floral-Print-Casual-Wear-S-2.jpg",
     "productImageURLs": [
       "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/13901242/2021/4/12/bae2e1d1-a3e2-4f3d-9fec-adc824c9a3af1618224103089-Saree-Mall-Navy-Blue-Satin-Ethnic-Floral-Print-Casual-Wear-S-2.jpg",

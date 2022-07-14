@@ -66,26 +66,33 @@ const Auth = () => {
   }, [cartCount]);
 
   const handleSubmit = async e => {
-    // e.preventDefault();
-    let { data } = await Axios.post(
-      "/user/signIn",
-      {
-        email: values.email,
-        password: values.password,
-      },
-      { withCredentials: true }
-    );
-    if (data.message == "success") {
-      dispatch(
-        createCurrentUser({
-          currentUser: data.userData,
-          token: data.accessToken,
-        })
+   // e.preventDefault();
+
+    try {
+      let { data } = await Axios.post(
+        "/users/login",
+        {
+          email: values.email,
+          password: values.password,
+        }
+        // { withCredentials: true }
       );
-      dispatch(CloseLogin());
-      toast.success("successfully logged in");
-      navigate("/Home");
-    } else toast.error("Invalid password or Email");
+      console.log(data)
+      if (data.message == "OK") {
+        dispatch(
+          createCurrentUser({
+            currentUser: data.data,
+            token: data.data.token,
+          })
+        );
+        dispatch(CloseLogin());
+        toast.success("successfully logged in");
+        navigate("/Home");
+      } else toast.error("Invalid password or Email");
+    } catch (err) {
+      toast.info(err);
+    }
+
     setValues({ email: "", password: "", showPassword: false });
   };
   return (

@@ -1,4 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
+import Axios from "../../apis/Axios";
 
 const initialState = {
   cartItems: [],
@@ -9,7 +10,10 @@ const cartSlice = createSlice({
   initialState,
   reducers: {
     addToCart: (state, action) => {
-      state.cartItems.push(action.payload);
+       state.cartItems.push(action.payload);
+      // try {
+      //   Axios.post(`/`)
+      // }
     },
     getCartTotal: state => {
       state.cartTotal = state.cartItems.reduce(

@@ -17,6 +17,7 @@ import CalculateOffer from "../Offer Helper Components/CalculateOffer";
 import StarRatings from "../starRating/StarRatings";
 import { sx } from "@mui/joy/styles/styleFunctionSx";
 import FavoriteIcon from "@mui/icons-material/Favorite";
+import Axios from "../../apis/Axios";
 
 const FeaturedProducts = () => {
   let product = useSelector(state => state.product);
@@ -44,7 +45,10 @@ const FeaturedProducts = () => {
     setPage();
   }, [currentPage, product]);
   useEffect(() => {
-    dispatch(fetchProducts());
+    fetch("http://localhost:8080/shopping-kart-ty-api-0.0.1-SNAPSHOT/products")
+      .then(res => res.json())
+      .then(data => setProdList(data.data))
+      .catch(err => console.log(err));
   }, []);
   useEffect(() => {
     setIdList(cartList.map(item => item.productsid));
