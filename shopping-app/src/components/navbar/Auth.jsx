@@ -35,10 +35,11 @@ const Auth = () => {
   const dispatch = useDispatch();
   const location = useLocation();
   const navigate = useNavigate();
-  let cartValue = useSelector(state => state.cart.cartItems.length);
+  let cartValue = useSelector(state => state.user.currentUser.cartList);
+  console.log(cartValue);
   const isLoginOpen = useSelector(state => state.Login.isOpen);
   const currentUser = useSelector(state => state.user.currentUser);
-  const [count, setCount] = useState(cartValue);
+  const [count, setCount] = useState([]);
   const [opendrop, setOpendrop] = useState(false);
   const [values, setValues] = useState({
     email: "",
@@ -57,7 +58,7 @@ const Auth = () => {
   };
 
   let cartCount = useSelector(state =>
-    state.cart.cartItems.map(item => item.productsid)
+    state.cart.cartItems.map(item => item.productId)
   );
   let set = new Set(cartCount);
   cartCount = [...set].length;
@@ -67,25 +68,32 @@ const Auth = () => {
 
   const handleSubmit = async e => {
     // e.preventDefault();
-    let { data } = await Axios.post(
-      "/user/signIn",
-      {
-        email: values.email,
-        password: values.password,
-      },
-      { withCredentials: true }
-    );
-    if (data.message == "success") {
-      dispatch(
-        createCurrentUser({
-          currentUser: data.userData,
-          token: data.accessToken,
-        })
+
+    try {
+      let { data } = await Axios.post(
+        "/users/login",
+        {
+          email: values.email,
+          password: values.password,
+        }
+        // { withCredentials: true }
       );
-      dispatch(CloseLogin());
-      toast.success("successfully logged in");
-      navigate("/Home");
-    } else toast.error("Invalid password or Email");
+      console.log(data);
+      if (data.message == "OK") {
+        dispatch(
+          createCurrentUser({
+            currentUser: data.data,
+            token: data.data.token,
+          })
+        );
+        dispatch(CloseLogin());
+        toast.success("successfully logged in");
+        navigate("/Home");
+      } else toast.error("Invalid password or Email");
+    } catch (err) {
+      toast.info(err);
+    }
+
     setValues({ email: "", password: "", showPassword: false });
   };
   return (
@@ -100,7 +108,7 @@ const Auth = () => {
         >
           <AiOutlineShoppingCart />
           {openCart && <CartDropdown />}
-          <span>{count}</span>
+          <span>{cartValue.length}</span>
         </a>
       )}
 

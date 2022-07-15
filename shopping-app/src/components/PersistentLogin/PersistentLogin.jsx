@@ -49,6 +49,7 @@ const PersistentLogin = ({ children }) => {
   // };
   useEffect(() => {
     // getNewToken();
+    setLoading(false);
   }, []);
 
   if (loading) {
@@ -65,7 +66,7 @@ const PersistentLogin = ({ children }) => {
       </div>
     );
   } else {
-    return <>{currentUser.email && children}</>;
+    return <>{children}</>;
   }
 };
 

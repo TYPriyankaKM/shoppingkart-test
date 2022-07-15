@@ -3,9 +3,10 @@ import Axios from "../../apis/Axios";
 
 const initialState = {
   productList: [],
+  error: "",
 };
 export const fetchProducts = createAsyncThunk("product/fetchProducts", () => {
-  return Axios.get("/api/allProduct");
+  return Axios.get("/products");
 });
 const productSlice = createSlice({
   name: "product",
@@ -13,6 +14,9 @@ const productSlice = createSlice({
   extraReducers: {
     [fetchProducts.fulfilled]: (state, action) => {
       state.productList = action.payload.data;
+    },
+    [fetchProducts.rejected]: (state, action) => {
+      state.error = action.error.message;
     },
   },
 });

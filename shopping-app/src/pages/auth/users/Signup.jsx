@@ -73,7 +73,7 @@ const Signup = () => {
   const [lname, setLname] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("nopassword");
-  // const [role, setRole] = useState("");
+  const [role, setRole] = useState("");
   const [gender, setGender] = useState("male");
   const [payload, setPayload] = useState({});
   const [btnCondition, setBtnCondition] = useState(false);
@@ -92,16 +92,18 @@ const Signup = () => {
       password,
       gender,
       phone: number1,
+      role: ["CUSTOMER"],
     };
     setPayload(currPayload);
     console.log(payload);
+
     fetchData(currPayload);
     navigate("/");
   };
 
   const fetchData = async currPayload => {
     try {
-      await Axios.post("/users", currPayload);
+      await Axios.post("/customers", currPayload);
       console.log("user registered....");
       toast.success("successfully registered");
     } catch (error) {
