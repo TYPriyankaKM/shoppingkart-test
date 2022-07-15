@@ -35,10 +35,11 @@ const Auth = () => {
   const dispatch = useDispatch();
   const location = useLocation();
   const navigate = useNavigate();
-  let cartValue = useSelector(state => state.cart.cartItems.length);
+  let cartValue = useSelector(state => state.user.currentUser.cartList);
+  console.log(cartValue);
   const isLoginOpen = useSelector(state => state.Login.isOpen);
   const currentUser = useSelector(state => state.user.currentUser);
-  const [count, setCount] = useState(cartValue);
+  const [count, setCount] = useState([]);
   const [opendrop, setOpendrop] = useState(false);
   const [values, setValues] = useState({
     email: "",
@@ -57,7 +58,7 @@ const Auth = () => {
   };
 
   let cartCount = useSelector(state =>
-    state.cart.cartItems.map(item => item.productsid)
+    state.cart.cartItems.map(item => item.productId)
   );
   let set = new Set(cartCount);
   cartCount = [...set].length;
@@ -66,7 +67,7 @@ const Auth = () => {
   }, [cartCount]);
 
   const handleSubmit = async e => {
-   // e.preventDefault();
+    // e.preventDefault();
 
     try {
       let { data } = await Axios.post(
@@ -77,7 +78,7 @@ const Auth = () => {
         }
         // { withCredentials: true }
       );
-      console.log(data)
+      console.log(data);
       if (data.message == "OK") {
         dispatch(
           createCurrentUser({
@@ -107,7 +108,7 @@ const Auth = () => {
         >
           <AiOutlineShoppingCart />
           {openCart && <CartDropdown />}
-          <span>{count}</span>
+          <span>{cartValue.length}</span>
         </a>
       )}
 

@@ -11,9 +11,9 @@ const SubTotal = () => {
 
   const cart = useSelector(state => state.cart);
   const dispatch = useDispatch();
-  useEffect(() => {
-    dispatch(getCartTotal());
-  }, [cart]);
+  // useEffect(() => {
+  //   dispatch(getCartTotal());
+  // }, [cart]);
 
   const buyProduct = () => {
     navigate("/checkout");

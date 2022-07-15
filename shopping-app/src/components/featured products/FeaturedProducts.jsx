@@ -29,6 +29,7 @@ const FeaturedProducts = () => {
   let [currentPage, setCurrentPage] = useState(1);
   let cardPerPage = 12;
   let totalPages = Math.ceil(product.productList.length / cardPerPage);
+  const userId = useSelector(state => state.user.currentUser.userId);
 
   const setPage = () => {
     let start, end;
@@ -51,8 +52,22 @@ const FeaturedProducts = () => {
       .catch(err => console.log(err));
   }, []);
   useEffect(() => {
-    setIdList(cartList.map(item => item.productsid));
+    setIdList(cartList.map(item => item.productId));
   }, [cartList]);
+
+  let handleAddToCart = async (cost, imageLink, productId) => {
+    try {
+      let cartProduct = {
+        cost: cost,
+        imageLink: imageLink,
+        quantity: 1,
+        productId: productId,
+      };
+      await Axios.post(`/customers/${userId}/carts`, cartProduct);
+    } catch (error) {
+      console.log(error);
+    }
+  };
 
   return (
     <section className={styles.featuredProducts}>
@@ -64,7 +79,7 @@ const FeaturedProducts = () => {
           ) : (
             prodList.map((product, index) => {
               let {
-                productsid,
+                productId,
                 title,
                 price,
                 thumbnailURL,
@@ -77,9 +92,9 @@ const FeaturedProducts = () => {
                 <Card
                   data-aos="zoom-in"
                   data-aos-offset="200"
-                  onClick={() => navigate(`/products_page/${productsid}`)}
+                  onClick={() => navigate(`/products_page/${productId}`)}
                   className={styles.productCard}
-                  key={productsid}
+                  key={productId}
                 >
                   <div className={styles.cardBody}>
                     <img src={thumbnailURL} alt={title} />
@@ -109,7 +124,7 @@ const FeaturedProducts = () => {
                         size="small"
                         onClick={e => {
                           e.stopPropagation();
-                          dispatch(addToCart(product));
+                          handleAddToCart(price, thumbnailURL, productId);
                         }}
                       >
                         Add to cart
@@ -117,14 +132,14 @@ const FeaturedProducts = () => {
                       <FavoriteIcon
                         onClick={e => {
                           e.stopPropagation();
-                          if (productIdList.includes(productsid)) {
-                            dispatch(removeFromWishlist(productsid));
+                          if (productIdList.includes(productId)) {
+                            dispatch(removeFromWishlist(productId));
                             return;
                           }
                           dispatch(addToWishlist(product));
                         }}
                         style={{
-                          fill: productIdList.includes(productsid)
+                          fill: productIdList.includes(productId)
                             ? "red"
                             : "#c0bfbf",
                         }}

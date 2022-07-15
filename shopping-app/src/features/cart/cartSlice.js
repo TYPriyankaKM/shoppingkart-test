@@ -1,34 +1,36 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import Axios from "../../apis/Axios";
 
 const initialState = {
   cartItems: [],
-  cartTotal: 0,
+  error: "",
 };
+
+export const addToCart = createAsyncThunk(
+  "cart/addToCart",
+  (userId, payload) => {
+    return Axios.post(`/customers/${userId}/carts`, payload);
+  }
+);
+
+export const getCart = createAsyncThunk("cart/getCart", userId => {
+  return Axios.get(`/customers/${userId}/carts`);
+});
+
 const cartSlice = createSlice({
   name: "cart",
   initialState,
-  reducers: {
-    addToCart: (state, action) => {
-       state.cartItems.push(action.payload);
-      // try {
-      //   Axios.post(`/`)
-      // }
-    },
-    getCartTotal: state => {
-      state.cartTotal = state.cartItems.reduce(
-        (acc, item) => acc + item.price,
-        0
-      );
-    },
-    removeFromCart: (state, action) => {
-      state.cartItems.splice(action.payload, 1);
-    },
-    removeWholeProduct: (state, action) => {
-      state.cartItems = state.cartItems.filter(item => item.productsid!==action.payload);
-    }
+  extraReducers: builder => {
+    builder.addCase(addToCart.fulfilled, (state, action) => {
+      state.cartItems = action.payload.data;
+    });
+    builder.addCase(getCart.fulfilled, (state, action) => {
+      state.cartItems = action.payload.data;
+    });
+    builder.addCase(getCart.rejected, (state, action) => {
+      state.error = action.payload.data;
+    });
   },
 });
+
 export default cartSlice.reducer;
-export const { addToCart, getCartTotal, removeFromCart,removeWholeProduct} =
-  cartSlice.actions;
