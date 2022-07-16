@@ -1,7 +1,7 @@
 import React from "react";
 import Location from "./location.module.css";
 import ClearIcon from "@mui/icons-material/Clear";
-import { Card, TextField, makeStyles, Checkbox } from "@material-ui/core";
+import { Card, TextField, makeStyles } from "@material-ui/core";
 import clsx from "clsx";
 import { motion } from "framer-motion";
 import axios from "axios";

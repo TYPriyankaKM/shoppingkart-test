@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link, useNavigate, useParams} from "react-router-dom";
-import { Card, TextField, makeStyles, Checkbox } from "@material-ui/core";
+import { Card, TextField, makeStyles } from "@material-ui/core";
 import style from "../auth/users/signup.module.css";
 import { motion } from "framer-motion";
 import Axios from "../../apis/Axios";
@@ -343,7 +343,7 @@ const EditAddress = () => {
                   // set country code
                   let countryCode1 = "";
                   Country.getAllCountries().map((countryData) => {
-                    if (countryData.name == e.target.value) {
+                    if (countryData.name === e.target.value) {
                       setCountryCode(countryData.isoCode);
                       countryCode1 = countryData.isoCode;
                     }
@@ -388,7 +388,7 @@ const EditAddress = () => {
                   let stateCode1 = "";
                   State.getStatesOfCountry(`${countryCode}`).map(
                     (stateData) => {
-                      if (stateData.name == e.target.value) {
+                      if (stateData.name === e.target.value) {
                         stateCode1 = stateData.isoCode;
                       }
                     }

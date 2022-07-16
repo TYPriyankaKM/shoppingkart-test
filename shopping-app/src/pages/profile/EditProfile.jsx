@@ -10,8 +10,6 @@ import {
   Typography,
 } from "@mui/material";
 import React, { useState, useEffect } from "react";
-
-import { useNavigate } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { toast } from "react-toastify";
 import Axios from "../../apis/Axios";
@@ -42,9 +40,9 @@ function EditProfile({ open, onClose }) {
       gender,
       email,
       phone,
-      token,
+      // token,
     });
-  }, []);
+  }, [firstName, email, gender, lastName,phone, userData]);
 
   const handleChange = e => {
     let value = e.target.value;
