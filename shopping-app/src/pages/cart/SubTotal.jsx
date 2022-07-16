@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import styles from "./cart.module.css";
-import  {Link} from "react-router-dom"
+import { Link } from "react-router-dom";
 
 import { useSelector, useDispatch } from "react-redux";
 import { getCartTotal } from "../../features/cart/cartSlice";
@@ -11,9 +11,9 @@ const SubTotal = () => {
 
   const cart = useSelector(state => state.cart);
   const dispatch = useDispatch();
-  // useEffect(() => {
-  //   dispatch(getCartTotal());
-  // }, [cart]);
+  useEffect(() => {
+    dispatch(getCartTotal());
+  }, [cart]);
 
   const buyProduct = () => {
     navigate("/checkout");
