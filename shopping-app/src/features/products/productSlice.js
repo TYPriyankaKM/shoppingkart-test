@@ -6,7 +6,9 @@ const initialState = {
   error: "",
 };
 export const fetchProducts = createAsyncThunk("product/fetchProducts", () => {
-  return Axios.get("/products");
+  return fetch(
+    "http://localhost:8080/shopping-kart-ty-api-0.0.1-SNAPSHOT/products"
+  ).then(res => res.json());
 });
 const productSlice = createSlice({
   name: "product",

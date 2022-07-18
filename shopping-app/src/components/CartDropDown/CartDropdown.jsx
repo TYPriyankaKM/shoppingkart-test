@@ -69,7 +69,7 @@ export default function CartDropdown() {
           )}
 
           {filter
-            .slice(0, 4)
+            ?.slice(0, 4)
 
             .map((item, index) => {
               let { thumbnailURL, description, title, price, productsid } =
