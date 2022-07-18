@@ -4,8 +4,6 @@ import { useSelector , useDispatch} from "react-redux";
 import { Link } from "react-router-dom";
 import DeleteIcon from "@mui/icons-material/Delete";
 import ModeEditOutlineOutlinedIcon from "@mui/icons-material/ModeEditOutlineOutlined";
-import Axios from "../../apis/Axios";
-import { toast } from "react-toastify";
 import { fetchAddress , deleteAddress} from "../../features/address/addressSlice";
 
 function MyAddresses() {
@@ -28,14 +26,12 @@ console.log(addressData)
   }, [cuurentUser, currUser]);
 
 
-
-
   return (
     <div style={{ margin: "0 2rem" }}>
       <h3 style={{ marginBottom: "30px", textAlign: "center" }}>
         Your Address
       </h3>
-      {addressData=== null||addressData.length==0 ? "": 
+      {addressData=== null||addressData.length===0 ? "": 
       <div className={""}>
         <Link to="/addressform">
           <Button variant="contained">Add Address</Button>
@@ -46,7 +42,7 @@ console.log(addressData)
           {firstName} <span>{lastName}</span>
         </h3>
         <p style={{ fontWeight: "lighter" }}>{phone}</p>
-        { addressData == null||addressData.length==0? <><h1>No adderss added yet</h1>
+        { addressData === null||addressData.length===0? <><h1>No adderss added yet</h1>
          <Link to="/addressform">
           <Button variant="contained">Add Address</Button>
         </Link></>
@@ -79,7 +75,7 @@ console.log(addressData)
                 <Button
                   color="error"
                    onClick={() =>{
-                    dispatch(deleteAddress({userId,addressId}));  
+                    dispatch(deleteAddress({userId,addressId})) }}
                   startIcon={<DeleteIcon />}
                   size="small"
                 ></Button>
