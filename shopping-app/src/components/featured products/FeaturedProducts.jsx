@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { fetchProducts } from "../../features/products/productSlice";
 import Spinner from "./../spinner/Spinner";
 import styles from "./featuredProducts.module.css";
-import { addToCart } from "../../features/cart/cartSlice";
+import { addToCart, getCart } from "../../features/cart/cartSlice";
 import { useNavigate } from "react-router-dom";
 import PaginationComp from "../pagination/PaginationComp";
 import { AiOutlineHeart } from "react-icons/ai";
@@ -46,6 +46,7 @@ const FeaturedProducts = () => {
     setPage();
   }, [currentPage, product]);
   useEffect(() => {
+    dispatch(fetchProducts());
     fetch("http://localhost:8080/shopping-kart-ty-api-0.0.1-SNAPSHOT/products")
       .then(res => res.json())
       .then(data => setProdList(data.data))
@@ -87,7 +88,16 @@ const FeaturedProducts = () => {
                 rating,
                 brand,
               } = product;
-
+              let payload = {
+                cost: price,
+                imageLink: thumbnailURL,
+                quantity: 1,
+                productId: productId,
+              };
+              let cartData = {
+                userId,
+                payload,
+              };
               return (
                 <Card
                   data-aos="zoom-in"
@@ -124,7 +134,11 @@ const FeaturedProducts = () => {
                         size="small"
                         onClick={e => {
                           e.stopPropagation();
-                          handleAddToCart(price, thumbnailURL, productId);
+                          // handleAddToCart(price, thumbnailURL, productId);
+                          dispatch(addToCart(cartData));
+                          setTimeout(() => {
+                            dispatch(getCart(userId));
+                          }, 300);
                         }}
                       >
                         Add to cart
@@ -137,6 +151,7 @@ const FeaturedProducts = () => {
                             return;
                           }
                           dispatch(addToWishlist(product));
+                          dispatch();
                         }}
                         style={{
                           fill: productIdList.includes(productId)

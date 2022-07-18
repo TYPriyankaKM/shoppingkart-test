@@ -30,13 +30,16 @@ import UserMenu from "../UserMenu/UserMenu";
 import CartDropdown from "../CartDropDown/CartDropdown";
 import { BiAlignRight } from "react-icons/bi";
 import { NavLink } from "react-router-dom";
+import { getCart } from "../../features/cart/cartSlice";
+// import axios from './../../apis/Axios';
 
 const Auth = () => {
   const dispatch = useDispatch();
   const location = useLocation();
   const navigate = useNavigate();
-  let cartValue = useSelector(state => state.user.currentUser.cartList);
-  console.log(cartValue);
+  const [cartItems, setCartItems] = useState([]);
+  let cartValue = useSelector(state => state.cart.cartItems);
+  // console.log(cartValue);
   const isLoginOpen = useSelector(state => state.Login.isOpen);
   const currentUser = useSelector(state => state.user.currentUser);
   const [count, setCount] = useState([]);
@@ -46,6 +49,7 @@ const Auth = () => {
     password: "",
     showPassword: false,
   });
+
   const [openCart, setCart] = useState(false);
   const handleChange = (e, prop) => {
     setValues({ ...values, [prop]: e.target.value });
@@ -67,7 +71,7 @@ const Auth = () => {
   }, [cartCount]);
 
   const handleSubmit = async e => {
-    // e.preventDefault();
+    e.preventDefault();
 
     try {
       let { data } = await Axios.post(
@@ -89,6 +93,7 @@ const Auth = () => {
         dispatch(CloseLogin());
         toast.success("successfully logged in");
         navigate("/Home");
+        dispatch(getCart(data.data.userId));
       } else toast.error("Invalid password or Email");
     } catch (err) {
       toast.info(err);
@@ -107,8 +112,8 @@ const Auth = () => {
           style={{ marginRight: "0.6rem" }}
         >
           <AiOutlineShoppingCart />
-          {openCart && <CartDropdown />}
-          <span>{cartValue.length}</span>
+          {/* {openCart && <CartDropdown />} */}
+          <span>{cartValue?.length}</span>
         </a>
       )}
 

@@ -1,11 +1,7 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import styles from "./cart.module.css";
-import {
-  addToCart,
-  removeFromCart,
-  removeWholeProduct,
-} from "../../features/cart/cartSlice";
+import { addToCart, deleteFromCart } from "../../features/cart/cartSlice";
 import { Card } from "@material-ui/core";
 import { AiOutlineMinusCircle } from "react-icons/ai";
 import { AiOutlinePlusCircle } from "react-icons/ai";
@@ -15,11 +11,15 @@ import { IconButton } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import Axios from "../../apis/Axios";
 import { getCart } from "../../features/cart/cartSlice";
+import CalculateOffer from "../../components/Offer Helper Components/CalculateOffer";
 const CheckoutProducts = () => {
   // for the card
   const navigate = useNavigate();
-  const cart = useSelector(state => state.cart.cartItems);
+  // const cart = useSelector(state => state.cart.cartItems);
+  const allProducts = useSelector(state => state.product.productList);
   const dispatch = useDispatch();
+  const [cart, setCart] = useState([]);
+  const [cartIdObject, setCartIdObject] = useState({});
   // const cartSet = cart.map(JSON.stringify);
   // const uniqueSet = new Set(cartSet);
   // let uniqueArray = Array.from(uniqueSet).map(JSON.parse);
@@ -27,10 +27,12 @@ const CheckoutProducts = () => {
   // const productQuantityCounter = {};
   // const cartQnty = useSelector(state => state.cart);
   // cartQnty.cartItems.map(element => {
-  //   productQuantityCounter[element.productsid] =
-  //     (productQuantityCounter[element.productsid] || 0) + 1;
+  //   productQuantityCounter[element.productId] =
+  //     (productQuantityCounter[element.productId] || 0) + 1;
   // });
-  const userId = useSelector(state => state.user.currentUser.userId);
+
+  const { userId, cartList } = useSelector(state => state.user.currentUser);
+  const cartItems = useSelector(state => state.cart.cartItems);
   const fetchProduct = async id => {
     try {
       let { data } = await Axios.get(`/products/${id}`);
@@ -41,6 +43,19 @@ const CheckoutProducts = () => {
   useEffect(() => {
     dispatch(getCart(userId));
   }, []);
+
+  useEffect(() => {
+    let cartIdList = cartItems.map(item => item.productId);
+    let newCartIdobj = cartItems.reduce((acc, item) => {
+      return { ...acc, [item.productId]: item.itemId };
+    }, {});
+    setCartIdObject(newCartIdobj);
+    let filteredList = allProducts.filter(item => {
+      return cartIdList.includes(item.productId);
+    });
+    console.log(filteredList);
+    setCart(filteredList);
+  }, [cartItems]);
   return (
     <div className={styles.checkoutProductContainer}>
       {cart.length === 0 ? (
@@ -55,22 +70,25 @@ const CheckoutProducts = () => {
       ) : (
         cart.map((product, index) => {
           let {
-            productsid,
+            productId,
             title,
             price,
             description,
-
+            offer,
             thumbnailURL,
             rating,
             brand,
           } = product;
-
+          let payload = {
+            userId,
+            productId,
+          };
           return (
             <Card
               elevation={5}
               className={styles.cartProduct}
-              key={productsid}
-              onClick={() => navigate(`/products_page/${productsid}`)}
+              key={productId}
+              onClick={() => navigate(`/products_page/${productId}`)}
             >
               <img src={thumbnailURL} alt={title} />
               <div className={styles.productDetails}>
@@ -83,6 +101,7 @@ const CheckoutProducts = () => {
                 <span>{rating}⭐</span>
 
                 <span>₹{price}</span>
+                <CalculateOffer originPrice={price} offerPercentage={offer} />
                 <div className={styles.quantity}>
                   <AiOutlineMinusCircle
                     onClick={e => {
@@ -90,7 +109,7 @@ const CheckoutProducts = () => {
                       // dispatch(removeFromCart(index));
                     }}
                   />
-                  {/* <span>Qty:{productQuantityCounter[productsid]}</span> */}
+                  {/* <span>Qty:{productQuantityCounter[productId]}</span> */}
                   <AiOutlinePlusCircle
                     onClick={e => {
                       e.stopPropagation();
@@ -101,7 +120,15 @@ const CheckoutProducts = () => {
                 <button
                   onClick={e => {
                     e.stopPropagation();
-                    // dispatch(removeWholeProduct(productsid));
+                    dispatch(
+                      deleteFromCart({
+                        userId,
+                        cartId: cartIdObject[productId],
+                      })
+                    );
+                    setTimeout(() => {
+                      dispatch(getCart(userId));
+                    }, 200);
                   }}
                 >
                   Remove from Cart
