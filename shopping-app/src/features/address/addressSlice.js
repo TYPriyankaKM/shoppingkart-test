@@ -13,7 +13,7 @@ export const fetchAddress =createAsyncThunk("address/fetchAddress",async(custome
 //     return  fetch(`http://localhost:8080/shopping-kart-ty-api-0.0.1-SNAPSHOT/customers/${customerid}/address/${addressid}`,{method:"DELETE"}).then(data=>data.json()).then(finalData=>finalData).catch(err=>err)
 // })
 export const deleteAddress =createAsyncThunk("address/deleteAddress",async(customerid, addressid)=>{
-    return await Axios.delete(`customers/${customerid}/address/${7}`)
+    return await Axios.delete(`customers/${customerid}/address/${addressid}}`)
 })
 
 const addressSlice =createSlice({

@@ -150,7 +150,7 @@ const FeaturedProducts = () => {
                             dispatch(removeFromWishlist(productId));
                             return;
                           }
-                          dispatch(addToWishlist(product));
+                          dispatch(addToWishlist({userId,payload}));
                           dispatch();
                         }}
                         style={{
