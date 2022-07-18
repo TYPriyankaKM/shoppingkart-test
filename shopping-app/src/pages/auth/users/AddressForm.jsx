@@ -68,7 +68,7 @@ const useStyles = makeStyles(theme => ({
 const Signup = () => {
   let currUser = useSelector(state => state.user.currentUser);
 
-  let { addressList, id } = currUser;
+  let { addressList, userId } = currUser;
   console.log(currUser);
   const navigate = useNavigate();
   const dispatch = useDispatch();
@@ -83,22 +83,21 @@ const Signup = () => {
   const [payload, setPayload] = useState({});
   const [btnCondition, setBtnCondition] = useState(false);
   const [model, setModel] = useState(false);
-  const [number1, setNumber1] = useState();
+  const [number, setNumber] = useState();
   const [address, setAddress] = useState({
-    id: uuidv4(),
-    houseNo: "",
-    street: "",
-    landMark: "",
     city: "",
+    country: "",
+    line1: "",
+    street: "",
+    landmark: "",
     state: "",
     pincode: "",
-    country: "",
-  });
+  }
+  );
   const [allCountries, setAllCountries] = useState([]);
   const [countryCode, setCountryCode] = useState("IN");
   const [allStates, setAllStates] = useState([]);
   const [allCity, setAllcity] = useState([]);
-  // const navigate = useNavigate()
 
   useEffect(() => {
     let allCountriesData = Country.getAllCountries().map(countryData => {
@@ -123,24 +122,15 @@ const Signup = () => {
       ...address,
     };
     try {
-      await Axios.put(`/user/AddAddress/${id}`, currPayload);
+      await Axios.post(`/customers/${userId}/address`, currPayload);
       toast.success("successfully added");
-      window.location.assign("/my-profile/my-addresses")
+      navigate("/my-profile/my-addresses")
+      // window.location.assign("/my-profile/my-addresses")
     } catch (err) {
       console.log(err);
     }
   };
 
-  useEffect(() => {
-    const fetchData = async currPayload => {
-      try {
-        await Axios.post("/user/signUp", currPayload);
-        // toast.success("successfully registered");
-      } catch (error) {
-        console.log(error.message);
-      }
-    };
-  }, []);
 
   return (
     <>
@@ -165,7 +155,7 @@ const Signup = () => {
             className={style.formCardContainer}
           ></Card>
 
-          <Card
+          {/* <Card
             elevation={0}
             style={{ backgroundColor: "transparent" }}
             className={style.formCardContainer}
@@ -174,7 +164,7 @@ const Signup = () => {
             elevation={0}
             style={{ backgroundColor: "transparent" }}
             className={style.formCardContainer}
-          ></Card>
+          ></Card> */}
           {/* number2 optional */}
 
           {/* address 1 is mandatory */}
@@ -190,10 +180,10 @@ const Signup = () => {
               label="House/Office-Number"
               placeholder="eg-142/87"
               variant="outlined"
-              value={address.houseNo}
+              value={address.line1}
               required
               onChange={e => {
-                setAddress({ ...address, houseNo: e.target.value });
+                setAddress({ ...address, line1: e.target.value });
               }}
             ></TextField>
           </Card>
@@ -226,12 +216,12 @@ const Signup = () => {
               size="small"
               id="outlined-size-small"
               variant="outlined"
-              value={address.landMark}
-              label="landMark"
+              value={address.landmark}
+              label="landmark"
               required
               placeholder="eg-near This and That"
               onChange={e => {
-                setAddress({ ...address, landMark: e.target.value });
+                setAddress({ ...address, landmark: e.target.value });
               }}
             ></TextField>
           </Card>
@@ -372,6 +362,26 @@ const Signup = () => {
               }}
             ></TextField>
           </Card>
+           <Card
+            elevation={0}
+            style={{ backgroundColor: "transparent" }}
+            className={style.formCardContainer}
+          >
+            <TextField
+              className={classes.formTextFieldOther}
+              size="small"
+              id="outlined-size-small"
+              label="Number"
+              placeholder="Number"
+              variant="outlined"
+              value={address.number}
+              required
+              onChange={e => {
+                setAddress({ ...address, number: e.target.value });
+              }}
+            ></TextField>
+          </Card>
+{/* 
 
           <Card
             elevation={0}
@@ -391,7 +401,7 @@ const Signup = () => {
                 setPassword(e.target.value);
               }}
             ></TextField>
-          </Card>
+          </Card> */}
 
           <Card style={{ marginLeft: "300px" }}>
             {model && (

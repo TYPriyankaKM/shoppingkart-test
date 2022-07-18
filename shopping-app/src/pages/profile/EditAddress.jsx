@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link, useNavigate, useParams} from "react-router-dom";
-import { Card, TextField, makeStyles, Checkbox } from "@material-ui/core";
+import { Card, TextField, makeStyles } from "@material-ui/core";
 import style from "../auth/users/signup.module.css";
 import { motion } from "framer-motion";
 import Axios from "../../apis/Axios";
@@ -15,6 +15,8 @@ import { toast } from "react-toastify";
 import { Country, State, City } from "country-state-city";
 import { useSelector, useDispatch } from "react-redux";
 import { createCurrentUser } from "../../features/User/userSlice";
+import { editAddress } from "../../features/address/addressSlice";
+
  
 // import { motion, Variants } from "framer-motion";
 const useStyles = makeStyles((theme) => ({
@@ -60,30 +62,37 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const EditAddress = () => {
+  console.log("currUser")
   const dispatch = useDispatch(); 
   let currUser = useSelector((state) => state.user.currentUser);
+  const AddressList = useSelector(state => state.address.addressList);
+
+  
+  console.log(currUser)
     let token = useSelector(state => state.user.token);
   let { addressId } = useParams();
-  let { addressList } = currUser;
-  let Addressdata= addressList.find(add=>{if(add.id === addressId){
-    return add
-  }})
-// console.log(Addressdata)
-  let { houseNo, street, landMark, pincode } = Addressdata;
+
+  // let { addressList } = currUser;
+  let Addressdata= AddressList.find(add=>add.addressId==addressId)
+console.log(Addressdata)
+  let { line1, street, landmark, pincode,country,number,state,city } = Addressdata;
+  let {userId} = currUser
 
   const navigate = useNavigate();
   const classes = useStyles();
   const [password, setPassword] = useState("nopassword");
   const [address, setAddress] = useState({
-    id:addressId,
-    houseNo: houseNo,
-    street: street,
-    landMark: landMark,
-    city: "",
-    state: "",
-    pincode: pincode,
-    country: "",
-  });
+    city:"",
+    country:"",
+    line1,
+    street,
+    landmark,
+    state:"",
+    pincode,
+    number
+  }
+  );
+  console.log(address)
   const [allCountries, setAllCountries] = useState([]);
   const [countryCode, setCountryCode] = useState("IN");
   const [allStates, setAllStates] = useState([]);
@@ -95,6 +104,7 @@ const EditAddress = () => {
       return countryData.name;
     });
     setAllCountries(allCountriesData);
+    
   }, []);
 
   function enableStateDropDown(countryCode1) {
@@ -108,34 +118,35 @@ const EditAddress = () => {
   }
 
   
-  const handleSubmit = async e => {
+  const handleSubmit =e=> {
     
     e.preventDefault();
-    let addressPayload = {
-          ...address,
-        };
     try {
-      await Axios.put(
-        `http://localhost:5000/user/updateAddress/${currUser.id}/${addressId}`,
-        addressPayload
-      );
+        console.log(address)
+      dispatch(editAddress({userId,addressId,address},
+        
+      ))
+      // await Axios.put(
+      //   `http://localhost:5000/user/updateAddress/${currUser.id}/${addressId}`,
+      //   addressPayload
+      // );
 
-       setTimeout(async () => {
-         let detailsRes = await Axios.get("/api/user/detail", {
-           headers: {
-             "Context-Type": "application/json",
-             Authorization: `Bearer ${token}`,
-           },
-         });
-         console.log(detailsRes);
+      //  setTimeout(async () => {
+      //    let detailsRes = await Axios.get("/api/user/detail", {
+      //      headers: {
+      //        "Context-Type": "application/json",
+      //        Authorization: `Bearer ${token}`,
+      //      },
+      //    });
+      //    console.log(detailsRes);
 
-         dispatch(
-           createCurrentUser({
-             refreshToken: token,
-             currentUser: detailsRes.data.userDetails,
-           })
-         );
-       }, 200);
+      //    dispatch(
+      //      createCurrentUser({
+      //        refreshToken: token,
+      //        currentUser: detailsRes.data.userDetails,
+      //      })
+      //    );
+      //  }, 200);
       
       toast.success("successfully updated");
       navigate("/my-profile/my-addresses")
@@ -274,10 +285,10 @@ const EditAddress = () => {
               label="House/Office-Number"
               placeholder="eg-142/87"
               variant="outlined"
-              value={address.houseNo}
+              value={address.line1}
               required
               onChange={(e) => {
-                setAddress({ ...address, houseNo: e.target.value });
+                setAddress({ ...address, line1: e.target.value });
               }}
             ></TextField>
           </Card>
@@ -310,12 +321,12 @@ const EditAddress = () => {
               size="small"
               id="outlined-size-small"
               variant="outlined"
-              value={address.landMark}
+              value={address.landmark}
               label="landMark"
               required
               placeholder="eg-near This and That"
               onChange={(e) => {
-                setAddress({ ...address, landMark: e.target.value });
+                setAddress({ ...address, landmark: e.target.value });
               }}
             ></TextField>
           </Card>
@@ -343,7 +354,7 @@ const EditAddress = () => {
                   // set country code
                   let countryCode1 = "";
                   Country.getAllCountries().map((countryData) => {
-                    if (countryData.name == e.target.value) {
+                    if (countryData.name === e.target.value) {
                       setCountryCode(countryData.isoCode);
                       countryCode1 = countryData.isoCode;
                     }
@@ -388,7 +399,7 @@ const EditAddress = () => {
                   let stateCode1 = "";
                   State.getStatesOfCountry(`${countryCode}`).map(
                     (stateData) => {
-                      if (stateData.name == e.target.value) {
+                      if (stateData.name === e.target.value) {
                         stateCode1 = stateData.isoCode;
                       }
                     }
@@ -461,7 +472,25 @@ const EditAddress = () => {
               }}
             ></TextField>
           </Card>
-
+          <Card
+            elevation={0}
+            style={{ backgroundColor: "transparent" }}
+            className={style.formCardContainer}
+          >
+            <TextField
+              className={classes.formTextFieldOther}
+              size="small"
+              id="outlined-size-small"
+              label="Number"
+              placeholder="Number"
+              variant="outlined"
+              value={address.number}
+              required
+              onChange={e => {
+                setAddress({ ...address, number: e.target.value });
+              }}
+            ></TextField>
+          </Card>
 
           <Card
             elevation={0}
@@ -496,4 +525,7 @@ const EditAddress = () => {
   );
 };
 
-export default EditAddress;
+
+
+
+export default EditAddress

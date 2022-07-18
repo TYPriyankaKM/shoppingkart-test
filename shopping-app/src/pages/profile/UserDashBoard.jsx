@@ -1,14 +1,10 @@
 import { Card, Grid } from "@mui/material";
 import React from "react";
 import { NavLink, useLocation } from "react-router-dom";
-import { useSelector } from "react-redux";
-import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import "./profile.css";
 
 function UserDashBoard() {
   const { pathname } = useLocation();
-  let currUser = useSelector(state => state.user.currentUser);
-  let { firstName, lastName, gender, email, phone } = currUser;
   return (
     <Card
       sx={{
@@ -38,7 +34,7 @@ function UserDashBoard() {
         <NavLink to="my-profile-info">
           <Grid
             className={
-              pathname == "/my-profile/my-profile-info"
+              pathname === "/my-profile/my-profile-info"
                 ? "profileDashactive"
                 : "ediprofileDashNavlink"
             }
@@ -50,7 +46,7 @@ function UserDashBoard() {
         <NavLink to="my-addresses">
           <Grid
             className={
-              pathname == "/my-profile/my-addresses"
+              pathname === "/my-profile/my-addresses"
                 ? "profileDashactive"
                 : "ediprofileDashNavlink"
             }

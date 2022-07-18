@@ -45,10 +45,6 @@ export default function TermsConditions({ condition, modelCondition }) {
     }
   }, [open]);
 
-  setInterval(() => {
-    console.log(window.scrollY);
-  }, 1000);
-
   window.onscroll = function (ev) {
     if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
       console.log("reached bottom");

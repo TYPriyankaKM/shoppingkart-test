@@ -3,7 +3,6 @@
 import React, { useState } from "react";
 import { styled } from "@mui/material/styles";
 import Badge from "@mui/material/Badge";
-import PersonIcon from "@mui/icons-material/Person";
 import { Button, Avatar } from "@mui/material";
 import ModeEditIcon from "@mui/icons-material/ModeEdit";
 import { useSelector } from "react-redux";
