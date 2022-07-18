@@ -68,7 +68,7 @@ const EditAddress = () => {
   let Addressdata= addressList.find(add=>{if(add.id === addressId){
     return add
   }})
-// console.log(Addressdata)
+
   let { houseNo, street, landMark, pincode } = Addressdata;
 
   const navigate = useNavigate();
@@ -152,77 +152,7 @@ const EditAddress = () => {
       <motion.div className={clsx(style.formCard)}>
         <h1>Edit Address</h1>
         <form onSubmit={handleSubmit}>
-          {/* <Card
-            style={{ backgroundColor: "transparent" }}
-            elevation={0}
-            className={style.formCardContainer}
-          >
-            <TextField
-              className={classes.formTextFieldName}
-              size="small"
-              label="First Name"
-              id="outlined-size-small"
-              variant="outlined"
-              required
-              value={fname}
-              onChange={e => {
-                setFname(e.target.value);
-              }}
-            ></TextField>
-            <TextField
-              className={classes.formTextFieldName}
-              size="small"
-              label="Last Name"
-              id="outlined-size-small"
-              variant="outlined"
-              required
-              value={lname}
-              onChange={e => {
-                setLname(e.target.value);
-              }}
-            ></TextField>
-          </Card> */}
-          {/* <Card
-            elevation={0}
-            style={{ backgroundColor: "transparent" }}
-            className={style.formCardContainer}
-          >
-            <RadioGroup
-              aria-label="gender"
-              name="gender1"
-              value={gender}
-              onChange={e => setGender(e.target.value)}
-            >
-              <section
-                style={{
-                  display: "flex",
-                  // alignItems: "baseline",
-                  alignItems: "center",
-                  justifyContent: "space-evenly",
-                }}
-              >
-                <FormLabel component="legend">Gender</FormLabel>
-                <FormControlLabel
-                  className={style.radioGroup}
-                  value="female"
-                  control={<Radio />}
-                  label="Female"
-                />
-                <FormControlLabel
-                  className={style.radioGroup}
-                  value="male"
-                  control={<Radio />}
-                  label="Male"
-                />
-                <FormControlLabel
-                  className={style.radioGroup}
-                  value="other"
-                  control={<Radio />}
-                  label="Other"
-                />
-              </section>
-            </RadioGroup>
-          </Card> */}
+         
           {/* phone number1 mandatory */}
           {/* <Card
             elevation={0}
