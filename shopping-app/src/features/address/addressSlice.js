@@ -1,6 +1,7 @@
 import {createAsyncThunk, createSlice} from "@reduxjs/toolkit"
 import Axios from "../../apis/Axios"
 import {toast} from "react-toastify"
+
 const initialState={
     addressList:[],
     error :""
@@ -9,6 +10,7 @@ const initialState={
 export const fetchAddress =createAsyncThunk("address/fetchAddress",async(customerid)=>{
     return  fetch(`http://localhost:8080/shopping-kart-ty-api-0.0.1-SNAPSHOT/customers/${customerid}/address`).then(data=>data.json()).then(finalData=>finalData).catch(err=>err)
 })
+
 
 export const deleteAddress =createAsyncThunk("address/deleteAddress",async(obj)=>{
     let permit= window.confirm("Are you sure you want to delete Address")
@@ -35,8 +37,9 @@ export const editAddress =createAsyncThunk("address/editAddress",async(obj1)=>{
      
 })
 
+
 const addressSlice =createSlice({
-    name:"address", 
+    name:"address",
     initialState,
     extraReducers:{
         [fetchAddress.fulfilled]:(state, action)=>{
@@ -46,6 +49,7 @@ const addressSlice =createSlice({
             state.error = action.error.message;
           },
         [deleteAddress.fulfilled]:(state, action)=>{
+
             let index = state.addressList.findIndex(({ addressId }) => addressId == action.payload.addressId);
             state.addressList.splice(index, 1);
         },
@@ -61,6 +65,11 @@ const addressSlice =createSlice({
         },
         [editAddress.rejected]: (state, action) => {
             state.error = action.error.message;
+
+            console.log(action.payload.data.message)
+        },
+        [deleteAddress.rejected]: (state, action) => {
+            console.log(action.payload.data.message)
 
           },
     }
