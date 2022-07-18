@@ -89,7 +89,7 @@ const Signup = () => {
     country: "",
     line1: "",
     street: "",
-    landMark: "",
+    landmark: "",
     state: "",
     pincode: "",
   }
@@ -216,12 +216,12 @@ const Signup = () => {
               size="small"
               id="outlined-size-small"
               variant="outlined"
-              value={address.landMark}
-              label="landMark"
+              value={address.landmark}
+              label="landmark"
               required
               placeholder="eg-near This and That"
               onChange={e => {
-                setAddress({ ...address, landMark: e.target.value });
+                setAddress({ ...address, landmark: e.target.value });
               }}
             ></TextField>
           </Card>
@@ -377,7 +377,7 @@ const Signup = () => {
               value={address.number}
               required
               onChange={e => {
-                setNumber({ ...address, number: e.target.value });
+                setAddress({ ...address, number: e.target.value });
               }}
             ></TextField>
           </Card>

@@ -1,5 +1,6 @@
 import {createAsyncThunk, createSlice} from "@reduxjs/toolkit"
 import Axios from "../../apis/Axios"
+import {toast} from "react-toastify"
 
 const initialState={
     addressList:[],
@@ -9,12 +10,33 @@ const initialState={
 export const fetchAddress =createAsyncThunk("address/fetchAddress",async(customerid)=>{
     return  fetch(`http://localhost:8080/shopping-kart-ty-api-0.0.1-SNAPSHOT/customers/${customerid}/address`).then(data=>data.json()).then(finalData=>finalData).catch(err=>err)
 })
-// export const deleteAddress =createAsyncThunk("address/deleteAddress",async(customerid, addressid)=>{
-//     return  fetch(`http://localhost:8080/shopping-kart-ty-api-0.0.1-SNAPSHOT/customers/${customerid}/address/${addressid}`,{method:"DELETE"}).then(data=>data.json()).then(finalData=>finalData).catch(err=>err)
-// })
-export const deleteAddress =createAsyncThunk("address/deleteAddress",async(customerid, addressid)=>{
-    return await Axios.delete(`customers/${customerid}/address/${addressid}}`)
+
+
+export const deleteAddress =createAsyncThunk("address/deleteAddress",async(obj)=>{
+    let permit= window.confirm("Are you sure you want to delete Address")
+    
+     try{
+     let {userId,addressId} = obj
+     if(permit){
+        await Axios.delete(`customers/${userId}/address/${addressId}`)
+        toast.success("Address deleted successfully")   
+        return {addressId};
+     }
+     
+     }
+     catch (err){
+        toast.error(err.message)
+     }
 })
+
+export const editAddress =createAsyncThunk("address/editAddress",async(obj1)=>{
+    console.log(obj1)
+    let {userId,addressId,address} = obj1
+    await Axios.put(`customers/${userId}/address/${addressId}`,address)
+    return {addressId,address}
+     
+})
+
 
 const addressSlice =createSlice({
     name:"address",
@@ -27,10 +49,28 @@ const addressSlice =createSlice({
             state.error = action.error.message;
           },
         [deleteAddress.fulfilled]:(state, action)=>{
+
+            let index = state.addressList.findIndex(({ addressId }) => addressId == action.payload.addressId);
+            state.addressList.splice(index, 1);
+        },
+        [deleteAddress.rejected]: (state, action) => {
+            state.error = action.error.message;
+            
+          },
+          [editAddress.fulfilled]:(state, action)=>{
+            console.log(action.payload)
+            let index = state.addressList.findIndex((v) => v.addressId == action.payload.addressId);
+            state.addressList.splice(index, 1,action.payload.address);
+            
+        },
+        [editAddress.rejected]: (state, action) => {
+            state.error = action.error.message;
+
             console.log(action.payload.data.message)
         },
         [deleteAddress.rejected]: (state, action) => {
             console.log(action.payload.data.message)
+
           },
     }
 })

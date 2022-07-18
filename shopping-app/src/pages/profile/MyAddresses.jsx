@@ -27,27 +27,7 @@ console.log(addressData)
     // console.log(cuurentUser);
   }, [cuurentUser, currUser]);
 
-  let deleteAdd=(uid,aid)=>{
-    dispatch(deleteAddress(uid,aid));
 
-    dispatch(fetchAddress(uid));
-
-  }
-
-  // const deleteAddress = async (addressId) => {
-  //   let permit = window.confirm("Are sure to delete Address")
-  //   try {
-  //     if(permit){
-  //       await Axios.delete(
-  //         `http://localhost:5000/user/deleteAddress/${currUser.id}/${addressId}`
-  //       );
-  //       toast.error("Address Deleted");
-  //       window.location.assign("/my-profile/my-addresses")
-  //     }
-  //   } catch (err) {
-  //     console.log(err);
-  //   }
-  // };
 
 
   return (
@@ -55,8 +35,7 @@ console.log(addressData)
       <h3 style={{ marginBottom: "30px", textAlign: "center" }}>
         Your Address
       </h3>
-
-      {addressData.length === 0 ? "": 
+      {addressData=== null||addressData.length==0 ? "": 
       <div className={""}>
         <Link to="/addressform">
           <Button variant="contained">Add Address</Button>
@@ -67,13 +46,13 @@ console.log(addressData)
           {firstName} <span>{lastName}</span>
         </h3>
         <p style={{ fontWeight: "lighter" }}>{phone}</p>
-
-        { addressData.length === 0? <><h1>No adderss added yet</h1>
+        { addressData == null||addressData.length==0? <><h1>No adderss added yet</h1>
          <Link to="/addressform">
           <Button variant="contained">Add Address</Button>
         </Link></>
         :
         addressData.map((item, index) => {
+          let {addressId} = item
           return (
             <Card sx={{ maxWidth: 500, margin: "8px 0px" }}>
               <CardContent>
@@ -81,7 +60,7 @@ console.log(addressData)
                   <div className={""}>
                     <h4>{`Address ${index + 1}`} : &nbsp; </h4>
                     <div style={{ marginTop: "6px" }}>
-                      {item.line1} , {item.landMark},{item.street}{" "}
+                      {item.line1} , {item.landmark},{item.street}{" "}
                       {item.city} -{item.pincode},{item.number}
                     </div>
                   </div>
@@ -99,11 +78,8 @@ console.log(addressData)
 
                 <Button
                   color="error"
-   
                    onClick={() =>{
-                deleteAdd(userId,item.addressId)   
-    }}
-
+                    dispatch(deleteAddress({userId,addressId}));  
                   startIcon={<DeleteIcon />}
                   size="small"
                 ></Button>
