@@ -3,7 +3,6 @@ import { Link, useNavigate, useParams} from "react-router-dom";
 import { Card, TextField, makeStyles } from "@material-ui/core";
 import style from "../auth/users/signup.module.css";
 import { motion } from "framer-motion";
-import Axios from "../../apis/Axios";
 import MenuItem from "@material-ui/core/MenuItem";
 import Select from "@material-ui/core/Select";
 import "animate.css";
@@ -14,11 +13,9 @@ import FormControl from "@material-ui/core/FormControl";
 import { toast } from "react-toastify";
 import { Country, State, City } from "country-state-city";
 import { useSelector, useDispatch } from "react-redux";
-import { createCurrentUser } from "../../features/User/userSlice";
 import { editAddress } from "../../features/address/addressSlice";
 
  
-// import { motion, Variants } from "framer-motion";
 const useStyles = makeStyles((theme) => ({
   margin: {
     margin: theme.spacing(1),
@@ -68,7 +65,7 @@ const EditAddress = () => {
   const AddressList = useSelector(state => state.address.addressList);
 
   
-  console.log(currUser)
+  // console.log(currUser)
     let token = useSelector(state => state.user.token);
   let { addressId } = useParams();
 
@@ -122,31 +119,7 @@ console.log(Addressdata)
     e.preventDefault();
     try {
         console.log(address)
-      dispatch(editAddress({userId,addressId,address},
-        
-      ))
-      // await Axios.put(
-      //   `http://localhost:5000/user/updateAddress/${currUser.id}/${addressId}`,
-      //   addressPayload
-      // );
-
-      //  setTimeout(async () => {
-      //    let detailsRes = await Axios.get("/api/user/detail", {
-      //      headers: {
-      //        "Context-Type": "application/json",
-      //        Authorization: `Bearer ${token}`,
-      //      },
-      //    });
-      //    console.log(detailsRes);
-
-      //    dispatch(
-      //      createCurrentUser({
-      //        refreshToken: token,
-      //        currentUser: detailsRes.data.userDetails,
-      //      })
-      //    );
-      //  }, 200);
-      
+      dispatch(editAddress({userId,addressId,address}))
       toast.success("successfully updated");
       navigate("/my-profile/my-addresses")
     } catch (err) {
