@@ -56,8 +56,8 @@ const addressSlice =createSlice({
             state.error = action.error.message;
             
           },
-          [editAddress.fulfilled]:(state, action)=>{
-            console.log(action.payload)
+          [editAddress.fulfilled]:(state, action)=>{ 
+            
             let index = state.addressList.findIndex((v) => v.addressId == action.payload.addressId);
             state.addressList.splice(index, 1,action.payload.address);
             
