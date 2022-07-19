@@ -12,6 +12,7 @@ import { useNavigate } from "react-router-dom";
 import Axios from "../../apis/Axios";
 import { getCart } from "../../features/cart/cartSlice";
 import CalculateOffer from "../../components/Offer Helper Components/CalculateOffer";
+import { AccountCircle } from "@material-ui/icons";
 const CheckoutProducts = () => {
   // for the card
   const navigate = useNavigate();
@@ -47,13 +48,13 @@ const CheckoutProducts = () => {
   useEffect(() => {
     let cartIdList = cartItems.map(item => item.productId);
     let newCartIdobj = cartItems.reduce((acc, item) => {
-      return { ...acc, [item.productId]: item.itemId };
+      return { ...acc, [item.productId]: [item.itemId, item.quantity] };
     }, {});
+    console.log(newCartIdobj)
     setCartIdObject(newCartIdobj);
     let filteredList = allProducts.filter(item => {
       return cartIdList.includes(item.productId);
     });
-    console.log(filteredList);
     setCart(filteredList);
   }, [cartItems]);
   return (
@@ -109,7 +110,7 @@ const CheckoutProducts = () => {
                       // dispatch(removeFromCart(index));
                     }}
                   />
-                  {/* <span>Qty:{productQuantityCounter[productId]}</span> */}
+                  {cartIdObject[productId][1]}
                   <AiOutlinePlusCircle
                     onClick={e => {
                       e.stopPropagation();
@@ -123,7 +124,7 @@ const CheckoutProducts = () => {
                     dispatch(
                       deleteFromCart({
                         userId,
-                        cartId: cartIdObject[productId],
+                        cartId: cartIdObject[productId][0],
                       })
                     );
                     setTimeout(() => {
