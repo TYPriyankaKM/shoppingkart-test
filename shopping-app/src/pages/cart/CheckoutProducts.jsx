@@ -15,7 +15,7 @@ import CalculateOffer from "../../components/Offer Helper Components/CalculateOf
 const CheckoutProducts = () => {
   // for the card
   const navigate = useNavigate();
-  // const cart = useSelector(state => state.cart.cartItems);
+  const {quantity} = useSelector(state => state.cart.cartItems);
   const allProducts = useSelector(state => state.product.productList);
   const dispatch = useDispatch();
   const [cart, setCart] = useState([]);
@@ -32,7 +32,6 @@ const CheckoutProducts = () => {
   // });
 
   const { userId, cartList } = useSelector(state => state.user.currentUser);
-  const cartItems = useSelector(state => state.cart.cartItems);
   const fetchProduct = async id => {
     try {
       let { data } = await Axios.get(`/products/${id}`);
@@ -43,6 +42,7 @@ const CheckoutProducts = () => {
   useEffect(() => {
     dispatch(getCart(userId));
   }, []);
+  const cartItems = useSelector(state => state.cart.cartItems);
 
   useEffect(() => {
     let cartIdList = cartItems.map(item => item.productId);
@@ -83,6 +83,7 @@ const CheckoutProducts = () => {
             userId,
             productId,
           };
+          // let {quantity}=cartItems.find(v=>v.productId==productId)
           return (
             <Card
               elevation={5}
@@ -110,6 +111,8 @@ const CheckoutProducts = () => {
                     }}
                   />
                   {/* <span>Qty:{productQuantityCounter[productId]}</span> */}
+                  {/* {quantity} */}
+                  
                   <AiOutlinePlusCircle
                     onClick={e => {
                       e.stopPropagation();

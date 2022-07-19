@@ -19,7 +19,8 @@ export const getCart = createAsyncThunk("cart/getCart", userId => {
 export const deleteFromCart = createAsyncThunk(
   "cart/deleteFromCart",
   payload => {
-    return Axios.delete(`/customers/${payload.userId}/carts/${payload.cartId}`);
+     Axios.delete(`/customers/${payload.userId}/carts/${payload.cartId}`);
+     return {payload};
   }
 );
 
@@ -42,6 +43,13 @@ const cartSlice = createSlice({
       state.cartItems = action.payload.data;
     });
     builder.addCase(getCart.rejected, (state, action) => {
+      state.error = action.payload.data;
+    });
+    builder.addCase(deleteFromCart.fulfilled, (state, action) => {
+      let index = state.cartItems.findIndex((v) => v.productId == action.payload.cartId);
+      state.cartItems.splice(index,1)
+    });
+    builder.addCase(deleteFromCart.rejected, (state, action) => {
       state.error = action.payload.data;
     });
   },
