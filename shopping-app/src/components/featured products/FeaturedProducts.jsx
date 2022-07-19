@@ -9,7 +9,7 @@ import PaginationComp from "../pagination/PaginationComp";
 import { AiOutlineHeart } from "react-icons/ai";
 import {
   addToWishlist,
-  removeFromWishlist,
+  deleteFromWishlist,
 } from "../../features/wishlist/wishlistSlice";
 import Card from "@material-ui/core/Card";
 import { Button } from "@mui/material";
@@ -147,7 +147,7 @@ const FeaturedProducts = () => {
                         onClick={e => {
                           e.stopPropagation();
                           if (productIdList.includes(productId)) {
-                            dispatch(removeFromWishlist(productId));
+                            dispatch(deleteFromWishlist({userId,wishlistId:productId}));
                             return;
                           }
                           dispatch(addToWishlist({userId,payload}));

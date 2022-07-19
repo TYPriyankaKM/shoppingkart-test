@@ -73,7 +73,7 @@ function MyAddresses() {
                 <Button
                   color="error"
                    onClick={() =>{
-                    dispatch(deleteAddress({userId,addressId})) }}
+                    dispatch(deleteAddress({userId,addressId}))}}
                   startIcon={<DeleteIcon />}
                   size="small"
                 ></Button>

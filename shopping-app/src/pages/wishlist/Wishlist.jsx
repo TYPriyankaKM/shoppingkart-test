@@ -1,6 +1,6 @@
-import React from "react";
+import React,{useEffect,useState} from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { removeFromWishlist } from "../../features/wishlist/wishlistSlice";
+import { deleteFromWishlist,getAllWishlist } from "../../features/wishlist/wishlistSlice";
 import styles from "./wishlist.module.css";
 import { AiOutlineDelete } from "react-icons/ai";
 import { useNavigate } from "react-router-dom";
@@ -8,38 +8,45 @@ import CalculateOffer from "../../components/Offer Helper Components/CalculateOf
 import StarRatings from "../../components/starRating/StarRatings";
 import { Button } from "@mui/material";
 import { addToCart } from "../../features/cart/cartSlice";
+
 const Wishlist = () => {
+  // let [wl,setWl] = useState([])
   let navigate = useNavigate();
-  let wishlist = useSelector(state => state.wishlist);
+  let {userId} = useSelector((state) => state.user.currentUser);
+
+  let productlist = useSelector(state => state.product.productList);
+  
   const dispatch = useDispatch();
+  useEffect(()=>{
+    dispatch(getAllWishlist({userId}))
+  },[])
+  let wishlist = useSelector(state => state.wishlist.wishList);
+
   return (
     <section className={styles.wishlist}>
       <article>
-        <h1>My Wishlist ({wishlist.wishList.length})</h1>
-        {wishlist.wishList.length === 0 ? (
+        <h1>My Wishlist ({wishlist.length})</h1>
+        {
+        wishlist.length === 0 ? (
           <h1>Your wish list is empty please go back and add some products</h1>
         ) : (
           <div className={styles.listContainer}>
-            {wishlist.wishList.map((product, index) => {
+            {wishlist.map((product, index) => {
               let {
-                productsid,
-                brand,
-                title,
-                description,
-                price,
-                rating,
-                thumbnailURL,
-                offer,
+                productId,
+                quantity,
+                imageLink
               } = product;
+              let {title,brand,description,offer,price}=productlist.find(v=>v.productId==productId)
               return (
                 <div
-                  onClick={() => navigate(`/products_page/${productsid}`)}
+                  onClick={() => navigate(`/products_page/${productId}`)}
                   className={styles.wishlistProduct}
-                  key={productsid}
+                  key={productId}
                 >
                   <div className={styles.prodImg}>
                     <img
-                      src={thumbnailURL}
+                      src={imageLink}
                       alt={title}
                       height="200"
                       width="200"
@@ -50,11 +57,11 @@ const Wishlist = () => {
                       {brand} {title}
                     </h2>
                     <p>{description}</p>
-                    <span style={{ position: "relative", width: "100%" }}>
-                      {rating.toFixed(1)}
-                      <StarRatings rating={rating} left="1.7" top="0" />
+                    {/* <span style={{ position: "relative", width: "100%" }}> */}
+                      {/* {rating.toFixed(1)} */}
+                      {/* <StarRatings rating={rating} left="1.7" top="0" /> */}
                       {/* <Chip className={style.chip} label="Best" /> */}
-                    </span>
+                    {/* </span> */}
                     <CalculateOffer
                       originPrice={price}
                       offerPercentage={offer}
@@ -73,7 +80,7 @@ const Wishlist = () => {
                   <div
                     onClick={e => {
                       e.stopPropagation();
-                      dispatch(removeFromWishlist(productsid));
+                      dispatch(deleteFromWishlist({userId,wishlistId:productId}));
                     }}
                     className={styles.deleteIcon}
                   >
