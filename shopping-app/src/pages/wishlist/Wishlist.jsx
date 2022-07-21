@@ -21,6 +21,8 @@ const Wishlist = () => {
     dispatch(getAllWishlist({userId}))
   },[])
   let wishlist = useSelector(state => state.wishlist.wishList);
+  let cartItems = useSelector(state => state.cart.cartItems);
+
 
   return (
     <section className={styles.wishlist}>
@@ -37,7 +39,18 @@ const Wishlist = () => {
                 quantity,
                 imageLink
               } = product;
+              let payload = {
+                cost: product.cost,
+                imageLink:product.imageLink,
+                quantity: 1,
+                productId: product.productId,
+              };
+              let cartData = {
+                userId,
+                payload,
+              };
               let {title,brand,description,offer,price}=productlist.find(v=>v.productId==productId)
+              let found=cartItems.find(v=>v.productId==product.productId)
               return (
                 <div
                   onClick={() => navigate(`/products_page/${productId}`)}
@@ -71,10 +84,12 @@ const Wishlist = () => {
                       size="small"
                       onClick={e => {
                         e.stopPropagation();
-                        dispatch(addToCart(product));
+                        
+                        if(found==undefined)
+                        dispatch(addToCart(cartData));
                       }}
                     >
-                      Add to cart
+                      {found?"Added":"Add To Cart"}
                     </Button>
                   </div>
                   <div

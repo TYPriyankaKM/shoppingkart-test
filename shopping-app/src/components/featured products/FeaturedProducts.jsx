@@ -143,8 +143,7 @@ const FeaturedProducts = () => {
                             dispatch(addToCart(cartData));
                           setTimeout(() => {
                             dispatch(getCart(userId));
-                          }, 300);
-                            
+                          }, 300)
                           }
                           
                         }}
