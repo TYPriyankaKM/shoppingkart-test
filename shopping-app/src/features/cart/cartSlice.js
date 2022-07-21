@@ -44,7 +44,7 @@ const cartSlice = createSlice({
       );
     },
     getCartCount: (state, action) => {
-      state.cartCount = state.cartItems.reduce(
+      state.cartCount = state.cartItems?.reduce(
         (acc, item) => acc + item.quantity,
         0
       );

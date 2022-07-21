@@ -57,7 +57,7 @@ const FeaturedProducts = () => {
   }, []);
   useEffect(() => {
     setIdList(cartList.map(item => item.productId));
-    setCartIdList(cartlist.map(item => item.productId))
+    setCartIdList(cartlist?.map(item => item.productId))
   }, [cartList,cartlist]);
 
   let handleAddToCart = async (cost, imageLink, productId) => {
@@ -139,7 +139,7 @@ const FeaturedProducts = () => {
                         onClick={e => {
                           e.stopPropagation();
                           // handleAddToCart(price, thumbnailURL, productId);
-                          if (cartIdList.includes(productId)==false) {
+                          if (cartIdList?.includes(productId)==false) {
                             dispatch(addToCart(cartData));
                           setTimeout(() => {
                             dispatch(getCart(userId));
@@ -148,13 +148,13 @@ const FeaturedProducts = () => {
                           
                         }}
                       >
-                        {cartIdList.includes(productId)?"added":"add to cart"}
+                        {cartIdList?.includes(productId)?"added":"add to cart"}
                         
                       </Button>
                       <FavoriteIcon
                         onClick={e => {
                           e.stopPropagation();
-                          if (productIdList.includes(productId)) {
+                          if (productIdList?.includes(productId)) {
                             dispatch(deleteFromWishlist({userId,wishlistId:productId}));
                             return;
                           }
@@ -162,7 +162,7 @@ const FeaturedProducts = () => {
                           dispatch();
                         }}
                         style={{
-                          fill: productIdList.includes(productId)
+                          fill: productIdList?.includes(productId)
                             ? "red"
                             : "#c0bfbf",
                         }}

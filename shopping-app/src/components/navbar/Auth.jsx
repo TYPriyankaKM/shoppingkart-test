@@ -30,7 +30,7 @@ import UserMenu from "../UserMenu/UserMenu";
 import CartDropdown from "../CartDropDown/CartDropdown";
 import { BiAlignRight } from "react-icons/bi";
 import { NavLink } from "react-router-dom";
-import { getCart,getCartCount } from "../../features/cart/cartSlice";
+import { getCart, getCartCount } from "../../features/cart/cartSlice";
 // import axios from './../../apis/Axios';
 
 const Auth = () => {
@@ -64,12 +64,12 @@ const Auth = () => {
   };
 
   let cartCount = useSelector(state =>
-    state.cart.cartItems.map(item => item.productId)
+    state.cart.cartItems?.map(item => item.productId)
   );
   let set = new Set(cartCount);
   cartCount = [...set].length;
   useEffect(() => {
-    dispatch(getCartCount())
+    dispatch(getCartCount());
   }, [cart]);
 
   const handleSubmit = async e => {
@@ -115,7 +115,7 @@ const Auth = () => {
         >
           <AiOutlineShoppingCart />
           {/* {openCart && <CartDropdown />} */}
-          <span>{cart.cartCount}</span>
+          <span>{cart?.cartCount || 0}</span>
         </a>
       )}
 
