@@ -8,9 +8,9 @@ const initialState = {
 };
 
 export const addToCart = createAsyncThunk("cart/addToCart", data => {
-  let{payload} = data
+  let { payload } = data;
   Axios.post(`/customers/${data.userId}/carts`, data.payload);
-  return {payload}
+  return { payload };
 });
 
 export const getCart = createAsyncThunk("cart/getCart", userId => {
@@ -21,15 +21,8 @@ export const getCart = createAsyncThunk("cart/getCart", userId => {
 export const deleteFromCart = createAsyncThunk(
   "cart/deleteFromCart",
   payload => {
-     Axios.delete(`/customers/${payload.userId}/carts/${payload.cartid}`);
-     return {payload};
-  }
-);
-export const updateCart = createAsyncThunk(
-  "cart/updateCart",
-  payload => {
-     Axios.put(`/customers/${payload.userId}/carts/${payload.itemid}`,payload.data);
-     return {payload};
+    Axios.delete(`/customers/${payload.userId}/carts/${payload.cartId}`);
+    return { payload };
   }
 );
 
@@ -61,15 +54,17 @@ const cartSlice = createSlice({
       state.error = action.payload.data;
     });
     builder.addCase(updateCart.fulfilled, (state, action) => {
-      let index = state.cartItems.findIndex((v) => v.itemId == action.payload.payload.itemid);
-      state.addressList.splice(index, 1,action.payload.payload.data);
+      let index = state.cartItems.findIndex(
+        v => v.itemId == action.payload.payload.itemid
+      );
+      state.addressList.splice(index, 1, action.payload.payload.data);
     });
-    builder.addCase(updateCart.rejected, (state, action) => {
-      state.error = action.payload.data;
-    });
+
     builder.addCase(deleteFromCart.fulfilled, (state, action) => {
-      let index = state.cartItems.findIndex((v) => v.productId == action.payload.cartid);
-      state.cartItems.splice(index,1)
+      let index = state.cartItems.findIndex(
+        v => v.productId == action.payload.cartid
+      );
+      state.cartItems.splice(index, 1);
     });
     builder.addCase(deleteFromCart.rejected, (state, action) => {
       state.error = action.payload.data;
@@ -78,4 +73,4 @@ const cartSlice = createSlice({
 });
 
 export default cartSlice.reducer;
-export const { getCartTotal,getCartCount } = cartSlice.actions;
+export const { getCartTotal, getCartCount } = cartSlice.actions;
