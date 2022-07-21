@@ -15,39 +15,24 @@ import CalculateOffer from "../../components/Offer Helper Components/CalculateOf
 const CheckoutProducts = () => {
   // for the card
   const navigate = useNavigate();
-  const {quantity} = useSelector(state => state.cart.cartItems);
+  // const cart = useSelector(state => state.cart.cartItems);
   const allProducts = useSelector(state => state.product.productList);
   const dispatch = useDispatch();
   const [cart, setCart] = useState([]);
   const [cartIdObject, setCartIdObject] = useState({});
-  // const cartSet = cart.map(JSON.stringify);
-  // const uniqueSet = new Set(cartSet);
-  // let uniqueArray = Array.from(uniqueSet).map(JSON.parse);
-  // // for quantity
-  // const productQuantityCounter = {};
-  // const cartQnty = useSelector(state => state.cart);
-  // cartQnty.cartItems.map(element => {
-  //   productQuantityCounter[element.productId] =
-  //     (productQuantityCounter[element.productId] || 0) + 1;
-  // });
+  const [trackQuantity, setTrackQuantity] = useState(0);
 
-  const { userId, cartList } = useSelector(state => state.user.currentUser);
-  const fetchProduct = async id => {
-    try {
-      let { data } = await Axios.get(`/products/${id}`);
-    } catch (err) {
-      console.log(err);
-    }
-  };
+  const { userId } = useSelector(state => state.user.currentUser);
+  const cartItems = useSelector(state => state.cart.cartItems);
+
   useEffect(() => {
     dispatch(getCart(userId));
-  }, []);
-  const cartItems = useSelector(state => state.cart.cartItems);
+  }, [trackQuantity]);
 
   useEffect(() => {
     let cartIdList = cartItems.map(item => item.productId);
     let newCartIdobj = cartItems.reduce((acc, item) => {
-      return { ...acc, [item.productId]: item.itemId };
+      return { ...acc, [item.productId]: [item.itemId, item.quantity] };
     }, {});
     setCartIdObject(newCartIdobj);
     let filteredList = allProducts.filter(item => {
@@ -56,6 +41,27 @@ const CheckoutProducts = () => {
     console.log(filteredList);
     setCart(filteredList);
   }, [cartItems]);
+
+  const increaseQuantity = async (userId, itemId, quantity) => {
+    let payload = {
+      quantity: quantity + 1,
+    };
+    try {
+      Axios.put(`/customers/${userId}/carts/${itemId}`, payload);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+  const decreaseQuantity = async (userId, itemId, quantity) => {
+    let payload = {
+      quantity: quantity - 1,
+    };
+    try {
+      Axios.put(`/customers/${userId}/carts/${itemId}`, payload);
+    } catch (error) {
+      console.log(error);
+    }
+  };
   return (
     <div className={styles.checkoutProductContainer}>
       {cart.length === 0 ? (
@@ -79,11 +85,10 @@ const CheckoutProducts = () => {
             rating,
             brand,
           } = product;
-          let payload = {
-            userId,
-            productId,
-          };
-          // let {quantity}=cartItems.find(v=>v.productId==productId)
+          // let payload = {
+          //   userId,
+          //   productId,
+          // };
           return (
             <Card
               elevation={5}
@@ -101,22 +106,36 @@ const CheckoutProducts = () => {
                 {/* <StarRatings rating={rating} /> */}
                 <span>{rating}⭐</span>
 
-                <span>₹{price}</span>
+                {/* <span>₹{price}</span> */}
                 <CalculateOffer originPrice={price} offerPercentage={offer} />
                 <div className={styles.quantity}>
                   <AiOutlineMinusCircle
                     onClick={e => {
                       e.stopPropagation();
-                      // dispatch(removeFromCart(index));
+                      setTrackQuantity(pre => pre - 1);
+                      decreaseQuantity(
+                        userId,
+                        cartIdObject[productId][0],
+                        cartIdObject[productId][1]
+                      );
+                      setTimeout(() => {
+                        getCart(userId);
+                      }, 200);
                     }}
                   />
-                  {/* <span>Qty:{productQuantityCounter[productId]}</span> */}
-                  {/* {quantity} */}
-                  
+                  <span>Qty:{cartIdObject[productId][1]}</span>
                   <AiOutlinePlusCircle
                     onClick={e => {
                       e.stopPropagation();
-                      // dispatch(addToCart(product));
+                      setTrackQuantity(pre => pre + 1);
+                      increaseQuantity(
+                        userId,
+                        cartIdObject[productId][0],
+                        cartIdObject[productId][1]
+                      );
+                      setTimeout(() => {
+                        getCart(userId);
+                      }, 200);
                     }}
                   />
                 </div>
@@ -126,7 +145,7 @@ const CheckoutProducts = () => {
                     dispatch(
                       deleteFromCart({
                         userId,
-                        cartId: cartIdObject[productId],
+                        cartId: cartIdObject[productId][0],
                       })
                     );
                     setTimeout(() => {

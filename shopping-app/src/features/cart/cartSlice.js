@@ -19,8 +19,8 @@ export const getCart = createAsyncThunk("cart/getCart", userId => {
 export const deleteFromCart = createAsyncThunk(
   "cart/deleteFromCart",
   payload => {
-     Axios.delete(`/customers/${payload.userId}/carts/${payload.cartId}`);
-     return {payload};
+    Axios.delete(`/customers/${payload.userId}/carts/${payload.cartId}`);
+    return { payload };
   }
 );
 
@@ -30,7 +30,7 @@ const cartSlice = createSlice({
   reducers: {
     getCartTotal: (state, action) => {
       state.cartTotal = state.cartItems.reduce(
-        (acc, item) => acc + item.cost,
+        (acc, item) => acc + item.cost * item.quantity,
         0
       );
     },
@@ -46,8 +46,10 @@ const cartSlice = createSlice({
       state.error = action.payload.data;
     });
     builder.addCase(deleteFromCart.fulfilled, (state, action) => {
-      let index = state.cartItems.findIndex((v) => v.productId == action.payload.cartId);
-      state.cartItems.splice(index,1)
+      let index = state.cartItems.findIndex(
+        v => v.productId == action.payload.cartId
+      );
+      state.cartItems.splice(index, 1);
     });
     builder.addCase(deleteFromCart.rejected, (state, action) => {
       state.error = action.payload.data;
