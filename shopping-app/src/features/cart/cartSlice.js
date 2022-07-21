@@ -7,8 +7,10 @@ const initialState = {
   cartTotal: "",
 };
 
-export const addToCart = createAsyncThunk("cart/addToCart", payload => {
-  return Axios.post(`/customers/${payload.userId}/carts`, payload.payload);
+export const addToCart = createAsyncThunk("cart/addToCart", data => {
+  let { payload } = data;
+  Axios.post(`/customers/${data.userId}/carts`, data.payload);
+  return { payload };
 });
 
 export const getCart = createAsyncThunk("cart/getCart", userId => {
@@ -36,18 +38,25 @@ const cartSlice = createSlice({
     },
   },
   extraReducers: builder => {
-    // builder.addCase(addToCart.fulfilled, (state, action) => {
-    //   state.cartItems = action.payload.data;
-    // });
+    builder.addCase(addToCart.fulfilled, (state, action) => {
+      state.cartItems.push(action.payload.payload);
+    });
     builder.addCase(getCart.fulfilled, (state, action) => {
       state.cartItems = action.payload.data;
     });
     builder.addCase(getCart.rejected, (state, action) => {
       state.error = action.payload.data;
     });
+    builder.addCase(updateCart.fulfilled, (state, action) => {
+      let index = state.cartItems.findIndex(
+        v => v.itemId == action.payload.payload.itemid
+      );
+      state.addressList.splice(index, 1, action.payload.payload.data);
+    });
+
     builder.addCase(deleteFromCart.fulfilled, (state, action) => {
       let index = state.cartItems.findIndex(
-        v => v.productId == action.payload.cartId
+        v => v.productId == action.payload.cartid
       );
       state.cartItems.splice(index, 1);
     });
@@ -58,4 +67,4 @@ const cartSlice = createSlice({
 });
 
 export default cartSlice.reducer;
-export const { getCartTotal } = cartSlice.actions;
+export const { getCartTotal, getCartCount } = cartSlice.actions;

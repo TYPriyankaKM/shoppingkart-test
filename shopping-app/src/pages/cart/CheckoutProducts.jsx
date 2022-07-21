@@ -1,13 +1,15 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import styles from "./cart.module.css";
-import { addToCart, deleteFromCart } from "../../features/cart/cartSlice";
+import {deleteFromCart ,updateCart} from "../../features/cart/cartSlice";
+import {fetchProducts } from "../../features/products/productSlice";
+
 import { Card } from "@material-ui/core";
 import { AiOutlineMinusCircle } from "react-icons/ai";
 import { AiOutlinePlusCircle } from "react-icons/ai";
 import { useState, useEffect } from "react";
-import StarRatings from "../../components/starRating/StarRatings";
-import { IconButton } from "@mui/material";
+// import StarRatings from "../../components/starRating/StarRatings";
+// import { IconButton } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import Axios from "../../apis/Axios";
 import { getCart } from "../../features/cart/cartSlice";
@@ -64,7 +66,7 @@ const CheckoutProducts = () => {
   };
   return (
     <div className={styles.checkoutProductContainer}>
-      {cart.length === 0 ? (
+      {cartItems.length === 0 ? (
         <div className={styles.emptyCart}>
           <img
             src="https://rukminim1.flixcart.com/www/800/800/promos/16/05/2019/d438a32e-765a-4d8b-b4a6-520b560971e8.png?q=90"
@@ -74,7 +76,8 @@ const CheckoutProducts = () => {
           <p>It's a good day to buy the items you saved for later!</p>
         </div>
       ) : (
-        cart.map((product, index) => {
+        cartItems.map((product, index) => {
+          let thisProduct=allProducts.find(v=>v.productId==product.productId)
           let {
             productId,
             title,
@@ -165,3 +168,4 @@ const CheckoutProducts = () => {
 };
 
 export default CheckoutProducts;
+
