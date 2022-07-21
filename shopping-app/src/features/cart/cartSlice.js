@@ -7,8 +7,10 @@ const initialState = {
   cartTotal: "",
 };
 
-export const addToCart = createAsyncThunk("cart/addToCart", payload => {
-  return Axios.post(`/customers/${payload.userId}/carts`, payload.payload);
+export const addToCart = createAsyncThunk("cart/addToCart", data => {
+  let{payload} = data
+  Axios.post(`/customers/${data.userId}/carts`, data.payload);
+  return {payload}
 });
 
 export const getCart = createAsyncThunk("cart/getCart", userId => {
@@ -19,7 +21,15 @@ export const getCart = createAsyncThunk("cart/getCart", userId => {
 export const deleteFromCart = createAsyncThunk(
   "cart/deleteFromCart",
   payload => {
-    return Axios.delete(`/customers/${payload.userId}/carts/${payload.cartId}`);
+     Axios.delete(`/customers/${payload.userId}/carts/${payload.cartid}`);
+     return {payload};
+  }
+);
+export const updateCart = createAsyncThunk(
+  "cart/updateCart",
+  payload => {
+     Axios.put(`/customers/${payload.userId}/carts/${payload.itemid}`,payload.data);
+     return {payload};
   }
 );
 
@@ -29,23 +39,43 @@ const cartSlice = createSlice({
   reducers: {
     getCartTotal: (state, action) => {
       state.cartTotal = state.cartItems.reduce(
-        (acc, item) => acc + item.cost,
+        (acc, item) => acc + item.cost*item.quantity,
+        0
+      );
+    },
+    getCartCount: (state, action) => {
+      state.cartCount = state.cartItems.reduce(
+        (acc, item) => acc + item.quantity,
         0
       );
     },
   },
   extraReducers: builder => {
-    // builder.addCase(addToCart.fulfilled, (state, action) => {
-    //   state.cartItems = action.payload.data;
-    // });
+    builder.addCase(addToCart.fulfilled, (state, action) => {
+      state.cartItems.push(action.payload.payload);
+    });
     builder.addCase(getCart.fulfilled, (state, action) => {
       state.cartItems = action.payload.data;
     });
     builder.addCase(getCart.rejected, (state, action) => {
       state.error = action.payload.data;
     });
+    builder.addCase(updateCart.fulfilled, (state, action) => {
+      let index = state.cartItems.findIndex((v) => v.itemId == action.payload.payload.itemid);
+      state.addressList.splice(index, 1,action.payload.payload.data);
+    });
+    builder.addCase(updateCart.rejected, (state, action) => {
+      state.error = action.payload.data;
+    });
+    builder.addCase(deleteFromCart.fulfilled, (state, action) => {
+      let index = state.cartItems.findIndex((v) => v.productId == action.payload.cartid);
+      state.cartItems.splice(index,1)
+    });
+    builder.addCase(deleteFromCart.rejected, (state, action) => {
+      state.error = action.payload.data;
+    });
   },
 });
 
 export default cartSlice.reducer;
-export const { getCartTotal } = cartSlice.actions;
+export const { getCartTotal,getCartCount } = cartSlice.actions;

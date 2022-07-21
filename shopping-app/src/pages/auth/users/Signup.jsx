@@ -22,6 +22,7 @@ import { OpenLogin } from "../../../features/Login/LoginSlice";
 import { Country, State, City } from "country-state-city";
 
 // import { motion, Variants } from "framer-motion";
+
 const useStyles = makeStyles(theme => ({
   margin: {
     margin: theme.spacing(1),
@@ -93,8 +94,9 @@ const Signup = () => {
       gender,
       phone: number1,
       role: ["CUSTOMER"],
-      cartList:[],
-      wishList:[]
+      addressList:[],
+      WishList:[],
+      cartList:[]
     };
     setPayload(currPayload);
     console.log(payload);
