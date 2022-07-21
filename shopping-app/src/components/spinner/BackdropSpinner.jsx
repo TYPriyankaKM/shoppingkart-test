@@ -4,9 +4,13 @@ import CircularProgress from "@mui/material/CircularProgress";
 
 export default function BackdropSpinner({ open }) {
   return (
-    <div>
+    <div onClick={e => e.stopPropagation()}>
       <Backdrop
-        sx={{ color: "#fff", zIndex: theme => theme.zIndex.drawer + 1 }}
+        sx={{
+          color: "#666",
+          zIndex: theme => theme.zIndex.drawer + 1,
+          backgroundColor: "#ffffff40",
+        }}
         open={open}
       >
         <CircularProgress color="inherit" />
