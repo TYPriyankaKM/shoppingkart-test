@@ -3,7 +3,11 @@ import { useDispatch, useSelector } from "react-redux";
 import { fetchProducts } from "../../features/products/productSlice";
 import Spinner from "./../spinner/Spinner";
 import styles from "./featuredProducts.module.css";
-import { addToCart, getCart,deleteFromCart } from "../../features/cart/cartSlice";
+import {
+  addToCart,
+  getCart,
+  deleteFromCart,
+} from "../../features/cart/cartSlice";
 import { useNavigate } from "react-router-dom";
 import PaginationComp from "../pagination/PaginationComp";
 import { AiOutlineHeart } from "react-icons/ai";
@@ -57,8 +61,8 @@ const FeaturedProducts = () => {
   }, []);
   useEffect(() => {
     setIdList(cartList.map(item => item.productId));
-    setCartIdList(cartlist?.map(item => item.productId))
-  }, [cartList,cartlist]);
+    setCartIdList(cartlist?.map(item => item.productId));
+  }, [cartList, cartlist]);
 
   let handleAddToCart = async (cost, imageLink, productId) => {
     try {
@@ -139,26 +143,34 @@ const FeaturedProducts = () => {
                         onClick={e => {
                           e.stopPropagation();
                           // handleAddToCart(price, thumbnailURL, productId);
-                          if (cartIdList?.includes(productId)==false) {
+                          if (
+                            cartIdList?.includes(productId) ||
+                            false === false
+                          ) {
                             dispatch(addToCart(cartData));
-                          setTimeout(() => {
-                            dispatch(getCart(userId));
-                          }, 300)
+                            setTimeout(() => {
+                              dispatch(getCart(userId));
+                            }, 300);
                           }
-                          
                         }}
                       >
-                        {cartIdList?.includes(productId)?"added":"add to cart"}
-                        
+                        {cartIdList?.includes(productId)
+                          ? "added"
+                          : "add to cart"}
                       </Button>
                       <FavoriteIcon
                         onClick={e => {
                           e.stopPropagation();
                           if (productIdList?.includes(productId)) {
-                            dispatch(deleteFromWishlist({userId,wishlistId:productId}));
+                            dispatch(
+                              deleteFromWishlist({
+                                userId,
+                                wishlistId: productId,
+                              })
+                            );
                             return;
                           }
-                          dispatch(addToWishlist({userId,payload}));
+                          dispatch(addToWishlist({ userId, payload }));
                           dispatch();
                         }}
                         style={{

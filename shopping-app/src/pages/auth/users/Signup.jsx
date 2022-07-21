@@ -94,9 +94,6 @@ const Signup = () => {
       gender,
       phone: number1,
       role: ["CUSTOMER"],
-      addressList:[],
-      WishList:[],
-      cartList:[]
     };
     setPayload(currPayload);
     console.log(payload);
