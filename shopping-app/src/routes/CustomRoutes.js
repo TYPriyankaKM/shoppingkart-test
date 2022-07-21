@@ -1,7 +1,7 @@
 import React from "react";
 import { useRoutes } from "react-router";
 import Login from "../pages/auth/users/Login";
-import MerchSignup from "../pages/auth/merchants/MerchSignup";
+import MerchSignup from "../pages/auth/merchants/MerchantSignup";
 import Signup from "../pages/auth/users/Signup";
 import Cart from "../pages/cart/Cart";
 import Home from "../pages/home/Home";
@@ -117,7 +117,7 @@ const CustomRoutes = () => {
     {
       path: "/place-order",
       element: <PlaceOrder />,
-    },
+    }
   ]);
   return myRoutes;
 };
