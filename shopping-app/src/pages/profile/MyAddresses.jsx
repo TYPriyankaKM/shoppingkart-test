@@ -4,8 +4,6 @@ import { useSelector , useDispatch} from "react-redux";
 import { Link } from "react-router-dom";
 import DeleteIcon from "@mui/icons-material/Delete";
 import ModeEditOutlineOutlinedIcon from "@mui/icons-material/ModeEditOutlineOutlined";
-import Axios from "../../apis/Axios";
-import { toast } from "react-toastify";
 import { fetchAddress , deleteAddress} from "../../features/address/addressSlice";
 
 function MyAddresses() {
@@ -14,20 +12,16 @@ function MyAddresses() {
   let [cuurentUser, setCurrentUser] = useState(currUser);
   const addressData = useSelector(state => state.address.addressList);
   
-// let [addressList, setAddressList]=useState(addressData)
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(fetchAddress(userId));
     
   }, []);
 
-console.log(addressData)
+
   useEffect(() => {
     setCurrentUser(currUser);
-    // console.log(cuurentUser);
   }, [cuurentUser, currUser]);
-
-
 
 
   return (
@@ -35,18 +29,18 @@ console.log(addressData)
       <h3 style={{ marginBottom: "30px", textAlign: "center" }}>
         Your Address
       </h3>
-      {addressData=== null||addressData.length==0 ? "": 
-      <div className={""}>
+      {addressData=== null||addressData.length===0 ? "": 
+      <div className={""} style={{ textAlign: "right" }}>
         <Link to="/addressform">
           <Button variant="contained">Add Address</Button>
         </Link>
       </div>}
       <div className={""} style={{ margin: "8px 0px" }}>
         <h3>
-          {firstName} <span>{lastName}</span>
+          {firstName} &nbsp; {lastName}
         </h3>
         <p style={{ fontWeight: "lighter" }}>{phone}</p>
-        { addressData == null||addressData.length==0? <><h1>No adderss added yet</h1>
+        { addressData === null||addressData.length===0? <><h1>No adderss added yet</h1>
          <Link to="/addressform">
           <Button variant="contained">Add Address</Button>
         </Link></>
@@ -60,8 +54,9 @@ console.log(addressData)
                   <div className={""}>
                     <h4>{`Address ${index + 1}`} : &nbsp; </h4>
                     <div style={{ marginTop: "6px" }}>
-                      {item.line1} , {item.landmark},{item.street}{" "}
-                      {item.city} -{item.pincode},{item.number}
+                      <p>{item.line1} , {item.landmark},{item.street},{item.city}</p>
+                      <p>{item.state} -{item.pincode}</p>
+                      <p><strong>Contanct</strong> {item.number}</p>
                     </div>
                   </div>
                 </div>
@@ -75,7 +70,6 @@ console.log(addressData)
                     startIcon={<ModeEditOutlineOutlinedIcon />}
                   ></Button>
                 </Link>
-
                 <Button
                   color="error"
                    onClick={() =>{
