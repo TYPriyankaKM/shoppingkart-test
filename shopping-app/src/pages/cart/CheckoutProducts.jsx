@@ -17,53 +17,18 @@ import CalculateOffer from "../../components/Offer Helper Components/CalculateOf
 const CheckoutProducts = () => {
   // for the card
   const navigate = useNavigate();
-  // const cart = useSelector(state => state.cart.cartItems);
   const allProducts = useSelector(state => state.product.productList);
   const dispatch = useDispatch();
-  const [cart, setCart] = useState([]);
-  const [cartIdObject, setCartIdObject] = useState({});
-  const [trackQuantity, setTrackQuantity] = useState(0);
 
   const { userId } = useSelector(state => state.user.currentUser);
-  const cartItems = useSelector(state => state.cart.cartItems);
-
+  
   useEffect(() => {
     dispatch(getCart(userId));
-  }, [trackQuantity]);
+    dispatch(fetchProducts());
 
-  useEffect(() => {
-    let cartIdList = cartItems.map(item => item.productId);
-    let newCartIdobj = cartItems.reduce((acc, item) => {
-      return { ...acc, [item.productId]: [item.itemId, item.quantity] };
-    }, {});
-    setCartIdObject(newCartIdobj);
-    let filteredList = allProducts.filter(item => {
-      return cartIdList.includes(item.productId);
-    });
-    console.log(filteredList);
-    setCart(filteredList);
-  }, [cartItems]);
+  }, []);
+  const cartItems = useSelector(state => state.cart.cartItems);
 
-  const increaseQuantity = async (userId, itemId, quantity) => {
-    let payload = {
-      quantity: quantity + 1,
-    };
-    try {
-      Axios.put(`/customers/${userId}/carts/${itemId}`, payload);
-    } catch (error) {
-      console.log(error);
-    }
-  };
-  const decreaseQuantity = async (userId, itemId, quantity) => {
-    let payload = {
-      quantity: quantity - 1,
-    };
-    try {
-      Axios.put(`/customers/${userId}/carts/${itemId}`, payload);
-    } catch (error) {
-      console.log(error);
-    }
-  };
   return (
     <div className={styles.checkoutProductContainer}>
       {cartItems.length === 0 ? (
@@ -87,11 +52,15 @@ const CheckoutProducts = () => {
             thumbnailURL,
             rating,
             brand,
-          } = product;
-          // let payload = {
-          //   userId,
-          //   productId,
-          // };
+          } = thisProduct;
+          let payload = {
+            userId,
+            productId,
+          };
+        
+          // let {quantity}=cartItems.find(v=>v.productId==productId)
+          
+
           return (
             <Card
               elevation={5}
@@ -109,35 +78,28 @@ const CheckoutProducts = () => {
                 {/* <StarRatings rating={rating} /> */}
                 <span>{rating}⭐</span>
 
-                {/* <span>₹{price}</span> */}
+                <span>₹{price}</span>
                 <CalculateOffer originPrice={price} offerPercentage={offer} />
                 <div className={styles.quantity}>
                   <AiOutlineMinusCircle
                     onClick={e => {
                       e.stopPropagation();
-                      setTrackQuantity(pre => pre - 1);
-                      decreaseQuantity(
-                        userId,
-                        cartIdObject[productId][0],
-                        cartIdObject[productId][1]
-                      );
+                      if(product.quantity>1)
+                      dispatch(updateCart({userId,itemid:product.itemId,data:{...product,quantity:product.quantity-1}}));
                       setTimeout(() => {
-                        getCart(userId);
+                        dispatch(getCart(userId));
                       }, 200);
                     }}
                   />
-                  <span>Qty:{cartIdObject[productId][1]}</span>
+                  {/* <span>Qty:{productQuantityCounter[productId]}</span> */}
+                  {product.quantity}
+                  
                   <AiOutlinePlusCircle
                     onClick={e => {
                       e.stopPropagation();
-                      setTrackQuantity(pre => pre + 1);
-                      increaseQuantity(
-                        userId,
-                        cartIdObject[productId][0],
-                        cartIdObject[productId][1]
-                      );
+                      dispatch(updateCart({userId,itemid:product.itemId,data:{...product,quantity:product.quantity+1}}));
                       setTimeout(() => {
-                        getCart(userId);
+                        dispatch(getCart(userId));
                       }, 200);
                     }}
                   />
@@ -148,7 +110,7 @@ const CheckoutProducts = () => {
                     dispatch(
                       deleteFromCart({
                         userId,
-                        cartId: cartIdObject[productId][0],
+                        cartid: product.itemId,
                       })
                     );
                     setTimeout(() => {
