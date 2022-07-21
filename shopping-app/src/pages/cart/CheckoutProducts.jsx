@@ -1,8 +1,8 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import styles from "./cart.module.css";
-import {deleteFromCart ,updateCart} from "../../features/cart/cartSlice";
-import {fetchProducts } from "../../features/products/productSlice";
+import { deleteFromCart } from "../../features/cart/cartSlice";
+import { fetchProducts } from "../../features/products/productSlice";
 
 import { Card } from "@material-ui/core";
 import { AiOutlineMinusCircle } from "react-icons/ai";
@@ -55,9 +55,20 @@ const CheckoutProducts = () => {
     }
   };
   const decreaseQuantity = async (userId, itemId, quantity) => {
-    let payload = {
-      quantity: quantity - 1,
-    };
+    let payload;
+    if (quantity <= 1) {
+      dispatch(
+        deleteFromCart({
+          userId,
+          cartId: itemId,
+        })
+      );
+    } else {
+      payload = {
+        quantity: quantity - 1,
+      };
+    }
+
     try {
       Axios.put(`/customers/${userId}/carts/${itemId}`, payload);
     } catch (error) {
@@ -76,8 +87,10 @@ const CheckoutProducts = () => {
           <p>It's a good day to buy the items you saved for later!</p>
         </div>
       ) : (
-        cartItems.map((product, index) => {
-          let thisProduct=allProducts.find(v=>v.productId==product.productId)
+        cart.map((product, index) => {
+          // let thisProduct = allProducts.find(
+          //   v => v.productId == product.productId
+          // );
           let {
             productId,
             title,
@@ -168,4 +181,3 @@ const CheckoutProducts = () => {
 };
 
 export default CheckoutProducts;
-

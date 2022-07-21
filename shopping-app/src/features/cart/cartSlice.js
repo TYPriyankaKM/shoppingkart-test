@@ -36,6 +36,12 @@ const cartSlice = createSlice({
         0
       );
     },
+    getCartCount: (state, action) => {
+      state.cartCount = state.cartItems.reduce(
+        (acc, item) => acc + item.quantity,
+        0
+      );
+    },
   },
   extraReducers: builder => {
     builder.addCase(addToCart.fulfilled, (state, action) => {
@@ -47,12 +53,12 @@ const cartSlice = createSlice({
     builder.addCase(getCart.rejected, (state, action) => {
       state.error = action.payload.data;
     });
-    builder.addCase(updateCart.fulfilled, (state, action) => {
-      let index = state.cartItems.findIndex(
-        v => v.itemId == action.payload.payload.itemid
-      );
-      state.addressList.splice(index, 1, action.payload.payload.data);
-    });
+    // builder.addCase(updateCart.fulfilled, (state, action) => {
+    //   let index = state.cartItems.findIndex(
+    //     v => v.itemId == action.payload.payload.itemid
+    //   );
+    //   state.addressList.splice(index, 1, action.payload.payload.data);
+    // });
 
     builder.addCase(deleteFromCart.fulfilled, (state, action) => {
       let index = state.cartItems.findIndex(
