@@ -26,9 +26,9 @@ const CheckoutProducts = () => {
     dispatch(getCart(userId));
     dispatch(fetchProducts());
 
-  }, []);
+  }, [] );
   const cartItems = useSelector(state => state.cart.cartItems);
-
+// checkoutProducts
   return (
     <div className={styles.checkoutProductContainer}>
       {cartItems.length === 0 ? (
