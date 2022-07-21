@@ -14,22 +14,38 @@ import { useNavigate } from "react-router-dom";
 import Axios from "../../apis/Axios";
 import { getCart } from "../../features/cart/cartSlice";
 import CalculateOffer from "../../components/Offer Helper Components/CalculateOffer";
+import BackdropSpinner from "./../../components/spinner/BackdropSpinner";
 const CheckoutProducts = () => {
   // for the card
   const navigate = useNavigate();
+  const [cartIdObject, setCartIdObject] = useState({});
+  const [cart, setCart] = useState([]);
+  const [showBackdrop, setShowBackdrop] = useState(false);
   const allProducts = useSelector(state => state.product.productList);
   const dispatch = useDispatch();
 
   const { userId } = useSelector(state => state.user.currentUser);
-  
+  const cartItems = useSelector(state => state.cart.cartItems);
+
   useEffect(() => {
     dispatch(getCart(userId));
     dispatch(fetchProducts());
-
   }, []);
-  const cartItems = useSelector(state => state.cart.cartItems);
+  useEffect(() => {
+    let cartIdList = cartItems.map(item => item.productId);
+    let newCartIdobj = cartItems.reduce((acc, item) => {
+      return { ...acc, [item.productId]: [item.itemId, item.quantity] };
+    }, {});
+    setCartIdObject(newCartIdobj);
+    let filteredList = allProducts.filter(item => {
+      return cartIdList.includes(item.productId);
+    });
+    console.log(filteredList);
+    setCart(filteredList);
+  }, [cartItems]);
 
   const increaseQuantity = async (userId, itemId, quantity) => {
+    setShowBackdrop(true);
     let payload = {
       quantity: quantity + 1,
     };
@@ -38,14 +54,19 @@ const CheckoutProducts = () => {
     } catch (error) {
       console.log(error);
     }
+    setTimeout(() => {
+      setShowBackdrop(false);
+    }, 1000);
   };
   const decreaseQuantity = async (userId, itemId, quantity) => {
+    setShowBackdrop(true);
     let payload;
+
     if (quantity <= 1) {
       dispatch(
         deleteFromCart({
           userId,
-          cartId: itemId,
+          cartid: itemId,
         })
       );
     } else {
@@ -59,6 +80,9 @@ const CheckoutProducts = () => {
     } catch (error) {
       console.log(error);
     }
+    setTimeout(() => {
+      setShowBackdrop(false);
+    }, 1000);
   };
   return (
     <div className={styles.checkoutProductContainer}>
@@ -85,14 +109,13 @@ const CheckoutProducts = () => {
             thumbnailURL,
             rating,
             brand,
-          } = thisProduct;
-          let payload = {
-            userId,
-            productId,
-          };
-        
+          } = product;
+          // let payload = {
+          //   userId,
+          //   productId,
+          // };
+
           // let {quantity}=cartItems.find(v=>v.productId==productId)
-          
 
           return (
             <Card
@@ -117,20 +140,27 @@ const CheckoutProducts = () => {
                   <AiOutlineMinusCircle
                     onClick={e => {
                       e.stopPropagation();
-                      if(product.quantity>1)
-                      dispatch(updateCart({userId,itemid:product.itemId,data:{...product,quantity:product.quantity-1}}));
+                      decreaseQuantity(
+                        userId,
+                        cartIdObject[productId][0],
+                        cartIdObject[productId][1]
+                      );
                       setTimeout(() => {
                         dispatch(getCart(userId));
                       }, 200);
                     }}
                   />
                   {/* <span>Qty:{productQuantityCounter[productId]}</span> */}
-                  {product.quantity}
-                  
+                  <span>Qty:{cartIdObject[productId][1]}</span>
+
                   <AiOutlinePlusCircle
                     onClick={e => {
                       e.stopPropagation();
-                      dispatch(updateCart({userId,itemid:product.itemId,data:{...product,quantity:product.quantity+1}}));
+                      increaseQuantity(
+                        userId,
+                        cartIdObject[productId][0],
+                        cartIdObject[productId][1]
+                      );
                       setTimeout(() => {
                         dispatch(getCart(userId));
                       }, 200);
@@ -143,7 +173,7 @@ const CheckoutProducts = () => {
                     dispatch(
                       deleteFromCart({
                         userId,
-                        cartid: product.itemId,
+                        cartid: cartIdObject[productId][0],
                       })
                     );
                     setTimeout(() => {
@@ -154,6 +184,7 @@ const CheckoutProducts = () => {
                   Remove from Cart
                 </button>
               </div>
+              <BackdropSpinner open={showBackdrop} />
             </Card>
           );
         })
