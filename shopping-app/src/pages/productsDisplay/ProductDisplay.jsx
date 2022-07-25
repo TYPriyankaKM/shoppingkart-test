@@ -11,7 +11,7 @@ import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import Typography from "@material-ui/core/Typography";
 import { useNavigate, useParams } from "react-router-dom";
 import Cataxios from "./../../apis/Cataxios";
-import {} from "react-icons";
+import { getCurrentProduct } from "../../features/products/productSlice";
 // import Statements
 import { addToCart } from "../../features/cart/cartSlice";
 import { useDispatch, useSelector } from "react-redux";
@@ -32,13 +32,14 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-
 const ProductDisplay = () => {
   let currentUser = useSelector(state => state.user.currentUser);
   let { id } = useParams();
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const classes = useStyles();
+  let [currentProduct, setCurrentProduct] = useState([]);
+  // let currentProduct = useSelector(state => state.product.currentProduct);
   const [productName, setProductName] = useState("Kids");
   const [productPriceInfo, setProductPriceInfo] = useState(
     "From ₹8227.00/mo.Per Month with EMI,Footnote** or ₹69900.00"
@@ -59,23 +60,29 @@ const ProductDisplay = () => {
     }
     navigate("/checkout");
   };
-  const fetchProd = async () => {
-    try {
-      let { data } = await Cataxios.get(`/allProduct/${id}`);
-      console.log("fetching....");
-      setProduct(data);
-      setPrice(data.price);
-      setDescription(data.description);
-      setBrand(data.brand);
-      setRating(data.rating);
-      setProductName(data.title);
-      setOffer(data.offer);
-    } catch (error) {
-      console.log(error);
-    }
-  };
+  // const fetchProd = async () => {
+  //   try {
+  //     let { data } = await Cataxios.get(`/allProduct/${id}`);
+  //     console.log("fetching....");
+  //     setProduct(data);
+  //     setPrice(data.price);
+  //     setDescription(data.description);
+  //     setBrand(data.brand);
+  //     setRating(data.rating);
+  //     setProductName(data.title);
+  //     setOffer(data.offer);
+  //   } catch (error) {
+  //     console.log(error);
+  //   }
+  // };
   useEffect(() => {
-    fetchProd();
+    // fetchProd();
+    fetch(
+      `http://localhost:8080/shopping-kart-ty-api-0.0.1-SNAPSHOT/products/${id}`
+    )
+      .then(res => res.json())
+      .then(data => setCurrentProduct(data.data))
+      .catch(err => console.log(err));
   }, [id]);
   return (
     <div>
@@ -83,7 +90,7 @@ const ProductDisplay = () => {
       <Card elevation={3} className={style.headingCard}>
         <section className={style.sectionCard}>
           <span className={style.heading}>
-            <h1>{productName}</h1>
+            <h1>{currentProduct.title}</h1>
           </span>
           <span className={style.priceInfo}>
             <span>{productPriceInfo}</span>
@@ -103,20 +110,18 @@ const ProductDisplay = () => {
               showArrows={false}
               useKeyboardArrows={true}
             >
-              {product.productImageURLs &&
-                product.productImageURLs.map(e => {
+              {currentProduct.productImageURLs &&
+                currentProduct.productImageURLs.map(e => {
                   return (
                     <div>
-                      <img src={e} alt="watch" />
+                      <img src={e} alt={currentProduct.title} />
                     </div>
                   );
                 })}
-
-            
             </Carousel>
           </section>
           <footer className={style.imgCardFooterCard}>
-            {price > 600 && <span>free Delivery</span>}
+            {currentProduct.price > 1000 && <span>free Delivery</span>}
           </footer>
         </div>
 
@@ -125,21 +130,21 @@ const ProductDisplay = () => {
         {/* info card */}
         <div className={style.infoCard}>
           <h1 className={style.h1Title}>
-            {productName}
+            {currentProduct.brand}
             <sup className={style.supScript}>new</sup>
           </h1>
           <section className={style.offerDetailsContainer}>
             <span className={style.offerDetails}>
               {/* if possible add the "offer" details in json, it might help, for temporary purpose I'm using hard coding data */}
-              {offerDetails}
+              {/* {currentProduct.offer}% OFF */}
             </span>
           </section>
 
           <span>
             Ratings:
             <span className={style.ratingstag}>
-              {ratings.toFixed(1)}
-              <StarRatings rating={ratings} left="1.7" top="0" />
+              {currentProduct.rating}
+              <StarRatings rating={currentProduct.rating} left="1.7" top="0" />
               {/* <Chip className={style.chip} label="Best" /> */}
             </span>
           </span>
@@ -149,7 +154,10 @@ const ProductDisplay = () => {
             Price:
             {/* <span className={style.priceTag}>₹{price}</span>
             <sup className={style.supScriptPriceTag}>new</sup> */}
-            <CalculateOffer originPrice={price} offerPercentage={offer} />
+            <CalculateOffer
+              originPrice={currentProduct.price}
+              offerPercentage={offer}
+            />
           </span>
           <section className={style.btnContainer}>
             <button className={style.buyNow} onClick={handleBuy}>
@@ -176,7 +184,7 @@ const ProductDisplay = () => {
               </Typography>
             </AccordionSummary>
             <AccordionDetails>
-              <Typography>{description}</Typography>
+              <Typography>{currentProduct.description}</Typography>
             </AccordionDetails>
           </Accordion>
           <Box>
