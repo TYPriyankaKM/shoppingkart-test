@@ -3,7 +3,7 @@ import styles from "./cart.module.css";
 import { Link } from "react-router-dom";
 
 import { useSelector, useDispatch } from "react-redux";
-import { getCartTotal,getCartCount } from "../../features/cart/cartSlice";
+import { getCartTotal, getCartCount } from "../../features/cart/cartSlice";
 import { useNavigate } from "react-router-dom";
 
 const SubTotal = () => {
@@ -14,7 +14,6 @@ const SubTotal = () => {
   useEffect(() => {
     dispatch(getCartTotal());
     dispatch(getCartCount());
-
   }, [cart]);
 
   const buyProduct = () => {
@@ -24,7 +23,7 @@ const SubTotal = () => {
   return (
     <div className={styles.subtotalContainer}>
       <h2>
-        Subtotal ({cart.cartCount} Items): ₹{cart.cartTotal}
+        Subtotal ({cart.cartItems?.length} Items): ₹{cart.cartTotal}
       </h2>
       <div className={styles.formControl}>
         <input type="checkbox" name="gift" id="gift" />

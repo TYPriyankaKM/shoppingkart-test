@@ -1,8 +1,8 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import styles from "./cart.module.css";
-import {deleteFromCart ,updateCart} from "../../features/cart/cartSlice";
-import {fetchProducts } from "../../features/products/productSlice";
+import { deleteFromCart } from "../../features/cart/cartSlice";
+import { fetchProducts } from "../../features/products/productSlice";
 
 import { Card } from "@material-ui/core";
 import { AiOutlineMinusCircle } from "react-icons/ai";
@@ -14,20 +14,24 @@ import { useNavigate } from "react-router-dom";
 import Axios from "../../apis/Axios";
 import { getCart } from "../../features/cart/cartSlice";
 import CalculateOffer from "../../components/Offer Helper Components/CalculateOffer";
+import BackdropSpinner from "./../../components/spinner/BackdropSpinner";
 const CheckoutProducts = () => {
   // for the card
   const navigate = useNavigate();
+  const [cartIdObject, setCartIdObject] = useState({});
+  const [cart, setCart] = useState([]);
+  const [showBackdrop, setShowBackdrop] = useState(false);
   const allProducts = useSelector(state => state.product.productList);
   const dispatch = useDispatch();
 
   const { userId } = useSelector(state => state.user.currentUser);
-  
+  const cartItems = useSelector(state => state.cart.cartItems);
+
   useEffect(() => {
     dispatch(getCart(userId));
     dispatch(fetchProducts());
 
   }, [] );
-  const cartItems = useSelector(state => state.cart.cartItems);
 // checkoutProducts
   return (
     <div className={styles.checkoutProductContainer}>
@@ -41,8 +45,10 @@ const CheckoutProducts = () => {
           <p>It's a good day to buy the items you saved for later!</p>
         </div>
       ) : (
-        cartItems.map((product, index) => {
-          let thisProduct=allProducts.find(v=>v.productId==product.productId)
+        cart.map((product, index) => {
+          // let thisProduct = allProducts.find(
+          //   v => v.productId == product.productId
+          // );
           let {
             productId,
             title,
@@ -52,14 +58,13 @@ const CheckoutProducts = () => {
             thumbnailURL,
             rating,
             brand,
-          } = thisProduct;
-          let payload = {
-            userId,
-            productId,
-          };
-        
+          } = product;
+          // let payload = {
+          //   userId,
+          //   productId,
+          // };
+
           // let {quantity}=cartItems.find(v=>v.productId==productId)
-          
 
           return (
             <Card
@@ -84,20 +89,27 @@ const CheckoutProducts = () => {
                   <AiOutlineMinusCircle
                     onClick={e => {
                       e.stopPropagation();
-                      if(product.quantity>1)
-                      dispatch(updateCart({userId,itemid:product.itemId,data:{...product,quantity:product.quantity-1}}));
+                      decreaseQuantity(
+                        userId,
+                        cartIdObject[productId][0],
+                        cartIdObject[productId][1]
+                      );
                       setTimeout(() => {
                         dispatch(getCart(userId));
                       }, 200);
                     }}
                   />
                   {/* <span>Qty:{productQuantityCounter[productId]}</span> */}
-                  {product.quantity}
-                  
+                  <span>Qty:{cartIdObject[productId][1]}</span>
+
                   <AiOutlinePlusCircle
                     onClick={e => {
                       e.stopPropagation();
-                      dispatch(updateCart({userId,itemid:product.itemId,data:{...product,quantity:product.quantity+1}}));
+                      increaseQuantity(
+                        userId,
+                        cartIdObject[productId][0],
+                        cartIdObject[productId][1]
+                      );
                       setTimeout(() => {
                         dispatch(getCart(userId));
                       }, 200);
@@ -110,7 +122,7 @@ const CheckoutProducts = () => {
                     dispatch(
                       deleteFromCart({
                         userId,
-                        cartid: product.itemId,
+                        cartid: cartIdObject[productId][0],
                       })
                     );
                     setTimeout(() => {
@@ -121,6 +133,7 @@ const CheckoutProducts = () => {
                   Remove from Cart
                 </button>
               </div>
+              <BackdropSpinner open={showBackdrop} />
             </Card>
           );
         })
@@ -130,4 +143,3 @@ const CheckoutProducts = () => {
 };
 
 export default CheckoutProducts;
-

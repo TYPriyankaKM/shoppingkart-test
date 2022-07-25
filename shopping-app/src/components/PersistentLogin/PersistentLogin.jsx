@@ -16,39 +16,23 @@ import Navbar from "../navbar/Navbar";
 
 const PersistentLogin = ({ children }) => {
   let { pathname } = useLocation();
+  const [user, setUser] = useState([]);
   const navigate = useNavigate();
   let currentUser = useSelector(state => state.user.currentUser);
   let dispatch = useDispatch();
   const [loading, setLoading] = useState(true);
-  // let getNewToken = async () => {
-  //   setLoading(true);
-  //   try {
-  //     let { data } = await Axios.get("/user/refresh", {
-  //       withCredentials: true,
-  //     });
 
-  //     let detailsRes = await Axios.get("/api/user/detail", {
-  //       headers: {
-  //         "Context-Type": "application/json",
-  //         Authorization: `Bearer ${data.token}`,
-  //       },
-  //     });
-  //     let token = data.token;
-
-  //     dispatch(
-  //       createCurrentUser({
-  //         refreshToken: token,
-  //         currentUser: detailsRes.data.userDetails,
-  //       })
-  //     );
-  //   } catch (error) {
-  //     console.log(error);
-  //   } finally {
-  //     setLoading(false);
-  //   }
-  // };
+  const getUser = () => {
+    setUser(JSON.parse(localStorage.getItem("user")));
+  };
   useEffect(() => {
     // getNewToken();
+    // getUser();
+    if (localStorage.getItem("user") !== undefined) {
+      let currentUser = JSON.parse(localStorage.getItem("user"));
+      console.log(currentUser);
+      dispatch(createCurrentUser({ currentUser }));
+    }
     setLoading(false);
   }, []);
 

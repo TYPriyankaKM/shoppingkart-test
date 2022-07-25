@@ -17,7 +17,10 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Axios from "../../apis/Axios";
 import { useDispatch } from "react-redux";
-import { createCurrentUser } from "../../features/User/userSlice";
+import {
+  createCurrentUser,
+  logoutCurrentUser,
+} from "../../features/User/userSlice";
 
 export default function UserMenu({ user }) {
   const [anchorEl, setAnchorEl] = useState(null);
@@ -33,11 +36,11 @@ export default function UserMenu({ user }) {
   const handleLogOut = async () => {
     try {
       await Axios.get("/user/logout", { withCredentials: true });
-      navigate("/");
     } catch (error) {
       console.log(error);
     } finally {
-      dispatch(createCurrentUser({ token: "", currentUser: {} }));
+      dispatch(logoutCurrentUser());
+      navigate("/");
     }
   };
   return (

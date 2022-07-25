@@ -22,7 +22,7 @@
 body {
   font-family: "Varela Round", sans-serif;
   color: var(--text-primary);
-  background-color:#fdfdfd; /*--dark-> #121212 */
+  background-color: #fdfdfd; /*--dark-> #121212 */
 }
 h1,
 h2,
@@ -45,6 +45,6 @@ a:hover {
   color: var(--link-hover) !important;
 }
 
-ul{
+ul {
   list-style: none;
 }
