@@ -42,7 +42,7 @@ function EditProfile({ open, onClose }) {
       phone,
       // token,
     });
-  }, [firstName, email, gender, lastName,phone, userData]);
+  }, []);
 
   const handleChange = e => {
     let value = e.target.value;

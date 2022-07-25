@@ -151,7 +151,7 @@ const CheckoutProducts = () => {
                       }, 200);
                     }}
                   />
-                  {cartIdObject[productId][1]}
+                  {/* {cartIdObject[productId][1]} */}
                   {/* <span>Qty:{productQuantityCounter[productId]}</span> */}
                   <span>Qty:{cartIdObject[productId][1]}</span>
 
