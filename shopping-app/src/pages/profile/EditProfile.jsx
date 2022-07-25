@@ -14,7 +14,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { toast } from "react-toastify";
 import Axios from "../../apis/Axios";
 import "./profile.css";
-import { createCurrentUser } from "../../features/User/userSlice";
+import { createCurrentUser, editProfile } from "../../features/User/userSlice";
 
 let initialState = {
   firstName: "",
@@ -27,56 +27,42 @@ let initialState = {
 function EditProfile({ open, onClose }) {
   let currentUser = useSelector(state => state.user.currentUser);
   let token = useSelector(state => state.user.token);
-  let { firstName, lastName, gender, email, phone, id } = currentUser;
+  let { firstName, lastName, gender, email, phone, userId } = currentUser;
 
   let [userData, setUserData] = useState(initialState);
   const dispatch = useDispatch();
 
   useEffect(() => {
     setUserData({
-      ...userData,
+...currentUser,
+      userId,
       firstName,
       lastName,
       gender,
       email,
       phone,
-      // token,
+      
     });
-  }, [firstName, email, gender, lastName,phone, userData]);
+  }, []);
 
   const handleChange = e => {
     let value = e.target.value;
     setUserData(pre => ({ ...pre, [e.target.name]: value }));
   };
-  console.log(token);
+
 
   const handleSubmit = async e => {
     e.preventDefault();
     try {
-      await Axios.put(
-        `http://localhost:5000/user/updateProfile/${id}`,
-        userData
-      );
-      setTimeout(async () => {
-        let detailsRes = await Axios.get("/api/user/detail", {
-          headers: {
-            "Context-Type": "application/json",
-            Authorization: `Bearer ${token}`,
-          },
-        });
-        console.log(detailsRes);
-
-        dispatch(
-          createCurrentUser({
-            refreshToken: token,
-            currentUser: detailsRes.data.userDetails,
-          })
-        );
-      }, 200);
+      let updatedUserData ={
+        id: userId,
+        payload: {...userData}
+    }
+    dispatch(editProfile(updatedUserData))
       onClose()
       toast.success("successfully updated");
     } catch (err) {
-      console.log(err);
+      toast.error(err);
     }
   };
 
