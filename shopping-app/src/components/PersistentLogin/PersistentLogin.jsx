@@ -10,9 +10,7 @@ import {
   useNavigate,
 } from "react-router-dom";
 import { createCurrentUser } from "../../features/User/userSlice";
-import Welcome from "../welcomepage/Welcome";
-import CustomRoutes from "../../routes/CustomRoutes";
-import Navbar from "../navbar/Navbar";
+
 
 const PersistentLogin = ({ children }) => {
   let { pathname } = useLocation();
@@ -30,7 +28,7 @@ const PersistentLogin = ({ children }) => {
     // getUser();
     if (localStorage.getItem("user") !== undefined) {
       let currentUser = JSON.parse(localStorage.getItem("user"));
-      console.log(currentUser);
+      // console.log(currentUser);
       dispatch(createCurrentUser({ currentUser }));
     }
     setLoading(false);

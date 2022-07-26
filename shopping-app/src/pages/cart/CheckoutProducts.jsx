@@ -40,7 +40,7 @@ const CheckoutProducts = () => {
     let filteredList = allProducts.filter(item => {
       return cartIdList.includes(item.productId);
     });
-    console.log(filteredList);
+    // console.log(filteredList);
     setCart(filteredList);
   }, [cartItems]);
 

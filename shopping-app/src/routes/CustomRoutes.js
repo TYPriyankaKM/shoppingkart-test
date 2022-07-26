@@ -111,8 +111,8 @@ const CustomRoutes = () => {
       element: <AddressForm />,
     },
     {
-      path:`/editaddress/:addressId`,
-      element: <EditAddress/>
+      path: `/editaddress/:addressId`,
+      element: <EditAddress />,
     },
     {
       path: "/place-order",

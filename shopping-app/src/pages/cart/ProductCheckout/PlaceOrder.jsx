@@ -4,7 +4,7 @@ import { AiFillRightCircle } from "react-icons/ai";
 
 const PlaceOrder = () => {
   let orderId = Math.floor(Math.random() * 2664645);
-  console.log(orderId);
+  // console.log(orderId);
 
   return (
     <div className={style.checkoutcard}>
@@ -30,8 +30,8 @@ const PlaceOrder = () => {
         <h2 style={{ textAlign: "center" }}>Thank you for your order </h2>
         <p style={{ textAlign: "center", fontSize: "large" }}>
           <br />
-          Your order number is <h4> #{`${orderId}`} </h4> we update you when
-          your order has shipped.{" "}
+          Your order number is <b> #{`${orderId}`} </b> we update you when your
+          order has shipped.{" "}
         </p>
       </div>
     </div>
