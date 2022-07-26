@@ -40,7 +40,7 @@ export default function Reset() {
     await Axios.post(`/users/verify-account?token=${token}`, null, {
       headers: { password: newpass },
     });
-    navigate(`/`)
+    navigate(`/`);
   };
 
   return (
