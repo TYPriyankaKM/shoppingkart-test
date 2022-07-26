@@ -109,7 +109,7 @@ const Signup = () => {
   };
   const fetchData = async currPayload => {
     try {
-      await Axios.post("/users", currPayload, { headers: header });
+      await Axios.post("/customers", currPayload, { headers: header });
       console.log("user registered....");
       toast.success("successfully registered");
     } catch (error) {
