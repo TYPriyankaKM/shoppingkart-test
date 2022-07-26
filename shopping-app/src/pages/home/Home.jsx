@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 
 import CarouselComp from "../../components/Carousel/CarouselComp";
 import FeaturedProducts from "../../components/featured products/FeaturedProducts";
@@ -10,8 +10,6 @@ import { useSelector } from "react-redux";
 import { useEffect } from "react";
 
 const Home = () => {
-  
-
   return (
     <section className="homeBlock">
       <SubNavbar />

@@ -34,6 +34,7 @@ const useStyles = makeStyles(theme => ({
 
 const ProductDisplay = () => {
   let currentUser = useSelector(state => state.user.currentUser);
+  let userId = currentUser.userId;
   let { id } = useParams();
   const navigate = useNavigate();
   const dispatch = useDispatch();
@@ -58,7 +59,7 @@ const ProductDisplay = () => {
       dispatch(OpenLogin());
       return;
     }
-    navigate("/checkout");
+    navigate("/selectaddress");
   };
   // const fetchProd = async () => {
   //   try {
@@ -75,6 +76,16 @@ const ProductDisplay = () => {
   //     console.log(error);
   //   }
   // };
+  let payload = {
+    cost: currentProduct.price,
+    imageLink: currentProduct.thumbnailURL,
+    quantity: 1,
+    productId: currentProduct.productId,
+  };
+  let cartData = {
+    userId,
+    payload,
+  };
   useEffect(() => {
     // fetchProd();
     fetch(
@@ -84,6 +95,7 @@ const ProductDisplay = () => {
       .then(data => setCurrentProduct(data.data))
       .catch(err => console.log(err));
   }, [id]);
+
   return (
     <div>
       {/* title card */}
@@ -164,10 +176,11 @@ const ProductDisplay = () => {
               Buy Now
             </button>
             <br />
+
             <button
               className={style.addToCart}
               onClick={() => {
-                dispatch(addToCart(product));
+                dispatch(addToCart(cartData));
               }}
             >
               Add To Cart
