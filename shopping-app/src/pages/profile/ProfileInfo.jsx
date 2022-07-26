@@ -1,12 +1,11 @@
 // In this page called right contains the right part of the Profile
 
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { styled } from "@mui/material/styles";
 import Badge from "@mui/material/Badge";
 import { Button, Avatar } from "@mui/material";
 import ModeEditIcon from "@mui/icons-material/ModeEdit";
-import { useSelector,useDispatch } from "react-redux";
-import {getCurrentUser} from "../../features/User/userSlice"
+import { useSelector } from "react-redux";
 
 import "./right.css";
 import EditProfile from "./EditProfile";
@@ -45,14 +44,11 @@ const StyledBadge = styled(Badge)(({ theme }) => ({
 
 const ProfileInfo = () => {
   const [openeditprofile, setOpeneditprofile] = useState(false);
-  let dispatch=useDispatch()
   
   const handleClose = value => {
     setOpeneditprofile(false);
   };
-  useEffect(()=>{
-    dispatch(getCurrentUser())
-  },[])
+
   let currUser = useSelector(state => state.user.currentUser);
   let { firstName, lastName, gender, email, phone } = currUser;
   return (

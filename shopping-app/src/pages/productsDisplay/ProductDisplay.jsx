@@ -13,7 +13,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import Cataxios from "./../../apis/Cataxios";
 import { getCurrentProduct } from "../../features/products/productSlice";
 // import Statements
-import { addToCart } from "../../features/cart/cartSlice";
+import { addToCart,getCart } from "../../features/cart/cartSlice";
 import { useDispatch, useSelector } from "react-redux";
 import { OpenLogin } from "../../features/Login/LoginSlice";
 import StarRatings from "../../components/starRating/StarRatings";
@@ -53,6 +53,15 @@ const ProductDisplay = () => {
   const [product, setProduct] = useState({});
   const [description, setDescription] = useState("");
   const [offer, setOffer] = useState(0);
+  let [cartIdList, setCartIdList] = useState([]);
+  let cartlist = useSelector(state => state.cart.cartItems);
+  const userId = useSelector(state => state.user.currentUser.userId);
+
+  useEffect(() => {
+    // setIdList(cartList.map(item => item.productId));
+    setCartIdList(cartlist.map(item => item.productId))
+  }, [cartlist]);
+
   let handleBuy = e => {
     if (!currentUser.email) {
       dispatch(OpenLogin());
@@ -167,10 +176,18 @@ const ProductDisplay = () => {
             <button
               className={style.addToCart}
               onClick={() => {
-                dispatch(addToCart(product));
+               if( cartIdList.includes(currentProduct.productId)==false)
+                dispatch(addToCart({userId,payload:{cost: currentProduct.price,
+                  imageLink: currentProduct.thumbnailURL,
+                  quantity: 1,
+                  productId: currentProduct.productId,}}))
+                setTimeout(() => {
+                  dispatch(getCart(userId));
+                }, 300)
               }}
             >
-              Add To Cart
+                                      {cartIdList.includes(currentProduct.productId)?"added":"add to cart"}
+
             </button>
           </section>
           <Accordion className={style.accordion}>

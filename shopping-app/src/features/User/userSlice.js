@@ -28,9 +28,6 @@ const userSlice = createSlice({
       localStorage.removeItem("user");
       state.currentUser = {};
       state.token = null;
-    },
-    getCurrentUser:(state,action)=>{
-      state.currentUser=state.currentUser
     }
   },
   extraReducers:{

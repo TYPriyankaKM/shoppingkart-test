@@ -1,17 +1,15 @@
 import { useEffect } from "react";
 import React, { useState } from "react";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import styles from "./navbar.module.css";
 import { AiOutlineShoppingCart } from "react-icons/ai";
-import { BsHeart } from "react-icons/bs";
+
 import Axios from "../../apis/Axios";
 import {
   Box,
   Button,
   Dialog,
-  DialogActions,
   DialogContent,
-  DialogTitle,
   FormControl,
   IconButton,
   InputAdornment,
@@ -22,35 +20,31 @@ import {
 import { useSelector, useDispatch } from "react-redux";
 import Visibility from "@mui/icons-material/Visibility";
 import VisibilityOff from "@mui/icons-material/VisibilityOff";
-import axios from "axios";
 import { toast } from "react-toastify";
 import { CloseLogin, OpenLogin } from "../../features/Login/LoginSlice";
 import { createCurrentUser } from "../../features/User/userSlice";
 import UserMenu from "../UserMenu/UserMenu";
-import CartDropdown from "../CartDropDown/CartDropdown";
-import { BiAlignRight } from "react-icons/bi";
-import { NavLink } from "react-router-dom";
-import { getCart, getCartCount } from "../../features/cart/cartSlice";
-// import axios from './../../apis/Axios';
+import { getCart } from "../../features/cart/cartSlice";
+
+import BackdropSpinner from "../spinner/BackdropSpinner"
+
+
 
 const Auth = () => {
   const dispatch = useDispatch();
   const location = useLocation();
   const navigate = useNavigate();
-  const [cartItems, setCartItems] = useState([]);
-  let cartValue = useSelector(state => state.cart.cartItems);
-  let cart = useSelector(state => state.cart);
 
   // console.log(cartValue);
   const isLoginOpen = useSelector(state => state.Login.isOpen);
   const currentUser = useSelector(state => state.user.currentUser);
-  const [count, setCount] = useState([]);
-  const [opendrop, setOpendrop] = useState(false);
   const [values, setValues] = useState({
     email: "",
     password: "",
     showPassword: false,
   });
+  // loading state
+  const [showBackdrop, setShowBackdrop] = useState(false);
 
   const [openCart, setCart] = useState(false);
   const handleChange = (e, prop) => {
@@ -73,6 +67,7 @@ const Auth = () => {
     e.preventDefault();
 
     try {
+      setShowBackdrop(true)
       let { data } = await Axios.post(
         "/users/login",
         {
@@ -81,8 +76,8 @@ const Auth = () => {
         }
         // { withCredentials: true }
       );
-      console.log(data);
-      if (data.message == "OK") {
+      console.log(data.message);
+      if (data) {
         dispatch(
           createCurrentUser({
             currentUser: data.data,
@@ -90,12 +85,16 @@ const Auth = () => {
           })
         );
         dispatch(CloseLogin());
+        setShowBackdrop(false)
         toast.success("successfully logged in");
         navigate("/Home");
         dispatch(getCart(data.data.userId));
-      } else toast.error("Invalid password or Email");
+      }
+
     } catch (err) {
-      toast.info(err);
+      console.log(err)
+      toast.error(err.response.data.data);
+      setShowBackdrop(false)
     }
 
     setValues({ email: "", password: "", showPassword: false });
@@ -249,6 +248,7 @@ const Auth = () => {
           </a>
         </div>
       </Dialog>
+      <BackdropSpinner open={showBackdrop} />
     </div>
   );
 };

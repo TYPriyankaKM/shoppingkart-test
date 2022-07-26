@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { Card, TextField, makeStyles, Checkbox } from "@material-ui/core";
 import Radio from "@material-ui/core/Radio";
 import RadioGroup from "@material-ui/core/RadioGroup";
@@ -19,8 +19,7 @@ import FormControl from "@material-ui/core/FormControl";
 import { toast } from "react-toastify";
 import { useDispatch } from "react-redux";
 import { OpenLogin } from "../../../features/Login/LoginSlice";
-import { Country, State, City } from "country-state-city";
-
+import BackdropSpinner from "../../../components/spinner/BackdropSpinner"
 // import { motion, Variants } from "framer-motion";
 
 const useStyles = makeStyles(theme => ({
@@ -69,6 +68,9 @@ const Signup = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const classes = useStyles();
+  // Loading state
+  const [showBackdrop, setShowBackdrop] = useState(false);
+
 
   const [fname, setFname] = useState("");
   const [lname, setLname] = useState("");
@@ -83,9 +85,9 @@ const Signup = () => {
 
   // const navigate = useNavigate()
 
-  const handleSubmit = e => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    window.alert(" Successfully Registered Please Check your mail and Verify");
+    setShowBackdrop(true)
     let currPayload = {
       firstName: fname,
       lastName: lname,
@@ -101,15 +103,16 @@ const Signup = () => {
     setPayload(currPayload);
     console.log(payload);
 
-    fetchData(currPayload);
+   await fetchData(currPayload);
+    setShowBackdrop(false)
+    toast.success("Successfully Registered Please Check your mail and Verify");
     navigate("/");
   };
 
   const fetchData = async currPayload => {
     try {
       await Axios.post("/customers", currPayload);
-      console.log("user registered....");
-      toast.success("successfully registered");
+          console.log("user registered....");
     } catch (error) {
       toast.error(error.message);
       console.log(error.message);
@@ -342,6 +345,8 @@ const Signup = () => {
             <button className={style.bn5}>Register</button>
           </Card>
         </form>
+        <BackdropSpinner open={showBackdrop} />
+
       </motion.div>
       <br />
     </>
