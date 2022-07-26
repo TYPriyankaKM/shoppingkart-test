@@ -96,9 +96,9 @@ const Signup = () => {
       gender,
       phone: number1,
       role: ["CUSTOMER"],
-      addressList:[],
-      WishList:[],
-      cartList:[]
+      addressList: [],
+      wishList: [],
+      cartList: [],
     };
     setPayload(currPayload);
     console.log(payload);
@@ -108,7 +108,9 @@ const Signup = () => {
     toast.success("Successfully Registered Please Check your mail and Verify");
     navigate("/");
   };
-
+  const header = {
+    verifyUrl: "http://localhost:3000/reset",
+  };
   const fetchData = async currPayload => {
     try {
       await Axios.post("/customers", currPayload);

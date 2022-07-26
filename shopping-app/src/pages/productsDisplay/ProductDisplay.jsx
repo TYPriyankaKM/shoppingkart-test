@@ -34,6 +34,7 @@ const useStyles = makeStyles(theme => ({
 
 const ProductDisplay = () => {
   let currentUser = useSelector(state => state.user.currentUser);
+  let userId = currentUser.userId;
   let { id } = useParams();
   const navigate = useNavigate();
   const dispatch = useDispatch();
@@ -55,7 +56,6 @@ const ProductDisplay = () => {
   const [offer, setOffer] = useState(0);
   let [cartIdList, setCartIdList] = useState([]);
   let cartlist = useSelector(state => state.cart.cartItems);
-  const userId = useSelector(state => state.user.currentUser.userId);
 
   useEffect(() => {
     // setIdList(cartList.map(item => item.productId));
@@ -67,7 +67,7 @@ const ProductDisplay = () => {
       dispatch(OpenLogin());
       return;
     }
-    navigate("/checkout");
+    navigate("/selectaddress");
   };
   // const fetchProd = async () => {
   //   try {
@@ -84,6 +84,16 @@ const ProductDisplay = () => {
   //     console.log(error);
   //   }
   // };
+  let payload = {
+    cost: currentProduct.price,
+    imageLink: currentProduct.thumbnailURL,
+    quantity: 1,
+    productId: currentProduct.productId,
+  };
+  let cartData = {
+    userId,
+    payload,
+  };
   useEffect(() => {
     // fetchProd();
     fetch(
@@ -93,6 +103,7 @@ const ProductDisplay = () => {
       .then(data => setCurrentProduct(data.data))
       .catch(err => console.log(err));
   }, [id]);
+
   return (
     <div>
       {/* title card */}
@@ -173,6 +184,7 @@ const ProductDisplay = () => {
               Buy Now
             </button>
             <br />
+
             <button
               className={style.addToCart}
               onClick={() => {
@@ -186,7 +198,7 @@ const ProductDisplay = () => {
                 }, 300)
               }}
             >
-                                      {cartIdList.includes(currentProduct.productId)?"added":"add to cart"}
+              {cartIdList.includes(currentProduct.productId)?"added":"add to cart"}
 
             </button>
           </section>
