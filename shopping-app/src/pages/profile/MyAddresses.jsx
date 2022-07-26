@@ -15,7 +15,6 @@ function MyAddresses() {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(fetchAddress(userId));
-    
   }, []);
 
 
