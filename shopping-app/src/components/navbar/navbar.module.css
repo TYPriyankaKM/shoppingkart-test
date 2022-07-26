@@ -8,7 +8,7 @@
   position: sticky;
   top: 0;
   z-index: 99;
-  box-shadow: 0px 2px 4px 1px #afafaf;
+  /* box-shadow: 0px 2px 4px 1px #afafaf; */
 }
 .navbar article {
   width: 90%;

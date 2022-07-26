@@ -1,4 +1,4 @@
-import * as React from "react";
+import React, { useEffect } from "react";
 import { useState } from "react";
 import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
@@ -9,8 +9,10 @@ import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { orange } from "@mui/material/colors";
+import { useSearchParams } from "react-router-dom";
+import Axios from "../../../apis/Axios";
 const theme = createTheme({
   palette: {
     primary: {
@@ -20,16 +22,25 @@ const theme = createTheme({
 });
 
 export default function Reset() {
+  let navigate = useNavigate();
+  let [searchParam, setSearchParam] = useSearchParams();
+  const [token, setToken] = useState("");
+  // console.log(useSearchParams())
   let [newpass, setPass] = useState();
   let [confirmpassword, setPassword] = useState();
 
-  const handleSubmit = event => {
+  useEffect(() => {
+    setToken(searchParam.get("token"));
+    searchParam.set("token", "######");
+    setSearchParam(searchParam);
+  }, []);
+
+  const handleSubmit = async event => {
     event.preventDefault();
-    const data = new FormData(event.currentTarget);
-    console.log({
-      newpassword: data.get("newpassword"),
-      confirmpassword: data.get("conpassword"),
+    await Axios.post(`/users/verify-account?token=${token}`, null, {
+      headers: { password: newpass },
     });
+    navigate(`/`)
   };
 
   return (
@@ -46,6 +57,7 @@ export default function Reset() {
             borderRadius: "0.4rem",
             background: "#efefef",
             boxShadow: "2px 1px 10px 1px grey",
+            marginBottom: "20px",
           }}
         >
           <Avatar sx={{ m: 1, bgcolor: "#1D2C4E" }}>
@@ -84,16 +96,16 @@ export default function Reset() {
               value={confirmpassword}
               onChange={e => setPassword(e.target.value)}
             />
-            <Link to="/login">
-              <Button
-                type="submit"
-                fullWidth
-                variant="contained"
-                sx={{ mt: 3, mb: 2 }}
-              >
-                Confirm
-              </Button>
-            </Link>
+
+            <Button
+              type="submit"
+              onClick={handleSubmit}
+              fullWidth
+              variant="contained"
+              sx={{ mt: 3, mb: 2 }}
+            >
+              Confirm
+            </Button>
           </Box>
         </Box>
       </Container>
