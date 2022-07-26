@@ -162,6 +162,7 @@ function EditProfile({ open, onClose }) {
                 autoComplete="email"
                 onChange={handleChange}
                 value={userData.email}
+                type="email"
               />
             </Grid>
             <Grid item xs={12}>
