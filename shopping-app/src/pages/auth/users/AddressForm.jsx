@@ -86,14 +86,16 @@ const Signup = () => {
   const [number, setNumber] = useState();
   const [address, setAddress] = useState({
     city: "",
+    type: "",
     country: "",
-    line1: "",
-    street: "",
+    buildingInfo: "",
+    streetInfo: "",
     landmark: "",
     state: "",
     pincode: "",
-  }
-  );
+    name: "",
+    phone: "",
+  });
   const [allCountries, setAllCountries] = useState([]);
   const [countryCode, setCountryCode] = useState("IN");
   const [allStates, setAllStates] = useState([]);
@@ -124,20 +126,19 @@ const Signup = () => {
     try {
       await Axios.post(`/customers/${userId}/address`, currPayload);
       toast.success("successfully added");
-      navigate("/my-profile/my-addresses")
+      navigate("/my-profile/my-addresses");
       // window.location.assign("/my-profile/my-addresses")
     } catch (err) {
       console.log(err);
     }
   };
 
-
   return (
     <>
       <br />
       <motion.div className={clsx(style.formCard)}>
         <h1>Add Address</h1>
-        <section>
+        {/* <section>
           One profile ID is all you need to access all KART services. You
           already have a profile?{" "}
           <a
@@ -147,7 +148,7 @@ const Signup = () => {
           >
             Find it here{" "}
           </a>
-        </section>
+        </section> */}
         <form onSubmit={handleSubmit}>
           <Card
             style={{ backgroundColor: "transparent" }}
@@ -168,6 +169,7 @@ const Signup = () => {
           {/* number2 optional */}
 
           {/* address 1 is mandatory */}
+
           <Card
             elevation={0}
             style={{ backgroundColor: "transparent" }}
@@ -177,13 +179,13 @@ const Signup = () => {
               className={classes.formTextFieldOther}
               size="small"
               id="outlined-size-small"
-              label="House/Office-Number"
-              placeholder="eg-142/87"
+              label="Name"
+              placeholder="John Doe"
               variant="outlined"
-              value={address.line1}
+              value={address.name}
               required
               onChange={e => {
-                setAddress({ ...address, line1: e.target.value });
+                setAddress({ ...address, name: e.target.value });
               }}
             ></TextField>
           </Card>
@@ -196,13 +198,32 @@ const Signup = () => {
               className={classes.formTextFieldOther}
               size="small"
               id="outlined-size-small"
-              label="Street"
-              placeholder="eg-4th Street"
+              label="House/Office Info"
+              placeholder="eg-142/87, ABC Apartment"
               variant="outlined"
-              value={address.street}
+              value={address.buildingInfo}
               required
               onChange={e => {
-                setAddress({ ...address, street: e.target.value });
+                setAddress({ ...address, buildingInfo: e.target.value });
+              }}
+            ></TextField>
+          </Card>
+          <Card
+            elevation={0}
+            style={{ backgroundColor: "transparent" }}
+            className={style.formCardContainer}
+          >
+            <TextField
+              className={classes.formTextFieldOther}
+              size="small"
+              id="outlined-size-small"
+              label="streetInfo"
+              placeholder="eg-4th streetInfo"
+              variant="outlined"
+              value={address.streetInfo}
+              required
+              onChange={e => {
+                setAddress({ ...address, streetInfo: e.target.value });
               }}
             ></TextField>
           </Card>
@@ -362,7 +383,7 @@ const Signup = () => {
               }}
             ></TextField>
           </Card>
-           <Card
+          <Card
             elevation={0}
             style={{ backgroundColor: "transparent" }}
             className={style.formCardContainer}
@@ -371,17 +392,17 @@ const Signup = () => {
               className={classes.formTextFieldOther}
               size="small"
               id="outlined-size-small"
-              label="Number"
-              placeholder="Number"
+              label="Phone Number"
+              placeholder="9876543210"
               variant="outlined"
-              value={address.number}
+              value={address.phone}
               required
               onChange={e => {
-                setAddress({ ...address, number: e.target.value });
+                setAddress({ ...address, phone: e.target.value });
               }}
             ></TextField>
           </Card>
-{/* 
+          {/* 
 
           <Card
             elevation={0}
