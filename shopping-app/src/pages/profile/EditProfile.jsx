@@ -15,6 +15,7 @@ import { toast } from "react-toastify";
 import Axios from "../../apis/Axios";
 import "./profile.css";
 import { createCurrentUser, editProfile } from "../../features/User/userSlice";
+import {useNavigate} from "react-router-dom"
 
 let initialState = {
   firstName: "",
@@ -27,22 +28,14 @@ let initialState = {
 function EditProfile({ open, onClose }) {
   let currentUser = useSelector(state => state.user.currentUser);
   let token = useSelector(state => state.user.token);
-  let { firstName, lastName, gender, email, phone, userId } = currentUser;
+  // let { firstName, lastName, gender, email, phone, userId } = currentUser;
+  let navigate = useNavigate()
 
   let [userData, setUserData] = useState(initialState);
   const dispatch = useDispatch();
 
   useEffect(() => {
-    setUserData({
-...currentUser,
-      userId,
-      firstName,
-      lastName,
-      gender,
-      email,
-      phone,
-      
-    });
+    setUserData({...currentUser});
   }, []);
 
   const handleChange = e => {
@@ -55,10 +48,11 @@ function EditProfile({ open, onClose }) {
     e.preventDefault();
     try {
       let updatedUserData ={
-        id: userId,
+        id: currentUser.userId,
         payload: {...userData}
     }
     dispatch(editProfile(updatedUserData))
+    navigate("/my-profile/my-profile-info")
       onClose()
       toast.success("successfully updated");
     } catch (err) {

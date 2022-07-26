@@ -32,7 +32,61 @@ const CheckoutProducts = () => {
     dispatch(fetchProducts());
 
   }, [] );
-// checkoutProducts
+  
+
+  useEffect(() => {
+    let cartIdList = cartItems.map(item => item.productId);
+    let newCartIdobj = cartItems.reduce((acc, item) => {
+      return { ...acc, [item.productId]: [item.itemId, item.quantity] };
+    }, {});
+    setCartIdObject(newCartIdobj);
+    let filteredList = allProducts.filter(item => {
+      return cartIdList.includes(item.productId);
+    });
+    console.log(filteredList);
+    setCart(filteredList);
+  }, [cartItems]);
+
+  const increaseQuantity = async (userId, itemId, quantity) => {
+    setShowBackdrop(true);
+    let payload = {
+      quantity: quantity + 1,
+    };
+    try {
+      Axios.put(`/customers/${userId}/carts/${itemId}`, payload);
+    } catch (error) {
+      console.log(error);
+    }
+    setTimeout(() => {
+      setShowBackdrop(false);
+    }, 1000);
+  };
+  const decreaseQuantity = async (userId, itemId, quantity) => {
+    setShowBackdrop(true);
+    let payload;
+
+    if (quantity <= 1) {
+      dispatch(
+        deleteFromCart({
+          userId,
+          cartid: itemId,
+        })
+      );
+    } else {
+      payload = {
+        quantity: quantity - 1,
+      };
+    }
+
+    try {
+      Axios.put(`/customers/${userId}/carts/${itemId}`, payload);
+    } catch (error) {
+      console.log(error);
+    }
+    setTimeout(() => {
+      setShowBackdrop(false);
+    }, 1000);
+  };
   return (
     <div className={styles.checkoutProductContainer}>
       {cartItems.length === 0 ? (

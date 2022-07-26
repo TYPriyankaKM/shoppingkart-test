@@ -49,12 +49,7 @@ const cartSlice = createSlice({
         0
       );
     },
-    getCartCount: (state, action) => {
-      state.cartCount = state.cartItems.reduce(
-        (acc, item) => acc + item.quantity,
-        0
-      );
-    },
+  
   },
   extraReducers: builder => {
     builder.addCase(addToCart.fulfilled, (state, action) => {

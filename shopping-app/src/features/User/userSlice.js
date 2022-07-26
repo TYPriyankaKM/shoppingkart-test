@@ -7,10 +7,9 @@ const initialState = {
 
 // editProfile
 export const editProfile =createAsyncThunk("user/editProfile",async(userData)=>{
-  // console.log(obj1)
   let {id, payload} = userData
-  await Axios.put(`users/${id}`, payload)
-  return {userData}
+  await Axios.put(`customers/${id}`, payload)
+  return {...userData}
    
 })
 
@@ -30,12 +29,15 @@ const userSlice = createSlice({
       state.currentUser = {};
       state.token = null;
     },
+    getCurrentUser:(state,action)=>{
+      state.currentUser=state.currentUser
+    }
   },
   extraReducers:{
     [editProfile.fulfilled]:(state, action)=>{ 
             
       // let index = state.currentUser.findIndex((v) => v.userId == action.payload.id);
-      state.currentUser= action.payload.payload
+      state.currentUser= {...action.payload.payload}
       
   },
   [editProfile.rejected]: (state, action) => {
@@ -53,4 +55,4 @@ const userSlice = createSlice({
 
 
 export default userSlice.reducer;
-export let { createCurrentUser,logoutCurrentUser } = userSlice.actions;
+export let { createCurrentUser,logoutCurrentUser, getCurrentUser} = userSlice.actions;
