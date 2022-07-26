@@ -53,6 +53,7 @@
   border: 1px solid;
   align-items: center;
   margin: 5px 0;
+  cursor: pointer;
 
   /* margin: 1px 0; */
 }
@@ -149,7 +150,6 @@
 .emptyCart img {
   object-fit: cover;
   width: 30vw;
-  
 }
 
 .quantity {
@@ -162,7 +162,7 @@
 .quantity svg {
   width: 1.5rem;
   height: 1.5rem;
-  fill: #282222 ;
+  fill: #282222;
   cursor: pointer;
 }
 /* .quantity svg:nth-child(1) {
