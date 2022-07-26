@@ -94,9 +94,9 @@ const Signup = () => {
       gender,
       phone: number1,
       role: ["CUSTOMER"],
-      addressList:[],
-      WishList:[],
-      cartList:[]
+      addressList: [],
+      wishList: [],
+      cartList: [],
     };
     setPayload(currPayload);
     console.log(payload);
@@ -104,10 +104,12 @@ const Signup = () => {
     fetchData(currPayload);
     navigate("/");
   };
-
+  const header = {
+    verifyUrl: "http://localhost:3000/reset",
+  };
   const fetchData = async currPayload => {
     try {
-      await Axios.post("/customers", currPayload);
+      await Axios.post("/users", currPayload, { headers: header });
       console.log("user registered....");
       toast.success("successfully registered");
     } catch (error) {
