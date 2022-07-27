@@ -39,12 +39,9 @@ const StyledBadge = styled(Badge)(({ theme }) => ({
   },
 }));
 
-
-
-
 const ProfileInfo = () => {
   const [openeditprofile, setOpeneditprofile] = useState(false);
-  
+
   const handleClose = value => {
     setOpeneditprofile(false);
   };
@@ -64,31 +61,39 @@ const ProfileInfo = () => {
               anchorOrigin={{ vertical: "bottom", horizontal: "right" }}
               variant="dot"
             >
-              <Avatar  >{firstName.slice(0,1)}</Avatar>
+              <Avatar>{firstName.slice(0, 1)}</Avatar>
             </StyledBadge>
             <span>{firstName}</span>
           </h1>
-          <Button sx={{textTransform:'capitalize',fontWeight:'600'}}  variant="contained" onClick={() => setOpeneditprofile(true)}>
+          <Button
+            sx={{ textTransform: "capitalize", fontWeight: "600" }}
+            variant="contained"
+            onClick={() => setOpeneditprofile(true)}
+          >
             Edit Profile &nbsp; <ModeEditIcon />
           </Button>
         </div>
         <div className="r2">
           <table>
-            <tr>
-              <th>FirstName</th>
-              <th>LastName</th>
-              <th>Email</th>
-              <th>Phone</th>
+            <thead>
+              <tr>
+                <th>FirstName</th>
+                <th>LastName</th>
+                <th>Email</th>
+                <th>Phone</th>
 
-              <th>Gender</th>
-            </tr>
-            <tr>
-              <td>{`${firstName}`}</td>
-              <td>{`${lastName}`}</td>
-              <td>{`${email}`}</td>
-              <td>{`${phone}`}</td>
-              <td>{`${gender}`}</td>
-            </tr>
+                <th>Gender</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>{`${firstName}`}</td>
+                <td>{`${lastName}`}</td>
+                <td>{`${email}`}</td>
+                <td>{`${phone}`}</td>
+                <td>{`${gender}`}</td>
+              </tr>
+            </tbody>
           </table>
         </div>
       </section>

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link, useNavigate, useParams} from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 import { Card, TextField, makeStyles } from "@material-ui/core";
 import style from "../auth/users/signup.module.css";
 import { motion } from "framer-motion";
@@ -13,10 +13,14 @@ import FormControl from "@material-ui/core/FormControl";
 import { toast } from "react-toastify";
 import { Country, State, City } from "country-state-city";
 import { useSelector, useDispatch } from "react-redux";
-import { editAddress } from "../../features/address/addressSlice";
+import { editAddress, fetchAddress } from "../../features/address/addressSlice";
+import Radio from "@material-ui/core/Radio";
+import RadioGroup from "@material-ui/core/RadioGroup";
+import FormControlLabel from "@material-ui/core/FormControlLabel";
+import FormLabel from "@material-ui/core/FormLabel";
+import TermsConditions from "../auth/TermsConditions";
 
- 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(theme => ({
   margin: {
     margin: theme.spacing(1),
     width: 50,
@@ -59,50 +63,65 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const EditAddress = () => {
-  console.log("currUser")
-  const dispatch = useDispatch(); 
-  let currUser = useSelector((state) => state.user.currentUser);
+  const dispatch = useDispatch();
+  let currUser = useSelector(state => state.user.currentUser);
   const AddressList = useSelector(state => state.address.addressList);
 
-  
   // console.log(currUser)
-    let token = useSelector(state => state.user.token);
+  let token = useSelector(state => state.user.token);
   let { addressId } = useParams();
 
-  let Addressdata= AddressList.find(add=>add.addressId==addressId)
-console.log(Addressdata)
-  let { line1, street, landmark, pincode,country,number,state,city } = Addressdata;
-  let {userId} = currUser
+  let Addressdata = AddressList.find(add => add.addressId == addressId);
+  let {
+    streetInfo,
+    landmark,
+    pincode,
+    country,
+
+    state,
+    city,
+    type,
+    buildingInfo,
+    name,
+    phone,
+  } = Addressdata;
+  let { userId } = currUser;
 
   const navigate = useNavigate();
   const classes = useStyles();
   const [password, setPassword] = useState("nopassword");
   const [address, setAddress] = useState({
-    city:"",
-    country:"",
-    line1,
-    street,
+    city: "",
+    type,
+    country: "",
+    buildingInfo,
+    streetInfo,
     landmark,
-    state:"",
+    state: "",
     pincode,
-    number
-  }
-  );
-  console.log(address)
+    name,
+    phone,
+  });
+
   const [allCountries, setAllCountries] = useState([]);
   const [countryCode, setCountryCode] = useState("IN");
   const [allStates, setAllStates] = useState([]);
   const [allCity, setAllcity] = useState([]);
-  // const navigate = useNavigate()
+  const [addressType, setaddressType] = useState(type);
+  const [otherAddress, setOtherAddress] = useState("");
+  const [model, setModel] = useState(false);
+  const [btnCondition, setBtnCondition] = useState(false);
 
   useEffect(() => {
-    let allCountriesData = Country.getAllCountries().map((countryData) => {
+    let allCountriesData = Country.getAllCountries().map(countryData => {
       return countryData.name;
     });
     setAllCountries(allCountriesData);
-    
   }, []);
 
+  useEffect(() => {
+    dispatch(fetchAddress(userId));
+  }, []);
   function enableStateDropDown(countryCode1) {
     let allStatesData = State.getStatesOfCountry(`${countryCode1}`);
     setAllStates(allStatesData);
@@ -113,68 +132,108 @@ console.log(Addressdata)
     setAllcity(allCityData);
   }
 
-  
-  const handleSubmit =e=> {
-    
+  const handleSubmit = e => {
     e.preventDefault();
+    let addresstype = addressType;
+    if (otherAddress !== "") addresstype = otherAddress;
+    let currPayload = {
+      ...address,
+      type: addresstype,
+    };
     try {
-        console.log(address)
-      dispatch(editAddress({userId,addressId,address}))
+      dispatch(editAddress({ userId, addressId, currPayload }));
       toast.success("successfully updated");
-      navigate("/my-profile/my-addresses")
+      navigate("/my-profile/my-addresses");
     } catch (err) {
       console.log(err);
     }
   };
 
-
-  
   return (
     <>
       <br />
       <motion.div className={clsx(style.formCard)}>
-        <h1>Edit Address</h1>
+        <h1>Update Address</h1>
+
         <form onSubmit={handleSubmit}>
-         
-          {/* phone number1 mandatory */}
+          <Card
+            style={{ backgroundColor: "transparent" }}
+            elevation={0}
+            className={style.formCardContainer}
+          ></Card>
+
           {/* <Card
             elevation={0}
             style={{ backgroundColor: "transparent" }}
             className={style.formCardContainer}
-          >
-             <TextField
-              className={classes.formTextFieldOther}
-              size="small"
-              label="Phone Number"
-              required
-              placeholder="9856412537"
-              id="outlined-size-small"
-              variant="outlined"
-              value={number1}
-              onChange={e => setNumber1(e.target.value)}
-            ></TextField> 
-          </Card> */}
-          {/* <Card
+          ></Card>
+          <Card
             elevation={0}
             style={{ backgroundColor: "transparent" }}
             className={style.formCardContainer}
-          >
-            <TextField
-              className={classes.formTextFieldOther}
-              size="small"
-              label="Email Address"
-              id="outlined-size-small email"
-              variant="outlined"
-              placeholder="exmaple@company.com"
-              required
-              value={email}
-              onChange={e => {
-                setEmail(e.target.value);
-              }}
-            ></TextField>
-          </Card> */}
+          ></Card> */}
           {/* number2 optional */}
+
           {/* address 1 is mandatory */}
+          <Card
+            elevation={0}
+            style={{ backgroundColor: "transparent" }}
+            className={style.formCardContainer}
+          >
+            <RadioGroup
+              aria-label="addressType"
+              name="addressType1"
+              value={addressType}
+              onChange={e => setaddressType(e.target.value)}
+            >
+              <section
+                style={{
+                  display: "flex",
+                  // alignItems: "baseline",
+                  alignItems: "center",
+                  justifyContent: "space-evenly",
+                }}
+              >
+                <FormLabel component="legend">Address Type</FormLabel>
+                <FormControlLabel
+                  className={style.radioGroup}
+                  value="Home"
+                  control={<Radio />}
+                  label="Home"
+                />
+                <FormControlLabel
+                  className={style.radioGroup}
+                  value="Office"
+                  control={<Radio />}
+                  label="Office"
+                />
+                <FormControlLabel
+                  className={style.radioGroup}
+                  value="other"
+                  control={<Radio />}
+                  label="Other"
+                />
+              </section>
+              <div style={{ display: "flex", justifyContent: "center " }}>
+                {addressType == "other" && (
+                  <TextField
+                    className={classes.formTextFieldOther}
+                    size="small"
+                    id="outlined-size-small"
+                    label="Other"
+                    placeholder="Enter Address type"
+                    variant="outlined"
+                    value={otherAddress}
+                    required
+                    onChange={e => {
+                      setOtherAddress(e.target.value);
+                    }}
+                  ></TextField>
+                )}
+              </div>
+            </RadioGroup>
+          </Card>
+
           <Card
             elevation={0}
             style={{ backgroundColor: "transparent" }}
@@ -184,13 +243,13 @@ console.log(Addressdata)
               className={classes.formTextFieldOther}
               size="small"
               id="outlined-size-small"
-              label="House/Office-Number"
-              placeholder="eg-142/87"
+              label="Name"
+              placeholder="John Doe"
               variant="outlined"
-              value={address.line1}
+              value={address.name}
               required
-              onChange={(e) => {
-                setAddress({ ...address, line1: e.target.value });
+              onChange={e => {
+                setAddress({ ...address, name: e.target.value });
               }}
             ></TextField>
           </Card>
@@ -203,13 +262,32 @@ console.log(Addressdata)
               className={classes.formTextFieldOther}
               size="small"
               id="outlined-size-small"
-              label="Street"
-              placeholder="eg-4th Street"
+              label="House/Office Info"
+              placeholder="eg-142/87, ABC Apartment"
               variant="outlined"
-              value={address.street}
+              value={address.buildingInfo}
               required
-              onChange={(e) => {
-                setAddress({ ...address, street: e.target.value });
+              onChange={e => {
+                setAddress({ ...address, buildingInfo: e.target.value });
+              }}
+            ></TextField>
+          </Card>
+          <Card
+            elevation={0}
+            style={{ backgroundColor: "transparent" }}
+            className={style.formCardContainer}
+          >
+            <TextField
+              className={classes.formTextFieldOther}
+              size="small"
+              id="outlined-size-small"
+              label="streetInfo"
+              placeholder="eg-4th streetInfo"
+              variant="outlined"
+              value={address.streetInfo}
+              required
+              onChange={e => {
+                setAddress({ ...address, streetInfo: e.target.value });
               }}
             ></TextField>
           </Card>
@@ -224,10 +302,10 @@ console.log(Addressdata)
               id="outlined-size-small"
               variant="outlined"
               value={address.landmark}
-              label="landMark"
+              label="landmark"
               required
               placeholder="eg-near This and That"
-              onChange={(e) => {
+              onChange={e => {
                 setAddress({ ...address, landmark: e.target.value });
               }}
             ></TextField>
@@ -251,12 +329,12 @@ console.log(Addressdata)
                 id="demo-simple-select-placeholder-label"
                 value={address.country}
                 required
-                onChange={(e) => {
+                onChange={e => {
                   setAddress({ ...address, country: e.target.value });
                   // set country code
                   let countryCode1 = "";
-                  Country.getAllCountries().map((countryData) => {
-                    if (countryData.name === e.target.value) {
+                  Country.getAllCountries().map(countryData => {
+                    if (countryData.name == e.target.value) {
                       setCountryCode(countryData.isoCode);
                       countryCode1 = countryData.isoCode;
                     }
@@ -279,9 +357,6 @@ console.log(Addressdata)
               <FormHelperText>Select your Country</FormHelperText>
             </FormControl>
 
-            {/* ========================================================== */}
-
-            {/* =============================================================== */}
             {/* state */}
             <FormControl className={classes.formControl}>
               <InputLabel
@@ -295,17 +370,15 @@ console.log(Addressdata)
                 id="demo-simple-select-placeholder-label"
                 value={address.state}
                 required
-                onChange={(e) => {
+                onChange={e => {
                   setAddress({ ...address, state: e.target.value });
                   // set state code
                   let stateCode1 = "";
-                  State.getStatesOfCountry(`${countryCode}`).map(
-                    (stateData) => {
-                      if (stateData.name === e.target.value) {
-                        stateCode1 = stateData.isoCode;
-                      }
+                  State.getStatesOfCountry(`${countryCode}`).map(stateData => {
+                    if (stateData.name == e.target.value) {
+                      stateCode1 = stateData.isoCode;
                     }
-                  );
+                  });
 
                   enableCityDropDown(stateCode1);
                 }}
@@ -337,7 +410,7 @@ console.log(Addressdata)
                 id="demo-simple-select-placeholder-label"
                 value={address.city}
                 required
-                onChange={(e) => {
+                onChange={e => {
                   setAddress({ ...address, city: e.target.value });
                 }}
                 displayEmpty
@@ -369,7 +442,7 @@ console.log(Addressdata)
               label="Pincode"
               required
               value={address.pincode}
-              onChange={(e) => {
+              onChange={e => {
                 setAddress({ ...address, pincode: e.target.value });
               }}
             ></TextField>
@@ -383,36 +456,26 @@ console.log(Addressdata)
               className={classes.formTextFieldOther}
               size="small"
               id="outlined-size-small"
-              label="Number"
-              placeholder="Number"
+              label="Phone Number"
+              placeholder="9876543210"
               variant="outlined"
-              value={address.number}
+              value={address.phone}
               required
               onChange={e => {
-                setAddress({ ...address, number: e.target.value });
+                setAddress({ ...address, phone: e.target.value });
               }}
             ></TextField>
           </Card>
 
-          <Card
-            elevation={0}
-            style={{ backgroundColor: "transparent", display: "none" }}
-            className={style.formCardContainer}
-          >
-            <TextField
-              className={classes.formTextFieldOther}
-              size="small"
-              label="Password"
-              id="outlined-size-small password"
-              variant="outlined"
-              required
-              value={password}
-              type="password"
-              onChange={(e) => {
-                setPassword(e.target.value);
-              }}
-            ></TextField>
+          <Card style={{ marginLeft: "300px" }}>
+            {model && (
+              <TermsConditions
+                modelCondition={setModel}
+                condition={setBtnCondition}
+              />
+            )}
           </Card>
+
           <Card
             elevation={0}
             style={{ backgroundColor: "transparent" }}
@@ -427,7 +490,4 @@ console.log(Addressdata)
   );
 };
 
-
-
-
-export default EditAddress
+export default EditAddress;

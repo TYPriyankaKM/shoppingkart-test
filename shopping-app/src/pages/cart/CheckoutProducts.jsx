@@ -31,16 +31,13 @@ const CheckoutProducts = () => {
   useEffect(() => {
     dispatch(getCart(userId));
     dispatch(fetchProducts());
-
-  }, [] );
-  
+  }, []);
 
   useEffect(() => {
     let cartIdList = cartItems.map(item => item.productId);
     let newCartIdobj = cartItems.reduce((acc, item) => {
       return { ...acc, [item.productId]: [item.itemId, item.quantity] };
     }, {});
-    console.log(newCartIdobj)
     setCartIdObject(newCartIdobj);
     let filteredList = allProducts.filter(item => {
       return cartIdList.includes(item.productId);
