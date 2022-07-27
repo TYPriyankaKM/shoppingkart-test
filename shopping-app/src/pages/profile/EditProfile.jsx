@@ -33,16 +33,8 @@ function EditProfile({ open, onClose }) {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    setUserData({
-      ...userData,
-      firstName,
-      lastName,
-      gender,
-      email,
-      phone,
-      // token,
-    });
-  }, []);
+    setUserData({ ...currentUser });
+  }, [currentUser]);
 
   const handleChange = e => {
     let value = e.target.value;
