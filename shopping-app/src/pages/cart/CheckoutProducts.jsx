@@ -14,6 +14,7 @@ import { useNavigate } from "react-router-dom";
 import Axios from "../../apis/Axios";
 import { getCart } from "../../features/cart/cartSlice";
 import CalculateOffer from "../../components/Offer Helper Components/CalculateOffer";
+import { AccountCircle } from "@material-ui/icons";
 import BackdropSpinner from "./../../components/spinner/BackdropSpinner";
 const CheckoutProducts = () => {
   // for the card
@@ -39,11 +40,11 @@ const CheckoutProducts = () => {
     let newCartIdobj = cartItems.reduce((acc, item) => {
       return { ...acc, [item.productId]: [item.itemId, item.quantity] };
     }, {});
+    console.log(newCartIdobj)
     setCartIdObject(newCartIdobj);
     let filteredList = allProducts.filter(item => {
       return cartIdList.includes(item.productId);
     });
-    console.log(filteredList);
     setCart(filteredList);
   }, [cartItems]);
 
@@ -153,6 +154,7 @@ const CheckoutProducts = () => {
                       }, 200);
                     }}
                   />
+                  {/* {cartIdObject[productId][1]} */}
                   {/* <span>Qty:{productQuantityCounter[productId]}</span> */}
                   <span>Qty:{cartIdObject[productId][1]}</span>
 

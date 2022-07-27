@@ -33,8 +33,16 @@ function EditProfile({ open, onClose }) {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    setUserData({...currentUser});
-  }, [currentUser]);
+    setUserData({
+      ...userData,
+      firstName,
+      lastName,
+      gender,
+      email,
+      phone,
+      // token,
+    });
+  }, []);
 
   const handleChange = e => {
     let value = e.target.value;
@@ -140,6 +148,7 @@ function EditProfile({ open, onClose }) {
                 autoComplete="email"
                 onChange={handleChange}
                 value={userData.email}
+                type="email"
               />
             </Grid>
             <Grid item xs={12}>
