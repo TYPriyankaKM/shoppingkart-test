@@ -69,19 +69,19 @@ const FeaturedProducts = () => {
     setCartIdList(cartlist.map(item => item.productId))
   }, [cartList,cartlist]);
 
-  let handleAddToCart = async (cost, imageLink, productId) => {
-    try {
-      let cartProduct = {
-        cost: cost,
-        imageLink: imageLink,
-        quantity: 1,
-        productId: productId,
-      };
-      await Axios.post(`/customers/${userId}/carts`, cartProduct);
-    } catch (error) {
-      console.log(error);
-    }
-  };
+  // let handleAddToCart = async (cost, imageLink, productId) => {
+  //   try {
+  //     let cartProduct = {
+  //       cost: cost,
+  //       imageLink: imageLink,
+  //       quantity: 1,
+  //       productId: productId,
+  //     };
+  //     await Axios.post(`/customers/${userId}/carts`, cartProduct);
+  //   } catch (error) {
+  //     console.log(error);
+  //   }
+  // };
 
   return (
     <section className={styles.featuredProducts}>
