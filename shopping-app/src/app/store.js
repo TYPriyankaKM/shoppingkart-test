@@ -5,14 +5,16 @@ import productSlice from "../features/products/productSlice";
 import userSlice from "../features/User/userSlice";
 import wishlistSlice from "../features/wishlist/wishlistSlice";
 import addressSlice from "../features/address/addressSlice";
+import orderSlice from "./../features/orders/orderSlice";
 const store = configureStore({
   reducer: {
     product: productSlice,
     cart: cartSlice,
-    Login:LoginSlice,
+    Login: LoginSlice,
     wishlist: wishlistSlice,
-    user:userSlice,
-    address:addressSlice
+    user: userSlice,
+    address: addressSlice,
+    orders: orderSlice,
   },
 });
 
