@@ -1,19 +1,17 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import styles from "./cart.module.css";
-import {
-  addToCart,
-  removeFromCart,
-  removeWholeProduct,
-} from "../../features/cart/cartSlice";
+
 import { Card } from "@material-ui/core";
 import { AiOutlineMinusCircle } from "react-icons/ai";
 import { AiOutlinePlusCircle } from "react-icons/ai";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import StarRatings from "../../components/starRating/StarRatings";
 import { IconButton } from "@mui/material";
 import { useNavigate } from "react-router-dom";
-const CheckoutProducts = () => {
+import { getOrderHistory } from "./../../features/orders/orderSlice";
+const MyOrder = () => {
+  const orderList = useSelector(state => state.orders.orderList);
   // for the card
   const navigate = useNavigate();
   const cart = useSelector(state => state.cart);
@@ -21,6 +19,7 @@ const CheckoutProducts = () => {
   const cartSet = cart.cartItems.map(JSON.stringify);
   const uniqueSet = new Set(cartSet);
   let uniqueArray = Array.from(uniqueSet).map(JSON.parse);
+  const userId = useSelector(state => state.user.currentUser.userId);
   // for quantity
   const productQuantityCounter = {};
   const cartQnty = useSelector(state => state.cart);
@@ -28,12 +27,15 @@ const CheckoutProducts = () => {
     productQuantityCounter[element.productsid] =
       (productQuantityCounter[element.productsid] || 0) + 1;
   });
+  useEffect(() => {
+    dispatch(getOrderHistory(userId));
+  }, []);
   return (
     <div
       className={styles.checkoutProductContainer}
       style={{ margin: "1rem auto" }}
     >
-      <h1>My Order</h1>
+      <h1>My Orders ({orderList?.length})</h1>
       {cart.cartItems.length === 0 ? (
         <div className={styles.emptyCart}>
           <img
@@ -44,7 +46,7 @@ const CheckoutProducts = () => {
           <p>It's a good day to buy the items you saved for later!</p>
         </div>
       ) : (
-        uniqueArray.map((product, index) => {
+        orderList.map((product, index) => {
           let {
             productsid,
             title,
@@ -86,4 +88,4 @@ const CheckoutProducts = () => {
   );
 };
 
-export default CheckoutProducts;
+export default MyOrder;

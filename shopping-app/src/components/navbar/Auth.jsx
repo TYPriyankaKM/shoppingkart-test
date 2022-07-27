@@ -26,9 +26,8 @@ import { createCurrentUser } from "../../features/User/userSlice";
 import UserMenu from "../UserMenu/UserMenu";
 import { getCart } from "../../features/cart/cartSlice";
 
-import BackdropSpinner from "../spinner/BackdropSpinner"
-
-
+import BackdropSpinner from "../spinner/BackdropSpinner";
+import { getOrderHistory } from "./../../features/orders/orderSlice";
 
 const Auth = () => {
   const dispatch = useDispatch();
@@ -61,13 +60,14 @@ const Auth = () => {
 
   useEffect(() => {
     dispatch(getCart(currentUser.userId));
+    dispatch(getOrderHistory(currentUser.userId));
   }, []);
 
   const handleSubmit = async e => {
     e.preventDefault();
 
     try {
-      setShowBackdrop(true)
+      setShowBackdrop(true);
       let { data } = await Axios.post(
         "/users/login",
         {
@@ -85,16 +85,16 @@ const Auth = () => {
           })
         );
         dispatch(CloseLogin());
-        setShowBackdrop(false)
+        setShowBackdrop(false);
         toast.success("successfully logged in");
         navigate("/Home");
         dispatch(getCart(data.data.userId));
+        dispatch(getOrderHistory(data.data.userId));
       }
-
     } catch (err) {
-      console.log(err)
+      console.log(err);
       toast.error(err.response.data.data);
-      setShowBackdrop(false)
+      setShowBackdrop(false);
     }
 
     setValues({ email: "", password: "", showPassword: false });

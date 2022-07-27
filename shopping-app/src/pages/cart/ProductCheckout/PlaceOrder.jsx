@@ -1,9 +1,11 @@
 import React from "react";
 import style from "./placeorder.module.css";
 import { AiFillRightCircle } from "react-icons/ai";
+import { useSelector } from "react-redux";
 
 const PlaceOrder = () => {
-  let orderId = Math.floor(Math.random() * 2664645);
+  const orderId = useSelector(state => state.orders.currentOrderId);
+  // let orderId = Math.floor(Math.random() * 2664645);
   // console.log(orderId);
 
   return (
