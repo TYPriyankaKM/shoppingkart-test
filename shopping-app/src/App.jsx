@@ -24,11 +24,9 @@ const App = () => {
         <PersistentLogin>
           <Navbar />
 
-          {Object.keys(currentUser).length == 0 ? (
-            <CustomRoutes2 />
-          ) : (
-            <CustomRoutes />
-          )}
+          <CustomRoutes2 />
+
+          <CustomRoutes />
         </PersistentLogin>
         <Footer />
       </Router>
