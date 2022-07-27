@@ -70,9 +70,7 @@ function MyAddresses() {
                         <p>
                           {item.state} - {item.pincode} - {item.country}
                         </p>
-                        <p>
-                          <h4>Contanct</h4> {item.phone}
-                        </p>
+                        <h4>Contanct</h4> {item.phone}
                       </div>
                     </div>
                   </div>
