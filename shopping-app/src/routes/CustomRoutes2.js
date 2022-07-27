@@ -32,20 +32,15 @@ const CustomRoutes2 = () => {
     {
       path: "/signup",
       element: <Signup />,
-
     },
     {
       path: "/forgot",
       element: <Forget />,
     },
     {
-      path:"/login",
-      element:<Login/>
+      path: "/login",
+      element: <Login />,
     },
-    {
-      path:"/reset",
-      element:<Reset/>
-    }
   ]);
   return myRoutes;
 };

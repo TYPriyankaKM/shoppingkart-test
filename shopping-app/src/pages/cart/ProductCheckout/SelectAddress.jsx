@@ -11,15 +11,9 @@ const SelectAddress = () => {
   let navigate = useNavigate();
 
   let currUser = useSelector(state => state.user.currentUser);
-  console.log(currUser);
+  // console.log(currUser);
   let { firstName, lastName, gender, email, phone, addressList, id } = currUser;
-
-  useEffect(() => {
-    let address = currUser;
-    console.log(address);
-  }, []);
-
-  let remove = () => {};
+  let address = useSelector(state => state.address.addressList);
 
   let handlesubmit = () => {
     if (use === true) {
@@ -50,14 +44,14 @@ const SelectAddress = () => {
         </h3>
         <p style={{ fontWeight: "lighter" }}>{phone}</p>
 
-        {addressList.map((item, index) => {
+        {address.map((item, index) => {
           return (
-            <div style={{ display: "flex" }}>
+            <div style={{ display: "flex" }} key={index}>
               <input type="radio" name="address" onClick={() => setuse(!use)} />
               <div className={style.addname}>
                 <h4>{`Address ${index + 1}`} : &nbsp; </h4>
                 <p>
-                  {item.houseNo} , {item.landMark},{item.street}, {item.city} -
+                  {item.line1} , {item.landmark},{item.street}, {item.city} -
                   {item.pincode}{" "}
                 </p>
               </div>

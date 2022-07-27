@@ -22,7 +22,7 @@ function Welcome() {
 
   return (
     <section>
-      <Navbar />
+      {/* <Navbar /> */}
       <article className={welcomeStyle.welcomesection}>
         <div className={welcomeStyle.mainHead}>
           <div className={welcomeStyle.headings1}>
