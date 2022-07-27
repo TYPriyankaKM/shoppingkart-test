@@ -1,25 +1,24 @@
 import React, { useEffect, useState } from "react";
-import { useSelector,useDispatch } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import style from "./selectaddress.module.css";
 import { Link, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import { AiFillDelete } from "react-icons/ai";
-import {fetchAddress} from "../../../features/address/addressSlice"
+import { fetchAddress } from "../../../features/address/addressSlice";
 
 const SelectAddress = () => {
   let [proceed, setproceed] = useState(false);
   let [use, setuse] = useState(false);
   let navigate = useNavigate();
-  let dispatch = useDispatch()
-
+  let dispatch = useDispatch();
 
   let currUser = useSelector(state => state.user.currentUser);
   // console.log(currUser);
-  let { firstName, lastName, gender, email, phone, addressList, userId } = currUser;
+  let { firstName, lastName, gender, email, phone, addressList, userId } =
+    currUser;
   let address = useSelector(state => state.address.addressList);
   useEffect(() => {
     dispatch(fetchAddress(userId));
-    
   }, []);
   let handlesubmit = () => {
     if (use === true) {
@@ -56,11 +55,16 @@ const SelectAddress = () => {
               <input type="radio" name="address" onClick={() => setuse(!use)} />
               <div className={style.addname}>
                 <h4>{`Address ${index + 1}`} : &nbsp; </h4>
-                <h5><storng>{item.name}</storng></h5>
-                <p> {item.buildingInfo} , {item.streetInfo},
-                   {item.landmark}, {item.city} - {item.pincode}
+                <h5>
+                  <strong>{item.name}</strong>
+                </h5>
+                <p>
+                  {" "}
+                  {item.buildingInfo} , {item.streetInfo},{item.landmark},{" "}
+                  {item.city} - {item.pincode}
                 </p>
-                <strong>contact :</strong>{item.phone}
+                <strong>contact :</strong>
+                {item.phone}
               </div>
             </div>
           );
