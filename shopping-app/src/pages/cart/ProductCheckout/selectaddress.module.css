@@ -37,8 +37,7 @@ color: #333;
 
 .addname{
     width:60vw;
-    height: 10vh;
-    display: flex;
+    height: auto;
     align-items: center;
     justify-content:start;
     box-shadow: 0 0 1px 0.5px gray;

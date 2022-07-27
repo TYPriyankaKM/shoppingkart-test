@@ -56,10 +56,11 @@ const SelectAddress = () => {
               <input type="radio" name="address" onClick={() => setuse(!use)} />
               <div className={style.addname}>
                 <h4>{`Address ${index + 1}`} : &nbsp; </h4>
-                <p>{item.name}
-                  {item.line1} , {item.landmark},{item.street}, {item.city} -
-                  {item.pincode}{" "}
+                <h5><storng>{item.name}</storng></h5>
+                <p> {item.buildingInfo} , {item.streetInfo},
+                   {item.landmark}, {item.city} - {item.pincode}
                 </p>
+                <strong>contact :</strong>{item.phone}
               </div>
             </div>
           );
