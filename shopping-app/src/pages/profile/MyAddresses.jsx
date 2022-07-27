@@ -24,6 +24,8 @@ function MyAddresses() {
     setCurrentUser(currUser);
   }, [cuurentUser, currUser]);
 
+
+
   return (
     <div style={{ margin: "0 2rem" }}>
       <h3 style={{ marginBottom: "30px", textAlign: "center" }}>

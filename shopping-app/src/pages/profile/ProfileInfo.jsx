@@ -44,13 +44,13 @@ const StyledBadge = styled(Badge)(({ theme }) => ({
 
 const ProfileInfo = () => {
   const [openeditprofile, setOpeneditprofile] = useState(false);
-  let currUser = useSelector(state => state.user.currentUser);
-  let { firstName, lastName, gender, email, phone } = currUser;
-
+  
   const handleClose = value => {
     setOpeneditprofile(false);
   };
 
+  let currUser = useSelector(state => state.user.currentUser);
+  let { firstName, lastName, gender, email, phone } = currUser;
   return (
     <>
       {openeditprofile && (
