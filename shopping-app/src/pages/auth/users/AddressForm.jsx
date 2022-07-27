@@ -74,7 +74,7 @@ const Signup = () => {
   const dispatch = useDispatch();
   const classes = useStyles();
 
-  const [fname, setFname] = useState("");
+  // const [name, setname] = useState("");
   const [lname, setLname] = useState("");
   //   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("nopassword");
@@ -138,17 +138,7 @@ const Signup = () => {
       <br />
       <motion.div className={clsx(style.formCard)}>
         <h1>Add Address</h1>
-        {/* <section>
-          One profile ID is all you need to access all KART services. You
-          already have a profile?{" "}
-          <a
-            onClick={() => {
-              dispatch(OpenLogin());
-            }}
-          >
-            Find it here{" "}
-          </a>
-        </section> */}
+
         <form onSubmit={handleSubmit}>
           <Card
             style={{ backgroundColor: "transparent" }}

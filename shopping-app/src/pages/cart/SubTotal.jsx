@@ -13,7 +13,7 @@ const SubTotal = () => {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(getCartTotal());
-    dispatch(getCartCount());
+    // dispatch(getCartCount());
   }, [cart]);
 
   const buyProduct = () => {

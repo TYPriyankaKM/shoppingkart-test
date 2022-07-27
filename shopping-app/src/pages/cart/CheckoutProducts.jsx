@@ -30,7 +30,10 @@ const CheckoutProducts = () => {
   useEffect(() => {
     dispatch(getCart(userId));
     dispatch(fetchProducts());
-  }, []);
+
+  }, [] );
+  
+
   useEffect(() => {
     let cartIdList = cartItems.map(item => item.productId);
     let newCartIdobj = cartItems.reduce((acc, item) => {
