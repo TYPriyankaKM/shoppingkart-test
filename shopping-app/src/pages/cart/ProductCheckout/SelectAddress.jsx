@@ -15,11 +15,16 @@ const SelectAddress = () => {
   let [use, setuse] = useState(false);
   let navigate = useNavigate();
   let dispatch = useDispatch();
-  let [orderAddress, setOrderAddress] = useState({});
 
   let currUser = useSelector(state => state.user.currentUser);
   // console.log(currUser);
-  let { userId } = currUser;
+  let { firstName, lastName, gender, email, phone, addressList, userId } =
+    currUser;
+  let [orderAddress, setOrderAddress] = useState({});
+
+  // let currUser = useSelector(state => state.user.currentUser);
+  // // console.log(currUser);
+  // let { userId } = currUser;
   let address = useSelector(state => state.address.addressList);
   let orderCart = useSelector(state => state.cart);
   const [orderId, setOrderId] = useState({});

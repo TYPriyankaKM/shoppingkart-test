@@ -9,11 +9,13 @@ import "aos/dist/aos.css";
 import "react-toastify/dist/ReactToastify.css";
 import Footer from "./components/footer/Footer";
 import PersistentLogin from "./components/PersistentLogin/PersistentLogin";
+import { useSelector } from "react-redux";
 
 import CustomRoutes2 from "./routes/CustomRoutes2";
 
 const App = () => {
   AOS.init({ once: true });
+  let currentUser = useSelector(state => state.user.currentUser);
 
   return (
     <div>
@@ -22,9 +24,11 @@ const App = () => {
         <PersistentLogin>
           <Navbar />
 
-          <CustomRoutes2 />
-
-          <CustomRoutes />
+          {Object.keys(currentUser).length == 0 ? (
+            <CustomRoutes2 />
+          ) : (
+            <CustomRoutes />
+          )}
         </PersistentLogin>
         <Footer />
       </Router>

@@ -78,7 +78,7 @@ const Signup = () => {
   //   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("nopassword");
   const [role, setRole] = useState("");
-  const [addressType, setaddressType] = useState("male");
+  const [addressType, setaddressType] = useState("");
   const [payload, setPayload] = useState({});
   const [btnCondition, setBtnCondition] = useState(false);
   const [otherAddress, setOtherAddress] = useState("");

@@ -3,13 +3,18 @@ import { useDispatch, useSelector } from "react-redux";
 import { fetchProducts } from "../../features/products/productSlice";
 import Spinner from "./../spinner/Spinner";
 import styles from "./featuredProducts.module.css";
-import { addToCart, getCart,deleteFromCart } from "../../features/cart/cartSlice";
+import {
+  addToCart,
+  getCart,
+  deleteFromCart,
+} from "../../features/cart/cartSlice";
 import { useNavigate } from "react-router-dom";
 import PaginationComp from "../pagination/PaginationComp";
 import { AiOutlineHeart } from "react-icons/ai";
 import {
   addToWishlist,
   deleteFromWishlist,
+  getAllWishlist,
 } from "../../features/wishlist/wishlistSlice";
 import Card from "@material-ui/core/Card";
 import { Button } from "@mui/material";
@@ -48,6 +53,10 @@ const FeaturedProducts = () => {
   useEffect(() => {
     setPage();
   }, [currentPage, product]);
+
+  useEffect(() => {
+    dispatch(getAllWishlist({ userId }));
+  }, []);
   useEffect(() => {
     dispatch(fetchProducts());
     fetch("http://localhost:8080/shopping-kart-ty-api-0.0.1-SNAPSHOT/products")
@@ -98,6 +107,10 @@ const FeaturedProducts = () => {
                 quantity: 1,
                 productId: productId,
               };
+              let data = {
+                userId,
+                payload,
+              };
               let cartData = {
                 userId,
                 payload,
@@ -141,25 +154,29 @@ const FeaturedProducts = () => {
                           // handleAddToCart(price, thumbnailURL, productId);
                           if (cartIdList.includes(productId)==false) {
                             dispatch(addToCart(cartData));
-                          setTimeout(() => {
-                            dispatch(getCart(userId));
-                          }, 300)
+                            setTimeout(() => {
+                              dispatch(getCart(userId));
+                            }, 300)
                           }
-                          
                         }}
                       >
-                        {cartIdList.includes(productId)?"added":"add to cart"}
-                        
+                        {cartIdList.includes(productId)
+                          ? "added"
+                          : "add to cart"}
                       </Button>
                       <FavoriteIcon
                         onClick={e => {
                           e.stopPropagation();
                           if (productIdList.includes(productId)) {
-                            dispatch(deleteFromWishlist({userId,wishlistId:productId}));
+                            dispatch(
+                              deleteFromWishlist({
+                                userId,
+                                wishlistId: productId,
+                              })
+                            );
                             return;
                           }
-                          dispatch(addToWishlist({userId,payload}));
-                          dispatch();
+                          dispatch(addToWishlist(data));
                         }}
                         style={{
                           fill: productIdList.includes(productId)

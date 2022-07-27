@@ -41,15 +41,14 @@ function EditProfile({ open, onClose }) {
     setUserData(pre => ({ ...pre, [e.target.name]: value }));
   };
 
-
   const handleSubmit = async e => {
     e.preventDefault();
     try {
       let updatedUserData ={
         id: currentUser.userId,
         payload: {...userData}
-    }
-    dispatch(editProfile(updatedUserData))
+      }
+      dispatch(editProfile(updatedUserData))
       onClose()
       toast.success("successfully updated");
       navigate("/my-profile/my-profile-info")
@@ -96,7 +95,7 @@ function EditProfile({ open, onClose }) {
             <Grid
               item
               xs={12}
-              row
+              row="true"
               aria-labelledby="demo-row-radio-buttons-group-label"
             >
               <Typography

@@ -24,8 +24,6 @@ function MyAddresses() {
     setCurrentUser(currUser);
   }, [cuurentUser, currUser]);
 
-
-
   return (
     <div style={{ margin: "0 2rem" }}>
       <h3 style={{ marginBottom: "30px", textAlign: "center" }}>
@@ -56,7 +54,7 @@ function MyAddresses() {
           addressData.map((item, index) => {
             let { addressId } = item;
             return (
-              <Card sx={{ maxWidth: 500, margin: "8px 0px" }}>
+              <Card sx={{ maxWidth: 500, margin: "8px 0px" }} key={index}>
                 <CardContent>
                   <div style={{ display: "flex" }}>
                     <div className={""}>
@@ -72,9 +70,7 @@ function MyAddresses() {
                         <p>
                           {item.state} - {item.pincode} - {item.country}
                         </p>
-                        <p>
-                          <strong>Contanct</strong> {item.phone}
-                        </p>
+                        <strong>Contanct</strong> {item.phone}
                       </div>
                     </div>
                   </div>
