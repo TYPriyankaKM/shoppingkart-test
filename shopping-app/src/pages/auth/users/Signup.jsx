@@ -19,7 +19,7 @@ import FormControl from "@material-ui/core/FormControl";
 import { toast } from "react-toastify";
 import { useDispatch } from "react-redux";
 import { OpenLogin } from "../../../features/Login/LoginSlice";
-import BackdropSpinner from "../../../components/spinner/BackdropSpinner"
+import BackdropSpinner from "../../../components/spinner/BackdropSpinner";
 // import { motion, Variants } from "framer-motion";
 
 const useStyles = makeStyles(theme => ({
@@ -71,7 +71,6 @@ const Signup = () => {
   // Loading state
   const [showBackdrop, setShowBackdrop] = useState(false);
 
-
   const [fname, setFname] = useState("");
   const [lname, setLname] = useState("");
   const [email, setEmail] = useState("");
@@ -85,9 +84,9 @@ const Signup = () => {
 
   // const navigate = useNavigate()
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async e => {
     e.preventDefault();
-    setShowBackdrop(true)
+    setShowBackdrop(true);
     let currPayload = {
       firstName: fname,
       lastName: lname,
@@ -103,8 +102,8 @@ const Signup = () => {
     setPayload(currPayload);
     console.log(payload);
 
-   await fetchData(currPayload);
-    setShowBackdrop(false)
+    await fetchData(currPayload);
+    setShowBackdrop(false);
     toast.success("Successfully Registered Please Check your mail and Verify");
     navigate("/");
   };
@@ -113,8 +112,8 @@ const Signup = () => {
   };
   const fetchData = async currPayload => {
     try {
-      await Axios.post("/customers", currPayload);
-          console.log("user registered....");
+      await Axios.post("/customers", currPayload, { headers: header });
+      console.log("user registered....");
     } catch (error) {
       toast.error(error.message);
       console.log(error.message);
@@ -348,7 +347,6 @@ const Signup = () => {
           </Card>
         </form>
         <BackdropSpinner open={showBackdrop} />
-
       </motion.div>
       <br />
     </>
