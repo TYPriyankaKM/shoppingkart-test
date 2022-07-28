@@ -76,7 +76,6 @@ const Auth = () => {
         }
         // { withCredentials: true }
       );
-      console.log(data.message);
       if (data) {
         dispatch(
           createCurrentUser({
