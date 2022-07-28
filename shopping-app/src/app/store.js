@@ -6,6 +6,7 @@ import userSlice from "../features/User/userSlice";
 import wishlistSlice from "../features/wishlist/wishlistSlice";
 import addressSlice from "../features/address/addressSlice";
 import orderSlice from "./../features/orders/orderSlice";
+
 const store = configureStore({
   reducer: {
     product: productSlice,
@@ -16,6 +17,10 @@ const store = configureStore({
     address: addressSlice,
     orders: orderSlice,
   },
+  middleware: getDefaultMiddleware =>
+    getDefaultMiddleware({
+      serializableCheck: false,
+    }),
 });
 
 export default store;
