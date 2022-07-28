@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 // import Footer from "./components/footer/Footer";
@@ -9,11 +9,16 @@ import "aos/dist/aos.css";
 import "react-toastify/dist/ReactToastify.css";
 import Footer from "./components/footer/Footer";
 import PersistentLogin from "./components/PersistentLogin/PersistentLogin";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 
 import CustomRoutes2 from "./routes/CustomRoutes2";
+import { fetchProducts } from "./features/products/productSlice";
 
 const App = () => {
+  let dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(fetchProducts());
+  }, []);
   AOS.init({ once: true });
   let currentUser = useSelector(state => state.user.currentUser);
 
