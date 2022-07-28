@@ -8,6 +8,8 @@ import {
   fetchAddress,
   deleteAddress,
 } from "../../features/address/addressSlice";
+import ConfirmDialogButton from "../../components/customButton/ConfirmDialogButton"
+
 
 function MyAddresses() {
   let currUser = useSelector(state => state.user.currentUser);
@@ -84,14 +86,8 @@ function MyAddresses() {
                       startIcon={<ModeEditOutlineOutlinedIcon />}
                     ></Button>
                   </Link>
-                  <Button
-                    color="error"
-                    onClick={() => {
-                      dispatch(deleteAddress({ userId, addressId }));
-                    }}
-                    startIcon={<DeleteIcon />}
-                    size="small"
-                  ></Button>
+                  
+                  <ConfirmDialogButton title={"Are your sure to Delete Address"} onConfirm={(permit)=> permit ?dispatch(deleteAddress({ userId, addressId })):""} />
                 </CardActions>
               </Card>
             );
