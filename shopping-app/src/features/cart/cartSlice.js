@@ -52,9 +52,10 @@ const cartSlice = createSlice({
     builder.addCase(getCart.fulfilled, (state, action) => {
       state.cartItems = action.payload.data;
     });
-    builder.addCase(getCart.rejected, (state, action) => {
-      state.error = action.payload.data;
-    });
+    // builder.addCase(getCart.rejected, (state, action) => {
+    //   state.error = action.payload.data;
+    // });
+    
     // builder.addCase(updateCart.fulfilled, (state, action) => {
     //   let index = state.cartItems.findIndex(
     //     v => v.itemId == action.payload.payload.itemid

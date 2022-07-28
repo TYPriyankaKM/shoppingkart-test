@@ -39,10 +39,7 @@ function MyAddresses() {
         </div>
       )}
       <div className={""} style={{ margin: "8px 0px" }}>
-        <h3>
-          {firstName} &nbsp; {lastName}
-        </h3>
-        <p style={{ fontWeight: "lighter" }}>{phone}</p>
+
         {addressData === null || addressData.length === 0 ? (
           <>
             <h1>No adderss added yet</h1>
