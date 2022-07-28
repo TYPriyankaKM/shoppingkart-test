@@ -143,7 +143,7 @@ const EditAddress = () => {
     try {
       dispatch(editAddress({ userId, addressId, currPayload }));
       toast.success("successfully updated");
-      navigate("/my-profile/my-addresses");
+      navigate(-1);
     } catch (err) {
       console.log(err);
     }
