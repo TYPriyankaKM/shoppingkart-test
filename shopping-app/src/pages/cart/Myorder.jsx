@@ -1,17 +1,26 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import styles from "./cart.module.css";
+import Accordion from "@mui/material/Accordion";
+import AccordionSummary from "@mui/material/AccordionSummary";
+import AccordionDetails from "@mui/material/AccordionDetails";
+import Typography from "@mui/material/Typography";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
-import { Card } from "@material-ui/core";
-import { AiOutlineMinusCircle } from "react-icons/ai";
-import { AiOutlinePlusCircle } from "react-icons/ai";
+import { Card, CardHeader } from "@material-ui/core";
+
 import { useState, useEffect } from "react";
 import StarRatings from "../../components/starRating/StarRatings";
 import { IconButton } from "@mui/material";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { getOrderHistory } from "./../../features/orders/orderSlice";
+import CalculateOffer from "../../components/Offer Helper Components/CalculateOffer";
+import Axios from "../../apis/Axios";
+import { toast } from "react-toastify";
 const MyOrder = () => {
   const orderList = useSelector(state => state.orders.orderList);
+  const orderItems = useState([]);
+  const [allPropertyObj, setAllPropertyObj] = useState({});
   // for the card
   const navigate = useNavigate();
   const cart = useSelector(state => state.cart);
@@ -23,20 +32,37 @@ const MyOrder = () => {
   // for quantity
   const productQuantityCounter = {};
   const cartQnty = useSelector(state => state.cart);
+
   cartQnty.cartItems.map(element => {
     productQuantityCounter[element.productsid] =
       (productQuantityCounter[element.productsid] || 0) + 1;
   });
+  const featureProduct = useSelector(state => state.product.productList);
+
+  const handleCancelOrder = async orderId => {
+    try {
+      await Axios.patch(`customers/${userId}/orders/${orderId}`);
+      dispatch(getOrderHistory(userId));
+      toast.success("Order has been Cancelled");
+    } catch (error) {
+      console.log(error);
+      toast.error(error.response.data.data);
+    }
+  };
+
   useEffect(() => {
     dispatch(getOrderHistory(userId));
   }, []);
+  useEffect(() => {
+    let newAllpropertyObj = featureProduct.reduce((acc, value) => {
+      return { ...acc, [value.productId]: value };
+    }, {});
+    setAllPropertyObj(newAllpropertyObj);
+  }, [featureProduct]);
   return (
-    <div
-      className={styles.checkoutProductContainer}
-      style={{ margin: "1rem auto" }}
-    >
+    <div className={styles.orderListContainer} style={{ margin: "1rem auto" }}>
       <h1>My Orders ({orderList?.length})</h1>
-      {cart.cartItems.length === 0 ? (
+      {orderList?.length === 0 ? (
         <div className={styles.emptyCart}>
           <img
             src="https://rukminim1.flixcart.com/www/800/800/promos/16/05/2019/d438a32e-765a-4d8b-b4a6-520b560971e8.png?q=90"
@@ -46,41 +72,142 @@ const MyOrder = () => {
           <p>It's a good day to buy the items you saved for later!</p>
         </div>
       ) : (
-        orderList.map((product, index) => {
+        orderList.map((order, index) => {
           let {
-            productsid,
-            title,
-            price,
-            description,
-
-            thumbnailURL,
-            rating,
-            brand,
-          } = product;
+            id,
+            orderStatus,
+            address,
+            orderedItems,
+            orderDate,
+            totalAmount,
+          } = order;
+          let {
+            type,
+            name,
+            buildingInfo,
+            streetInfo,
+            landmark,
+            city,
+            state,
+            country,
+            pincode,
+            phone,
+          } = address;
 
           return (
-            <Card
-              elevation={5}
-              className={styles.cartProduct}
-              key={productsid}
-              onClick={() => navigate(`/products_page/${productsid}`)}
-              style={{ margin: "10px" }}
-            >
-              <img src={thumbnailURL} alt={title} />
-              <div className={styles.productDetails}>
-                <h3>{brand}</h3>
-                <p>{title}</p>
-                <p>{description}</p>
-              </div>
-              <div className={styles.moreDetails}>
-                <span>{rating}⭐</span>
+            <Accordion key={id}>
+              <AccordionSummary
+                expandIcon={<ExpandMoreIcon />}
+                aria-controls="panel2a-content"
+                id="panel2a-header"
+              >
+                <Card
+                  elevation={5}
+                  className={styles.cartOrder}
+                  key={id}
+                  // onClick={() => navigate(`/products_page/${productsid}`)}
+                  style={{ margin: "10px" }}
+                >
+                  <div className={styles.orderHeader}>
+                    <div className={styles.orderStatus}>
+                      <h3>{orderStatus}</h3>
+                      <p>
+                        {new Date(orderDate).toLocaleDateString()}{" "}
+                        {new Date(orderDate).toLocaleTimeString()}{" "}
+                      </p>
+                    </div>
+                    <div className={styles.orderTotal}>
+                      <h3> TOTAL</h3>
+                      <h3>₹{totalAmount} </h3>
+                    </div>
+                    <div className={styles.deliveryAddress}>
+                      <h3>SHIP TO</h3>
+                      <Accordion onClick={e => e.stopPropagation()}>
+                        <AccordionSummary
+                          expandIcon={<ExpandMoreIcon />}
+                          aria-controls="panel1a-content"
+                          id="panel1a-header"
+                        >
+                          <Typography>{name} </Typography>
+                        </AccordionSummary>
+                        <AccordionDetails>
+                          <h4>Address : &nbsp; {type} </h4>
 
-                <span>₹{price}</span>
-                <div className={styles.quantity}>
-                  <span>Qty:{productQuantityCounter[productsid]}</span>
+                          <p>
+                            {" "}
+                            {buildingInfo} , {streetInfo}, Landmark: "{landmark}
+                            " , {city} - {pincode} - {state} - {country}
+                          </p>
+                          <strong>contact :</strong>
+                          {phone}
+                        </AccordionDetails>
+                      </Accordion>
+                    </div>
+                    <div className={styles.orderNumber}>
+                      <h3>ORDER #{id}</h3>
+                      <button onClick={e => e.stopPropagation()}>
+                        Invoice
+                      </button>
+                    </div>
+                    <div className={styles.cancelOrder}>
+                      {orderStatus == "CANCELLED" ? (
+                        ""
+                      ) : (
+                        <button
+                          onClick={e => {
+                            e.stopPropagation();
+                            handleCancelOrder(id);
+                          }}
+                          className={styles.cancelBtn}
+                        >
+                          Cancel order
+                        </button>
+                      )}
+                    </div>
+                  </div>
+                </Card>
+              </AccordionSummary>
+              <AccordionDetails>
+                <div className={styles.orderListContainer}>
+                  {orderedItems.map(item => {
+                    let fullPropertyObj = allPropertyObj[item.productId];
+                    if (!(item.productId in allPropertyObj)) {
+                      return;
+                    }
+                    return (
+                      <Card
+                        elevation={5}
+                        className={styles.cartProduct}
+                        key={item.productId}
+                        onClick={() =>
+                          navigate(`/products_page/${item.productId}`)
+                        }
+                      >
+                        <img
+                          src={fullPropertyObj?.thumbnailURL}
+                          alt={fullPropertyObj?.title}
+                        />
+                        <div className={styles.productDetails}>
+                          <h3>{fullPropertyObj?.brand}</h3>
+                          <p>{fullPropertyObj.title}</p>
+                          <p>{fullPropertyObj.description}</p>
+                        </div>
+                        <div className={styles.moreDetails}>
+                          {/* <StarRatings rating={rating} /> */}
+                          <span>{fullPropertyObj.rating}⭐</span>
+
+                          <span>₹{fullPropertyObj.price}</span>
+                          <CalculateOffer
+                            originPrice={fullPropertyObj.price}
+                            offerPercentage={fullPropertyObj.offer}
+                          />
+                        </div>
+                      </Card>
+                    );
+                  })}
                 </div>
-              </div>
-            </Card>
+              </AccordionDetails>
+            </Accordion>
           );
         })
       )}
