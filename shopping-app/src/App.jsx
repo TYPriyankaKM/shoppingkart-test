@@ -15,11 +15,12 @@ import CustomRoutes2 from "./routes/CustomRoutes2";
 import { fetchProducts } from "./features/products/productSlice";
 
 const App = () => {
-    let dispatch = useDispatch();
-    useEffect(() => {
-      dispatch(fetchProducts());
-    }, []);
+  let dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(fetchProducts());
+  }, []);
   AOS.init({ once: true });
+  
   let currentUser = useSelector(state => state.user.currentUser);
 
   return (

@@ -1,12 +1,7 @@
 import React from "react";
 import { useRoutes } from "react-router";
-import Login from "../pages/auth/users/Login";
-import MerchSignup from "../pages/auth/merchants/MerchSignup";
+
 import Signup from "../pages/auth/users/Signup";
-import Cart from "../pages/cart/Cart";
-import Home from "../pages/home/Home";
-import ProductDisplay from "../pages/productsDisplay/ProductDisplay";
-import Checkout from "../pages/cart/ProductCheckout/Checkout";
 
 import Forget from "../pages/auth/users/Forget";
 import Maincategory from "../components/categories/Maincategory";
@@ -36,10 +31,6 @@ const CustomRoutes2 = () => {
     {
       path: "/forgot",
       element: <Forget />,
-    },
-    {
-      path: "/login",
-      element: <Login />,
     },
   ]);
   return myRoutes;

@@ -32,6 +32,7 @@ const MyOrder = () => {
   // for quantity
   const productQuantityCounter = {};
   const cartQnty = useSelector(state => state.cart);
+
   cartQnty.cartItems.map(element => {
     productQuantityCounter[element.productsid] =
       (productQuantityCounter[element.productsid] || 0) + 1;
