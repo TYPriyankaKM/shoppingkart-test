@@ -20,6 +20,7 @@ const App = () => {
     dispatch(fetchProducts());
   }, []);
   AOS.init({ once: true });
+  
   let currentUser = useSelector(state => state.user.currentUser);
 
   return (

@@ -6,9 +6,9 @@ import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-
 import { Card, CardHeader } from "@material-ui/core";
-
+import { AiOutlineMinusCircle } from "react-icons/ai";
+import { AiOutlinePlusCircle } from "react-icons/ai";
 import { useState, useEffect } from "react";
 import StarRatings from "../../components/starRating/StarRatings";
 import { IconButton } from "@mui/material";
@@ -19,8 +19,8 @@ import Axios from "../../apis/Axios";
 import { toast } from "react-toastify";
 const MyOrder = () => {
   const orderList = useSelector(state => state.orders.orderList);
-  const orderItems = useState([]);
-  const [allPropertyObj, setAllPropertyObj] = useState({});
+    const orderItems = useState([]);
+    const [allPropertyObj, setAllPropertyObj] = useState({});
   // for the card
   const navigate = useNavigate();
   const cart = useSelector(state => state.cart);
@@ -37,23 +37,22 @@ const MyOrder = () => {
     productQuantityCounter[element.productsid] =
       (productQuantityCounter[element.productsid] || 0) + 1;
   });
-  const featureProduct = useSelector(state => state.product.productList);
+   const featureProduct = useSelector(state => state.product.productList);
 
-  const handleCancelOrder = async orderId => {
-    try {
-      await Axios.patch(`customers/${userId}/orders/${orderId}`);
-      dispatch(getOrderHistory(userId));
-      toast.success("Order has been Cancelled");
-    } catch (error) {
-      console.log(error);
-      toast.error(error.response.data.data);
-    }
-  };
-
+   const handleCancelOrder = async orderId => {
+     try {
+       await Axios.patch(`customers/${userId}/orders/${orderId}`);
+       dispatch(getOrderHistory(userId));
+       toast.success("Order has been Cancelled");
+     } catch (error) {
+       console.log(error);
+       toast.error(error.response.data.data);
+     }
+   };
   useEffect(() => {
     dispatch(getOrderHistory(userId));
   }, []);
-  useEffect(() => {
+   useEffect(() => {
     let newAllpropertyObj = featureProduct.reduce((acc, value) => {
       return { ...acc, [value.productId]: value };
     }, {});
@@ -93,7 +92,6 @@ const MyOrder = () => {
             pincode,
             phone,
           } = address;
-
           return (
             <Accordion key={id}>
               <AccordionSummary
