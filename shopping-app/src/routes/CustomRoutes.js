@@ -1,14 +1,12 @@
 import React from "react";
 import { useRoutes } from "react-router";
-import Login from "../pages/auth/users/Login";
-import MerchSignup from "../pages/auth/merchants/MerchSignup";
-import Signup from "../pages/auth/users/Signup";
+
 import Cart from "../pages/cart/Cart";
 import Home from "../pages/home/Home";
 import ProductDisplay from "../pages/productsDisplay/ProductDisplay";
 import Checkout from "../pages/cart/ProductCheckout/Checkout";
 import Myorder from "../pages/cart/Myorder";
-import Forget from "../pages/auth/users/Forget";
+
 import Maincategory from "../components/categories/Maincategory";
 import Kids from "../components/categories/Kids";
 import Women from "../components/categories/Women";
@@ -19,9 +17,9 @@ import SelectAddress from "../pages/cart/ProductCheckout/SelectAddress";
 import Wishlist from "../pages/wishlist/Wishlist";
 import Profile from "./../pages/profile/Profile";
 import Reset from "../pages/auth/users/Reset";
-import Order from "../pages/profile/Order";
+
 import AddressForm from "../pages/auth/users/AddressForm";
-import Right from "../pages/profile/ProfileInfo";
+
 import ProfileInfo from "../pages/profile/ProfileInfo";
 import MyAddresses from "../pages/profile/MyAddresses";
 import EditAddress from "../pages/profile/EditAddress";
@@ -51,10 +49,7 @@ const CustomRoutes = () => {
       path: `/products_page/:id`,
       element: <ProductDisplay />,
     },
-    {
-      path: "/merch-Signup",
-      element: <MerchSignup />,
-    },
+
     {
       path: "/main-category",
       element: <Maincategory />,

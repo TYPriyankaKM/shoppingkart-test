@@ -171,3 +171,84 @@
 /* .moreDetails>span:nth-child(1) {
   visibility: hidden;
 } */
+.cartOrder {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(182, 181, 181, 0.796);
+  border-radius: 10px;
+}
+.orderHeader {
+  padding: 10px 20px;
+  width: 100%;
+  display: flex;
+  column-gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.orderStatus {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.orderTotal {
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.deliveryAddress {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+/* .orderListContainer {
+  width: 90%;
+  margin: auto;
+} */
+.orderNumber {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.orderListContainer {
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  padding: 0 20px;
+  margin: auto;
+}
+.cancelOrder {
+  width: 10%;
+}
+.cancelOrder button {
+  background-color: transparent;
+  color: red;
+  padding: 8px 14px;
+  border: 1px solid red;
+  border-radius: 10px;
+  transition: all 0.3s linear;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+}
+.cancelOrder button:hover {
+  background-color: red;
+  color: #efefef;
+}
+.orderNumber button {
+  width: 50%;
+  padding: 8px 14px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 10px;
+  border: 1px solid #1d2c4e;
+  color: #1d2c4e;
+  background-color: var(--link-hover);
+  transition: all 0.3s linear;
+}
