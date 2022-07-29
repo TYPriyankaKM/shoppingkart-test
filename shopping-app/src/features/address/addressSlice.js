@@ -22,15 +22,12 @@ export const fetchAddress = createAsyncThunk(
 export const deleteAddress = createAsyncThunk(
   "address/deleteAddress",
   async obj => {
-    // let permit = window.confirm("Are you sure you want to delete Address");
 
     try {
       let { userId, addressId } = obj;
-      // if (permit) {
         await Axios.delete(`customers/${userId}/address/${addressId}`);
         toast.success("Address deleted successfully");
         return { addressId };
-      // }
     } catch (err) {
       toast.error(err.message);
     }

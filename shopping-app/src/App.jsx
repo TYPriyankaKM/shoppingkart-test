@@ -23,9 +23,7 @@ const App = () => {
         <ToastContainer />
         <PersistentLogin>
           <Navbar />
-
           <CustomRoutes2 />
-
           <CustomRoutes />
         </PersistentLogin>
         <Footer />
