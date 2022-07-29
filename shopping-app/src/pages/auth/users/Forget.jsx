@@ -25,19 +25,21 @@ export default function Forget() {
   let navigate = useNavigate();
   let [email, setEmail] = useState();
 
-  const handleSubmit = async event => {
-    event.preventDefault();
-    let { data } = await Axios.post(
-      "/user/forgot-password",
-      {
-        email,
-      }
-    );
-    if (data.message === "Invalid") toast.error("invalid email");
-    else {
-      toast.success("reset link is sended successfully");
-      setEmail("");
+  const handleSubmit = async e => {
+    e.preventDefault();
+    let header = {
+      email: email,
+      verifyUrl: "http://localhost:3000/reset",
+    };
+    try {
+      let { data } = await Axios.post(`users/forgot-password`, null, {
+        headers: header,
+      });
+      toast.success(data);
       navigate("/");
+    } catch (error) {
+      console.log(error);
+      toast.error(error.message);
     }
   };
 
@@ -55,13 +57,14 @@ export default function Forget() {
             borderRadius: "0.4rem",
             background: "#efefef",
             boxShadow: "2px 1px 10px 1px grey",
+            marginBottom: "100px",
           }}
         >
           <Avatar sx={{ m: 1, bgcolor: "#1D2C4E" }}>
             <LockOutlinedIcon />
           </Avatar>
           <Typography component="h1" variant="h5">
-            Forget Password
+            Forgot Password
           </Typography>
           <Box
             component="form"
