@@ -80,7 +80,7 @@ const Signup = () => {
   const [payload, setPayload] = useState({});
   const [btnCondition, setBtnCondition] = useState(false);
   const [model, setModel] = useState(false);
-  const [number1, setNumber1] = useState();
+  const [number1, setNumber1] = useState("");
 
   // const navigate = useNavigate()
 
@@ -100,7 +100,6 @@ const Signup = () => {
       cartList: [],
     };
     setPayload(currPayload);
-    console.log(payload);
 
     await fetchData(currPayload);
     setShowBackdrop(false);
