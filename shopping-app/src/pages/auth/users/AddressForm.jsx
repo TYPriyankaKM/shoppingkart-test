@@ -131,7 +131,6 @@ const Signup = () => {
       await Axios.post(`/customers/${userId}/address`, currPayload);
       toast.success("successfully added");
       navigate(-1);
-  
     } catch (err) {
       console.log(err);
     }
@@ -208,7 +207,7 @@ const Signup = () => {
                     className={classes.formTextFieldOther}
                     size="small"
                     id="outlined-size-small"
-                    label="Other"
+                    label="Address type"
                     placeholder="Enter Address type"
                     variant="outlined"
                     value={otherAddress}
