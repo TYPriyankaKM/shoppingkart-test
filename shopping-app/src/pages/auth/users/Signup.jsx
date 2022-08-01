@@ -80,9 +80,16 @@ const Signup = () => {
   const [payload, setPayload] = useState({});
   const [btnCondition, setBtnCondition] = useState(false);
   const [model, setModel] = useState(false);
-  const [number1, setNumber1] = useState();
+  const [number1, setNumber1] = useState("");
 
   // const navigate = useNavigate()
+
+  // Accept Term & condition callback function
+  const onAgreeTC = (tcAccepted)=> {
+    setBtnCondition(tcAccepted)
+  }
+  
+
 
   const handleSubmit = async e => {
     e.preventDefault();
@@ -270,28 +277,9 @@ const Signup = () => {
             ></TextField>
           </Card>
           <Card
-            elevation={0}
-            style={{ backgroundColor: "transparent" }}
-            className={style.formCardContainer}
-          >
-            {/* <TextField
-              className={classes.formTextFieldOther}
-              size="small"
-              label="Role"
-              id="outlined-size-small role"
-              variant="outlined"
-              required
-              value={role}
-              onChange={e => {
-                setRole(e.target.value);
-              }}
-            ></TextField> */}
-          </Card>
-          <Card
             className={clsx(style.formCardContainer, style.Checkbox)}
             elevation={0}
             style={{ backgroundColor: "transparent" }}
-            onc
           >
             <span
               style={{ marginLeft: "300px", display: "flex", width: "350px" }}
@@ -334,6 +322,7 @@ const Signup = () => {
               <TermsConditions
                 modelCondition={setModel}
                 condition={setBtnCondition}
+                onAgreeTC={onAgreeTC}
               />
             )}
           </Card>
@@ -343,7 +332,11 @@ const Signup = () => {
             style={{ backgroundColor: "transparent" }}
             className={style.formCardContainer}
           >
-            <button className={style.bn5}>Register</button>
+            { btnCondition === true ?(
+              <button className={style.bn5} > Register</button>
+            ):
+            <button className={style.bn5Disabled} disabled={true}> Register</button> 
+            }
           </Card>
         </form>
         <BackdropSpinner open={showBackdrop} />

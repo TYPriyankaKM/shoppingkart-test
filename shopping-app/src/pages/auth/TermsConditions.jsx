@@ -9,7 +9,7 @@ import { Checkbox, FormControlLabel } from "@mui/material";
 import ClearIcon from "@mui/icons-material/Clear";
 import termsStyle from "./TermsCondtions.module.css";
 
-export default function TermsConditions({ condition, modelCondition }) {
+export default function TermsConditions({ condition, modelCondition , onAgreeTC}) {
   const [open, setOpen] = React.useState(true);
   const [scroll, setScroll] = React.useState("paper");
   const [btnCondition, setBtnCondition] = React.useState(false);
@@ -56,7 +56,7 @@ export default function TermsConditions({ condition, modelCondition }) {
       {/* <Button onClick={handleClickOpen("paper")}>scroll=paper</Button> */}
       <Dialog
         open={open}
-        onClose="{handleClose, {reason: backdropClick}}"
+        onClose={handleClose}
         scroll={scroll}
         aria-labelledby="scroll-dialog-title"
         aria-describedby="scroll-dialog-description"
@@ -86,7 +86,8 @@ Praesent commodo cursus magna, vel scelerisque nisl consectetur et.`
                 style={{ width: "350px" }}
                 value="other"
                 checked={btnCondition}
-                onClick={() => setBtnCondition(!btnCondition)}
+                onClick={() => {setBtnCondition(!btnCondition)
+                onAgreeTC(true)}}
                 control={<Checkbox />}
                 label="I agree to the Terms Conditions*"
               />
