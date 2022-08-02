@@ -78,6 +78,20 @@ hr {
   font-size: larger;
 }
 
+.bn5Disabled {
+  /* width: 100%; */
+  padding: 20px 50px;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #6b58466b;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: larger;
+}
 .bn5:before {
   content: "";
   background-color: #ec8a2f; 
