@@ -13,6 +13,7 @@ import { useNavigate } from "react-router-dom";
 import { orange } from "@mui/material/colors";
 import { useSearchParams } from "react-router-dom";
 import Axios from "../../../apis/Axios";
+import { toast } from "react-toastify";
 const theme = createTheme({
   palette: {
     primary: {
@@ -37,10 +38,16 @@ export default function Reset() {
 
   const handleSubmit = async event => {
     event.preventDefault();
-    await Axios.post(`/users/verify-account?token=${token}`, null, {
-      headers: { password: newpass },
-    });
-    navigate(`/`);
+    try {
+      await Axios.post(`/users/verify-account?token=${token}`, null, {
+        headers: { password: newpass },
+      });
+      toast.success("Password changed successfully");
+      navigate(`/`);
+    } catch (err) {
+      console.log(err);
+      toast.err(Response.data);
+    }
   };
 
   return (

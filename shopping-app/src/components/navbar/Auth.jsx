@@ -27,11 +27,10 @@ import { toast } from "react-toastify";
 import { CloseLogin, OpenLogin } from "../../features/Login/LoginSlice";
 import { createCurrentUser } from "../../features/User/userSlice";
 import UserMenu from "../UserMenu/UserMenu";
-import CartDropdown from "../CartDropDown/CartDropdown";
-import { BiAlignRight } from "react-icons/bi";
-import { NavLink } from "react-router-dom";
-import { getCart, getCartCount } from "../../features/cart/cartSlice";
-// import axios from './../../apis/Axios';
+import { getCart } from "../../features/cart/cartSlice";
+
+import BackdropSpinner from "../spinner/BackdropSpinner";
+import { getOrderHistory } from "./../../features/orders/orderSlice";
 
 const Auth = () => {
   const dispatch = useDispatch();
@@ -67,12 +66,14 @@ const Auth = () => {
 
   useEffect(() => {
     dispatch(getCart(currentUser.userId));
+    dispatch(getOrderHistory(currentUser.userId));
   }, []);
 
   const handleSubmit = async e => {
     e.preventDefault();
 
     try {
+      setShowBackdrop(true);
       let { data } = await Axios.post(
         "/users/login",
         {
@@ -81,8 +82,7 @@ const Auth = () => {
         }
         // { withCredentials: true }
       );
-      console.log(data);
-      if (data.message == "OK") {
+      if (data) {
         dispatch(
           createCurrentUser({
             currentUser: data.data,
@@ -90,12 +90,16 @@ const Auth = () => {
           })
         );
         dispatch(CloseLogin());
+        setShowBackdrop(false);
         toast.success("successfully logged in");
         navigate("/Home");
         dispatch(getCart(data.data.userId));
-      } else toast.error("Invalid password or Email");
+        dispatch(getOrderHistory(data.data.userId));
+      }
     } catch (err) {
-      toast.info(err);
+      console.log(err);
+      toast.error(err.response.data.data);
+      setShowBackdrop(false);
     }
 
     setValues({ email: "", password: "", showPassword: false });

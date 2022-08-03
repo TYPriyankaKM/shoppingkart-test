@@ -19,8 +19,7 @@ import FormControl from "@material-ui/core/FormControl";
 import { toast } from "react-toastify";
 import { useDispatch } from "react-redux";
 import { OpenLogin } from "../../../features/Login/LoginSlice";
-import { Country, State, City } from "country-state-city";
-
+import BackdropSpinner from "../../../components/spinner/BackdropSpinner";
 // import { motion, Variants } from "framer-motion";
 
 const useStyles = makeStyles(theme => ({
@@ -69,6 +68,8 @@ const Signup = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const classes = useStyles();
+  // Loading state
+  const [showBackdrop, setShowBackdrop] = useState(false);
 
   const [fname, setFname] = useState("");
   const [lname, setLname] = useState("");
@@ -83,9 +84,9 @@ const Signup = () => {
 
   // const navigate = useNavigate()
 
-  const handleSubmit = e => {
+  const handleSubmit = async e => {
     e.preventDefault();
-    window.alert(" Successfully Registered Please Check your mail and Verify");
+    setShowBackdrop(true);
     let currPayload = {
       firstName: fname,
       lastName: lname,
@@ -101,7 +102,9 @@ const Signup = () => {
     setPayload(currPayload);
     console.log(payload);
 
-    fetchData(currPayload);
+    await fetchData(currPayload);
+    setShowBackdrop(false);
+    toast.success("Successfully Registered Please Check your mail and Verify");
     navigate("/");
   };
   const header = {
@@ -111,7 +114,6 @@ const Signup = () => {
     try {
       await Axios.post("/customers", currPayload, { headers: header });
       console.log("user registered....");
-      toast.success("successfully registered");
     } catch (error) {
       toast.error(error.message);
       console.log(error.message);
@@ -344,6 +346,7 @@ const Signup = () => {
             <button className={style.bn5}>Register</button>
           </Card>
         </form>
+        <BackdropSpinner open={showBackdrop} />
       </motion.div>
       <br />
     </>

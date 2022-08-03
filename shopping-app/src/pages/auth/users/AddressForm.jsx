@@ -79,7 +79,7 @@ const Signup = () => {
   //   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("nopassword");
   const [role, setRole] = useState("");
-  const [gender, setGender] = useState("male");
+  const [addressType, setaddressType] = useState("");
   const [payload, setPayload] = useState({});
   const [btnCondition, setBtnCondition] = useState(false);
   const [model, setModel] = useState(false);
@@ -126,8 +126,7 @@ const Signup = () => {
     try {
       await Axios.post(`/customers/${userId}/address`, currPayload);
       toast.success("successfully added");
-      navigate("/my-profile/my-addresses");
-      // window.location.assign("/my-profile/my-addresses")
+      navigate(-1);
     } catch (err) {
       console.log(err);
     }
@@ -169,6 +168,64 @@ const Signup = () => {
           {/* number2 optional */}
 
           {/* address 1 is mandatory */}
+          <Card
+            elevation={0}
+            style={{ backgroundColor: "transparent" }}
+            className={style.formCardContainer}
+          >
+            <RadioGroup
+              aria-label="addressType"
+              name="addressType1"
+              value={addressType}
+              onChange={e => setaddressType(e.target.value)}
+            >
+              <section
+                style={{
+                  display: "flex",
+                  // alignItems: "baseline",
+                  alignItems: "center",
+                  justifyContent: "space-evenly",
+                }}
+              >
+                <FormLabel component="legend">Address Type</FormLabel>
+                <FormControlLabel
+                  className={style.radioGroup}
+                  value="Home"
+                  control={<Radio />}
+                  label="Home"
+                />
+                <FormControlLabel
+                  className={style.radioGroup}
+                  value="Office"
+                  control={<Radio />}
+                  label="Office"
+                />
+                <FormControlLabel
+                  className={style.radioGroup}
+                  value="other"
+                  control={<Radio />}
+                  label="Other"
+                />
+              </section>
+              <div style={{ display: "flex", justifyContent: "center " }}>
+                {addressType == "other" && (
+                  <TextField
+                    className={classes.formTextFieldOther}
+                    size="small"
+                    id="outlined-size-small"
+                    label="Address type"
+                    placeholder="Enter Address type"
+                    variant="outlined"
+                    value={otherAddress}
+                    required
+                    onChange={e => {
+                      setOtherAddress(e.target.value);
+                    }}
+                  ></TextField>
+                )}
+              </div>
+            </RadioGroup>
+          </Card>
 
           <Card
             elevation={0}

@@ -48,31 +48,15 @@ function EditProfile({ open, onClose }) {
     let value = e.target.value;
     setUserData(pre => ({ ...pre, [e.target.name]: value }));
   };
-  console.log(token);
 
   const handleSubmit = async e => {
     e.preventDefault();
     try {
-      await Axios.put(
-        `http://localhost:5000/user/updateProfile/${id}`,
-        userData
-      );
-      setTimeout(async () => {
-        let detailsRes = await Axios.get("/api/user/detail", {
-          headers: {
-            "Context-Type": "application/json",
-            Authorization: `Bearer ${token}`,
-          },
-        });
-        console.log(detailsRes);
-
-        dispatch(
-          createCurrentUser({
-            refreshToken: token,
-            currentUser: detailsRes.data.userDetails,
-          })
-        );
-      }, 200);
+      let updatedUserData ={
+        id: currentUser.userId,
+        payload: {...userData}
+      }
+      dispatch(editProfile(updatedUserData))
       onClose()
       toast.success("successfully updated");
     } catch (err) {
@@ -118,7 +102,7 @@ function EditProfile({ open, onClose }) {
             <Grid
               item
               xs={12}
-              row
+              row="true"
               aria-labelledby="demo-row-radio-buttons-group-label"
             >
               <Typography

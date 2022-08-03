@@ -4,6 +4,8 @@ import Dialog from "@mui/material/Dialog";
 import DialogActions from "@mui/material/DialogActions";
 import DialogTitle from "@mui/material/DialogTitle";
 import Slide from "@mui/material/Slide";
+import DeleteIcon from "@mui/icons-material/Delete";
+
 
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
@@ -27,9 +29,12 @@ export default function ConfirmDialogButton({ title, onConfirm }) {
 
   return (
     <div>
-      <Button variant="outlined" onClick={handleClickOpen}>
-        delete
-      </Button>
+      <Button
+        color="error"
+        onClick={handleClickOpen}
+        startIcon={<DeleteIcon />}
+        size="small"
+      ></Button>
       <Dialog
         open={open}
         TransitionComponent={Transition}
@@ -40,7 +45,7 @@ export default function ConfirmDialogButton({ title, onConfirm }) {
         <DialogTitle>{title}</DialogTitle>
         <DialogActions>
           <Button onClick={handleCancle}>Cancel</Button>
-          <Button onClick={handleConfirm}>Okay</Button>
+          <Button color="error" onClick={handleConfirm}>Yes</Button>
         </DialogActions>
       </Dialog>
     </div>

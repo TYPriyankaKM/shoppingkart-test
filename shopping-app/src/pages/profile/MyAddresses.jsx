@@ -8,6 +8,8 @@ import {
   fetchAddress,
   deleteAddress,
 } from "../../features/address/addressSlice";
+import ConfirmDialogButton from "../../components/customButton/ConfirmDialogButton"
+
 
 function MyAddresses() {
   let currUser = useSelector(state => state.user.currentUser);
@@ -39,10 +41,7 @@ function MyAddresses() {
         </div>
       )}
       <div className={""} style={{ margin: "8px 0px" }}>
-        <h3>
-          {firstName} &nbsp; {lastName}
-        </h3>
-        <p style={{ fontWeight: "lighter" }}>{phone}</p>
+
         {addressData === null || addressData.length === 0 ? (
           <>
             <h1>No adderss added yet</h1>
@@ -54,7 +53,7 @@ function MyAddresses() {
           addressData.map((item, index) => {
             let { addressId } = item;
             return (
-              <Card sx={{ maxWidth: 500, margin: "8px 0px" }}>
+              <Card sx={{ maxWidth: 500, margin: "8px 0px" }} key={index}>
                 <CardContent>
                   <div style={{ display: "flex" }}>
                     <div className={""}>
@@ -70,9 +69,7 @@ function MyAddresses() {
                         <p>
                           {item.state} - {item.pincode} - {item.country}
                         </p>
-                        <p>
-                          <strong>Contanct</strong> {item.phone}
-                        </p>
+                        <strong>Contanct</strong> {item.phone}
                       </div>
                     </div>
                   </div>
@@ -86,14 +83,8 @@ function MyAddresses() {
                       startIcon={<ModeEditOutlineOutlinedIcon />}
                     ></Button>
                   </Link>
-                  <Button
-                    color="error"
-                    onClick={() => {
-                      dispatch(deleteAddress({ userId, addressId }));
-                    }}
-                    startIcon={<DeleteIcon />}
-                    size="small"
-                  ></Button>
+                  
+                  <ConfirmDialogButton title={"Are your sure to Delete Address"} onConfirm={(permit)=> permit ?dispatch(deleteAddress({ userId, addressId })):""} />
                 </CardActions>
               </Card>
             );
